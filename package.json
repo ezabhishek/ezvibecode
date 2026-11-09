@@ -2,9 +2,7 @@
   "name": "ezvibecode",
   "version": "1.0.0",
   "description": "ezvibecode - subscriptions you can build yourself. Stop subscribing. Start shipping.",
-  "main": "server.js",
   "scripts": {
-    "start": "node server.js",
     "dev": "node server.js",
     "preview": "node server.js"
   },
