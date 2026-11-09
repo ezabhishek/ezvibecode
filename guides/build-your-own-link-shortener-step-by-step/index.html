@@ -1,0 +1,278 @@
+<!DOCTYPE html><html lang="en"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width"><title>Build your own link shortener step by step — ezvibecode</title><meta name="description" content="Build your own link shortener step by step with slugs, redirects, and a click count. Follow the prompts, check each step, and skip Bitly's $35–$300 platform."><link rel="canonical" href="https://ezvibecode.com/guides/build-your-own-link-shortener-step-by-step/"><link rel="alternate" type="application/rss+xml" title="ezvibecode guides" href="https://ezvibecode.com/guides/rss.xml"><meta name="theme-color" content="#f4f1e8"><link rel="icon" href="/favicon.ico" sizes="32x32"><link rel="icon" href="/favicon.png" type="image/png" sizes="512x512"><link rel="apple-touch-icon" href="/apple-touch-icon.png" sizes="180x180"><meta property="og:type" content="article"><meta property="og:site_name" content="ezvibecode"><meta property="og:title" content="Build your own link shortener step by step — ezvibecode"><meta property="og:description" content="Build your own link shortener step by step with slugs, redirects, and a click count. Follow the prompts, check each step, and skip Bitly's $35–$300 platform."><meta property="og:url" content="https://ezvibecode.com/guides/build-your-own-link-shortener-step-by-step/"><meta property="og:image" content="https://ezvibecode.com/og/guides/build-your-own-link-shortener-step-by-step.png"><meta property="og:image:type" content="image/png"><meta property="og:image:width" content="1200"><meta property="og:image:height" content="630"><meta property="og:image:alt" content="Build your own link shortener step by step"><meta property="article:published_time" content="2026-10-23T00:00:00.000Z"><meta property="article:modified_time" content="2026-10-23T00:00:00.000Z"><meta property="article:author" content="ezvibecode"><meta name="twitter:card" content="summary_large_image"><meta name="twitter:title" content="Build your own link shortener step by step — ezvibecode"><meta name="twitter:description" content="Build your own link shortener step by step with slugs, redirects, and a click count. Follow the prompts, check each step, and skip Bitly's $35–$300 platform."><meta name="twitter:url" content="https://ezvibecode.com/guides/build-your-own-link-shortener-step-by-step/"><meta name="twitter:image" content="https://ezvibecode.com/og/guides/build-your-own-link-shortener-step-by-step.png"><meta name="twitter:image:alt" content="Build your own link shortener step by step"><script type="application/ld+json">{"@context":"https://schema.org","@type":"BreadcrumbList","itemListElement":[{"@type":"ListItem","position":1,"name":"ezvibecode","item":"https://ezvibecode.com/"},{"@type":"ListItem","position":2,"name":"Guides","item":"https://ezvibecode.com/guides/"},{"@type":"ListItem","position":3,"name":"Build your own link shortener step by step","item":"https://ezvibecode.com/guides/build-your-own-link-shortener-step-by-step/"}]}</script><script type="application/ld+json">{"@context":"https://schema.org","@type":["Article","TechArticle"],"headline":"Build your own link shortener step by step","description":"Build your own link shortener step by step with slugs, redirects, and a click count. Follow the prompts, check each step, and skip Bitly's $35–$300 platform.","datePublished":"2026-10-23T00:00:00.000Z","dateModified":"2026-10-23T00:00:00.000Z","url":"https://ezvibecode.com/guides/build-your-own-link-shortener-step-by-step/","image":"https://ezvibecode.com/og/guides/build-your-own-link-shortener-step-by-step.png","author":{"@type":"Person","name":"ezvibecode","url":"https://ezvibecode.com/"},"publisher":{"@type":"Organization","name":"ezvibecode","url":"https://ezvibecode.com/"},"mainEntityOfPage":{"@type":"WebPage","@id":"https://ezvibecode.com/guides/build-your-own-link-shortener-step-by-step/"}}</script><link rel="stylesheet" href="/_astro/_slug_.8-etlKKw.css"></head><body><header class="site-header"><a class="logo" href="/" aria-label="ezvibecode home"><span class="logo-mark">EZ</span><span>ezvibecode</span></a><nav class="header-links" aria-label="Site"><a class="header-link" href="/blog/">Blog</a><a class="header-link" href="/guides/" aria-current="page">Guides</a><a class="header-link" href="/#audit">All 109 apps</a></nav><button class="icon-button" id="theme-toggle" type="button" aria-label="Toggle dark mode" title="Toggle dark mode">◐</button></header><main><nav class="breadcrumb" aria-label="Breadcrumb"><a href="/">Home</a><span aria-hidden="true">/</span><a href="/guides/">Guides</a><span aria-hidden="true">/</span><span aria-current="page">Build your own link shortener step by step</span></nav><article><header class="hero"><p class="eyebrow"><time datetime="2026-10-23">October 23, 2026</time></p><h1>Build your own link shortener step by step</h1><p class="lede">Build your own link shortener step by step with slugs, redirects, and a click count. Follow the prompts, check each step, and skip Bitly&#39;s $35–$300 platform.</p><ul class="tags"><li>guide</li><li>vibe-coding</li><li>bitly</li></ul></header><div class="prose"><p>You can build your own link shortener step by step as slugs, redirects, and a click count. <a href="/build-your-own-bitly/">Bitly</a> is that product. The catalog line is “Short links with names you can remember and numbers you can trust.”</p>
+<p>You pay $35–$300 a month. That is $420–$3,600 a year. The verdict is “Tiny by definition”. The first estimate is 90 minutes: short links, redirects, click counts.</p>
+<p>I already wrote the teardown, <a href="/blog/bitly-is-a-90-minute-project/">Build your own link shortener</a>. This guide is the walk. Prompts in order, then what to look at.</p>
+<p>The audience is a marketing team managing campaign links on its own domain. If you need deep links into mobile apps, or a permission matrix for a company, keep paying. The same v1 also replaces Dub, Rebrandly, and Short.io.</p>
+<h2 id="what-you-ship-when-you-build-your-own-link-shortener-step-by-step">What you ship when you build your own link shortener step by step</h2>
+<p>The <a href="/build-your-own-bitly/">Bitly page</a> splits the work into three rows.</p>
+<p>The first row is the one you want. A slug you pick or generate. A destination you can edit. A number that goes up when someone hits the URL. That is the 90-minute v1.</p>
+<p>The second row is 5 hours. Custom slugs, campaign tags, QR codes, expiry. Do that after you have sent a real link.</p>
+<p>The third row is a week. Global analytics, deep links, enterprise permissions. Skip it.</p>
+<p>If you tell an agent to “clone Bitly”, it aims at the third row. Pin every prompt to the first one.</p>
+<p>Here is the shape of the data. Nothing else has to exist at 90 minutes.</p>
+<pre class="astro-code github-dark" style="background-color:#24292e;color:#e1e4e8; overflow-x: auto;" tabindex="0" data-language="js"><code><span class="line"><span style="color:#F97583">const</span><span style="color:#79B8FF"> link</span><span style="color:#F97583"> =</span><span style="color:#E1E4E8"> {</span></span>
+<span class="line"><span style="color:#E1E4E8">  domain: </span><span style="color:#9ECBFF">'go.flaviocopes.com'</span><span style="color:#E1E4E8">,</span></span>
+<span class="line"><span style="color:#E1E4E8">  slug: </span><span style="color:#9ECBFF">'js-course'</span><span style="color:#E1E4E8">,</span></span>
+<span class="line"><span style="color:#E1E4E8">  destination: </span><span style="color:#9ECBFF">'https://flaviocopes.com/javascript/'</span><span style="color:#E1E4E8">,</span></span>
+<span class="line"><span style="color:#E1E4E8">  enabled: </span><span style="color:#79B8FF">true</span><span style="color:#E1E4E8">,</span></span>
+<span class="line"><span style="color:#E1E4E8">  clicksToday: </span><span style="color:#79B8FF">0</span><span style="color:#E1E4E8">,</span></span>
+<span class="line"><span style="color:#E1E4E8">}</span></span></code></pre>
+<p>A visitor hits <code>https://go.flaviocopes.com/js-course</code> and lands on the current destination. You change the destination later. The tweet still works.</p>
+<p>Campaign waits. ClickEvent can be a <code>(link_id, day)</code> counter. The identity is the slug record, so totals stay when the destination changes.</p>
+<p>Two tables cover the 90-minute row.</p>
+<pre class="astro-code github-dark" style="background-color:#24292e;color:#e1e4e8; overflow-x: auto;" tabindex="0" data-language="js"><code><span class="line"><span style="color:#F97583">const</span><span style="color:#79B8FF"> shortLink</span><span style="color:#F97583"> =</span><span style="color:#E1E4E8"> {</span></span>
+<span class="line"><span style="color:#E1E4E8">  id: </span><span style="color:#9ECBFF">'link-12'</span><span style="color:#E1E4E8">,</span></span>
+<span class="line"><span style="color:#E1E4E8">  domain: </span><span style="color:#9ECBFF">'go.flaviocopes.com'</span><span style="color:#E1E4E8">,</span></span>
+<span class="line"><span style="color:#E1E4E8">  slug: </span><span style="color:#9ECBFF">'js-course'</span><span style="color:#E1E4E8">,</span></span>
+<span class="line"><span style="color:#E1E4E8">  destination: </span><span style="color:#9ECBFF">'https://flaviocopes.com/javascript/?utm_source=newsletter'</span><span style="color:#E1E4E8">,</span></span>
+<span class="line"><span style="color:#E1E4E8">  enabled: </span><span style="color:#79B8FF">true</span><span style="color:#E1E4E8">,</span></span>
+<span class="line"><span style="color:#E1E4E8">  createdAt: </span><span style="color:#9ECBFF">'2026-10-23T09:12:00.000Z'</span><span style="color:#E1E4E8">,</span></span>
+<span class="line"><span style="color:#E1E4E8">}</span></span>
+<span class="line"></span>
+<span class="line"><span style="color:#F97583">const</span><span style="color:#79B8FF"> clickDay</span><span style="color:#F97583"> =</span><span style="color:#E1E4E8"> {</span></span>
+<span class="line"><span style="color:#E1E4E8">  linkId: </span><span style="color:#9ECBFF">'link-12'</span><span style="color:#E1E4E8">,</span></span>
+<span class="line"><span style="color:#E1E4E8">  day: </span><span style="color:#9ECBFF">'2026-10-23'</span><span style="color:#E1E4E8">,</span></span>
+<span class="line"><span style="color:#E1E4E8">  count: </span><span style="color:#79B8FF">2</span><span style="color:#E1E4E8">,</span></span>
+<span class="line"><span style="color:#E1E4E8">}</span></span></code></pre>
+<p><code>short_links</code> needs a unique index on <code>(domain, slug)</code>. <code>click_days</code> needs a unique index on <code>(link_id, day)</code> so two Workers incrementing the same morning do not invent a second row.</p>
+<figure>
+<svg role="img" aria-label="Build flow for a Bitly v1: save a slug and destination, reject unsafe URLs, write the unique slug, then redirect the visitor and increment the daily click count" viewBox="0 0 360 520" xmlns="http://www.w3.org/2000/svg">
+  <rect x="18" y="10" width="324" height="100" fill="var(--surface)" stroke="var(--ink)" stroke-width="3"/>
+  <rect x="18" y="10" width="324" height="40" fill="var(--lime)" stroke="var(--ink)" stroke-width="3"/>
+  <text x="180" y="37" text-anchor="middle" font-family="Arial, Helvetica, sans-serif" font-weight="800" font-size="15" fill="var(--ink)">SAVE THE LINK</text>
+  <text x="180" y="74" text-anchor="middle" font-family="Arial, Helvetica, sans-serif" font-weight="700" font-size="14" fill="var(--ink)">go.flaviocopes.com / js-course</text>
+  <text x="180" y="96" text-anchor="middle" font-family="Arial, Helvetica, sans-serif" font-weight="700" font-size="13" fill="var(--ink)">Points at flaviocopes.com/javascript/</text>
+  <path d="M180 118 v22" fill="none" stroke="var(--ink)" stroke-width="3"/>
+  <path d="M170 130 l10 12 10-12" fill="none" stroke="var(--ink)" stroke-width="3"/>
+  <rect x="18" y="148" width="324" height="100" fill="var(--surface)" stroke="var(--ink)" stroke-width="3"/>
+  <rect x="18" y="148" width="324" height="40" fill="var(--blue)" stroke="var(--ink)" stroke-width="3"/>
+  <text x="180" y="175" text-anchor="middle" font-family="Arial, Helvetica, sans-serif" font-weight="800" font-size="15" fill="var(--ink)">VALIDATE THE URL</text>
+  <text x="180" y="212" text-anchor="middle" font-family="Arial, Helvetica, sans-serif" font-weight="700" font-size="14" fill="var(--ink)">http or https only, no credentials</text>
+  <text x="180" y="234" text-anchor="middle" font-family="Arial, Helvetica, sans-serif" font-weight="700" font-size="13" fill="var(--ink)">Never fetch the destination</text>
+  <path d="M180 256 v22" fill="none" stroke="var(--ink)" stroke-width="3"/>
+  <path d="M170 268 l10 12 10-12" fill="none" stroke="var(--ink)" stroke-width="3"/>
+  <rect x="18" y="286" width="324" height="100" fill="var(--surface)" stroke="var(--ink)" stroke-width="3"/>
+  <rect x="18" y="286" width="324" height="40" fill="#ffda47" stroke="var(--ink)" stroke-width="3"/>
+  <text x="180" y="313" text-anchor="middle" font-family="Arial, Helvetica, sans-serif" font-weight="800" font-size="15" fill="var(--ink)">WRITE ONE SLUG</text>
+  <text x="180" y="350" text-anchor="middle" font-family="Arial, Helvetica, sans-serif" font-weight="700" font-size="14" fill="var(--ink)">Unique on domain plus slug</text>
+  <text x="180" y="372" text-anchor="middle" font-family="Arial, Helvetica, sans-serif" font-weight="700" font-size="13" fill="var(--ink)">JS-course collides with js-course</text>
+  <path d="M180 394 v22" fill="none" stroke="var(--ink)" stroke-width="3"/>
+  <path d="M170 406 l10 12 10-12" fill="none" stroke="var(--ink)" stroke-width="3"/>
+  <rect x="18" y="424" width="324" height="84" fill="var(--surface)" stroke="var(--ink)" stroke-width="3"/>
+  <rect x="18" y="424" width="324" height="40" fill="var(--coral)" stroke="var(--ink)" stroke-width="3"/>
+  <text x="180" y="451" text-anchor="middle" font-family="Arial, Helvetica, sans-serif" font-weight="800" font-size="15" fill="var(--ink)">REDIRECT AND COUNT</text>
+  <text x="180" y="488" text-anchor="middle" font-family="Arial, Helvetica, sans-serif" font-weight="700" font-size="14" fill="var(--ink)">302, then a (link, day) increment</text>
+</svg>
+<figcaption>Save, validate, lock the slug. The visitor gets a 302 and you get a count.</figcaption>
+</figure>
+<h2 id="pick-the-stack-you-already-write">Pick the stack you already write</h2>
+<p>Every product prompt ships in four flavors: AHA (Astro, HTMX, Alpine.js), Next.js, Laravel, and Rails. The capability line for Bitly is Workers, D1, and Astro.</p>
+<p>This site is an Astro app on Cloudflare, so that is the path I default to. Use Next.js if that is your weekday language.</p>
+<p>Open <a href="/build-your-own-bitly/">Build your own Bitly</a>. The guardrail is the useful sentence: block dangerous protocols, rate-limit redirect creation, and minimize stored request data. The non-goal sits next to it. No ad retargeting, deep links, link-in-bio pages, or enterprise permissions.</p>
+<p>Pick one stack and stay on it.</p>
+<h2 id="prompt-1-scaffold-shortstack-and-stop">Prompt 1. Scaffold Shortstack and stop</h2>
+<p>Copy the AHA prompt from the product page. Paste it into your coding tool. Put this block above it.</p>
+<pre class="astro-code github-dark" style="background-color:#24292e;color:#e1e4e8; overflow-x: auto;" tabindex="0" data-language="text"><code><span class="line"><span>Ship the 90-minute row only. Short links, redirects, click counts.</span></span>
+<span class="line"><span></span></span>
+<span class="line"><span>Project name: Shortstack.</span></span>
+<span class="line"><span>Owner is one person. Visitors do not create accounts.</span></span>
+<span class="line"><span></span></span>
+<span class="line"><span>Do not add campaign tags, QR codes, or expiry yet.</span></span>
+<span class="line"><span>Do not add bulk CSV import or a date-range chart.</span></span>
+<span class="line"><span>Do not add deep links, a bio page, or roles.</span></span>
+<span class="line"><span></span></span>
+<span class="line"><span>When the plan is done, stop and wait. Do not write</span></span>
+<span class="line"><span>implementation code until I say go.</span></span></code></pre>
+<p>The official prompt already asks for a short technical plan first: routes, tables, authorization, jobs. Let it produce that plan. Read it.</p>
+<p>You want pages like these:</p>
+<ul>
+<li><code>/dashboard</code> for the owner list</li>
+<li><code>/links/new</code> for the editor</li>
+<li><code>/:slug</code> for the public redirect</li>
+</ul>
+<p>You want a <code>short_links</code> table. A <code>click_days</code> table with <code>(link_id, day, count)</code> is enough. <code>campaigns</code> should not appear.</p>
+<p>If the plan includes OAuth for visitors, Stripe, or a users table for people who click, send it back. Paste the non-goal again.</p>
+<p>When the plan is narrow, say go. Let it scaffold the app, the migrations, and empty screens.</p>
+<h3 id="what-to-check-after-the-scaffold">What to check after the scaffold</h3>
+<p>Start the app. Sign in as the owner. You should see an empty dashboard and a create action.</p>
+<p>Open the migrations. <code>short_links.slug</code> is unique per domain. There is a unique constraint, not a comment that says “check first”. If the README is a placeholder, stop and make the agent write a real one before you add logic.</p>
+<h2 id="prompt-2-create-the-link-and-validate-the-destination">Prompt 2. Create the link and validate the destination</h2>
+<p>Now fill the editor. The mini-prompt on the product page is “The URL validator that refuses politely”. Use a tighter version so the agent does not fetch the destination.</p>
+<pre class="astro-code github-dark" style="background-color:#24292e;color:#e1e4e8; overflow-x: auto;" tabindex="0" data-language="text"><code><span class="line"><span>Implement link create and edit for Shortstack.</span></span>
+<span class="line"><span></span></span>
+<span class="line"><span>An owner can save domain, slug, destination, and enabled.</span></span>
+<span class="line"><span>Domain is go.flaviocopes.com in v1. Slug is optional. If the</span></span>
+<span class="line"><span>owner leaves it blank, generate one later. Destination is</span></span>
+<span class="line"><span>required.</span></span>
+<span class="line"><span></span></span>
+<span class="line"><span>Accept only http and https. If the paste has no scheme,</span></span>
+<span class="line"><span>assume https. Reject javascript:, data:, file:, protocol-</span></span>
+<span class="line"><span>relative tricks, embedded credentials, control characters,</span></span>
+<span class="line"><span>and newlines. Parse with the language URL parser, not a</span></span>
+<span class="line"><span>regex. Never fetch the destination.</span></span>
+<span class="line"><span></span></span>
+<span class="line"><span>On redirect, pass the destination through untouched so UTM</span></span>
+<span class="line"><span>tags stay byte-for-byte. Rate-limit creation at 30 new</span></span>
+<span class="line"><span>links an hour per account.</span></span>
+<span class="line"><span></span></span>
+<span class="line"><span>A failed save keeps the rest of the draft. Do not wipe the</span></span>
+<span class="line"><span>slug because the destination is missing a slash.</span></span>
+<span class="line"><span></span></span>
+<span class="line"><span>Seed one link:</span></span>
+<span class="line"><span>- domain go.flaviocopes.com</span></span>
+<span class="line"><span>- slug js-course</span></span>
+<span class="line"><span>- destination https://flaviocopes.com/javascript/?utm_source=newsletter</span></span>
+<span class="line"><span>- enabled true</span></span>
+<span class="line"><span></span></span>
+<span class="line"><span>Done when I can save those fields, refresh, and see the</span></span>
+<span class="line"><span>same values. Do not redirect visitors yet.</span></span></code></pre>
+<p>Agents invent URL fields that accept anything. Your domain then becomes an open redirect with a short slug on it.</p>
+<pre class="astro-code github-dark" style="background-color:#24292e;color:#e1e4e8; overflow-x: auto;" tabindex="0" data-language="js"><code><span class="line"><span style="color:#F97583">function</span><span style="color:#B392F0"> normalizeDestination</span><span style="color:#E1E4E8">(</span><span style="color:#FFAB70">raw</span><span style="color:#E1E4E8">) {</span></span>
+<span class="line"><span style="color:#F97583">  const</span><span style="color:#79B8FF"> trimmed</span><span style="color:#F97583"> =</span><span style="color:#E1E4E8"> raw.</span><span style="color:#B392F0">trim</span><span style="color:#E1E4E8">()</span></span>
+<span class="line"><span style="color:#F97583">  const</span><span style="color:#79B8FF"> withScheme</span><span style="color:#F97583"> =</span><span style="color:#E1E4E8"> trimmed.</span><span style="color:#B392F0">includes</span><span style="color:#E1E4E8">(</span><span style="color:#9ECBFF">'://'</span><span style="color:#E1E4E8">) </span><span style="color:#F97583">?</span><span style="color:#E1E4E8"> trimmed </span><span style="color:#F97583">:</span><span style="color:#9ECBFF"> `https://${</span><span style="color:#E1E4E8">trimmed</span><span style="color:#9ECBFF">}`</span></span>
+<span class="line"><span style="color:#F97583">  const</span><span style="color:#79B8FF"> url</span><span style="color:#F97583"> =</span><span style="color:#F97583"> new</span><span style="color:#B392F0"> URL</span><span style="color:#E1E4E8">(withScheme)</span></span>
+<span class="line"></span>
+<span class="line"><span style="color:#F97583">  if</span><span style="color:#E1E4E8"> (url.protocol </span><span style="color:#F97583">!==</span><span style="color:#9ECBFF"> 'http:'</span><span style="color:#F97583"> &amp;&amp;</span><span style="color:#E1E4E8"> url.protocol </span><span style="color:#F97583">!==</span><span style="color:#9ECBFF"> 'https:'</span><span style="color:#E1E4E8">) {</span></span>
+<span class="line"><span style="color:#F97583">    throw</span><span style="color:#F97583"> new</span><span style="color:#B392F0"> Error</span><span style="color:#E1E4E8">(</span><span style="color:#9ECBFF">'Only http and https destinations are allowed'</span><span style="color:#E1E4E8">)</span></span>
+<span class="line"><span style="color:#E1E4E8">  }</span></span>
+<span class="line"></span>
+<span class="line"><span style="color:#F97583">  if</span><span style="color:#E1E4E8"> (url.username </span><span style="color:#F97583">!==</span><span style="color:#9ECBFF"> ''</span><span style="color:#F97583"> ||</span><span style="color:#E1E4E8"> url.password </span><span style="color:#F97583">!==</span><span style="color:#9ECBFF"> ''</span><span style="color:#E1E4E8">) {</span></span>
+<span class="line"><span style="color:#F97583">    throw</span><span style="color:#F97583"> new</span><span style="color:#B392F0"> Error</span><span style="color:#E1E4E8">(</span><span style="color:#9ECBFF">'Destinations cannot include credentials'</span><span style="color:#E1E4E8">)</span></span>
+<span class="line"><span style="color:#E1E4E8">  }</span></span>
+<span class="line"></span>
+<span class="line"><span style="color:#F97583">  return</span><span style="color:#E1E4E8"> url.href</span></span>
+<span class="line"><span style="color:#E1E4E8">}</span></span>
+<span class="line"></span>
+<span class="line"><span style="color:#B392F0">normalizeDestination</span><span style="color:#E1E4E8">(</span><span style="color:#9ECBFF">'flaviocopes.com/javascript/?utm_source=newsletter'</span><span style="color:#E1E4E8">)</span></span>
+<span class="line"><span style="color:#6A737D">//https://flaviocopes.com/javascript/?utm_source=newsletter</span></span></code></pre>
+<p>You are validating shape, not liveness. Fetching turns the shortener into an SSRF proxy and slows every save.</p>
+<h3 id="what-to-check-after-the-destination-saves">What to check after the destination saves</h3>
+<p>Create <code>js-course</code>. Refresh. Destination still has <code>utm_source=newsletter</code>.</p>
+<p>Paste <code>javascript:alert(1)</code> and get a clear error. Paste <code>https://user:<a href="/cdn-cgi/l/email-protection" class="__cf_email__" data-cfemail="601001131320060c0116090f030f1005134e030f0d">[email&#160;protected]</a></code> and get the credentials error. Paste <code>flaviocopes.com/javascript/</code> and see <code>https://</code> added.</p>
+<p>If the agent adds a “check that the page loads” button that hits the destination from the server, delete that function.</p>
+<h2 id="prompt-3-make-the-slug-unique-for-real">Prompt 3. Make the slug unique for real</h2>
+<p>The second mini-prompt is “Two people, one slug, exactly one winner”. Paste this after the editor saves.</p>
+<pre class="astro-code github-dark" style="background-color:#24292e;color:#e1e4e8; overflow-x: auto;" tabindex="0" data-language="text"><code><span class="line"><span>Build slug management for Shortstack on go.flaviocopes.com.</span></span>
+<span class="line"><span></span></span>
+<span class="line"><span>Normalize every slug: trim, lowercase for comparison.</span></span>
+<span class="line"><span>Uniqueness is domain plus slug. Enforce it in the creation</span></span>
+<span class="line"><span>transaction with a unique constraint, not a check-then-</span></span>
+<span class="line"><span>insert. Two simultaneous creates for launch produce one</span></span>
+<span class="line"><span>link and one collision error that suggests two alternatives.</span></span>
+<span class="line"><span></span></span>
+<span class="line"><span>Reserve dashboard, api, health, and links. A user must not</span></span>
+<span class="line"><span>shadow the admin page. Case variants of an existing slug</span></span>
+<span class="line"><span>are collisions. JS-course is taken if js-course exists.</span></span>
+<span class="line"><span></span></span>
+<span class="line"><span>Generated slugs use this alphabet, length 7:</span></span>
+<span class="line"><span>abcdefghijkmnopqrstuvwxyz23456789</span></span>
+<span class="line"><span>Skip 0, O, l, and 1. On a random collision, generate again</span></span>
+<span class="line"><span>instead of failing the request.</span></span>
+<span class="line"><span></span></span>
+<span class="line"><span>Done when concurrent creates for launch yield one row, a</span></span>
+<span class="line"><span>reserved slug is refused, and a blank slug still saves.</span></span></code></pre>
+<p>Two people hitting create on <code>launch</code> at the same time is the failure agents miss. The unique constraint is the last line of defense.</p>
+<pre class="astro-code github-dark" style="background-color:#24292e;color:#e1e4e8; overflow-x: auto;" tabindex="0" data-language="js"><code><span class="line"><span style="color:#F97583">const</span><span style="color:#79B8FF"> SLUG_ALPHABET</span><span style="color:#F97583"> =</span><span style="color:#9ECBFF"> 'abcdefghijkmnopqrstuvwxyz23456789'</span></span>
+<span class="line"></span>
+<span class="line"><span style="color:#F97583">function</span><span style="color:#B392F0"> generateSlug</span><span style="color:#E1E4E8">(</span><span style="color:#FFAB70">length</span><span style="color:#F97583"> =</span><span style="color:#79B8FF"> 7</span><span style="color:#E1E4E8">) {</span></span>
+<span class="line"><span style="color:#F97583">  let</span><span style="color:#E1E4E8"> slug </span><span style="color:#F97583">=</span><span style="color:#9ECBFF"> ''</span></span>
+<span class="line"><span style="color:#F97583">  for</span><span style="color:#E1E4E8"> (</span><span style="color:#F97583">let</span><span style="color:#E1E4E8"> i </span><span style="color:#F97583">=</span><span style="color:#79B8FF"> 0</span><span style="color:#E1E4E8">; i </span><span style="color:#F97583">&lt;</span><span style="color:#E1E4E8"> length; i</span><span style="color:#F97583">++</span><span style="color:#E1E4E8">) {</span></span>
+<span class="line"><span style="color:#E1E4E8">    slug </span><span style="color:#F97583">+=</span><span style="color:#79B8FF"> SLUG_ALPHABET</span><span style="color:#E1E4E8">[Math.</span><span style="color:#B392F0">floor</span><span style="color:#E1E4E8">(Math.</span><span style="color:#B392F0">random</span><span style="color:#E1E4E8">() </span><span style="color:#F97583">*</span><span style="color:#79B8FF"> SLUG_ALPHABET</span><span style="color:#E1E4E8">.</span><span style="color:#79B8FF">length</span><span style="color:#E1E4E8">)]</span></span>
+<span class="line"><span style="color:#E1E4E8">  }</span></span>
+<span class="line"><span style="color:#F97583">  return</span><span style="color:#E1E4E8"> slug</span></span>
+<span class="line"><span style="color:#E1E4E8">}</span></span>
+<span class="line"></span>
+<span class="line"><span style="color:#B392F0">generateSlug</span><span style="color:#E1E4E8">()</span></span>
+<span class="line"><span style="color:#6A737D">//k4n7p2m</span></span></code></pre>
+<p>Keep generation in one function. The same function serves a blank slug field. Bulk CSV, later, should call it too.</p>
+<h3 id="what-to-check-after-the-slug-lock">What to check after the slug lock</h3>
+<p>Create <code>launch</code>. Try <code>Launch</code> in another tab. You get a collision, not a second row.</p>
+<p>Try slug <code>dashboard</code>. The form refuses it. Create a link with an empty slug. You get a 7-character code with no <code>0</code>, <code>O</code>, <code>l</code>, or <code>1</code>.</p>
+<p>If two rows share <code>launch</code>, the unique constraint is missing. Add it before you decorate the dashboard.</p>
+<h2 id="prompt-4-redirect-the-visitor-and-count-the-click">Prompt 4. Redirect the visitor and count the click</h2>
+<p>Now the public path. The product page also has “Click analytics with amnesia”. Stay on the 90-minute half of that idea.</p>
+<pre class="astro-code github-dark" style="background-color:#24292e;color:#e1e4e8; overflow-x: auto;" tabindex="0" data-language="text"><code><span class="line"><span>Build the public redirect for /:slug on go.flaviocopes.com.</span></span>
+<span class="line"><span></span></span>
+<span class="line"><span>Look up the enabled link. Return 302 to the stored</span></span>
+<span class="line"><span>destination, not 301. A 301 gets stuck in the browser</span></span>
+<span class="line"><span>after you edit the destination. Preserve the destination</span></span>
+<span class="line"><span>query string exactly. Do not append extra parameters.</span></span>
+<span class="line"><span></span></span>
+<span class="line"><span>After the visitor is already gone, increment a click_days</span></span>
+<span class="line"><span>row keyed on (link_id, UTC day). Filter obvious bots by</span></span>
+<span class="line"><span>user agent before counting. Never persist full IPs, raw</span></span>
+<span class="line"><span>user agents, or query strings from the referrer.</span></span>
+<span class="line"><span></span></span>
+<span class="line"><span>Disabled links show a branded unavailable page and do not</span></span>
+<span class="line"><span>increment anything. No country, device, or referrer store</span></span>
+<span class="line"><span>in v1.</span></span>
+<span class="line"><span></span></span>
+<span class="line"><span>Seed two clicks on js-course for 2026-10-23. The dashboard</span></span>
+<span class="line"><span>total for that link is 2 after a refresh.</span></span>
+<span class="line"><span></span></span>
+<span class="line"><span>Done when GET /js-course returns 302 to</span></span>
+<span class="line"><span>https://flaviocopes.com/javascript/?utm_source=newsletter</span></span>
+<span class="line"><span>and the count moves when I click it from a phone.</span></span></code></pre>
+<p>Tonight you skip country and device. Increment a <code>(link_id, day)</code> row.</p>
+<pre class="astro-code github-dark" style="background-color:#24292e;color:#e1e4e8; overflow-x: auto;" tabindex="0" data-language="js"><code><span class="line"><span style="color:#F97583">function</span><span style="color:#B392F0"> clickKey</span><span style="color:#E1E4E8">(</span><span style="color:#FFAB70">linkId</span><span style="color:#E1E4E8">, </span><span style="color:#FFAB70">requestedAt</span><span style="color:#E1E4E8">) {</span></span>
+<span class="line"><span style="color:#F97583">  const</span><span style="color:#79B8FF"> day</span><span style="color:#F97583"> =</span><span style="color:#E1E4E8"> requestedAt.</span><span style="color:#B392F0">toISOString</span><span style="color:#E1E4E8">().</span><span style="color:#B392F0">slice</span><span style="color:#E1E4E8">(</span><span style="color:#79B8FF">0</span><span style="color:#E1E4E8">, </span><span style="color:#79B8FF">10</span><span style="color:#E1E4E8">)</span></span>
+<span class="line"><span style="color:#F97583">  return</span><span style="color:#9ECBFF"> `${</span><span style="color:#E1E4E8">linkId</span><span style="color:#9ECBFF">}:${</span><span style="color:#E1E4E8">day</span><span style="color:#9ECBFF">}`</span></span>
+<span class="line"><span style="color:#E1E4E8">}</span></span>
+<span class="line"></span>
+<span class="line"><span style="color:#B392F0">clickKey</span><span style="color:#E1E4E8">(</span><span style="color:#9ECBFF">'js-course'</span><span style="color:#E1E4E8">, </span><span style="color:#F97583">new</span><span style="color:#B392F0"> Date</span><span style="color:#E1E4E8">(</span><span style="color:#9ECBFF">'2026-10-23T18:04:00.000Z'</span><span style="color:#E1E4E8">))</span></span>
+<span class="line"><span style="color:#6A737D">//js-course:2026-10-23</span></span></code></pre>
+<p>Write the increment after the 302 is on the way. A slow analytics insert should not hold the visitor.</p>
+<p>If you cache the destination, invalidate that cache in the same write that edits or disables the link. Historical counts stay on the slug through every destination change.</p>
+<h3 id="what-to-check-after-the-redirect">What to check after the redirect</h3>
+<p>Open <code>https://go.flaviocopes.com/js-course</code> in a private window. You land on the JavaScript course with the UTM still there. Refresh <code>/dashboard</code>. The total went up.</p>
+<p>Disable the link. Hit the short URL again. You get the unavailable page. The count did not move.</p>
+<p>Edit the destination to <code>https://flaviocopes.com/</code>. Hit the short URL. You land on the homepage. The click total is still the same slug, not a new row.</p>
+<p>If the 302 strips <code>utm_source</code>, the handler is rebuilding the URL. Pass <code>destination</code> through.</p>
+<p>If the response is 301, change it. Edit the destination once and hit the short URL from the same browser. A cached 301 will ignore the new target.</p>
+<h2 id="failures-the-agent-ships-anyway">Failures the agent ships anyway</h2>
+<h3 id="an-open-redirect-with-a-pretty-slug">An open redirect with a pretty slug</h3>
+<p><code>javascript:</code> and <code>data:</code> have to die at save time. A regex that looks for <code>http</code> still lets <code>http://</code> sit in front of a newline and a second URL. Use the parser.</p>
+<h3 id="fetching-the-destination">Fetching the destination</h3>
+<p>A health check that <code>HEAD</code>s the target from your Worker is SSRF. You do not need to know the page is up. The tweet still works if the site is down for ten minutes.</p>
+<h3 id="check-then-insert">Check then insert</h3>
+<p>Two creates for <code>launch</code> both read “free” and both write. The unique constraint on <code>(domain, slug)</code> is the lock. The collision error should name two free alternatives, not dump a SQL string.</p>
+<h3 id="counting-people">Counting people</h3>
+<p>Full IP, raw user agent, and referrer query strings are how a shortener becomes a surveillance file. The catalog is explicit. Keep the short link, the day, and a number.</p>
+<h3 id="a-301-that-outlives-the-edit">A 301 that outlives the edit</h3>
+<p>The product is an editable redirect. <code>302 Found</code> keeps the lookup on your Worker. <code>301 Moved Permanently</code> lets Chrome remember <code>js-course</code> as the old course URL after you point it at a new post.</p>
+<h3 id="guest-accounts">Guest accounts</h3>
+<p>Visitors do not sign in. Magic links for people who click are a bio page in disguise. A page of links is <a href="/build-your-own-linktree/">Linktree</a>, $9–$24 a month, about 30 minutes. You already have <a href="/blog/build-your-own-linktree-tonight/">that post</a>.</p>
+<h2 id="deploy-the-short-url">Deploy the short URL</h2>
+<p>The product pages put hosting this way: a focused replacement costs your build time plus close-to-zero hosting.</p>
+<p>Shortstack wants Workers, D1, and Astro. Put it on a subdomain you already own, <code>go.flaviocopes.com</code>. The AHA prompt points at Cloudflare D1 for the tables and Workers for the redirect.</p>
+<p>Attach the custom domain on the Worker. The short URL is the product, so <code>go.flaviocopes.com/js-course</code> has to resolve on the public internet, not only on <code>localhost</code>.</p>
+<p>Ship with the seed <code>js-course</code> link. Click it from a phone on cellular, not the same Wi-Fi as your laptop. Confirm the dashboard count moves after a refresh. Point one real campaign at it for a week.</p>
+<p>If you miss expiry or a QR download, those are the 5-hour row and the last two mini-prompts on the card. Add them after you print something.</p>
+<p>Take a D1 backup, then cancel Bitly, or Dub, or Rebrandly, or Short.io, whichever one you pay for.</p>
+<h2 id="what-to-skip-on-purpose">What to skip on purpose</h2>
+<p>Leave out ad retargeting, deep links, a link-in-bio page, and anything that looks like enterprise permissions.</p>
+<figure>
+<svg role="img" aria-label="Easy half versus skip half of a Bitly clone: ninety minutes for slugs, redirects, and a click count, versus a week of global analytics, deep links, and enterprise permissions" viewBox="0 0 360 348" xmlns="http://www.w3.org/2000/svg">
+  <rect x="18" y="10" width="324" height="152" fill="var(--surface)" stroke="var(--ink)" stroke-width="3"/>
+  <rect x="18" y="10" width="324" height="40" fill="var(--lime)" stroke="var(--ink)" stroke-width="3"/>
+  <text x="180" y="37" text-anchor="middle" font-family="Arial, Helvetica, sans-serif" font-weight="800" font-size="15" fill="var(--ink)">90-MINUTE V1</text>
+  <text x="180" y="78" text-anchor="middle" font-family="Arial, Helvetica, sans-serif" font-weight="700" font-size="14" fill="var(--ink)">Custom or generated slugs</text>
+  <text x="180" y="106" text-anchor="middle" font-family="Arial, Helvetica, sans-serif" font-weight="700" font-size="14" fill="var(--ink)">Safe http and https redirects</text>
+  <text x="180" y="134" text-anchor="middle" font-family="Arial, Helvetica, sans-serif" font-weight="700" font-size="14" fill="var(--ink)">A daily click count per link</text>
+  <rect x="18" y="186" width="324" height="152" fill="var(--surface)" stroke="var(--ink)" stroke-width="3"/>
+  <rect x="18" y="186" width="324" height="40" fill="var(--coral)" stroke="var(--ink)" stroke-width="3"/>
+  <text x="180" y="213" text-anchor="middle" font-family="Arial, Helvetica, sans-serif" font-weight="800" font-size="15" fill="var(--ink)">SKIP THIS HALF</text>
+  <text x="180" y="254" text-anchor="middle" font-family="Arial, Helvetica, sans-serif" font-weight="700" font-size="14" fill="var(--ink)">Ad retargeting and deep links</text>
+  <text x="180" y="282" text-anchor="middle" font-family="Arial, Helvetica, sans-serif" font-weight="700" font-size="14" fill="var(--ink)">A link-in-bio page</text>
+  <text x="180" y="310" text-anchor="middle" font-family="Arial, Helvetica, sans-serif" font-weight="700" font-size="14" fill="var(--ink)">Enterprise permissions</text>
+</svg>
+<figcaption>Ship the 90-minute shortener. Leave retargeting, deep links, and roles on the skip row.</figcaption>
+</figure>
+<p>A QR code that stays editable after you print it is <a href="/build-your-own-qr-tiger/">QR Tiger</a>, $15–$49 a month, about 90 minutes. The <a href="/blog/build-a-qr-tiger-alternative/">QR Tiger walkthrough</a> is that post. The 5-hour Bitly row already includes a QR download. Build the squares if the poster is the rent.</p>
+<p>A booking page is a different job. That is the <a href="/guides/vibe-code-a-calendly-clone/">Calendly guide</a>. Weekly hours and a slot lock, not a slug.</p>
+<p>More writeups land on the <a href="/guides/">guides</a> index. The <a href="/#audit">audit</a> is the catalog if you want a smaller first ship.</p>
+<h2 id="start-now">Start now</h2>
+<p>Go to <a href="/build-your-own-bitly/">Build your own Bitly</a>. Copy the AHA prompt, or the stack you already write.</p>
+<p>Tell the agent the first estimate only: short links, redirects, click counts. Ninety minutes.</p>
+<p>Publish <code>go.flaviocopes.com</code>. Point one real campaign at it this week.</p>
+</div></article><section class="section" aria-labelledby="related-heading"><h2 id="related-heading">Products in this guide</h2><ul class="related-list"><li><a href="/build-your-own-bitly/">Build your own Bitly</a><span>$35–$300/mo · from 90 min</span></li><li><a href="/build-your-own-qr-tiger/">Build your own QR Tiger</a><span>$15–$49/mo · from 90 min</span></li><li><a href="/build-your-own-linktree/">Build your own Linktree</a><span>$9–$24/mo · from 30 min</span></li></ul><p class="related-home"><a href="/#audit">Browse all 109 buildable subscriptions →</a></p></section><section class="section" aria-labelledby="more-guides-heading"><h2 id="more-guides-heading">More guides</h2><ul class="related-list"><li><a href="/guides/how-to-build-a-typeform-alternative/">How to build a Typeform alternative</a><time datetime="2026-10-24">October 24, 2026</time></li><li><a href="/guides/how-to-build-a-linktree-alternative/">How to build a Linktree alternative</a><time datetime="2026-10-23">October 23, 2026</time></li><li><a href="/guides/vibe-code-a-calendly-clone/">Vibe code a Calendly clone</a><time datetime="2026-10-23">October 23, 2026</time></li></ul><p class="related-home"><a href="/guides/">All step-by-step guides →</a></p></section></main><footer><a class="logo footer-logo" href="/"><span class="logo-mark">EZ</span><span>ezvibecode</span></a><p><a href="/blog/">Blog</a></p><p><a href="/guides/">Guides</a></p><p><a href="/changelog/">Changelog</a></p><p>A tiny idea about tiny software.</p><p>Built with vibes, obviously.</p></footer><script type="module">var e=document.querySelector(`#theme-toggle`);localStorage.getItem(`vibe-theme`)===`dark`&&(document.documentElement.dataset.theme=`dark`),e?.addEventListener(`click`,()=>{let e=document.documentElement.dataset.theme!==`dark`;document.documentElement.dataset.theme=e?`dark`:`light`,localStorage.setItem(`vibe-theme`,e?`dark`:`light`)});</script><script type="module" src="https://static.cloudflareinsights.com/beacon.min.js/vce701823e78c4301a35b7e07294d87301792088814092" integrity="sha512-UKNk8GbxkABxKcXYuLkO16EleLGUkcvJWtpSNmExE0Too3ZaFAxTscNWEc1OdAv5/BikHawapSCaiD2XCmp+Bw==" data-cf-beacon='{"version":"2024.11.0","token":"228ace6b78e04bb494384851ece32c99","r":1,"spa":2}' crossorigin="anonymous"></script>
+</body></html>

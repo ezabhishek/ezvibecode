@@ -1,0 +1,390 @@
+<!DOCTYPE html><html lang="en"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width"><title>How to Vibe Code Your Own FreshBooks Alternative</title><meta name="description" content="Learn how to build your own with ezvibecode FreshBooks alternative with copyable AI prompts, a scoped feature list, and realistic build estimates starting at 10 hours. The same build also replaces Invoice Ninja and Bonsai."><link rel="canonical" href="https://ezvibecode.com/build-your-own-freshbooks/"><meta name="theme-color" content="#f4f1e8"><link rel="icon" href="/favicon.ico" sizes="32x32"><link rel="icon" href="/favicon.png" type="image/png" sizes="512x512"><link rel="apple-touch-icon" href="/apple-touch-icon.png" sizes="180x180"><meta property="og:type" content="article"><meta property="og:site_name" content="ezvibecode"><meta property="og:title" content="How to Vibe Code Your Own FreshBooks Alternative"><meta property="og:description" content="Learn how to build your own with ezvibecode FreshBooks alternative with copyable AI prompts, a scoped feature list, and realistic build estimates starting at 10 hours. The same build also replaces Invoice Ninja and Bonsai."><meta property="og:url" content="https://ezvibecode.com/build-your-own-freshbooks/"><meta property="og:image" content="https://ezvibecode.com/og/build-your-own-freshbooks.png"><meta property="og:image:type" content="image/png"><meta property="og:image:width" content="1200"><meta property="og:image:height" content="630"><meta property="og:image:alt" content="How to Vibe Code Your Own FreshBooks Alternative"><meta name="twitter:card" content="summary_large_image"><meta name="twitter:title" content="How to Vibe Code Your Own FreshBooks Alternative"><meta name="twitter:description" content="Learn how to build your own with ezvibecode FreshBooks alternative with copyable AI prompts, a scoped feature list, and realistic build estimates starting at 10 hours. The same build also replaces Invoice Ninja and Bonsai."><meta name="twitter:image" content="https://ezvibecode.com/og/build-your-own-freshbooks.png"><meta name="twitter:image:alt" content="How to Vibe Code Your Own FreshBooks Alternative"><script type="application/ld+json">{"@context":"https://schema.org","@type":"FAQPage","mainEntity":[{"@type":"Question","name":"How long does it take to build your own FreshBooks?","acceptedAnswer":{"@type":"Answer","text":"A basic version — clients, invoices, paid tracking, pdf download — takes about 10 hours. Roughly 4 days gets you a solid v1 with expense log, receipts, overdue states, email sending. Matching everything FreshBooks really does (bank feeds, payroll, double-entry books, taxes) is closer to 3 months+, which is exactly why you should scope down instead."}},{"@type":"Question","name":"How much does FreshBooks cost if I keep subscribing?","acceptedAnswer":{"@type":"Answer","text":"FreshBooks runs $23–$60 per month on public paid plans, which is $276–$720 per year. A focused self-built replacement costs your build time plus close-to-zero hosting."}},{"@type":"Question","name":"What stack should I use to build a FreshBooks alternative?","acceptedAnswer":{"@type":"Answer","text":"The build prompt on this page ships in four flavors: the AHA stack (Astro, HTMX, Alpine.js), Next.js, Laravel, and Ruby on Rails. The capability context for this product is Astro, D1, R2. Pick the stack you already know — the scope matters more than the framework."}},{"@type":"Question","name":"What features does a minimal FreshBooks replacement need?","acceptedAnswer":{"@type":"Answer","text":"A useful v1 needs: clients with contact details, currency, and default payment terms; invoices with line items, tax rate, notes, and automatic numbering; send-by-email with a clean public invoice page and PDF download; draft, sent, paid, and overdue states visible at a glance; a simple expense log with categories, receipt uploads, and monthly totals. Everything else is scope creep until you personally miss it."}},{"@type":"Question","name":"What should I deliberately not build?","acceptedAnswer":{"@type":"Answer","text":"Do not connect to banks, file taxes, run payroll, or attempt double-entry accounting in v1."}},{"@type":"Question","name":"Does this build also replace Invoice Ninja and Bonsai?","acceptedAnswer":{"@type":"Answer","text":"Yes. FreshBooks, Invoice Ninja and Bonsai all solve the same core job — send professional invoices, know exactly who has paid, and log expenses without an accounting degree. The scoped v1 on this page covers what most people use any of them for, so one focused build replaces whichever you currently pay for."}}]}</script><script type="application/ld+json">{"@context":"https://schema.org","@type":"BreadcrumbList","itemListElement":[{"@type":"ListItem","position":1,"name":"ezvibecode","item":"https://ezvibecode.com/"},{"@type":"ListItem","position":2,"name":"Build your own FreshBooks","item":"https://ezvibecode.com/build-your-own-freshbooks/"}]}</script><script type="application/ld+json">{"@context":"https://schema.org","@type":"TechArticle","headline":"How to Vibe Code Your Own FreshBooks Alternative","description":"Learn how to build your own with ezvibecode FreshBooks alternative with copyable AI prompts, a scoped feature list, and realistic build estimates starting at 10 hours. The same build also replaces Invoice Ninja and Bonsai.","url":"https://ezvibecode.com/build-your-own-freshbooks/","image":"https://ezvibecode.com/og/build-your-own-freshbooks.png","author":{"@type":"Organization","name":"ezvibecode","url":"https://ezvibecode.com/"}}</script><link rel="stylesheet" href="/_astro/build-your-own-_slug_.0qOs6ThE.css"></head><body><header class="site-header"><a class="logo" href="/" aria-label="ezvibecode home"><span class="logo-mark">EZ</span><span>ezvibecode</span></a><nav class="header-links" aria-label="Site"><a class="header-link" href="/blog/">Blog</a><a class="header-link" href="/guides/">Guides</a><a class="header-link" href="/#audit">All 109 apps</a></nav><button class="icon-button" id="theme-toggle" type="button" aria-label="Toggle dark mode" title="Toggle dark mode">◐</button></header><main><nav class="breadcrumb" aria-label="Breadcrumb"><a href="/">Home</a><span aria-hidden="true">/</span><span aria-current="page">Build your own FreshBooks</span></nav><section class="hero"><p class="eyebrow">Operations · Weekend build</p><h1>How to Vibe Code Your Own <em>FreshBooks Alternative</em></h1><p class="lede">Invoices out, money in, spreadsheet retired. FreshBooks charges $23–$60 per month — that’s $276–$720 a year — for something you can replace with focused software of your own. Here is the honest scope, the honest timeline, and the exact prompt to hand your coding agent.</p><div class="hero-meta"><span class="effort weekend">from 10 hours</span><span class="verdict">Send the invoice tonight</span></div></section><section class="section" aria-labelledby="who-heading"><h2 id="who-heading">Who this replacement is for</h2><p>This build targets one freelancer billing a handful of clients. The goal: send professional invoices, know exactly who has paid, and log expenses without an accounting degree. If you need more than that, keep paying — the point of building it yourself is owning a tool shaped exactly like your workflow, not re-implementing a venture-funded roadmap.</p><p class="also-replaces">Same build, different logo: this v1 also replaces <strong>Invoice Ninja and Bonsai</strong> — they all solve the same core job.</p></section><section class="section" aria-labelledby="time-heading"><h2 id="time-heading">How long it actually takes</h2><p>One number would be a lie, so here are three. Each tier is a real, usable product — pick the one that matches how much of FreshBooks you actually use.</p><table class="estimate-table"><thead><tr><th scope="col">Estimate</th><th scope="col">What you get</th></tr></thead><tbody><tr><th scope="row">10 hours</th><td>clients, invoices, paid tracking, pdf download</td></tr><tr><th scope="row">4 days</th><td>expense log, receipts, overdue states, email sending</td></tr><tr><th scope="row">3 months+</th><td>bank feeds, payroll, double-entry books, taxes — the part you should probably skip</td></tr></tbody></table></section><section class="section" aria-labelledby="features-heading"><h2 id="features-heading">What a minimal FreshBooks alternative needs</h2><ul class="feature-list"><li>clients with contact details, currency, and default payment terms</li><li>invoices with line items, tax rate, notes, and automatic numbering</li><li>send-by-email with a clean public invoice page and PDF download</li><li>draft, sent, paid, and overdue states visible at a glance</li><li>a simple expense log with categories, receipt uploads, and monthly totals</li></ul><div class="fact-grid"><div class="fact"><h3>Data model</h3><p>Client, Invoice, LineItem, Payment, Expense</p></div><div class="fact"><h3>Integrations</h3><p>transactional email</p></div><div class="fact"><h3>Capability context</h3><p>Astro, D1, R2</p></div></div><div class="callout guardrail"><h3>The guardrail</h3><p>Store all amounts as integer minor units and never edit, renumber, or delete an invoice after it has been sent.</p></div><div class="callout nongoal"><h3>Deliberate non-goals</h3><p>Do not connect to banks, file taxes, run payroll, or attempt double-entry accounting in v1.</p></div></section><section class="section" aria-labelledby="prompt-heading"><h2 id="prompt-heading">The complete build prompt</h2><p>Copy this into your coding agent of choice. It is scoped for a useful v1 — journeys, screens, business rules, data model, security, tests, and acceptance scenarios included. Pick your stack:</p><div class="prompt-tabs" role="tablist" aria-label="Choose your stack"><button class="prompt-tab" id="prompt-tab-aha" type="button" role="tab" aria-selected="true" aria-controls="prompt-panel-aha" tabindex="0" data-framework="aha">AHA</button><button class="prompt-tab" id="prompt-tab-nextjs" type="button" role="tab" aria-selected="false" aria-controls="prompt-panel-nextjs" tabindex="-1" data-framework="nextjs">Next.js</button><button class="prompt-tab" id="prompt-tab-laravel" type="button" role="tab" aria-selected="false" aria-controls="prompt-panel-laravel" tabindex="-1" data-framework="laravel">Laravel</button><button class="prompt-tab" id="prompt-tab-rails" type="button" role="tab" aria-selected="false" aria-controls="prompt-panel-rails" tabindex="-1" data-framework="rails">Ruby on Rails</button></div><div class="prompt-box" id="prompt-panel-aha" role="tabpanel" aria-labelledby="prompt-tab-aha" tabindex="0"><pre>You are building a production-ready software product named “Billfold”, a deliberately focused alternative to FreshBooks. Build a complete, usable vertical slice—not a landing page, static mockup, or disconnected collection of components.
+
+WORKING AGREEMENT
+Before writing implementation code, produce a short technical plan that names the routes or pages, server actions or endpoints, data tables, important state transitions, authorization boundaries, background jobs, and external adapters. Resolve contradictions in favor of the narrow audience and non-goals below. Prefer a small, legible architecture over speculative abstraction, but do not omit persistence, validation, error handling, or tests.
+
+PRODUCT BRIEF
+Primary user: one freelancer billing a handful of clients.
+Primary outcome: send professional invoices, know exactly who has paid, and log expenses without an accounting degree.
+Product principle: optimize the exact workflow below instead of copying the full breadth of FreshBooks. A first-time user should understand what to do from the interface itself, without a tour or documentation.
+
+END-TO-END USER JOURNEYS
+Implement all of these flows through the real interface and persistent data layer:
+1. The owner adds a client, builds an invoice with line items and a tax rate, previews it, and sends it by email with a link to a public invoice page.
+2. The client opens the public page, the owner records the payment against the invoice, and it moves to paid with the payment date preserved.
+3. The owner logs the month’s expenses with receipts and categories, then reviews income and spending totals side by side in one view.
+
+SCREENS AND INFORMATION ARCHITECTURE
+Build these as coherent responsive views. Each screen must specify its primary action, secondary actions, visible status, validation feedback, empty state, loading or pending state, success confirmation, and recoverable failure state.
+1. Dashboard: outstanding total, overdue invoices, recent payments, this month’s income and expense totals, and a new-invoice action.
+2. Invoice editor: client picker, line items with quantity and unit price, tax rate, due date, notes, live total, and preview plus send actions.
+3. Public invoice: business details, itemized amounts, status banner, PDF download, and access through an unguessable link with no login.
+4. Expenses: dated expense list with category, amount, and receipt, a quick-add form, category filter, and monthly totals.
+
+CORE CAPABILITIES
+1. clients with contact details, currency, and default payment terms
+2. invoices with line items, tax rate, notes, and automatic numbering
+3. send-by-email with a clean public invoice page and PDF download
+4. draft, sent, paid, and overdue states visible at a glance
+5. a simple expense log with categories, receipt uploads, and monthly totals
+
+DETAILED BEHAVIOR AND BUSINESS RULES
+Treat these as server-enforced product requirements, not interface suggestions:
+1. Store all money as integer minor units in one currency per invoice and compute every total server-side from the stored line items.
+2. Assign invoice numbers sequentially at send time; after sending, amounts and numbering are immutable and corrections require a new invoice.
+3. Determine overdue status only by comparing the due date on the server, and mark an invoice paid only when recorded payments cover its total.
+4. Serve public invoice pages by long random token, never sequential IDs, and keep receipt files private behind owner authentication.
+
+DATA MODEL AND LIFECYCLE
+Design a small relational schema centered on Client, Invoice, LineItem, Payment, Expense. Before implementing it, document:
+1. Each table’s purpose, primary key, ownership or tenant boundary, timestamps, status fields, and important attributes.
+2. Foreign keys, uniqueness constraints, check constraints, indexes needed by the named screens, and transaction boundaries for multi-record changes.
+3. The allowed lifecycle or state transitions, who may trigger each transition, which transitions are terminal or reversible, and what audit history must remain immutable.
+4. Archive, retention, and deletion behavior, including what happens to dependent records and external files.
+5. Idempotency strategy for submissions, jobs, imports, notifications, webhooks, or retries where applicable.
+Use migrations rather than ad-hoc schema creation. Store time instants consistently and retain named timezone context whenever local schedules or dates matter. Never rely on a counter, disabled button, or client-side check to preserve a business invariant.
+
+USERS, AUTHENTICATION, AND PERMISSIONS
+Implement only the roles required by the stated audience. Make the ownership and visibility model explicit before coding. Enforce authorization in every server-side query and mutation, including search, exports, attachments, live updates, and guessed URLs—not merely by hiding controls. Use secure session defaults, protect state-changing requests, and provide an understandable signed-out, expired-session, and forbidden state. Seed distinct users when multiple roles are required so permissions can be demonstrated and tested.
+
+INTERACTION AND VISUAL DIRECTION
+The product should feel fast, calm, focused, and credible rather than like a generic admin template. Use a clear visual hierarchy, restrained color, readable typography, generous hit targets, and consistent placement for primary actions. Start with server-rendered HTML and progressively enhance only the interactions that benefit from it. The core workflow must remain understandable if enhancement fails.
+
+Start with server-rendered Astro pages and ordinary HTML forms. Use HTMX for form submissions, partial navigation, and server-driven updates, then Alpine.js only for small local browser state. The core workflow must remain understandable if either enhancement layer fails.
+
+Design mobile layouts intentionally instead of simply stacking desktop panels. Support keyboard navigation, visible focus, semantic landmarks, explicit labels, useful page titles, reduced-motion preferences, and screen-reader announcements for asynchronous results. Never use color alone to communicate state. Destructive actions require clear scope and confirmation; safe repeated actions should be idempotent.
+
+TECHNICAL DIRECTION
+Build this version with the AHA stack: Astro for routing, layouts, and server-rendered pages; HTMX for interactions that benefit from HTML fragment responses; and Alpine.js for small, local interface state. Prefer Cloudflare D1 for relational persistence, R2 for object storage, Workers for server endpoints and scheduled work, Durable Objects only for coordinated real-time state, and Workflows or Queues for durable background jobs—but only when the product requirements call for them.
+
+Keep domain rules in testable server-side modules instead of route handlers or UI components. Separate persistence, external providers, and background work behind small interfaces without building a framework. Prefer ordinary HTML forms and URLs for durable navigation; use optimistic interaction only when failure can be reconciled clearly.
+
+The product brief currently identifies Astro, D1, R2 as capability context. Preserve any required native, browser-only, edge, storage, real-time, or background-processing capability through a narrow adapter appropriate to the selected framework. If the core workflow genuinely requires native or browser APIs, keep that runtime as the primary execution surface rather than simulating inaccessible capabilities or inventing an unnecessary web surface.
+
+Integrate with transactional email. For every integration:
+- List required environment variables in an .env.example without real secrets.
+- Add a small adapter with timeouts, normalized errors, and a deterministic local fake or development path.
+- Verify inbound signatures and deduplicate provider events where supported.
+- Keep credentials server-side, encrypt long-lived provider tokens at rest, and redact secrets and sensitive payloads from logs.
+- Define retry, backoff, and idempotency behavior for any side effect that can be repeated.
+
+SECURITY AND PRIVACY
+Store all amounts as integer minor units and never edit, renumber, or delete an invoice after it has been sent.
+Validate, normalize, and length-limit all untrusted input on the server. Escape rendered content by default, sanitize any intentionally accepted markup, rate-limit public or abuse-prone actions, and use private object storage plus short-lived authorized URLs for sensitive files. Collect the minimum personal data necessary for the named workflow. Document retention and deletion behavior. Add specific protections for the riskier surfaces in this app, such as uploads, redirects, outbound requests, email delivery, OAuth, webhooks, CSV import or export, and real-time connections.
+
+ACCEPTANCE SCENARIOS
+Automate these app-specific scenarios at the most appropriate level:
+1. Given a draft invoice with three line items and a tax rate, sending it emails the client, locks the amounts, and assigns the next invoice number.
+2. Given a sent invoice past its due date with no recorded payment, the dashboard lists it as overdue with the number of days late.
+3. Given a recorded payment equal to the remaining balance, the invoice becomes paid and the public page shows a paid banner instead of an amount due.
+
+TESTING
+Add focused unit tests for state transitions, authorization predicates, normalization, date or money calculations, and other risky domain rules. Add integration tests for persistence constraints and each external adapter’s success, timeout, retry, and rejection paths. Add at least one browser-level test for every end-to-end journey above, including one small-screen viewport. Tests must use isolated data and run through a documented single command.
+
+OPERATIONS AND FAILURE RECOVERY
+Add structured server logs with request, job, or event correlation IDs but no secrets or unnecessarily sensitive data. Make failures actionable in both the interface and logs. Background work must expose pending, succeeded, failed, and retrying states where relevant; do not silently swallow errors. Include safe database migration and rollback guidance, seed data, backup and restore notes, external-data cleanup behavior, and a basic health or diagnostic path appropriate to the stack.
+
+DELIVERABLES
+Ship the working application, migrations, representative seed data, tests, .env.example, and a concise README. The README must cover prerequisites, local setup, environment variables, migrations, seed and test commands, deployment, integration setup, backup and restore, security decisions, and known limitations. Seed data should exercise the happy path plus at least one empty, failed, overdue, expired, archived, or permission-restricted state relevant to the product.
+
+DEFINITION OF DONE
+The app is complete when a fresh developer can follow the README, create and migrate the database, run the app, sign in as each relevant role, complete every named journey using real persisted data, refresh without losing state, recover from common failures, and use the core interface on phone and desktop. All acceptance scenarios pass, permission boundaries are covered by tests, and no core screen is left as a placeholder.
+
+NON-GOALS
+Do not connect to banks, file taxes, run payroll, or attempt double-entry accounting in v1.</pre></div><div class="prompt-box" id="prompt-panel-nextjs" role="tabpanel" aria-labelledby="prompt-tab-nextjs" tabindex="0" hidden><pre>You are building a production-ready software product named “Billfold”, a deliberately focused alternative to FreshBooks. Build a complete, usable vertical slice—not a landing page, static mockup, or disconnected collection of components.
+
+WORKING AGREEMENT
+Before writing implementation code, produce a short technical plan that names the routes or pages, server actions or endpoints, data tables, important state transitions, authorization boundaries, background jobs, and external adapters. Resolve contradictions in favor of the narrow audience and non-goals below. Prefer a small, legible architecture over speculative abstraction, but do not omit persistence, validation, error handling, or tests.
+
+PRODUCT BRIEF
+Primary user: one freelancer billing a handful of clients.
+Primary outcome: send professional invoices, know exactly who has paid, and log expenses without an accounting degree.
+Product principle: optimize the exact workflow below instead of copying the full breadth of FreshBooks. A first-time user should understand what to do from the interface itself, without a tour or documentation.
+
+END-TO-END USER JOURNEYS
+Implement all of these flows through the real interface and persistent data layer:
+1. The owner adds a client, builds an invoice with line items and a tax rate, previews it, and sends it by email with a link to a public invoice page.
+2. The client opens the public page, the owner records the payment against the invoice, and it moves to paid with the payment date preserved.
+3. The owner logs the month’s expenses with receipts and categories, then reviews income and spending totals side by side in one view.
+
+SCREENS AND INFORMATION ARCHITECTURE
+Build these as coherent responsive views. Each screen must specify its primary action, secondary actions, visible status, validation feedback, empty state, loading or pending state, success confirmation, and recoverable failure state.
+1. Dashboard: outstanding total, overdue invoices, recent payments, this month’s income and expense totals, and a new-invoice action.
+2. Invoice editor: client picker, line items with quantity and unit price, tax rate, due date, notes, live total, and preview plus send actions.
+3. Public invoice: business details, itemized amounts, status banner, PDF download, and access through an unguessable link with no login.
+4. Expenses: dated expense list with category, amount, and receipt, a quick-add form, category filter, and monthly totals.
+
+CORE CAPABILITIES
+1. clients with contact details, currency, and default payment terms
+2. invoices with line items, tax rate, notes, and automatic numbering
+3. send-by-email with a clean public invoice page and PDF download
+4. draft, sent, paid, and overdue states visible at a glance
+5. a simple expense log with categories, receipt uploads, and monthly totals
+
+DETAILED BEHAVIOR AND BUSINESS RULES
+Treat these as server-enforced product requirements, not interface suggestions:
+1. Store all money as integer minor units in one currency per invoice and compute every total server-side from the stored line items.
+2. Assign invoice numbers sequentially at send time; after sending, amounts and numbering are immutable and corrections require a new invoice.
+3. Determine overdue status only by comparing the due date on the server, and mark an invoice paid only when recorded payments cover its total.
+4. Serve public invoice pages by long random token, never sequential IDs, and keep receipt files private behind owner authentication.
+
+DATA MODEL AND LIFECYCLE
+Design a small relational schema centered on Client, Invoice, LineItem, Payment, Expense. Before implementing it, document:
+1. Each table’s purpose, primary key, ownership or tenant boundary, timestamps, status fields, and important attributes.
+2. Foreign keys, uniqueness constraints, check constraints, indexes needed by the named screens, and transaction boundaries for multi-record changes.
+3. The allowed lifecycle or state transitions, who may trigger each transition, which transitions are terminal or reversible, and what audit history must remain immutable.
+4. Archive, retention, and deletion behavior, including what happens to dependent records and external files.
+5. Idempotency strategy for submissions, jobs, imports, notifications, webhooks, or retries where applicable.
+Use migrations rather than ad-hoc schema creation. Store time instants consistently and retain named timezone context whenever local schedules or dates matter. Never rely on a counter, disabled button, or client-side check to preserve a business invariant.
+
+USERS, AUTHENTICATION, AND PERMISSIONS
+Implement only the roles required by the stated audience. Make the ownership and visibility model explicit before coding. Enforce authorization in every server-side query and mutation, including search, exports, attachments, live updates, and guessed URLs—not merely by hiding controls. Use secure session defaults, protect state-changing requests, and provide an understandable signed-out, expired-session, and forbidden state. Seed distinct users when multiple roles are required so permissions can be demonstrated and tested.
+
+INTERACTION AND VISUAL DIRECTION
+The product should feel fast, calm, focused, and credible rather than like a generic admin template. Use a clear visual hierarchy, restrained color, readable typography, generous hit targets, and consistent placement for primary actions. Start with server-rendered HTML and progressively enhance only the interactions that benefit from it. The core workflow must remain understandable if enhancement fails.
+
+Render with React Server Components by default. Use Server Actions for authenticated form mutations and add Client Components only for interactions that genuinely require browser state, browser APIs, drag-and-drop, or live updates. The core workflow must remain understandable before client-side JavaScript finishes loading.
+
+Design mobile layouts intentionally instead of simply stacking desktop panels. Support keyboard navigation, visible focus, semantic landmarks, explicit labels, useful page titles, reduced-motion preferences, and screen-reader announcements for asynchronous results. Never use color alone to communicate state. Destructive actions require clear scope and confirmation; safe repeated actions should be idempotent.
+
+TECHNICAL DIRECTION
+Build this version with Next.js, the App Router, and TypeScript. Use Server Components by default, Server Actions for authenticated mutations, and Route Handlers for public APIs, OAuth callbacks, webhooks, feeds, uploads, and downloads. Use PostgreSQL through Drizzle ORM with versioned migrations and an isolated test database. Access S3-compatible object storage through a server-only adapter, and run slow or retryable work in a real job or workflow system instead of the request lifecycle.
+
+Keep domain rules in testable server-side modules instead of route handlers or UI components. Separate persistence, external providers, and background work behind small interfaces without building a framework. Prefer ordinary HTML forms and URLs for durable navigation; use optimistic interaction only when failure can be reconciled clearly.
+
+The product brief currently identifies Astro, D1, R2 as capability context. Preserve any required native, browser-only, edge, storage, real-time, or background-processing capability through a narrow adapter appropriate to the selected framework. If the core workflow genuinely requires native or browser APIs, keep that runtime as the primary execution surface rather than simulating inaccessible capabilities or inventing an unnecessary web surface.
+
+Integrate with transactional email. For every integration:
+- List required environment variables in an .env.example without real secrets.
+- Add a small adapter with timeouts, normalized errors, and a deterministic local fake or development path.
+- Verify inbound signatures and deduplicate provider events where supported.
+- Keep credentials server-side, encrypt long-lived provider tokens at rest, and redact secrets and sensitive payloads from logs.
+- Define retry, backoff, and idempotency behavior for any side effect that can be repeated.
+
+SECURITY AND PRIVACY
+Store all amounts as integer minor units and never edit, renumber, or delete an invoice after it has been sent.
+Validate, normalize, and length-limit all untrusted input on the server. Escape rendered content by default, sanitize any intentionally accepted markup, rate-limit public or abuse-prone actions, and use private object storage plus short-lived authorized URLs for sensitive files. Collect the minimum personal data necessary for the named workflow. Document retention and deletion behavior. Add specific protections for the riskier surfaces in this app, such as uploads, redirects, outbound requests, email delivery, OAuth, webhooks, CSV import or export, and real-time connections.
+
+ACCEPTANCE SCENARIOS
+Automate these app-specific scenarios at the most appropriate level:
+1. Given a draft invoice with three line items and a tax rate, sending it emails the client, locks the amounts, and assigns the next invoice number.
+2. Given a sent invoice past its due date with no recorded payment, the dashboard lists it as overdue with the number of days late.
+3. Given a recorded payment equal to the remaining balance, the invoice becomes paid and the public page shows a paid banner instead of an amount due.
+
+TESTING
+Add focused unit tests for state transitions, authorization predicates, normalization, date or money calculations, and other risky domain rules. Add integration tests for persistence constraints and each external adapter’s success, timeout, retry, and rejection paths. Add at least one browser-level test for every end-to-end journey above, including one small-screen viewport. Tests must use isolated data and run through a documented single command.
+
+OPERATIONS AND FAILURE RECOVERY
+Add structured server logs with request, job, or event correlation IDs but no secrets or unnecessarily sensitive data. Make failures actionable in both the interface and logs. Background work must expose pending, succeeded, failed, and retrying states where relevant; do not silently swallow errors. Include safe database migration and rollback guidance, seed data, backup and restore notes, external-data cleanup behavior, and a basic health or diagnostic path appropriate to the stack.
+
+DELIVERABLES
+Ship the working application, migrations, representative seed data, tests, .env.example, and a concise README. The README must cover prerequisites, local setup, environment variables, migrations, seed and test commands, deployment, integration setup, backup and restore, security decisions, and known limitations. Seed data should exercise the happy path plus at least one empty, failed, overdue, expired, archived, or permission-restricted state relevant to the product.
+
+DEFINITION OF DONE
+The app is complete when a fresh developer can follow the README, create and migrate the database, run the app, sign in as each relevant role, complete every named journey using real persisted data, refresh without losing state, recover from common failures, and use the core interface on phone and desktop. All acceptance scenarios pass, permission boundaries are covered by tests, and no core screen is left as a placeholder.
+
+NON-GOALS
+Do not connect to banks, file taxes, run payroll, or attempt double-entry accounting in v1.</pre></div><div class="prompt-box" id="prompt-panel-laravel" role="tabpanel" aria-labelledby="prompt-tab-laravel" tabindex="0" hidden><pre>You are building a production-ready software product named “Billfold”, a deliberately focused alternative to FreshBooks. Build a complete, usable vertical slice—not a landing page, static mockup, or disconnected collection of components.
+
+WORKING AGREEMENT
+Before writing implementation code, produce a short technical plan that names the routes or pages, server actions or endpoints, data tables, important state transitions, authorization boundaries, background jobs, and external adapters. Resolve contradictions in favor of the narrow audience and non-goals below. Prefer a small, legible architecture over speculative abstraction, but do not omit persistence, validation, error handling, or tests.
+
+PRODUCT BRIEF
+Primary user: one freelancer billing a handful of clients.
+Primary outcome: send professional invoices, know exactly who has paid, and log expenses without an accounting degree.
+Product principle: optimize the exact workflow below instead of copying the full breadth of FreshBooks. A first-time user should understand what to do from the interface itself, without a tour or documentation.
+
+END-TO-END USER JOURNEYS
+Implement all of these flows through the real interface and persistent data layer:
+1. The owner adds a client, builds an invoice with line items and a tax rate, previews it, and sends it by email with a link to a public invoice page.
+2. The client opens the public page, the owner records the payment against the invoice, and it moves to paid with the payment date preserved.
+3. The owner logs the month’s expenses with receipts and categories, then reviews income and spending totals side by side in one view.
+
+SCREENS AND INFORMATION ARCHITECTURE
+Build these as coherent responsive views. Each screen must specify its primary action, secondary actions, visible status, validation feedback, empty state, loading or pending state, success confirmation, and recoverable failure state.
+1. Dashboard: outstanding total, overdue invoices, recent payments, this month’s income and expense totals, and a new-invoice action.
+2. Invoice editor: client picker, line items with quantity and unit price, tax rate, due date, notes, live total, and preview plus send actions.
+3. Public invoice: business details, itemized amounts, status banner, PDF download, and access through an unguessable link with no login.
+4. Expenses: dated expense list with category, amount, and receipt, a quick-add form, category filter, and monthly totals.
+
+CORE CAPABILITIES
+1. clients with contact details, currency, and default payment terms
+2. invoices with line items, tax rate, notes, and automatic numbering
+3. send-by-email with a clean public invoice page and PDF download
+4. draft, sent, paid, and overdue states visible at a glance
+5. a simple expense log with categories, receipt uploads, and monthly totals
+
+DETAILED BEHAVIOR AND BUSINESS RULES
+Treat these as server-enforced product requirements, not interface suggestions:
+1. Store all money as integer minor units in one currency per invoice and compute every total server-side from the stored line items.
+2. Assign invoice numbers sequentially at send time; after sending, amounts and numbering are immutable and corrections require a new invoice.
+3. Determine overdue status only by comparing the due date on the server, and mark an invoice paid only when recorded payments cover its total.
+4. Serve public invoice pages by long random token, never sequential IDs, and keep receipt files private behind owner authentication.
+
+DATA MODEL AND LIFECYCLE
+Design a small relational schema centered on Client, Invoice, LineItem, Payment, Expense. Before implementing it, document:
+1. Each table’s purpose, primary key, ownership or tenant boundary, timestamps, status fields, and important attributes.
+2. Foreign keys, uniqueness constraints, check constraints, indexes needed by the named screens, and transaction boundaries for multi-record changes.
+3. The allowed lifecycle or state transitions, who may trigger each transition, which transitions are terminal or reversible, and what audit history must remain immutable.
+4. Archive, retention, and deletion behavior, including what happens to dependent records and external files.
+5. Idempotency strategy for submissions, jobs, imports, notifications, webhooks, or retries where applicable.
+Use migrations rather than ad-hoc schema creation. Store time instants consistently and retain named timezone context whenever local schedules or dates matter. Never rely on a counter, disabled button, or client-side check to preserve a business invariant.
+
+USERS, AUTHENTICATION, AND PERMISSIONS
+Implement only the roles required by the stated audience. Make the ownership and visibility model explicit before coding. Enforce authorization in every server-side query and mutation, including search, exports, attachments, live updates, and guessed URLs—not merely by hiding controls. Use secure session defaults, protect state-changing requests, and provide an understandable signed-out, expired-session, and forbidden state. Seed distinct users when multiple roles are required so permissions can be demonstrated and tested.
+
+INTERACTION AND VISUAL DIRECTION
+The product should feel fast, calm, focused, and credible rather than like a generic admin template. Use a clear visual hierarchy, restrained color, readable typography, generous hit targets, and consistent placement for primary actions. Start with server-rendered HTML and progressively enhance only the interactions that benefit from it. The core workflow must remain understandable if enhancement fails.
+
+Start with server-rendered Blade views and ordinary forms. Use Livewire for focused server-driven interactions and Alpine.js only for small local interface state. The core workflow must remain understandable without relying on a client-side application shell.
+
+Design mobile layouts intentionally instead of simply stacking desktop panels. Support keyboard navigation, visible focus, semantic landmarks, explicit labels, useful page titles, reduced-motion preferences, and screen-reader announcements for asynchronous results. Never use color alone to communicate state. Destructive actions require clear scope and confirmation; safe repeated actions should be idempotent.
+
+TECHNICAL DIRECTION
+Build this version with Laravel, PHP, Blade, Livewire, and Alpine.js. Use controllers and Blade forms for durable navigation, Livewire for focused interactions, Form Requests for validation, Policies and Gates for authorization, and small application actions or services for domain transitions. Use Eloquent with migrations, database constraints, and transactions; Laravel Storage for private S3-compatible files; queued Jobs for retryable work; the Scheduler for recurring work; and Notifications or Mail for email.
+
+Keep domain rules in testable server-side modules instead of route handlers or UI components. Separate persistence, external providers, and background work behind small interfaces without building a framework. Prefer ordinary HTML forms and URLs for durable navigation; use optimistic interaction only when failure can be reconciled clearly.
+
+The product brief currently identifies Astro, D1, R2 as capability context. Preserve any required native, browser-only, edge, storage, real-time, or background-processing capability through a narrow adapter appropriate to the selected framework. If the core workflow genuinely requires native or browser APIs, keep that runtime as the primary execution surface rather than simulating inaccessible capabilities or inventing an unnecessary web surface.
+
+Integrate with transactional email. For every integration:
+- List required environment variables in an .env.example without real secrets.
+- Add a small adapter with timeouts, normalized errors, and a deterministic local fake or development path.
+- Verify inbound signatures and deduplicate provider events where supported.
+- Keep credentials server-side, encrypt long-lived provider tokens at rest, and redact secrets and sensitive payloads from logs.
+- Define retry, backoff, and idempotency behavior for any side effect that can be repeated.
+
+SECURITY AND PRIVACY
+Store all amounts as integer minor units and never edit, renumber, or delete an invoice after it has been sent.
+Validate, normalize, and length-limit all untrusted input on the server. Escape rendered content by default, sanitize any intentionally accepted markup, rate-limit public or abuse-prone actions, and use private object storage plus short-lived authorized URLs for sensitive files. Collect the minimum personal data necessary for the named workflow. Document retention and deletion behavior. Add specific protections for the riskier surfaces in this app, such as uploads, redirects, outbound requests, email delivery, OAuth, webhooks, CSV import or export, and real-time connections.
+
+ACCEPTANCE SCENARIOS
+Automate these app-specific scenarios at the most appropriate level:
+1. Given a draft invoice with three line items and a tax rate, sending it emails the client, locks the amounts, and assigns the next invoice number.
+2. Given a sent invoice past its due date with no recorded payment, the dashboard lists it as overdue with the number of days late.
+3. Given a recorded payment equal to the remaining balance, the invoice becomes paid and the public page shows a paid banner instead of an amount due.
+
+TESTING
+Add focused unit tests for state transitions, authorization predicates, normalization, date or money calculations, and other risky domain rules. Add integration tests for persistence constraints and each external adapter’s success, timeout, retry, and rejection paths. Add at least one browser-level test for every end-to-end journey above, including one small-screen viewport. Tests must use isolated data and run through a documented single command.
+
+OPERATIONS AND FAILURE RECOVERY
+Add structured server logs with request, job, or event correlation IDs but no secrets or unnecessarily sensitive data. Make failures actionable in both the interface and logs. Background work must expose pending, succeeded, failed, and retrying states where relevant; do not silently swallow errors. Include safe database migration and rollback guidance, seed data, backup and restore notes, external-data cleanup behavior, and a basic health or diagnostic path appropriate to the stack.
+
+DELIVERABLES
+Ship the working application, migrations, representative seed data, tests, .env.example, and a concise README. The README must cover prerequisites, local setup, environment variables, migrations, seed and test commands, deployment, integration setup, backup and restore, security decisions, and known limitations. Seed data should exercise the happy path plus at least one empty, failed, overdue, expired, archived, or permission-restricted state relevant to the product.
+
+DEFINITION OF DONE
+The app is complete when a fresh developer can follow the README, create and migrate the database, run the app, sign in as each relevant role, complete every named journey using real persisted data, refresh without losing state, recover from common failures, and use the core interface on phone and desktop. All acceptance scenarios pass, permission boundaries are covered by tests, and no core screen is left as a placeholder.
+
+NON-GOALS
+Do not connect to banks, file taxes, run payroll, or attempt double-entry accounting in v1.</pre></div><div class="prompt-box" id="prompt-panel-rails" role="tabpanel" aria-labelledby="prompt-tab-rails" tabindex="0" hidden><pre>You are building a production-ready software product named “Billfold”, a deliberately focused alternative to FreshBooks. Build a complete, usable vertical slice—not a landing page, static mockup, or disconnected collection of components.
+
+WORKING AGREEMENT
+Before writing implementation code, produce a short technical plan that names the routes or pages, server actions or endpoints, data tables, important state transitions, authorization boundaries, background jobs, and external adapters. Resolve contradictions in favor of the narrow audience and non-goals below. Prefer a small, legible architecture over speculative abstraction, but do not omit persistence, validation, error handling, or tests.
+
+PRODUCT BRIEF
+Primary user: one freelancer billing a handful of clients.
+Primary outcome: send professional invoices, know exactly who has paid, and log expenses without an accounting degree.
+Product principle: optimize the exact workflow below instead of copying the full breadth of FreshBooks. A first-time user should understand what to do from the interface itself, without a tour or documentation.
+
+END-TO-END USER JOURNEYS
+Implement all of these flows through the real interface and persistent data layer:
+1. The owner adds a client, builds an invoice with line items and a tax rate, previews it, and sends it by email with a link to a public invoice page.
+2. The client opens the public page, the owner records the payment against the invoice, and it moves to paid with the payment date preserved.
+3. The owner logs the month’s expenses with receipts and categories, then reviews income and spending totals side by side in one view.
+
+SCREENS AND INFORMATION ARCHITECTURE
+Build these as coherent responsive views. Each screen must specify its primary action, secondary actions, visible status, validation feedback, empty state, loading or pending state, success confirmation, and recoverable failure state.
+1. Dashboard: outstanding total, overdue invoices, recent payments, this month’s income and expense totals, and a new-invoice action.
+2. Invoice editor: client picker, line items with quantity and unit price, tax rate, due date, notes, live total, and preview plus send actions.
+3. Public invoice: business details, itemized amounts, status banner, PDF download, and access through an unguessable link with no login.
+4. Expenses: dated expense list with category, amount, and receipt, a quick-add form, category filter, and monthly totals.
+
+CORE CAPABILITIES
+1. clients with contact details, currency, and default payment terms
+2. invoices with line items, tax rate, notes, and automatic numbering
+3. send-by-email with a clean public invoice page and PDF download
+4. draft, sent, paid, and overdue states visible at a glance
+5. a simple expense log with categories, receipt uploads, and monthly totals
+
+DETAILED BEHAVIOR AND BUSINESS RULES
+Treat these as server-enforced product requirements, not interface suggestions:
+1. Store all money as integer minor units in one currency per invoice and compute every total server-side from the stored line items.
+2. Assign invoice numbers sequentially at send time; after sending, amounts and numbering are immutable and corrections require a new invoice.
+3. Determine overdue status only by comparing the due date on the server, and mark an invoice paid only when recorded payments cover its total.
+4. Serve public invoice pages by long random token, never sequential IDs, and keep receipt files private behind owner authentication.
+
+DATA MODEL AND LIFECYCLE
+Design a small relational schema centered on Client, Invoice, LineItem, Payment, Expense. Before implementing it, document:
+1. Each table’s purpose, primary key, ownership or tenant boundary, timestamps, status fields, and important attributes.
+2. Foreign keys, uniqueness constraints, check constraints, indexes needed by the named screens, and transaction boundaries for multi-record changes.
+3. The allowed lifecycle or state transitions, who may trigger each transition, which transitions are terminal or reversible, and what audit history must remain immutable.
+4. Archive, retention, and deletion behavior, including what happens to dependent records and external files.
+5. Idempotency strategy for submissions, jobs, imports, notifications, webhooks, or retries where applicable.
+Use migrations rather than ad-hoc schema creation. Store time instants consistently and retain named timezone context whenever local schedules or dates matter. Never rely on a counter, disabled button, or client-side check to preserve a business invariant.
+
+USERS, AUTHENTICATION, AND PERMISSIONS
+Implement only the roles required by the stated audience. Make the ownership and visibility model explicit before coding. Enforce authorization in every server-side query and mutation, including search, exports, attachments, live updates, and guessed URLs—not merely by hiding controls. Use secure session defaults, protect state-changing requests, and provide an understandable signed-out, expired-session, and forbidden state. Seed distinct users when multiple roles are required so permissions can be demonstrated and tested.
+
+INTERACTION AND VISUAL DIRECTION
+The product should feel fast, calm, focused, and credible rather than like a generic admin template. Use a clear visual hierarchy, restrained color, readable typography, generous hit targets, and consistent placement for primary actions. Start with server-rendered HTML and progressively enhance only the interactions that benefit from it. The core workflow must remain understandable if enhancement fails.
+
+Start with server-rendered Rails views and ordinary forms. Use Turbo for navigation, submissions, and server-driven updates, then Stimulus only for small browser-side behavior. Do not turn the product into a client-side SPA, and keep the core workflow usable when enhancement fails.
+
+Design mobile layouts intentionally instead of simply stacking desktop panels. Support keyboard navigation, visible focus, semantic landmarks, explicit labels, useful page titles, reduced-motion preferences, and screen-reader announcements for asynchronous results. Never use color alone to communicate state. Destructive actions require clear scope and confirmation; safe repeated actions should be idempotent.
+
+TECHNICAL DIRECTION
+Build this version with Ruby on Rails and Hotwire: Turbo for navigation, form submissions, and server-driven updates, and Stimulus for small browser-side behavior. Use RESTful controllers with strong parameters and explicit authorization, with domain transitions in testable models or small application services. Use Active Record migrations plus database-level constraints and transactions; Active Storage with an S3-compatible service for private files; Active Job with a durable queue backend for retryable work; Action Mailer for email; and Action Cable only when live updates are required.
+
+Keep domain rules in testable server-side modules instead of route handlers or UI components. Separate persistence, external providers, and background work behind small interfaces without building a framework. Prefer ordinary HTML forms and URLs for durable navigation; use optimistic interaction only when failure can be reconciled clearly.
+
+The product brief currently identifies Astro, D1, R2 as capability context. Preserve any required native, browser-only, edge, storage, real-time, or background-processing capability through a narrow adapter appropriate to the selected framework. If the core workflow genuinely requires native or browser APIs, keep that runtime as the primary execution surface rather than simulating inaccessible capabilities or inventing an unnecessary web surface.
+
+Integrate with transactional email. For every integration:
+- List required environment variables in an .env.example without real secrets.
+- Add a small adapter with timeouts, normalized errors, and a deterministic local fake or development path.
+- Verify inbound signatures and deduplicate provider events where supported.
+- Keep credentials server-side, encrypt long-lived provider tokens at rest, and redact secrets and sensitive payloads from logs.
+- Define retry, backoff, and idempotency behavior for any side effect that can be repeated.
+
+SECURITY AND PRIVACY
+Store all amounts as integer minor units and never edit, renumber, or delete an invoice after it has been sent.
+Validate, normalize, and length-limit all untrusted input on the server. Escape rendered content by default, sanitize any intentionally accepted markup, rate-limit public or abuse-prone actions, and use private object storage plus short-lived authorized URLs for sensitive files. Collect the minimum personal data necessary for the named workflow. Document retention and deletion behavior. Add specific protections for the riskier surfaces in this app, such as uploads, redirects, outbound requests, email delivery, OAuth, webhooks, CSV import or export, and real-time connections.
+
+ACCEPTANCE SCENARIOS
+Automate these app-specific scenarios at the most appropriate level:
+1. Given a draft invoice with three line items and a tax rate, sending it emails the client, locks the amounts, and assigns the next invoice number.
+2. Given a sent invoice past its due date with no recorded payment, the dashboard lists it as overdue with the number of days late.
+3. Given a recorded payment equal to the remaining balance, the invoice becomes paid and the public page shows a paid banner instead of an amount due.
+
+TESTING
+Add focused unit tests for state transitions, authorization predicates, normalization, date or money calculations, and other risky domain rules. Add integration tests for persistence constraints and each external adapter’s success, timeout, retry, and rejection paths. Add at least one browser-level test for every end-to-end journey above, including one small-screen viewport. Tests must use isolated data and run through a documented single command.
+
+OPERATIONS AND FAILURE RECOVERY
+Add structured server logs with request, job, or event correlation IDs but no secrets or unnecessarily sensitive data. Make failures actionable in both the interface and logs. Background work must expose pending, succeeded, failed, and retrying states where relevant; do not silently swallow errors. Include safe database migration and rollback guidance, seed data, backup and restore notes, external-data cleanup behavior, and a basic health or diagnostic path appropriate to the stack.
+
+DELIVERABLES
+Ship the working application, migrations, representative seed data, tests, .env.example, and a concise README. The README must cover prerequisites, local setup, environment variables, migrations, seed and test commands, deployment, integration setup, backup and restore, security decisions, and known limitations. Seed data should exercise the happy path plus at least one empty, failed, overdue, expired, archived, or permission-restricted state relevant to the product.
+
+DEFINITION OF DONE
+The app is complete when a fresh developer can follow the README, create and migrate the database, run the app, sign in as each relevant role, complete every named journey using real persisted data, refresh without losing state, recover from common failures, and use the core interface on phone and desktop. All acceptance scenarios pass, permission boundaries are covered by tests, and no core screen is left as a placeholder.
+
+NON-GOALS
+Do not connect to banks, file taxes, run payroll, or attempt double-entry accounting in v1.</pre></div><div class="prompt-actions"><button class="button primary" type="button" id="copy-prompt">Copy AHA prompt</button></div></section><section class="section" aria-labelledby="mini-heading"><h2 id="mini-heading">Build just one piece</h2><p>Not ready to replace all of FreshBooks? Fine. These are the peculiar sub-problems hiding inside it — the parts that are actually interesting to build. Each one is a standalone prompt, scoped to an evening, no strings attached to the full build.</p><details class="mini"><summary><strong>Money math without a single float</strong><span>Integer cents, explicit rounding, and totals that always add up.</span></summary><pre>Build the calculation core of an invoicing tool where every amount is an integer in minor units and floats never appear.
+
+An invoice has line items with quantity and unit price, plus one tax rate. Decide your rounding policy explicitly: compute each line total, round it to a whole minor unit, then sum lines and apply tax to the subtotal with one final rounding, using round-half-up and documenting it. Write the nasty test cases first: a quantity of 3 at a price ending in a half-cent-producing figure, a 7.25 percent tax on an odd subtotal, and a many-line invoice where per-line rounding and rounding-at-the-end disagree by a cent. Whatever policy you pick, the displayed lines must sum exactly to the displayed total, because a client will notice a one-cent discrepancy before they notice anything else. Compute everything server-side from stored line items; never trust a total sent by the browser.
+
+Done when: your cent-discrepancy test cases pass, the printed lines always sum to the printed total, and no float touches any money value anywhere.</pre><button class="mini-copy" type="button">Copy this prompt</button></details><details class="mini"><summary><strong>Invoice numbers with no gaps and no repeats</strong><span>Sequential, assigned at send time, and safe under a double-click.</span></summary><pre>Build sequential invoice numbering for a freelancer&#39;s billing tool, where the sequence has legal weight: no duplicates, no gaps, no renumbering.
+
+Drafts have no number. The number is assigned atomically at send time from a per-owner counter, so an abandoned draft never burns a number. Make the assignment safe under concurrency: two send requests racing (a double-clicked send button, or two tabs) must produce either one sent invoice or two invoices with distinct consecutive numbers, never two invoices sharing a number and never a skipped one. Use a transaction or an atomic increment, not read-then-write. After sending, the number and all amounts are immutable: corrections happen through a new credit-note-style invoice that references the original, not through edits. Support a configurable prefix and yearly reset (2026-001) without breaking the guarantees.
+
+Done when: a hundred concurrent sends produce a hundred distinct consecutive numbers, deleted drafts leave no holes in the sequence, and no code path can modify a sent invoice&#39;s number or totals.</pre><button class="mini-copy" type="button">Copy this prompt</button></details><details class="mini"><summary><strong>The public invoice page nobody can guess</strong><span>No login, no sequential IDs, and overdue computed on the server.</span></summary><pre>Build the public invoice page a client opens from an email: itemized amounts, business details, a status banner, and a PDF download, with no login.
+
+Serve it at a URL containing a long random token, at least 128 bits, generated per invoice; never expose the sequential invoice number or database ID in the URL, since guessing neighboring invoices would leak your client list. Make the token revocable and reissuable if a link leaks. Compute status server-side at request time: overdue means the server&#39;s current date is past the due date with unpaid balance, and the banner shows days late. Never trust or accept status from the client. Rate-limit token lookups and return an identical 404 for wrong tokens and nonexistent invoices, so probing reveals nothing. The page must render printably and the PDF must match it.
+
+Done when: sequential URL probing finds nothing, an invoice crossing its due date flips to overdue with a correct day count and no cron job, and a revoked link dies while a reissued one works.</pre><button class="mini-copy" type="button">Copy this prompt</button></details><details class="mini"><summary><strong>The moment an invoice turns paid</strong><span>Partial payments, overpayment, and a state machine with no reverse gear.</span></summary><pre>Build payment recording for an invoicing tool, where an invoice becomes paid only when recorded payments cover its total.
+
+Payments are separate rows with date, amount, and note, attached to a sent invoice. After each recorded payment, recompute the balance from scratch: sum of payments versus the immutable invoice total. Partial coverage keeps the invoice sent (or overdue) with a visible remaining balance; full coverage flips it to paid and preserves the date of the payment that completed it. Handle the awkward cases: an overpayment should be recorded faithfully and surfaced as a credit note to the owner rather than rejected or truncated; a payment recorded by mistake needs a void operation that keeps the row for the record but excludes it from the balance; and two payments recorded concurrently must both count, with the paid transition happening exactly once.
+
+Done when: two half payments flip the state on the second one only, voiding a payment can move a paid invoice back to overdue with history intact, and the public page shows a paid banner the moment the balance hits zero.</pre><button class="mini-copy" type="button">Copy this prompt</button></details></section><section class="section" aria-labelledby="faq-heading"><h2 id="faq-heading">Frequently asked questions</h2><details class="faq"><summary>How long does it take to build your own FreshBooks?</summary><p>A basic version — clients, invoices, paid tracking, pdf download — takes about 10 hours. Roughly 4 days gets you a solid v1 with expense log, receipts, overdue states, email sending. Matching everything FreshBooks really does (bank feeds, payroll, double-entry books, taxes) is closer to 3 months+, which is exactly why you should scope down instead.</p></details><details class="faq"><summary>How much does FreshBooks cost if I keep subscribing?</summary><p>FreshBooks runs $23–$60 per month on public paid plans, which is $276–$720 per year. A focused self-built replacement costs your build time plus close-to-zero hosting.</p></details><details class="faq"><summary>What stack should I use to build a FreshBooks alternative?</summary><p>The build prompt on this page ships in four flavors: the AHA stack (Astro, HTMX, Alpine.js), Next.js, Laravel, and Ruby on Rails. The capability context for this product is Astro, D1, R2. Pick the stack you already know — the scope matters more than the framework.</p></details><details class="faq"><summary>What features does a minimal FreshBooks replacement need?</summary><p>A useful v1 needs: clients with contact details, currency, and default payment terms; invoices with line items, tax rate, notes, and automatic numbering; send-by-email with a clean public invoice page and PDF download; draft, sent, paid, and overdue states visible at a glance; a simple expense log with categories, receipt uploads, and monthly totals. Everything else is scope creep until you personally miss it.</p></details><details class="faq"><summary>What should I deliberately not build?</summary><p>Do not connect to banks, file taxes, run payroll, or attempt double-entry accounting in v1.</p></details><details class="faq"><summary>Does this build also replace Invoice Ninja and Bonsai?</summary><p>Yes. FreshBooks, Invoice Ninja and Bonsai all solve the same core job — send professional invoices, know exactly who has paid, and log expenses without an accounting degree. The scoped v1 on this page covers what most people use any of them for, so one focused build replaces whichever you currently pay for.</p></details></section><section class="section" aria-labelledby="related-heading"><h2 id="related-heading">More operations subscriptions to replace</h2><ul class="related-list"><li><a href="/build-your-own-airtable/">Build your own Airtable</a><span>$24–$54/mo · from 3 days</span></li><li><a href="/build-your-own-dropbox-transfer/">Build your own Dropbox Transfer</a><span>$20–$32/mo · from 3 hours</span></li><li><a href="/build-your-own-statuspage/">Build your own Statuspage</a><span>$29–$399/mo · from 3 hours</span></li><li><a href="/build-your-own-uptimerobot/">Build your own UptimeRobot</a><span>$24–$69/mo · from 6 hours</span></li></ul><p class="related-home"><a href="/#audit">Browse all 109 buildable subscriptions →</a></p></section></main><footer><a class="logo footer-logo" href="/"><span class="logo-mark">EZ</span><span>ezvibecode</span></a><p><a href="/blog/">Blog</a></p><p><a href="/guides/">Guides</a></p><p><a href="/changelog/">Changelog</a></p><p>A tiny idea about tiny software.</p><p>Built with vibes, obviously.</p></footer><div class="toast" id="toast" role="status" aria-live="polite">Prompt copied. Go ship it.</div><script type="module">var e=Array.from(document.querySelectorAll(`.prompt-tab`)),t=Array.from(document.querySelectorAll(`.prompt-box`)),n=document.querySelector(`#copy-prompt`),r=r=>{e.forEach(e=>{let t=e.dataset.framework===r;e.setAttribute(`aria-selected`,String(t)),e.tabIndex=t?0:-1}),t.forEach(e=>{e.hidden=e.id!==`prompt-panel-${r}`}),n.textContent=`Copy ${e.find(e=>e.dataset.framework===r)?.textContent||`prompt`} prompt`};e.forEach((t,n)=>{t.addEventListener(`click`,()=>r(t.dataset.framework)),t.addEventListener(`keydown`,t=>{let i;t.key===`ArrowRight`&&(i=(n+1)%e.length),t.key===`ArrowLeft`&&(i=(n-1+e.length)%e.length),t.key===`Home`&&(i=0),t.key===`End`&&(i=e.length-1),i!==void 0&&(t.preventDefault(),r(e[i].dataset.framework),e[i].focus())})}),n?.addEventListener(`click`,async()=>{let e=t.find(e=>!e.hidden);await navigator.clipboard.writeText(e?.querySelector(`pre`)?.textContent||``);let n=document.querySelector(`#toast`);n.classList.add(`show`),setTimeout(()=>n.classList.remove(`show`),2200)}),document.querySelectorAll(`.mini-copy`).forEach(e=>{e.addEventListener(`click`,async()=>{let t=e.closest(`.mini`)?.querySelector(`pre`)?.textContent||``;await navigator.clipboard.writeText(t);let n=document.querySelector(`#toast`);n.classList.add(`show`),setTimeout(()=>n.classList.remove(`show`),2200)})});var i=document.querySelector(`#theme-toggle`);localStorage.getItem(`vibe-theme`)===`dark`&&(document.documentElement.dataset.theme=`dark`),i?.addEventListener(`click`,()=>{let e=document.documentElement.dataset.theme!==`dark`;document.documentElement.dataset.theme=e?`dark`:`light`,localStorage.setItem(`vibe-theme`,e?`dark`:`light`)});</script><script type="module" src="https://static.cloudflareinsights.com/beacon.min.js/vce701823e78c4301a35b7e07294d87301792088814092" integrity="sha512-UKNk8GbxkABxKcXYuLkO16EleLGUkcvJWtpSNmExE0Too3ZaFAxTscNWEc1OdAv5/BikHawapSCaiD2XCmp+Bw==" data-cf-beacon='{"version":"2024.11.0","token":"228ace6b78e04bb494384851ece32c99","r":1,"spa":2}' crossorigin="anonymous"></script>
+</body></html>

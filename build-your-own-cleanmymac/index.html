@@ -1,0 +1,404 @@
+<!DOCTYPE html><html lang="en"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width"><title>How to Vibe Code Your Own CleanMyMac Alternative</title><meta name="description" content="Learn how to build your own with ezvibecode CleanMyMac alternative with copyable AI prompts, a scoped feature list, and realistic build estimates starting at 8 hours."><link rel="canonical" href="https://ezvibecode.com/build-your-own-cleanmymac/"><meta name="theme-color" content="#f4f1e8"><link rel="icon" href="/favicon.ico" sizes="32x32"><link rel="icon" href="/favicon.png" type="image/png" sizes="512x512"><link rel="apple-touch-icon" href="/apple-touch-icon.png" sizes="180x180"><meta property="og:type" content="article"><meta property="og:site_name" content="ezvibecode"><meta property="og:title" content="How to Vibe Code Your Own CleanMyMac Alternative"><meta property="og:description" content="Learn how to build your own with ezvibecode CleanMyMac alternative with copyable AI prompts, a scoped feature list, and realistic build estimates starting at 8 hours."><meta property="og:url" content="https://ezvibecode.com/build-your-own-cleanmymac/"><meta property="og:image" content="https://ezvibecode.com/og/build-your-own-cleanmymac.png"><meta property="og:image:type" content="image/png"><meta property="og:image:width" content="1200"><meta property="og:image:height" content="630"><meta property="og:image:alt" content="How to Vibe Code Your Own CleanMyMac Alternative"><meta name="twitter:card" content="summary_large_image"><meta name="twitter:title" content="How to Vibe Code Your Own CleanMyMac Alternative"><meta name="twitter:description" content="Learn how to build your own with ezvibecode CleanMyMac alternative with copyable AI prompts, a scoped feature list, and realistic build estimates starting at 8 hours."><meta name="twitter:image" content="https://ezvibecode.com/og/build-your-own-cleanmymac.png"><meta name="twitter:image:alt" content="How to Vibe Code Your Own CleanMyMac Alternative"><script type="application/ld+json">{"@context":"https://schema.org","@type":"FAQPage","mainEntity":[{"@type":"Question","name":"How long does it take to build your own CleanMyMac?","acceptedAnswer":{"@type":"Answer","text":"A basic version — scan known caches, show sizes, safe delete — takes about 8 hours. Roughly 3 days gets you a solid v1 with git worktree audit, safety rules, cleanup reports. Matching everything CleanMyMac really does (malware scanning, background monitoring, notarized system access) is closer to 1 month+, which is exactly why you should scope down instead."}},{"@type":"Question","name":"How much does CleanMyMac cost if I keep subscribing?","acceptedAnswer":{"@type":"Answer","text":"CleanMyMac runs $3.33–$9.95 per person per month on public paid plans, which is $40–$119 per year for every person on your team. A focused self-built replacement costs your build time plus close-to-zero hosting."}},{"@type":"Question","name":"What stack should I use to build a CleanMyMac alternative?","acceptedAnswer":{"@type":"Answer","text":"The build prompt on this page ships in four flavors: the AHA stack (Astro, HTMX, Alpine.js), Next.js, Laravel, and Ruby on Rails. The capability context for this product is SwiftUI, Swift, macOS. Pick the stack you already know — the scope matters more than the framework."}},{"@type":"Question","name":"What features does a minimal CleanMyMac replacement need?","acceptedAnswer":{"@type":"Answer","text":"A useful v1 needs: disk overview with free space, mounted volumes, and largest known cleanup categories; targeted scans of build artifacts, package caches, and documented application caches; safe, review-required, and protected classifications with size estimates; Git worktree audit that preserves dirty, unique, or unpushed work; before-and-after cleanup report with removed, skipped, and failed targets. Everything else is scope creep until you personally miss it."}},{"@type":"Question","name":"What should I deliberately not build?","acceptedAnswer":{"@type":"Answer","text":"Do not build antivirus, performance optimization, background monitoring, duplicate-photo detection, or a general-purpose recursive file deleter."}}]}</script><script type="application/ld+json">{"@context":"https://schema.org","@type":"BreadcrumbList","itemListElement":[{"@type":"ListItem","position":1,"name":"ezvibecode","item":"https://ezvibecode.com/"},{"@type":"ListItem","position":2,"name":"Build your own CleanMyMac","item":"https://ezvibecode.com/build-your-own-cleanmymac/"}]}</script><script type="application/ld+json">{"@context":"https://schema.org","@type":"TechArticle","headline":"How to Vibe Code Your Own CleanMyMac Alternative","description":"Learn how to build your own with ezvibecode CleanMyMac alternative with copyable AI prompts, a scoped feature list, and realistic build estimates starting at 8 hours.","url":"https://ezvibecode.com/build-your-own-cleanmymac/","image":"https://ezvibecode.com/og/build-your-own-cleanmymac.png","author":{"@type":"Organization","name":"ezvibecode","url":"https://ezvibecode.com/"}}</script><link rel="stylesheet" href="/_astro/build-your-own-_slug_.0qOs6ThE.css"></head><body><header class="site-header"><a class="logo" href="/" aria-label="ezvibecode home"><span class="logo-mark">EZ</span><span>ezvibecode</span></a><nav class="header-links" aria-label="Site"><a class="header-link" href="/blog/">Blog</a><a class="header-link" href="/guides/">Guides</a><a class="header-link" href="/#audit">All 109 apps</a></nav><button class="icon-button" id="theme-toggle" type="button" aria-label="Toggle dark mode" title="Toggle dark mode">◐</button></header><main><nav class="breadcrumb" aria-label="Breadcrumb"><a href="/">Home</a><span aria-hidden="true">/</span><span aria-current="page">Build your own CleanMyMac</span></nav><section class="hero"><p class="eyebrow">Personal · Weekend build</p><h1>How to Vibe Code Your Own <em>CleanMyMac Alternative</em></h1><p class="lede">Find the space hogs. Delete only what can safely grow back. CleanMyMac charges $3.33–$9.95 per person per month — that’s $40–$119 a year per person — for something you can replace with focused software of your own. Here is the honest scope, the honest timeline, and the exact prompt to hand your coding agent.</p><div class="hero-meta"><span class="effort weekend">from 8 hours</span><span class="verdict">Build only the cleanup loop</span></div></section><section class="section" aria-labelledby="who-heading"><h2 id="who-heading">Who this replacement is for</h2><p>This build targets a developer using one Mac who wants a transparent, conservative cleanup utility. The goal: find large regenerable files, reclaim disk space safely, and explain exactly what changed. If you need more than that, keep paying — the point of building it yourself is owning a tool shaped exactly like your workflow, not re-implementing a venture-funded roadmap.</p></section><section class="section" aria-labelledby="time-heading"><h2 id="time-heading">How long it actually takes</h2><p>One number would be a lie, so here are three. Each tier is a real, usable product — pick the one that matches how much of CleanMyMac you actually use.</p><table class="estimate-table"><thead><tr><th scope="col">Estimate</th><th scope="col">What you get</th></tr></thead><tbody><tr><th scope="row">8 hours</th><td>scan known caches, show sizes, safe delete</td></tr><tr><th scope="row">3 days</th><td>git worktree audit, safety rules, cleanup reports</td></tr><tr><th scope="row">1 month+</th><td>malware scanning, background monitoring, notarized system access — the part you should probably skip</td></tr></tbody></table></section><section class="section" aria-labelledby="features-heading"><h2 id="features-heading">What a minimal CleanMyMac alternative needs</h2><ul class="feature-list"><li>disk overview with free space, mounted volumes, and largest known cleanup categories</li><li>targeted scans of build artifacts, package caches, and documented application caches</li><li>safe, review-required, and protected classifications with size estimates</li><li>Git worktree audit that preserves dirty, unique, or unpushed work</li><li>before-and-after cleanup report with removed, skipped, and failed targets</li></ul><div class="fact-grid"><div class="fact"><h3>Data model</h3><p>CleanupScan, CleanupTarget, SafetyRule, WorktreeAudit, CleanupRun</p></div><div class="fact"><h3>Integrations</h3><p>macOS file APIs, Git, package-manager cache CLIs</p></div><div class="fact"><h3>Capability context</h3><p>SwiftUI, Swift, macOS</p></div></div><div class="callout guardrail"><h3>The guardrail</h3><p>Never delete user documents, media, application data, model weights, toolchains, source repositories, or anything whose safety cannot be proven.</p></div><div class="callout nongoal"><h3>Deliberate non-goals</h3><p>Do not build antivirus, performance optimization, background monitoring, duplicate-photo detection, or a general-purpose recursive file deleter.</p></div></section><section class="section" aria-labelledby="prompt-heading"><h2 id="prompt-heading">The complete build prompt</h2><p>Copy this into your coding agent of choice. It is scoped for a useful v1 — journeys, screens, business rules, data model, security, tests, and acceptance scenarios included. Pick your stack:</p><div class="prompt-tabs" role="tablist" aria-label="Choose your stack"><button class="prompt-tab" id="prompt-tab-aha" type="button" role="tab" aria-selected="true" aria-controls="prompt-panel-aha" tabindex="0" data-framework="aha">AHA</button><button class="prompt-tab" id="prompt-tab-nextjs" type="button" role="tab" aria-selected="false" aria-controls="prompt-panel-nextjs" tabindex="-1" data-framework="nextjs">Next.js</button><button class="prompt-tab" id="prompt-tab-laravel" type="button" role="tab" aria-selected="false" aria-controls="prompt-panel-laravel" tabindex="-1" data-framework="laravel">Laravel</button><button class="prompt-tab" id="prompt-tab-rails" type="button" role="tab" aria-selected="false" aria-controls="prompt-panel-rails" tabindex="-1" data-framework="rails">Ruby on Rails</button></div><div class="prompt-box" id="prompt-panel-aha" role="tabpanel" aria-labelledby="prompt-tab-aha" tabindex="0"><pre>You are building a production-ready software product named “Spacekeeper”, a deliberately focused alternative to CleanMyMac. Build a complete, usable vertical slice—not a landing page, static mockup, or disconnected collection of components.
+
+WORKING AGREEMENT
+Before writing implementation code, produce a short technical plan that names the routes or pages, server actions or endpoints, data tables, important state transitions, authorization boundaries, background jobs, and external adapters. Resolve contradictions in favor of the narrow audience and non-goals below. Prefer a small, legible architecture over speculative abstraction, but do not omit persistence, validation, error handling, or tests.
+
+PRODUCT BRIEF
+Primary user: a developer using one Mac who wants a transparent, conservative cleanup utility.
+Primary outcome: find large regenerable files, reclaim disk space safely, and explain exactly what changed.
+Product principle: optimize the exact workflow below instead of copying the full breadth of CleanMyMac. A first-time user should understand what to do from the interface itself, without a tour or documentation.
+
+END-TO-END USER JOURNEYS
+Implement all of these flows through the real interface and persistent data layer:
+1. The user opens the app, reviews current free space and mounted volumes, starts a targeted scan, and sees cleanup candidates grouped by category, size, and safety level.
+2. The user inspects a large category, understands why each target is considered regenerable or protected, selects safe targets, previews the exact paths, and runs cleanup.
+3. The user reviews linked Git worktrees, sees dirty and unpushed work preserved, optionally confirms removal of one clean merged worktree, and receives a verified before-and-after report.
+
+SCREENS AND INFORMATION ARCHITECTURE
+Build these as coherent responsive views. Each screen must specify its primary action, secondary actions, visible status, validation feedback, empty state, loading or pending state, success confirmation, and recoverable failure state.
+1. Disk overview: writable volume, free and used space, mounted volumes, last scan, category estimates, scan scope, and a prominent targeted-scan action.
+2. Scan results: grouped cleanup targets with path, owner tool, size estimate, safety classification, explanation, selection state, and filters for category and confidence.
+3. Cleanup review: selected targets, exact resolved paths, estimated recovery, warnings, protected and skipped summary, confirmation boundary, progress, and recoverable failures.
+4. Worktree audit and history: repository, worktree path, branch, clean or dirty state, ahead or unpushed state, merge evidence, allowed actions, prior cleanup runs, and verified recovered space.
+
+CORE CAPABILITIES
+1. disk overview with free space, mounted volumes, and largest known cleanup categories
+2. targeted scans of build artifacts, package caches, and documented application caches
+3. safe, review-required, and protected classifications with size estimates
+4. Git worktree audit that preserves dirty, unique, or unpushed work
+5. before-and-after cleanup report with removed, skipped, and failed targets
+
+DETAILED BEHAVIOR AND BUSINESS RULES
+Treat these as server-enforced product requirements, not interface suggestions:
+1. Scan only explicit allowlisted cache and generated-artifact locations; resolve every target to an absolute canonical path and reject symlinks or descendants that escape the allowed root.
+2. Classify targets as safe, review required, or protected from versioned rules. Safe means reproducible from source or an owning tool; unknown, user-authored, or ambiguous data is protected.
+3. Use the owning package manager or developer tool cleanup command when available. Capture per-target success or failure, continue only when later targets remain independent, and remeasure space after the run.
+4. Never remove a worktree or branch unless Git reports it clean and its commits reachable from the configured integration branch or remote. Dirty, unique, ahead, detached, or unverifiable work is read-only and must be explained.
+
+DATA MODEL AND LIFECYCLE
+Design a small relational schema centered on CleanupScan, CleanupTarget, SafetyRule, WorktreeAudit, CleanupRun. Before implementing it, document:
+1. Each table’s purpose, primary key, ownership or tenant boundary, timestamps, status fields, and important attributes.
+2. Foreign keys, uniqueness constraints, check constraints, indexes needed by the named screens, and transaction boundaries for multi-record changes.
+3. The allowed lifecycle or state transitions, who may trigger each transition, which transitions are terminal or reversible, and what audit history must remain immutable.
+4. Archive, retention, and deletion behavior, including what happens to dependent records and external files.
+5. Idempotency strategy for submissions, jobs, imports, notifications, webhooks, or retries where applicable.
+Use migrations rather than ad-hoc schema creation. Store time instants consistently and retain named timezone context whenever local schedules or dates matter. Never rely on a counter, disabled button, or client-side check to preserve a business invariant.
+
+USERS, AUTHENTICATION, AND PERMISSIONS
+Implement only the roles required by the stated audience. Make the ownership and visibility model explicit before coding. Enforce authorization in every server-side query and mutation, including search, exports, attachments, live updates, and guessed URLs—not merely by hiding controls. Use secure session defaults, protect state-changing requests, and provide an understandable signed-out, expired-session, and forbidden state. Seed distinct users when multiple roles are required so permissions can be demonstrated and tested.
+
+INTERACTION AND VISUAL DIRECTION
+The product should feel fast, calm, focused, and credible rather than like a generic admin template. Use a clear visual hierarchy, restrained color, readable typography, generous hit targets, and consistent placement for primary actions. Start with server-rendered HTML and progressively enhance only the interactions that benefit from it. The core workflow must remain understandable if enhancement fails.
+
+Start with server-rendered Astro pages and ordinary HTML forms. Use HTMX for form submissions, partial navigation, and server-driven updates, then Alpine.js only for small local browser state. The core workflow must remain understandable if either enhancement layer fails.
+
+Design mobile layouts intentionally instead of simply stacking desktop panels. Support keyboard navigation, visible focus, semantic landmarks, explicit labels, useful page titles, reduced-motion preferences, and screen-reader announcements for asynchronous results. Never use color alone to communicate state. Destructive actions require clear scope and confirmation; safe repeated actions should be idempotent.
+
+TECHNICAL DIRECTION
+Build this version with the AHA stack: Astro for routing, layouts, and server-rendered pages; HTMX for interactions that benefit from HTML fragment responses; and Alpine.js for small, local interface state. Prefer Cloudflare D1 for relational persistence, R2 for object storage, Workers for server endpoints and scheduled work, Durable Objects only for coordinated real-time state, and Workflows or Queues for durable background jobs—but only when the product requirements call for them.
+
+Keep domain rules in testable server-side modules instead of route handlers or UI components. Separate persistence, external providers, and background work behind small interfaces without building a framework. Prefer ordinary HTML forms and URLs for durable navigation; use optimistic interaction only when failure can be reconciled clearly.
+
+The product brief currently identifies SwiftUI, Swift, macOS as capability context. Preserve any required native, browser-only, edge, storage, real-time, or background-processing capability through a narrow adapter appropriate to the selected framework. If the core workflow genuinely requires native or browser APIs, keep that runtime as the primary execution surface rather than simulating inaccessible capabilities or inventing an unnecessary web surface.
+
+Integrate with macOS file APIs and Git and package-manager cache CLIs. For every integration:
+- List required environment variables in an .env.example without real secrets.
+- Add a small adapter with timeouts, normalized errors, and a deterministic local fake or development path.
+- Verify inbound signatures and deduplicate provider events where supported.
+- Keep credentials server-side, encrypt long-lived provider tokens at rest, and redact secrets and sensitive payloads from logs.
+- Define retry, backoff, and idempotency behavior for any side effect that can be repeated.
+
+SECURITY AND PRIVACY
+Never delete user documents, media, application data, model weights, toolchains, source repositories, or anything whose safety cannot be proven.
+Validate, normalize, and length-limit all untrusted input on the server. Escape rendered content by default, sanitize any intentionally accepted markup, rate-limit public or abuse-prone actions, and use private object storage plus short-lived authorized URLs for sensitive files. Collect the minimum personal data necessary for the named workflow. Document retention and deletion behavior. Add specific protections for the riskier surfaces in this app, such as uploads, redirects, outbound requests, email delivery, OAuth, webhooks, CSV import or export, and real-time connections.
+
+ACCEPTANCE SCENARIOS
+Automate these app-specific scenarios at the most appropriate level:
+1. Given an allowlisted cache containing a symlink to Documents, the scan rejects the escaped target, labels it protected, and cleanup leaves the destination untouched.
+2. Given a selected mix of safe, missing, and permission-denied targets, cleanup removes only the safe reachable items, records every outcome, and reports verified rather than estimated recovery.
+3. Given dirty, clean-unpushed, and clean-merged worktrees, only the clean merged worktree offers removal after itemized confirmation and all branch history remains auditable.
+
+TESTING
+Add focused unit tests for state transitions, authorization predicates, normalization, date or money calculations, and other risky domain rules. Add integration tests for persistence constraints and each external adapter’s success, timeout, retry, and rejection paths. Add at least one browser-level test for every end-to-end journey above, including one small-screen viewport. Tests must use isolated data and run through a documented single command.
+
+OPERATIONS AND FAILURE RECOVERY
+Add structured server logs with request, job, or event correlation IDs but no secrets or unnecessarily sensitive data. Make failures actionable in both the interface and logs. Background work must expose pending, succeeded, failed, and retrying states where relevant; do not silently swallow errors. Include safe database migration and rollback guidance, seed data, backup and restore notes, external-data cleanup behavior, and a basic health or diagnostic path appropriate to the stack.
+
+DELIVERABLES
+Ship the working application, migrations, representative seed data, tests, .env.example, and a concise README. The README must cover prerequisites, local setup, environment variables, migrations, seed and test commands, deployment, integration setup, backup and restore, security decisions, and known limitations. Seed data should exercise the happy path plus at least one empty, failed, overdue, expired, archived, or permission-restricted state relevant to the product.
+
+DEFINITION OF DONE
+The app is complete when a fresh developer can follow the README, create and migrate the database, run the app, sign in as each relevant role, complete every named journey using real persisted data, refresh without losing state, recover from common failures, and use the core interface on phone and desktop. All acceptance scenarios pass, permission boundaries are covered by tests, and no core screen is left as a placeholder.
+
+NON-GOALS
+Do not build antivirus, performance optimization, background monitoring, duplicate-photo detection, or a general-purpose recursive file deleter.</pre></div><div class="prompt-box" id="prompt-panel-nextjs" role="tabpanel" aria-labelledby="prompt-tab-nextjs" tabindex="0" hidden><pre>You are building a production-ready software product named “Spacekeeper”, a deliberately focused alternative to CleanMyMac. Build a complete, usable vertical slice—not a landing page, static mockup, or disconnected collection of components.
+
+WORKING AGREEMENT
+Before writing implementation code, produce a short technical plan that names the routes or pages, server actions or endpoints, data tables, important state transitions, authorization boundaries, background jobs, and external adapters. Resolve contradictions in favor of the narrow audience and non-goals below. Prefer a small, legible architecture over speculative abstraction, but do not omit persistence, validation, error handling, or tests.
+
+PRODUCT BRIEF
+Primary user: a developer using one Mac who wants a transparent, conservative cleanup utility.
+Primary outcome: find large regenerable files, reclaim disk space safely, and explain exactly what changed.
+Product principle: optimize the exact workflow below instead of copying the full breadth of CleanMyMac. A first-time user should understand what to do from the interface itself, without a tour or documentation.
+
+END-TO-END USER JOURNEYS
+Implement all of these flows through the real interface and persistent data layer:
+1. The user opens the app, reviews current free space and mounted volumes, starts a targeted scan, and sees cleanup candidates grouped by category, size, and safety level.
+2. The user inspects a large category, understands why each target is considered regenerable or protected, selects safe targets, previews the exact paths, and runs cleanup.
+3. The user reviews linked Git worktrees, sees dirty and unpushed work preserved, optionally confirms removal of one clean merged worktree, and receives a verified before-and-after report.
+
+SCREENS AND INFORMATION ARCHITECTURE
+Build these as coherent responsive views. Each screen must specify its primary action, secondary actions, visible status, validation feedback, empty state, loading or pending state, success confirmation, and recoverable failure state.
+1. Disk overview: writable volume, free and used space, mounted volumes, last scan, category estimates, scan scope, and a prominent targeted-scan action.
+2. Scan results: grouped cleanup targets with path, owner tool, size estimate, safety classification, explanation, selection state, and filters for category and confidence.
+3. Cleanup review: selected targets, exact resolved paths, estimated recovery, warnings, protected and skipped summary, confirmation boundary, progress, and recoverable failures.
+4. Worktree audit and history: repository, worktree path, branch, clean or dirty state, ahead or unpushed state, merge evidence, allowed actions, prior cleanup runs, and verified recovered space.
+
+CORE CAPABILITIES
+1. disk overview with free space, mounted volumes, and largest known cleanup categories
+2. targeted scans of build artifacts, package caches, and documented application caches
+3. safe, review-required, and protected classifications with size estimates
+4. Git worktree audit that preserves dirty, unique, or unpushed work
+5. before-and-after cleanup report with removed, skipped, and failed targets
+
+DETAILED BEHAVIOR AND BUSINESS RULES
+Treat these as server-enforced product requirements, not interface suggestions:
+1. Scan only explicit allowlisted cache and generated-artifact locations; resolve every target to an absolute canonical path and reject symlinks or descendants that escape the allowed root.
+2. Classify targets as safe, review required, or protected from versioned rules. Safe means reproducible from source or an owning tool; unknown, user-authored, or ambiguous data is protected.
+3. Use the owning package manager or developer tool cleanup command when available. Capture per-target success or failure, continue only when later targets remain independent, and remeasure space after the run.
+4. Never remove a worktree or branch unless Git reports it clean and its commits reachable from the configured integration branch or remote. Dirty, unique, ahead, detached, or unverifiable work is read-only and must be explained.
+
+DATA MODEL AND LIFECYCLE
+Design a small relational schema centered on CleanupScan, CleanupTarget, SafetyRule, WorktreeAudit, CleanupRun. Before implementing it, document:
+1. Each table’s purpose, primary key, ownership or tenant boundary, timestamps, status fields, and important attributes.
+2. Foreign keys, uniqueness constraints, check constraints, indexes needed by the named screens, and transaction boundaries for multi-record changes.
+3. The allowed lifecycle or state transitions, who may trigger each transition, which transitions are terminal or reversible, and what audit history must remain immutable.
+4. Archive, retention, and deletion behavior, including what happens to dependent records and external files.
+5. Idempotency strategy for submissions, jobs, imports, notifications, webhooks, or retries where applicable.
+Use migrations rather than ad-hoc schema creation. Store time instants consistently and retain named timezone context whenever local schedules or dates matter. Never rely on a counter, disabled button, or client-side check to preserve a business invariant.
+
+USERS, AUTHENTICATION, AND PERMISSIONS
+Implement only the roles required by the stated audience. Make the ownership and visibility model explicit before coding. Enforce authorization in every server-side query and mutation, including search, exports, attachments, live updates, and guessed URLs—not merely by hiding controls. Use secure session defaults, protect state-changing requests, and provide an understandable signed-out, expired-session, and forbidden state. Seed distinct users when multiple roles are required so permissions can be demonstrated and tested.
+
+INTERACTION AND VISUAL DIRECTION
+The product should feel fast, calm, focused, and credible rather than like a generic admin template. Use a clear visual hierarchy, restrained color, readable typography, generous hit targets, and consistent placement for primary actions. Start with server-rendered HTML and progressively enhance only the interactions that benefit from it. The core workflow must remain understandable if enhancement fails.
+
+Render with React Server Components by default. Use Server Actions for authenticated form mutations and add Client Components only for interactions that genuinely require browser state, browser APIs, drag-and-drop, or live updates. The core workflow must remain understandable before client-side JavaScript finishes loading.
+
+Design mobile layouts intentionally instead of simply stacking desktop panels. Support keyboard navigation, visible focus, semantic landmarks, explicit labels, useful page titles, reduced-motion preferences, and screen-reader announcements for asynchronous results. Never use color alone to communicate state. Destructive actions require clear scope and confirmation; safe repeated actions should be idempotent.
+
+TECHNICAL DIRECTION
+Build this version with Next.js, the App Router, and TypeScript. Use Server Components by default, Server Actions for authenticated mutations, and Route Handlers for public APIs, OAuth callbacks, webhooks, feeds, uploads, and downloads. Use PostgreSQL through Drizzle ORM with versioned migrations and an isolated test database. Access S3-compatible object storage through a server-only adapter, and run slow or retryable work in a real job or workflow system instead of the request lifecycle.
+
+Keep domain rules in testable server-side modules instead of route handlers or UI components. Separate persistence, external providers, and background work behind small interfaces without building a framework. Prefer ordinary HTML forms and URLs for durable navigation; use optimistic interaction only when failure can be reconciled clearly.
+
+The product brief currently identifies SwiftUI, Swift, macOS as capability context. Preserve any required native, browser-only, edge, storage, real-time, or background-processing capability through a narrow adapter appropriate to the selected framework. If the core workflow genuinely requires native or browser APIs, keep that runtime as the primary execution surface rather than simulating inaccessible capabilities or inventing an unnecessary web surface.
+
+Integrate with macOS file APIs and Git and package-manager cache CLIs. For every integration:
+- List required environment variables in an .env.example without real secrets.
+- Add a small adapter with timeouts, normalized errors, and a deterministic local fake or development path.
+- Verify inbound signatures and deduplicate provider events where supported.
+- Keep credentials server-side, encrypt long-lived provider tokens at rest, and redact secrets and sensitive payloads from logs.
+- Define retry, backoff, and idempotency behavior for any side effect that can be repeated.
+
+SECURITY AND PRIVACY
+Never delete user documents, media, application data, model weights, toolchains, source repositories, or anything whose safety cannot be proven.
+Validate, normalize, and length-limit all untrusted input on the server. Escape rendered content by default, sanitize any intentionally accepted markup, rate-limit public or abuse-prone actions, and use private object storage plus short-lived authorized URLs for sensitive files. Collect the minimum personal data necessary for the named workflow. Document retention and deletion behavior. Add specific protections for the riskier surfaces in this app, such as uploads, redirects, outbound requests, email delivery, OAuth, webhooks, CSV import or export, and real-time connections.
+
+ACCEPTANCE SCENARIOS
+Automate these app-specific scenarios at the most appropriate level:
+1. Given an allowlisted cache containing a symlink to Documents, the scan rejects the escaped target, labels it protected, and cleanup leaves the destination untouched.
+2. Given a selected mix of safe, missing, and permission-denied targets, cleanup removes only the safe reachable items, records every outcome, and reports verified rather than estimated recovery.
+3. Given dirty, clean-unpushed, and clean-merged worktrees, only the clean merged worktree offers removal after itemized confirmation and all branch history remains auditable.
+
+TESTING
+Add focused unit tests for state transitions, authorization predicates, normalization, date or money calculations, and other risky domain rules. Add integration tests for persistence constraints and each external adapter’s success, timeout, retry, and rejection paths. Add at least one browser-level test for every end-to-end journey above, including one small-screen viewport. Tests must use isolated data and run through a documented single command.
+
+OPERATIONS AND FAILURE RECOVERY
+Add structured server logs with request, job, or event correlation IDs but no secrets or unnecessarily sensitive data. Make failures actionable in both the interface and logs. Background work must expose pending, succeeded, failed, and retrying states where relevant; do not silently swallow errors. Include safe database migration and rollback guidance, seed data, backup and restore notes, external-data cleanup behavior, and a basic health or diagnostic path appropriate to the stack.
+
+DELIVERABLES
+Ship the working application, migrations, representative seed data, tests, .env.example, and a concise README. The README must cover prerequisites, local setup, environment variables, migrations, seed and test commands, deployment, integration setup, backup and restore, security decisions, and known limitations. Seed data should exercise the happy path plus at least one empty, failed, overdue, expired, archived, or permission-restricted state relevant to the product.
+
+DEFINITION OF DONE
+The app is complete when a fresh developer can follow the README, create and migrate the database, run the app, sign in as each relevant role, complete every named journey using real persisted data, refresh without losing state, recover from common failures, and use the core interface on phone and desktop. All acceptance scenarios pass, permission boundaries are covered by tests, and no core screen is left as a placeholder.
+
+NON-GOALS
+Do not build antivirus, performance optimization, background monitoring, duplicate-photo detection, or a general-purpose recursive file deleter.</pre></div><div class="prompt-box" id="prompt-panel-laravel" role="tabpanel" aria-labelledby="prompt-tab-laravel" tabindex="0" hidden><pre>You are building a production-ready software product named “Spacekeeper”, a deliberately focused alternative to CleanMyMac. Build a complete, usable vertical slice—not a landing page, static mockup, or disconnected collection of components.
+
+WORKING AGREEMENT
+Before writing implementation code, produce a short technical plan that names the routes or pages, server actions or endpoints, data tables, important state transitions, authorization boundaries, background jobs, and external adapters. Resolve contradictions in favor of the narrow audience and non-goals below. Prefer a small, legible architecture over speculative abstraction, but do not omit persistence, validation, error handling, or tests.
+
+PRODUCT BRIEF
+Primary user: a developer using one Mac who wants a transparent, conservative cleanup utility.
+Primary outcome: find large regenerable files, reclaim disk space safely, and explain exactly what changed.
+Product principle: optimize the exact workflow below instead of copying the full breadth of CleanMyMac. A first-time user should understand what to do from the interface itself, without a tour or documentation.
+
+END-TO-END USER JOURNEYS
+Implement all of these flows through the real interface and persistent data layer:
+1. The user opens the app, reviews current free space and mounted volumes, starts a targeted scan, and sees cleanup candidates grouped by category, size, and safety level.
+2. The user inspects a large category, understands why each target is considered regenerable or protected, selects safe targets, previews the exact paths, and runs cleanup.
+3. The user reviews linked Git worktrees, sees dirty and unpushed work preserved, optionally confirms removal of one clean merged worktree, and receives a verified before-and-after report.
+
+SCREENS AND INFORMATION ARCHITECTURE
+Build these as coherent responsive views. Each screen must specify its primary action, secondary actions, visible status, validation feedback, empty state, loading or pending state, success confirmation, and recoverable failure state.
+1. Disk overview: writable volume, free and used space, mounted volumes, last scan, category estimates, scan scope, and a prominent targeted-scan action.
+2. Scan results: grouped cleanup targets with path, owner tool, size estimate, safety classification, explanation, selection state, and filters for category and confidence.
+3. Cleanup review: selected targets, exact resolved paths, estimated recovery, warnings, protected and skipped summary, confirmation boundary, progress, and recoverable failures.
+4. Worktree audit and history: repository, worktree path, branch, clean or dirty state, ahead or unpushed state, merge evidence, allowed actions, prior cleanup runs, and verified recovered space.
+
+CORE CAPABILITIES
+1. disk overview with free space, mounted volumes, and largest known cleanup categories
+2. targeted scans of build artifacts, package caches, and documented application caches
+3. safe, review-required, and protected classifications with size estimates
+4. Git worktree audit that preserves dirty, unique, or unpushed work
+5. before-and-after cleanup report with removed, skipped, and failed targets
+
+DETAILED BEHAVIOR AND BUSINESS RULES
+Treat these as server-enforced product requirements, not interface suggestions:
+1. Scan only explicit allowlisted cache and generated-artifact locations; resolve every target to an absolute canonical path and reject symlinks or descendants that escape the allowed root.
+2. Classify targets as safe, review required, or protected from versioned rules. Safe means reproducible from source or an owning tool; unknown, user-authored, or ambiguous data is protected.
+3. Use the owning package manager or developer tool cleanup command when available. Capture per-target success or failure, continue only when later targets remain independent, and remeasure space after the run.
+4. Never remove a worktree or branch unless Git reports it clean and its commits reachable from the configured integration branch or remote. Dirty, unique, ahead, detached, or unverifiable work is read-only and must be explained.
+
+DATA MODEL AND LIFECYCLE
+Design a small relational schema centered on CleanupScan, CleanupTarget, SafetyRule, WorktreeAudit, CleanupRun. Before implementing it, document:
+1. Each table’s purpose, primary key, ownership or tenant boundary, timestamps, status fields, and important attributes.
+2. Foreign keys, uniqueness constraints, check constraints, indexes needed by the named screens, and transaction boundaries for multi-record changes.
+3. The allowed lifecycle or state transitions, who may trigger each transition, which transitions are terminal or reversible, and what audit history must remain immutable.
+4. Archive, retention, and deletion behavior, including what happens to dependent records and external files.
+5. Idempotency strategy for submissions, jobs, imports, notifications, webhooks, or retries where applicable.
+Use migrations rather than ad-hoc schema creation. Store time instants consistently and retain named timezone context whenever local schedules or dates matter. Never rely on a counter, disabled button, or client-side check to preserve a business invariant.
+
+USERS, AUTHENTICATION, AND PERMISSIONS
+Implement only the roles required by the stated audience. Make the ownership and visibility model explicit before coding. Enforce authorization in every server-side query and mutation, including search, exports, attachments, live updates, and guessed URLs—not merely by hiding controls. Use secure session defaults, protect state-changing requests, and provide an understandable signed-out, expired-session, and forbidden state. Seed distinct users when multiple roles are required so permissions can be demonstrated and tested.
+
+INTERACTION AND VISUAL DIRECTION
+The product should feel fast, calm, focused, and credible rather than like a generic admin template. Use a clear visual hierarchy, restrained color, readable typography, generous hit targets, and consistent placement for primary actions. Start with server-rendered HTML and progressively enhance only the interactions that benefit from it. The core workflow must remain understandable if enhancement fails.
+
+Start with server-rendered Blade views and ordinary forms. Use Livewire for focused server-driven interactions and Alpine.js only for small local interface state. The core workflow must remain understandable without relying on a client-side application shell.
+
+Design mobile layouts intentionally instead of simply stacking desktop panels. Support keyboard navigation, visible focus, semantic landmarks, explicit labels, useful page titles, reduced-motion preferences, and screen-reader announcements for asynchronous results. Never use color alone to communicate state. Destructive actions require clear scope and confirmation; safe repeated actions should be idempotent.
+
+TECHNICAL DIRECTION
+Build this version with Laravel, PHP, Blade, Livewire, and Alpine.js. Use controllers and Blade forms for durable navigation, Livewire for focused interactions, Form Requests for validation, Policies and Gates for authorization, and small application actions or services for domain transitions. Use Eloquent with migrations, database constraints, and transactions; Laravel Storage for private S3-compatible files; queued Jobs for retryable work; the Scheduler for recurring work; and Notifications or Mail for email.
+
+Keep domain rules in testable server-side modules instead of route handlers or UI components. Separate persistence, external providers, and background work behind small interfaces without building a framework. Prefer ordinary HTML forms and URLs for durable navigation; use optimistic interaction only when failure can be reconciled clearly.
+
+The product brief currently identifies SwiftUI, Swift, macOS as capability context. Preserve any required native, browser-only, edge, storage, real-time, or background-processing capability through a narrow adapter appropriate to the selected framework. If the core workflow genuinely requires native or browser APIs, keep that runtime as the primary execution surface rather than simulating inaccessible capabilities or inventing an unnecessary web surface.
+
+Integrate with macOS file APIs and Git and package-manager cache CLIs. For every integration:
+- List required environment variables in an .env.example without real secrets.
+- Add a small adapter with timeouts, normalized errors, and a deterministic local fake or development path.
+- Verify inbound signatures and deduplicate provider events where supported.
+- Keep credentials server-side, encrypt long-lived provider tokens at rest, and redact secrets and sensitive payloads from logs.
+- Define retry, backoff, and idempotency behavior for any side effect that can be repeated.
+
+SECURITY AND PRIVACY
+Never delete user documents, media, application data, model weights, toolchains, source repositories, or anything whose safety cannot be proven.
+Validate, normalize, and length-limit all untrusted input on the server. Escape rendered content by default, sanitize any intentionally accepted markup, rate-limit public or abuse-prone actions, and use private object storage plus short-lived authorized URLs for sensitive files. Collect the minimum personal data necessary for the named workflow. Document retention and deletion behavior. Add specific protections for the riskier surfaces in this app, such as uploads, redirects, outbound requests, email delivery, OAuth, webhooks, CSV import or export, and real-time connections.
+
+ACCEPTANCE SCENARIOS
+Automate these app-specific scenarios at the most appropriate level:
+1. Given an allowlisted cache containing a symlink to Documents, the scan rejects the escaped target, labels it protected, and cleanup leaves the destination untouched.
+2. Given a selected mix of safe, missing, and permission-denied targets, cleanup removes only the safe reachable items, records every outcome, and reports verified rather than estimated recovery.
+3. Given dirty, clean-unpushed, and clean-merged worktrees, only the clean merged worktree offers removal after itemized confirmation and all branch history remains auditable.
+
+TESTING
+Add focused unit tests for state transitions, authorization predicates, normalization, date or money calculations, and other risky domain rules. Add integration tests for persistence constraints and each external adapter’s success, timeout, retry, and rejection paths. Add at least one browser-level test for every end-to-end journey above, including one small-screen viewport. Tests must use isolated data and run through a documented single command.
+
+OPERATIONS AND FAILURE RECOVERY
+Add structured server logs with request, job, or event correlation IDs but no secrets or unnecessarily sensitive data. Make failures actionable in both the interface and logs. Background work must expose pending, succeeded, failed, and retrying states where relevant; do not silently swallow errors. Include safe database migration and rollback guidance, seed data, backup and restore notes, external-data cleanup behavior, and a basic health or diagnostic path appropriate to the stack.
+
+DELIVERABLES
+Ship the working application, migrations, representative seed data, tests, .env.example, and a concise README. The README must cover prerequisites, local setup, environment variables, migrations, seed and test commands, deployment, integration setup, backup and restore, security decisions, and known limitations. Seed data should exercise the happy path plus at least one empty, failed, overdue, expired, archived, or permission-restricted state relevant to the product.
+
+DEFINITION OF DONE
+The app is complete when a fresh developer can follow the README, create and migrate the database, run the app, sign in as each relevant role, complete every named journey using real persisted data, refresh without losing state, recover from common failures, and use the core interface on phone and desktop. All acceptance scenarios pass, permission boundaries are covered by tests, and no core screen is left as a placeholder.
+
+NON-GOALS
+Do not build antivirus, performance optimization, background monitoring, duplicate-photo detection, or a general-purpose recursive file deleter.</pre></div><div class="prompt-box" id="prompt-panel-rails" role="tabpanel" aria-labelledby="prompt-tab-rails" tabindex="0" hidden><pre>You are building a production-ready software product named “Spacekeeper”, a deliberately focused alternative to CleanMyMac. Build a complete, usable vertical slice—not a landing page, static mockup, or disconnected collection of components.
+
+WORKING AGREEMENT
+Before writing implementation code, produce a short technical plan that names the routes or pages, server actions or endpoints, data tables, important state transitions, authorization boundaries, background jobs, and external adapters. Resolve contradictions in favor of the narrow audience and non-goals below. Prefer a small, legible architecture over speculative abstraction, but do not omit persistence, validation, error handling, or tests.
+
+PRODUCT BRIEF
+Primary user: a developer using one Mac who wants a transparent, conservative cleanup utility.
+Primary outcome: find large regenerable files, reclaim disk space safely, and explain exactly what changed.
+Product principle: optimize the exact workflow below instead of copying the full breadth of CleanMyMac. A first-time user should understand what to do from the interface itself, without a tour or documentation.
+
+END-TO-END USER JOURNEYS
+Implement all of these flows through the real interface and persistent data layer:
+1. The user opens the app, reviews current free space and mounted volumes, starts a targeted scan, and sees cleanup candidates grouped by category, size, and safety level.
+2. The user inspects a large category, understands why each target is considered regenerable or protected, selects safe targets, previews the exact paths, and runs cleanup.
+3. The user reviews linked Git worktrees, sees dirty and unpushed work preserved, optionally confirms removal of one clean merged worktree, and receives a verified before-and-after report.
+
+SCREENS AND INFORMATION ARCHITECTURE
+Build these as coherent responsive views. Each screen must specify its primary action, secondary actions, visible status, validation feedback, empty state, loading or pending state, success confirmation, and recoverable failure state.
+1. Disk overview: writable volume, free and used space, mounted volumes, last scan, category estimates, scan scope, and a prominent targeted-scan action.
+2. Scan results: grouped cleanup targets with path, owner tool, size estimate, safety classification, explanation, selection state, and filters for category and confidence.
+3. Cleanup review: selected targets, exact resolved paths, estimated recovery, warnings, protected and skipped summary, confirmation boundary, progress, and recoverable failures.
+4. Worktree audit and history: repository, worktree path, branch, clean or dirty state, ahead or unpushed state, merge evidence, allowed actions, prior cleanup runs, and verified recovered space.
+
+CORE CAPABILITIES
+1. disk overview with free space, mounted volumes, and largest known cleanup categories
+2. targeted scans of build artifacts, package caches, and documented application caches
+3. safe, review-required, and protected classifications with size estimates
+4. Git worktree audit that preserves dirty, unique, or unpushed work
+5. before-and-after cleanup report with removed, skipped, and failed targets
+
+DETAILED BEHAVIOR AND BUSINESS RULES
+Treat these as server-enforced product requirements, not interface suggestions:
+1. Scan only explicit allowlisted cache and generated-artifact locations; resolve every target to an absolute canonical path and reject symlinks or descendants that escape the allowed root.
+2. Classify targets as safe, review required, or protected from versioned rules. Safe means reproducible from source or an owning tool; unknown, user-authored, or ambiguous data is protected.
+3. Use the owning package manager or developer tool cleanup command when available. Capture per-target success or failure, continue only when later targets remain independent, and remeasure space after the run.
+4. Never remove a worktree or branch unless Git reports it clean and its commits reachable from the configured integration branch or remote. Dirty, unique, ahead, detached, or unverifiable work is read-only and must be explained.
+
+DATA MODEL AND LIFECYCLE
+Design a small relational schema centered on CleanupScan, CleanupTarget, SafetyRule, WorktreeAudit, CleanupRun. Before implementing it, document:
+1. Each table’s purpose, primary key, ownership or tenant boundary, timestamps, status fields, and important attributes.
+2. Foreign keys, uniqueness constraints, check constraints, indexes needed by the named screens, and transaction boundaries for multi-record changes.
+3. The allowed lifecycle or state transitions, who may trigger each transition, which transitions are terminal or reversible, and what audit history must remain immutable.
+4. Archive, retention, and deletion behavior, including what happens to dependent records and external files.
+5. Idempotency strategy for submissions, jobs, imports, notifications, webhooks, or retries where applicable.
+Use migrations rather than ad-hoc schema creation. Store time instants consistently and retain named timezone context whenever local schedules or dates matter. Never rely on a counter, disabled button, or client-side check to preserve a business invariant.
+
+USERS, AUTHENTICATION, AND PERMISSIONS
+Implement only the roles required by the stated audience. Make the ownership and visibility model explicit before coding. Enforce authorization in every server-side query and mutation, including search, exports, attachments, live updates, and guessed URLs—not merely by hiding controls. Use secure session defaults, protect state-changing requests, and provide an understandable signed-out, expired-session, and forbidden state. Seed distinct users when multiple roles are required so permissions can be demonstrated and tested.
+
+INTERACTION AND VISUAL DIRECTION
+The product should feel fast, calm, focused, and credible rather than like a generic admin template. Use a clear visual hierarchy, restrained color, readable typography, generous hit targets, and consistent placement for primary actions. Start with server-rendered HTML and progressively enhance only the interactions that benefit from it. The core workflow must remain understandable if enhancement fails.
+
+Start with server-rendered Rails views and ordinary forms. Use Turbo for navigation, submissions, and server-driven updates, then Stimulus only for small browser-side behavior. Do not turn the product into a client-side SPA, and keep the core workflow usable when enhancement fails.
+
+Design mobile layouts intentionally instead of simply stacking desktop panels. Support keyboard navigation, visible focus, semantic landmarks, explicit labels, useful page titles, reduced-motion preferences, and screen-reader announcements for asynchronous results. Never use color alone to communicate state. Destructive actions require clear scope and confirmation; safe repeated actions should be idempotent.
+
+TECHNICAL DIRECTION
+Build this version with Ruby on Rails and Hotwire: Turbo for navigation, form submissions, and server-driven updates, and Stimulus for small browser-side behavior. Use RESTful controllers with strong parameters and explicit authorization, with domain transitions in testable models or small application services. Use Active Record migrations plus database-level constraints and transactions; Active Storage with an S3-compatible service for private files; Active Job with a durable queue backend for retryable work; Action Mailer for email; and Action Cable only when live updates are required.
+
+Keep domain rules in testable server-side modules instead of route handlers or UI components. Separate persistence, external providers, and background work behind small interfaces without building a framework. Prefer ordinary HTML forms and URLs for durable navigation; use optimistic interaction only when failure can be reconciled clearly.
+
+The product brief currently identifies SwiftUI, Swift, macOS as capability context. Preserve any required native, browser-only, edge, storage, real-time, or background-processing capability through a narrow adapter appropriate to the selected framework. If the core workflow genuinely requires native or browser APIs, keep that runtime as the primary execution surface rather than simulating inaccessible capabilities or inventing an unnecessary web surface.
+
+Integrate with macOS file APIs and Git and package-manager cache CLIs. For every integration:
+- List required environment variables in an .env.example without real secrets.
+- Add a small adapter with timeouts, normalized errors, and a deterministic local fake or development path.
+- Verify inbound signatures and deduplicate provider events where supported.
+- Keep credentials server-side, encrypt long-lived provider tokens at rest, and redact secrets and sensitive payloads from logs.
+- Define retry, backoff, and idempotency behavior for any side effect that can be repeated.
+
+SECURITY AND PRIVACY
+Never delete user documents, media, application data, model weights, toolchains, source repositories, or anything whose safety cannot be proven.
+Validate, normalize, and length-limit all untrusted input on the server. Escape rendered content by default, sanitize any intentionally accepted markup, rate-limit public or abuse-prone actions, and use private object storage plus short-lived authorized URLs for sensitive files. Collect the minimum personal data necessary for the named workflow. Document retention and deletion behavior. Add specific protections for the riskier surfaces in this app, such as uploads, redirects, outbound requests, email delivery, OAuth, webhooks, CSV import or export, and real-time connections.
+
+ACCEPTANCE SCENARIOS
+Automate these app-specific scenarios at the most appropriate level:
+1. Given an allowlisted cache containing a symlink to Documents, the scan rejects the escaped target, labels it protected, and cleanup leaves the destination untouched.
+2. Given a selected mix of safe, missing, and permission-denied targets, cleanup removes only the safe reachable items, records every outcome, and reports verified rather than estimated recovery.
+3. Given dirty, clean-unpushed, and clean-merged worktrees, only the clean merged worktree offers removal after itemized confirmation and all branch history remains auditable.
+
+TESTING
+Add focused unit tests for state transitions, authorization predicates, normalization, date or money calculations, and other risky domain rules. Add integration tests for persistence constraints and each external adapter’s success, timeout, retry, and rejection paths. Add at least one browser-level test for every end-to-end journey above, including one small-screen viewport. Tests must use isolated data and run through a documented single command.
+
+OPERATIONS AND FAILURE RECOVERY
+Add structured server logs with request, job, or event correlation IDs but no secrets or unnecessarily sensitive data. Make failures actionable in both the interface and logs. Background work must expose pending, succeeded, failed, and retrying states where relevant; do not silently swallow errors. Include safe database migration and rollback guidance, seed data, backup and restore notes, external-data cleanup behavior, and a basic health or diagnostic path appropriate to the stack.
+
+DELIVERABLES
+Ship the working application, migrations, representative seed data, tests, .env.example, and a concise README. The README must cover prerequisites, local setup, environment variables, migrations, seed and test commands, deployment, integration setup, backup and restore, security decisions, and known limitations. Seed data should exercise the happy path plus at least one empty, failed, overdue, expired, archived, or permission-restricted state relevant to the product.
+
+DEFINITION OF DONE
+The app is complete when a fresh developer can follow the README, create and migrate the database, run the app, sign in as each relevant role, complete every named journey using real persisted data, refresh without losing state, recover from common failures, and use the core interface on phone and desktop. All acceptance scenarios pass, permission boundaries are covered by tests, and no core screen is left as a placeholder.
+
+NON-GOALS
+Do not build antivirus, performance optimization, background monitoring, duplicate-photo detection, or a general-purpose recursive file deleter.</pre></div><div class="prompt-actions"><button class="button primary" type="button" id="copy-prompt">Copy AHA prompt</button></div></section><section class="section" aria-labelledby="mini-heading"><h2 id="mini-heading">Build just one piece</h2><p>Not ready to replace all of CleanMyMac? Fine. These are the peculiar sub-problems hiding inside it — the parts that are actually interesting to build. Each one is a standalone prompt, scoped to an evening, no strings attached to the full build.</p><details class="mini"><summary><strong>Delete inside the fence, even when symlinks point outside</strong><span>Canonical paths, component-wise containment, and symlinks treated as hostile.</span></summary><pre>Build the path-safety layer for a disk cleanup tool: it may only ever delete inside explicit allowlisted directories, and symlinks are actively trying to trick it.
+
+Resolve every cleanup candidate to an absolute canonical path — symlinks fully resolved, no dot-dot segments — before any decision. Then verify containment: the canonical path must be a descendant of a canonical allowlisted root, compared component by component, not by string prefix (a folder named cache-evil is not inside cache).
+
+The attack you are defending against: a symlink inside a cache directory pointing at the user&#39;s Documents. The entry looks in-scope, but its canonical target escapes. Classify such targets as protected with the explanation shown, and when deleting a symlink itself, remove only the link — never follow it. Re-verify containment at deletion time, not just scan time, because the filesystem can change between the two. Refuse to traverse into other volumes or network mounts.
+
+Done when: a symlink from an allowlisted cache to a user folder is flagged and its destination untouched after cleanup, prefix-collision paths are excluded, and every deletion re-validates containment at execution time.</pre><button class="mini-copy" type="button">Copy this prompt</button></details><details class="mini"><summary><strong>The worktree reaper that never eats unpushed work</strong><span>Only clean, merged, reachable work gets a removal offer. Everything else is evidence.</span></summary><pre>Build a Git worktree auditor that identifies which worktrees are safe to remove, and treats everything else as read-only.
+
+For each linked worktree, gather evidence with plumbing commands: dirty state via a porcelain status check including untracked files, stash entries, and whether the branch head is reachable from the configured integration branch or its remote-tracking ref (an is-ancestor merge-base check). A worktree that is dirty, ahead, unpushed, detached, or unverifiable — remote missing, fetch failed — is preserved and labeled with the exact reason.
+
+Squash merges are the honest gap: the work landed but the commits are unreachable. Do not guess. Classify as unverifiable with an explanation rather than faking certainty.
+
+Only clean, fully merged worktrees get a removal offer, itemized with branch, path, and the supporting evidence. Removal goes through Git&#39;s own worktree removal, never a recursive filesystem delete, and declines to force.
+
+Done when: dirty and unpushed worktrees cannot be removed through any path in the flow, removing a clean merged worktree leaves the repository intact, and every preserved worktree displays its specific reason.</pre><button class="mini-copy" type="button">Copy this prompt</button></details><details class="mini"><summary><strong>Safe, review, protected: a rules engine for deletion</strong><span>Versioned rules where unknown always means hands-off.</span></summary><pre>Build the safety-classification engine for a disk cleanup tool: every discovered target gets a verdict — safe, review required, or protected — with reasoning a human can audit.
+
+Classification comes from versioned rule definitions, not scattered if-statements. A rule declares the path pattern it covers, the owning tool (a package manager cache, an IDE&#39;s derived data, a browser cache), why regeneration is guaranteed, and a regeneration-cost hint. Safe means provably reproducible by the owning tool. Anything unmatched, ambiguous, user-authored, or outside a known location defaults to protected — the engine&#39;s core property is that ignorance means hands-off.
+
+Review-required covers the middle ground: regenerable but expensive, like model weights and toolchains, or entries whose owner cannot be confirmed. Each verdict carries the rule id and version that produced it, so a bad classification traces back to the rule that made it, and a rule update visibly re-classifies prior scan results.
+
+Ship rules as data with tests: every rule lists example paths that must match and near-misses that must not.
+
+Done when: unknown paths always land protected, every verdict displays its rule and justification, and bumping a rule version re-classifies affected targets traceably.</pre><button class="mini-copy" type="button">Copy this prompt</button></details><details class="mini"><summary><strong>Report what you actually freed, not what you hoped</strong><span>Remeasure the disk and report the truth, target by target.</span></summary><pre>Build the cleanup executor and its before-and-after report — the part that proves the tool did what it claimed.
+
+Measure free space before the run. Then execute per target: prefer the owning tool&#39;s own cleanup command where one exists (the package manager&#39;s cache clean, the formula manager&#39;s cleanup) over raw deletion, capture each command&#39;s exit status, and record per-target outcomes — removed with bytes freed, skipped with reason, failed with the error. A permission-denied or already-missing target logs its outcome and the run continues, provided the remaining targets are independent of it.
+
+When everything settles, remeasure free space and report verified recovery — the actual delta — alongside the naive sum of estimated sizes. The two will disagree (hard links, copy-on-write clones, files recreated mid-run): show both numbers and explain the gap instead of quietly printing the flattering one.
+
+Persist the full run: timestamp, target list, every outcome, both totals. Failures stay recoverable — a later run can retry exactly the failed targets.
+
+Done when: a mixed run of safe, missing, and permission-denied targets completes with each outcome individually recorded, the report shows measured rather than estimated recovery, and prior runs remain reviewable.</pre><button class="mini-copy" type="button">Copy this prompt</button></details></section><section class="section" aria-labelledby="faq-heading"><h2 id="faq-heading">Frequently asked questions</h2><details class="faq"><summary>How long does it take to build your own CleanMyMac?</summary><p>A basic version — scan known caches, show sizes, safe delete — takes about 8 hours. Roughly 3 days gets you a solid v1 with git worktree audit, safety rules, cleanup reports. Matching everything CleanMyMac really does (malware scanning, background monitoring, notarized system access) is closer to 1 month+, which is exactly why you should scope down instead.</p></details><details class="faq"><summary>How much does CleanMyMac cost if I keep subscribing?</summary><p>CleanMyMac runs $3.33–$9.95 per person per month on public paid plans, which is $40–$119 per year for every person on your team. A focused self-built replacement costs your build time plus close-to-zero hosting.</p></details><details class="faq"><summary>What stack should I use to build a CleanMyMac alternative?</summary><p>The build prompt on this page ships in four flavors: the AHA stack (Astro, HTMX, Alpine.js), Next.js, Laravel, and Ruby on Rails. The capability context for this product is SwiftUI, Swift, macOS. Pick the stack you already know — the scope matters more than the framework.</p></details><details class="faq"><summary>What features does a minimal CleanMyMac replacement need?</summary><p>A useful v1 needs: disk overview with free space, mounted volumes, and largest known cleanup categories; targeted scans of build artifacts, package caches, and documented application caches; safe, review-required, and protected classifications with size estimates; Git worktree audit that preserves dirty, unique, or unpushed work; before-and-after cleanup report with removed, skipped, and failed targets. Everything else is scope creep until you personally miss it.</p></details><details class="faq"><summary>What should I deliberately not build?</summary><p>Do not build antivirus, performance optimization, background monitoring, duplicate-photo detection, or a general-purpose recursive file deleter.</p></details></section><section class="section" aria-labelledby="related-heading"><h2 id="related-heading">More personal subscriptions to replace</h2><ul class="related-list"><li><a href="/build-your-own-linktree/">Build your own Linktree</a><span>$9–$24/mo · from 30 min</span></li><li><a href="/build-your-own-readwise-reader/">Build your own Readwise Reader</a><span>$10–$12.99/mo · from 2 days</span></li><li><a href="/build-your-own-tinypng-pro/">Build your own TinyPNG Pro</a><span>$25–$39/mo · from 60 min</span></li><li><a href="/build-your-own-ynab/">Build your own YNAB</a><span>$9.08–$14.99/mo · from 12 hours</span></li></ul><p class="related-home"><a href="/#audit">Browse all 109 buildable subscriptions →</a></p></section></main><footer><a class="logo footer-logo" href="/"><span class="logo-mark">EZ</span><span>ezvibecode</span></a><p><a href="/blog/">Blog</a></p><p><a href="/guides/">Guides</a></p><p><a href="/changelog/">Changelog</a></p><p>A tiny idea about tiny software.</p><p>Built with vibes, obviously.</p></footer><div class="toast" id="toast" role="status" aria-live="polite">Prompt copied. Go ship it.</div><script type="module">var e=Array.from(document.querySelectorAll(`.prompt-tab`)),t=Array.from(document.querySelectorAll(`.prompt-box`)),n=document.querySelector(`#copy-prompt`),r=r=>{e.forEach(e=>{let t=e.dataset.framework===r;e.setAttribute(`aria-selected`,String(t)),e.tabIndex=t?0:-1}),t.forEach(e=>{e.hidden=e.id!==`prompt-panel-${r}`}),n.textContent=`Copy ${e.find(e=>e.dataset.framework===r)?.textContent||`prompt`} prompt`};e.forEach((t,n)=>{t.addEventListener(`click`,()=>r(t.dataset.framework)),t.addEventListener(`keydown`,t=>{let i;t.key===`ArrowRight`&&(i=(n+1)%e.length),t.key===`ArrowLeft`&&(i=(n-1+e.length)%e.length),t.key===`Home`&&(i=0),t.key===`End`&&(i=e.length-1),i!==void 0&&(t.preventDefault(),r(e[i].dataset.framework),e[i].focus())})}),n?.addEventListener(`click`,async()=>{let e=t.find(e=>!e.hidden);await navigator.clipboard.writeText(e?.querySelector(`pre`)?.textContent||``);let n=document.querySelector(`#toast`);n.classList.add(`show`),setTimeout(()=>n.classList.remove(`show`),2200)}),document.querySelectorAll(`.mini-copy`).forEach(e=>{e.addEventListener(`click`,async()=>{let t=e.closest(`.mini`)?.querySelector(`pre`)?.textContent||``;await navigator.clipboard.writeText(t);let n=document.querySelector(`#toast`);n.classList.add(`show`),setTimeout(()=>n.classList.remove(`show`),2200)})});var i=document.querySelector(`#theme-toggle`);localStorage.getItem(`vibe-theme`)===`dark`&&(document.documentElement.dataset.theme=`dark`),i?.addEventListener(`click`,()=>{let e=document.documentElement.dataset.theme!==`dark`;document.documentElement.dataset.theme=e?`dark`:`light`,localStorage.setItem(`vibe-theme`,e?`dark`:`light`)});</script><script type="module" src="https://static.cloudflareinsights.com/beacon.min.js/vce701823e78c4301a35b7e07294d87301792088814092" integrity="sha512-UKNk8GbxkABxKcXYuLkO16EleLGUkcvJWtpSNmExE0Too3ZaFAxTscNWEc1OdAv5/BikHawapSCaiD2XCmp+Bw==" data-cf-beacon='{"version":"2024.11.0","token":"228ace6b78e04bb494384851ece32c99","r":1,"spa":2}' crossorigin="anonymous"></script>
+</body></html>

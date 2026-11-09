@@ -1,0 +1,284 @@
+<!DOCTYPE html><html lang="en"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width"><title>Vibe code a Calendly clone — ezvibecode</title><meta name="description" content="Vibe code a Calendly clone with weekly hours, a booking page, and a slot lock. Follow the prompts, check each step, and skip the calendar OAuth."><link rel="canonical" href="https://ezvibecode.com/guides/vibe-code-a-calendly-clone/"><link rel="alternate" type="application/rss+xml" title="ezvibecode guides" href="https://ezvibecode.com/guides/rss.xml"><meta name="theme-color" content="#f4f1e8"><link rel="icon" href="/favicon.ico" sizes="32x32"><link rel="icon" href="/favicon.png" type="image/png" sizes="512x512"><link rel="apple-touch-icon" href="/apple-touch-icon.png" sizes="180x180"><meta property="og:type" content="article"><meta property="og:site_name" content="ezvibecode"><meta property="og:title" content="Vibe code a Calendly clone — ezvibecode"><meta property="og:description" content="Vibe code a Calendly clone with weekly hours, a booking page, and a slot lock. Follow the prompts, check each step, and skip the calendar OAuth."><meta property="og:url" content="https://ezvibecode.com/guides/vibe-code-a-calendly-clone/"><meta property="og:image" content="https://ezvibecode.com/og/guides/vibe-code-a-calendly-clone.png"><meta property="og:image:type" content="image/png"><meta property="og:image:width" content="1200"><meta property="og:image:height" content="630"><meta property="og:image:alt" content="Vibe code a Calendly clone"><meta property="article:published_time" content="2026-10-23T00:00:00.000Z"><meta property="article:modified_time" content="2026-10-23T00:00:00.000Z"><meta property="article:author" content="ezvibecode"><meta name="twitter:card" content="summary_large_image"><meta name="twitter:title" content="Vibe code a Calendly clone — ezvibecode"><meta name="twitter:description" content="Vibe code a Calendly clone with weekly hours, a booking page, and a slot lock. Follow the prompts, check each step, and skip the calendar OAuth."><meta name="twitter:url" content="https://ezvibecode.com/guides/vibe-code-a-calendly-clone/"><meta name="twitter:image" content="https://ezvibecode.com/og/guides/vibe-code-a-calendly-clone.png"><meta name="twitter:image:alt" content="Vibe code a Calendly clone"><script type="application/ld+json">{"@context":"https://schema.org","@type":"BreadcrumbList","itemListElement":[{"@type":"ListItem","position":1,"name":"ezvibecode","item":"https://ezvibecode.com/"},{"@type":"ListItem","position":2,"name":"Guides","item":"https://ezvibecode.com/guides/"},{"@type":"ListItem","position":3,"name":"Vibe code a Calendly clone","item":"https://ezvibecode.com/guides/vibe-code-a-calendly-clone/"}]}</script><script type="application/ld+json">{"@context":"https://schema.org","@type":["Article","TechArticle"],"headline":"Vibe code a Calendly clone","description":"Vibe code a Calendly clone with weekly hours, a booking page, and a slot lock. Follow the prompts, check each step, and skip the calendar OAuth.","datePublished":"2026-10-23T00:00:00.000Z","dateModified":"2026-10-23T00:00:00.000Z","url":"https://ezvibecode.com/guides/vibe-code-a-calendly-clone/","image":"https://ezvibecode.com/og/guides/vibe-code-a-calendly-clone.png","author":{"@type":"Person","name":"ezvibecode","url":"https://ezvibecode.com/"},"publisher":{"@type":"Organization","name":"ezvibecode","url":"https://ezvibecode.com/"},"mainEntityOfPage":{"@type":"WebPage","@id":"https://ezvibecode.com/guides/vibe-code-a-calendly-clone/"}}</script><link rel="stylesheet" href="/_astro/_slug_.8-etlKKw.css"></head><body><header class="site-header"><a class="logo" href="/" aria-label="ezvibecode home"><span class="logo-mark">EZ</span><span>ezvibecode</span></a><nav class="header-links" aria-label="Site"><a class="header-link" href="/blog/">Blog</a><a class="header-link" href="/guides/" aria-current="page">Guides</a><a class="header-link" href="/#audit">All 109 apps</a></nav><button class="icon-button" id="theme-toggle" type="button" aria-label="Toggle dark mode" title="Toggle dark mode">◐</button></header><main><nav class="breadcrumb" aria-label="Breadcrumb"><a href="/">Home</a><span aria-hidden="true">/</span><a href="/guides/">Guides</a><span aria-hidden="true">/</span><span aria-current="page">Vibe code a Calendly clone</span></nav><article><header class="hero"><p class="eyebrow"><time datetime="2026-10-23">October 23, 2026</time></p><h1>Vibe code a Calendly clone</h1><p class="lede">Vibe code a Calendly clone with weekly hours, a booking page, and a slot lock. Follow the prompts, check each step, and skip the calendar OAuth.</p><ul class="tags"><li>guide</li><li>vibe-coding</li><li>calendly</li></ul></header><div class="prose"><p>You can vibe code a Calendly clone as weekly hours and a booking page. <a href="/build-your-own-calendly/">Calendly</a> is that product. The catalog line is “Your availability rules, one pleasant booking page.”</p>
+<p>You pay $12–$20 a person a month. That is $144–$240 a year, and the card says the price scales with the team. The verdict is “Very vibeable”. The first estimate is 6 hours: one meeting type, weekly availability, bookings.</p>
+<p>I already wrote the teardown, <a href="/blog/calendly-availability-minus-busy/">Build your own with ezvibecode Calendly</a>. This guide is the walk. Prompts in order, then what to look at.</p>
+<p>The audience is one consultant who offers 30- and 60-minute meetings. If a sales team already shares one Calendly org, keep paying. The same v1 also replaces Cal.com, SavvyCal, and Acuity Scheduling when you wanted a personal booking link.</p>
+<h2 id="what-you-ship-when-you-vibe-code-a-calendly-clone">What you ship when you vibe code a Calendly clone</h2>
+<p>The <a href="/build-your-own-calendly/">Calendly page</a> splits the work into three rows.</p>
+<p>The first row is the one you want. One meeting type. Weekday hours. A public page. A booking that lands in a table. That is the 6-hour v1.</p>
+<p>The second row is 2 days. Google Calendar sync, timezones, reschedule links. Still one consultant. Do that after a real guest has booked.</p>
+<p>The third row is 1 month and up. Team routing, payments, every calendar provider. Skip it.</p>
+<p>If you tell an agent to “clone Calendly”, it aims at the third row. Pin every prompt to the first one.</p>
+<p>Here is the shape of the data. Nothing else has to exist at 6 hours.</p>
+<pre class="astro-code github-dark" style="background-color:#24292e;color:#e1e4e8; overflow-x: auto;" tabindex="0" data-language="js"><code><span class="line"><span style="color:#F97583">const</span><span style="color:#79B8FF"> meetingType</span><span style="color:#F97583"> =</span><span style="color:#E1E4E8"> {</span></span>
+<span class="line"><span style="color:#E1E4E8">  id: </span><span style="color:#9ECBFF">'intro-30'</span><span style="color:#E1E4E8">,</span></span>
+<span class="line"><span style="color:#E1E4E8">  title: </span><span style="color:#9ECBFF">'Intro call'</span><span style="color:#E1E4E8">,</span></span>
+<span class="line"><span style="color:#E1E4E8">  durationMin: </span><span style="color:#79B8FF">30</span><span style="color:#E1E4E8">,</span></span>
+<span class="line"><span style="color:#E1E4E8">  timezone: </span><span style="color:#9ECBFF">'America/New_York'</span><span style="color:#E1E4E8">,</span></span>
+<span class="line"><span style="color:#E1E4E8">  hours: {</span></span>
+<span class="line"><span style="color:#E1E4E8">    wdays: [</span><span style="color:#9ECBFF">'monday'</span><span style="color:#E1E4E8">, </span><span style="color:#9ECBFF">'tuesday'</span><span style="color:#E1E4E8">, </span><span style="color:#9ECBFF">'wednesday'</span><span style="color:#E1E4E8">, </span><span style="color:#9ECBFF">'thursday'</span><span style="color:#E1E4E8">, </span><span style="color:#9ECBFF">'friday'</span><span style="color:#E1E4E8">],</span></span>
+<span class="line"><span style="color:#E1E4E8">    from: </span><span style="color:#9ECBFF">'09:00'</span><span style="color:#E1E4E8">,</span></span>
+<span class="line"><span style="color:#E1E4E8">    to: </span><span style="color:#9ECBFF">'17:00'</span><span style="color:#E1E4E8">,</span></span>
+<span class="line"><span style="color:#E1E4E8">  },</span></span>
+<span class="line"><span style="color:#E1E4E8">  bufferAfterMin: </span><span style="color:#79B8FF">15</span><span style="color:#E1E4E8">,</span></span>
+<span class="line"><span style="color:#E1E4E8">  noticeMin: </span><span style="color:#79B8FF">240</span><span style="color:#E1E4E8">,</span></span>
+<span class="line"><span style="color:#E1E4E8">  horizonDays: </span><span style="color:#79B8FF">14</span><span style="color:#E1E4E8">,</span></span>
+<span class="line"><span style="color:#E1E4E8">}</span></span>
+<span class="line"></span>
+<span class="line"><span style="color:#F97583">const</span><span style="color:#79B8FF"> booking</span><span style="color:#F97583"> =</span><span style="color:#E1E4E8"> {</span></span>
+<span class="line"><span style="color:#E1E4E8">  id: </span><span style="color:#9ECBFF">'booking-184'</span><span style="color:#E1E4E8">,</span></span>
+<span class="line"><span style="color:#E1E4E8">  meetingTypeId: </span><span style="color:#9ECBFF">'intro-30'</span><span style="color:#E1E4E8">,</span></span>
+<span class="line"><span style="color:#E1E4E8">  startAt: </span><span style="color:#9ECBFF">'2026-10-26T14:00:00.000Z'</span><span style="color:#E1E4E8">,</span></span>
+<span class="line"><span style="color:#E1E4E8">  guestName: </span><span style="color:#9ECBFF">'Jordan Lee'</span><span style="color:#E1E4E8">,</span></span>
+<span class="line"><span style="color:#E1E4E8">  guestEmail: </span><span style="color:#9ECBFF">'<a href="/cdn-cgi/l/email-protection" class="__cf_email__" data-cfemail="345e5b4650555a74525855425d5b575b4451471a575b59">[email&#160;protected]</a>'</span><span style="color:#E1E4E8">,</span></span>
+<span class="line"><span style="color:#E1E4E8">  guestTimezone: </span><span style="color:#9ECBFF">'Europe/Rome'</span><span style="color:#E1E4E8">,</span></span>
+<span class="line"><span style="color:#E1E4E8">  status: </span><span style="color:#9ECBFF">'confirmed'</span><span style="color:#E1E4E8">,</span></span>
+<span class="line"><span style="color:#E1E4E8">}</span></span></code></pre>
+<p>A meeting type, a weekly window, a booking stored in UTC. Date overrides wait until you take a Friday off. The card also lists CalendarConnection. Leave it unused.</p>
+<figure>
+<svg role="img" aria-label="Build flow for a Calendly v1: create a meeting type with weekly hours, generate bookable slots, hold the chosen slot, then confirm the booking in one transaction" viewBox="0 0 360 520" xmlns="http://www.w3.org/2000/svg">
+  <rect x="18" y="10" width="324" height="100" fill="var(--surface)" stroke="var(--ink)" stroke-width="3"/>
+  <rect x="18" y="10" width="324" height="40" fill="var(--lime)" stroke="var(--ink)" stroke-width="3"/>
+  <text x="180" y="37" text-anchor="middle" font-family="Arial, Helvetica, sans-serif" font-weight="800" font-size="15" fill="var(--ink)">MEETING TYPE</text>
+  <text x="180" y="74" text-anchor="middle" font-family="Arial, Helvetica, sans-serif" font-weight="700" font-size="14" fill="var(--ink)">Intro call, 30 minutes</text>
+  <text x="180" y="96" text-anchor="middle" font-family="Arial, Helvetica, sans-serif" font-weight="700" font-size="13" fill="var(--ink)">Mon-Fri 09:00-17:00, New York</text>
+  <path d="M180 118 v22" fill="none" stroke="var(--ink)" stroke-width="3"/>
+  <path d="M170 130 l10 12 10-12" fill="none" stroke="var(--ink)" stroke-width="3"/>
+  <rect x="18" y="148" width="324" height="100" fill="var(--surface)" stroke="var(--ink)" stroke-width="3"/>
+  <rect x="18" y="148" width="324" height="40" fill="var(--blue)" stroke="var(--ink)" stroke-width="3"/>
+  <text x="180" y="175" text-anchor="middle" font-family="Arial, Helvetica, sans-serif" font-weight="800" font-size="15" fill="var(--ink)">GENERATE SLOTS</text>
+  <text x="180" y="212" text-anchor="middle" font-family="Arial, Helvetica, sans-serif" font-weight="700" font-size="14" fill="var(--ink)">Hours minus bookings and buffers</text>
+  <text x="180" y="234" text-anchor="middle" font-family="Arial, Helvetica, sans-serif" font-weight="700" font-size="13" fill="var(--ink)">Show times in the guest timezone</text>
+  <path d="M180 256 v22" fill="none" stroke="var(--ink)" stroke-width="3"/>
+  <path d="M170 268 l10 12 10-12" fill="none" stroke="var(--ink)" stroke-width="3"/>
+  <rect x="18" y="286" width="324" height="100" fill="var(--surface)" stroke="var(--ink)" stroke-width="3"/>
+  <rect x="18" y="286" width="324" height="40" fill="#ffda47" stroke="var(--ink)" stroke-width="3"/>
+  <text x="180" y="313" text-anchor="middle" font-family="Arial, Helvetica, sans-serif" font-weight="800" font-size="15" fill="var(--ink)">HOLD THE SLOT</text>
+  <text x="180" y="350" text-anchor="middle" font-family="Arial, Helvetica, sans-serif" font-weight="700" font-size="14" fill="var(--ink)">Five-minute hold while they type</text>
+  <text x="180" y="372" text-anchor="middle" font-family="Arial, Helvetica, sans-serif" font-weight="700" font-size="13" fill="var(--ink)">Expired holds free the slot on read</text>
+  <path d="M180 394 v22" fill="none" stroke="var(--ink)" stroke-width="3"/>
+  <path d="M170 406 l10 12 10-12" fill="none" stroke="var(--ink)" stroke-width="3"/>
+  <rect x="18" y="424" width="324" height="84" fill="var(--surface)" stroke="var(--ink)" stroke-width="3"/>
+  <rect x="18" y="424" width="324" height="40" fill="var(--coral)" stroke="var(--ink)" stroke-width="3"/>
+  <text x="180" y="451" text-anchor="middle" font-family="Arial, Helvetica, sans-serif" font-weight="800" font-size="15" fill="var(--ink)">CONFIRM IN ONE WRITE</text>
+  <text x="180" y="488" text-anchor="middle" font-family="Arial, Helvetica, sans-serif" font-weight="700" font-size="14" fill="var(--ink)">Recheck plus a unique start time</text>
+</svg>
+<figcaption>Hours become slots. A hold keeps the form honest. The booking write is the lock.</figcaption>
+</figure>
+<h2 id="pick-the-stack-you-already-write">Pick the stack you already write</h2>
+<p>Every product prompt ships in four flavors: AHA (Astro, HTMX, Alpine.js), Next.js, Laravel, and Rails. The capability line for Calendly is Astro, HTMX, and D1.</p>
+<p>This site is an Astro app on Cloudflare, so that is the path I default to. Use Next.js if that is your weekday language.</p>
+<p>Open <a href="/build-your-own-calendly/">Build your own Calendly</a>. The guardrail is the useful sentence: prevent double booking with a final availability check inside the booking transaction. The non-goal sits next to it. No teams, round-robin routing, payments, or extra calendar providers in v1.</p>
+<p>Pick one stack and stay on it.</p>
+<h2 id="prompt-1-scaffold-slot-and-stop">Prompt 1. Scaffold Slot and stop</h2>
+<p>Copy the AHA prompt from the product page. Paste it into your coding tool. Put this block above it.</p>
+<pre class="astro-code github-dark" style="background-color:#24292e;color:#e1e4e8; overflow-x: auto;" tabindex="0" data-language="text"><code><span class="line"><span>Ship the 6-hour row only. One meeting type, weekly hours, bookings.</span></span>
+<span class="line"><span></span></span>
+<span class="line"><span>Project name: Slot.</span></span>
+<span class="line"><span>Owner is one person. Guests do not create accounts.</span></span>
+<span class="line"><span></span></span>
+<span class="line"><span>Do not connect Google Calendar.</span></span>
+<span class="line"><span>Do not add team routing, payments, or a second meeting-type marketplace.</span></span>
+<span class="line"><span>Do not add reschedule or cancel links yet.</span></span>
+<span class="line"><span></span></span>
+<span class="line"><span>When the plan is done, stop and wait. Do not write implementation code until I say go.</span></span></code></pre>
+<p>The official prompt already asks for a short technical plan first: routes, tables, authorization, jobs. Let it produce that plan. Read it.</p>
+<p>You want pages like these:</p>
+<ul>
+<li><code>/admin/meeting-types</code> for the owner</li>
+<li><code>/admin/availability</code> for weekday hours</li>
+<li><code>/book/intro-30</code> for the guest</li>
+<li><code>/admin/bookings</code> for the list</li>
+</ul>
+<p>You want tables like <code>meeting_types</code>, <code>availability_rules</code>, <code>bookings</code>. A <code>holds</code> table can wait until prompt 4 if the plan already mentions it. <code>calendar_connections</code> should not appear.</p>
+<p>If the plan includes OAuth, Stripe, or a users table for guests, send it back. Paste the non-goal again.</p>
+<p>When the plan is narrow, say go. Let it scaffold the app, the migrations, and empty screens.</p>
+<h3 id="what-to-check-after-the-scaffold">What to check after the scaffold</h3>
+<p>Start the app. Sign in as the owner. You should see empty admin screens and a public booking URL that 404s until a meeting type exists.</p>
+<p>Open the migrations. <code>bookings.start_at</code> is a UTC timestamp. There is no <code>busy_times</code> table from Google. If the README is a placeholder, stop and make the agent write a real one before you add logic.</p>
+<h2 id="prompt-2-create-the-meeting-type-and-the-hours">Prompt 2. Create the meeting type and the hours</h2>
+<p>Now fill the first two admin screens.</p>
+<pre class="astro-code github-dark" style="background-color:#24292e;color:#e1e4e8; overflow-x: auto;" tabindex="0" data-language="text"><code><span class="line"><span>Implement meeting types and weekly availability for Slot.</span></span>
+<span class="line"><span></span></span>
+<span class="line"><span>An owner can create one active meeting type in v1: title, duration</span></span>
+<span class="line"><span>(30 or 60 minutes), location text, buffer after, minimum notice,</span></span>
+<span class="line"><span>and booking horizon.</span></span>
+<span class="line"><span></span></span>
+<span class="line"><span>Weekly hours live on that meeting type. Weekdays plus a from time</span></span>
+<span class="line"><span>and a to time in the owner's IANA timezone, for example</span></span>
+<span class="line"><span>America/New_York. No date overrides yet.</span></span>
+<span class="line"><span></span></span>
+<span class="line"><span>Store every instant in UTC. Keep the timezone name on the meeting</span></span>
+<span class="line"><span>type. Show owner times in that zone with the label next to them.</span></span>
+<span class="line"><span></span></span>
+<span class="line"><span>Seed one meeting type:</span></span>
+<span class="line"><span>- id intro-30</span></span>
+<span class="line"><span>- title Intro call</span></span>
+<span class="line"><span>- 30 minutes</span></span>
+<span class="line"><span>- Mon-Fri 09:00-17:00 America/New_York</span></span>
+<span class="line"><span>- 15 minute buffer after</span></span>
+<span class="line"><span>- 4 hour minimum notice</span></span>
+<span class="line"><span>- 14 day horizon</span></span>
+<span class="line"><span></span></span>
+<span class="line"><span>Done when I can save those fields, refresh, and see the same</span></span>
+<span class="line"><span>numbers. Do not generate slots yet.</span></span></code></pre>
+<p>Notice that 4 hours of notice is <code>noticeMin: 240</code>. Agents like to invent a 24-hour notice because it looks safer. Pin the numbers. Keep weekday checks out of the slot-slicing file.</p>
+<h3 id="what-to-check-after-the-hours-save">What to check after the hours save</h3>
+<p>Create <code>Intro call</code>. Refresh. Duration 30, hours 09:00-17:00, timezone <code>America/New_York</code>.</p>
+<p>Refuse <code>from: 17:00</code> with <code>to: 09:00</code>. Overnight rules break DST math later. Refuse a notice or horizon of 0.</p>
+<h2 id="prompt-3-generate-the-slots-the-guest-sees">Prompt 3. Generate the slots the guest sees</h2>
+<p>The first mini-prompt on the product page is “The slot generator is just interval subtraction”. Use a tighter version so the agent does not pull a calendar feed.</p>
+<pre class="astro-code github-dark" style="background-color:#24292e;color:#e1e4e8; overflow-x: auto;" tabindex="0" data-language="text"><code><span class="line"><span>Build slot generation for /book/intro-30.</span></span>
+<span class="line"><span></span></span>
+<span class="line"><span>Inputs: the meeting type's weekly hours, duration, buffer after,</span></span>
+<span class="line"><span>minimum notice, booking horizon, and existing confirmed bookings.</span></span>
+<span class="line"><span>No calendar busy times. No date overrides.</span></span>
+<span class="line"><span></span></span>
+<span class="line"><span>Do the math in UTC. Expand the weekday window into concrete</span></span>
+<span class="line"><span>intervals for the requested day. Subtract each confirmed booking</span></span>
+<span class="line"><span>padded by the buffer. Clip to notice and horizon. Slice what</span></span>
+<span class="line"><span>survives into duration-sized starts.</span></span>
+<span class="line"><span></span></span>
+<span class="line"><span>Display those starts in the guest timezone. Keep a timezone</span></span>
+<span class="line"><span>selector on the page. Default it to the browser timezone.</span></span>
+<span class="line"><span>Every time on screen needs a zone label.</span></span>
+<span class="line"><span></span></span>
+<span class="line"><span>Seed two confirmed bookings on Monday 2026-10-26:</span></span>
+<span class="line"><span>- 14:00 UTC</span></span>
+<span class="line"><span>- 15:00 UTC</span></span>
+<span class="line"><span></span></span>
+<span class="line"><span>Done when /book/intro-30 for that Monday hides 14:00 UTC and</span></span>
+<span class="line"><span>15:00 UTC, keeps 13:30 UTC free if it still fits, and does</span></span>
+<span class="line"><span>not offer a slot inside the 15 minute buffer after 15:00 UTC.</span></span></code></pre>
+<p>You do not call Calendly’s API. Copy the product rule: weekly hours in a named timezone, bookings as UTC instants. For v1, busy is only your own <code>bookings</code> table. The teardown covers the cooked-vs-raw split if you want it.</p>
+<p>A compact version of the subtraction looks like this.</p>
+<pre class="astro-code github-dark" style="background-color:#24292e;color:#e1e4e8; overflow-x: auto;" tabindex="0" data-language="js"><code><span class="line"><span style="color:#F97583">function</span><span style="color:#B392F0"> overlaps</span><span style="color:#E1E4E8">(</span><span style="color:#FFAB70">aStart</span><span style="color:#E1E4E8">, </span><span style="color:#FFAB70">aEnd</span><span style="color:#E1E4E8">, </span><span style="color:#FFAB70">bStart</span><span style="color:#E1E4E8">, </span><span style="color:#FFAB70">bEnd</span><span style="color:#E1E4E8">) {</span></span>
+<span class="line"><span style="color:#F97583">  return</span><span style="color:#E1E4E8"> aStart </span><span style="color:#F97583">&lt;</span><span style="color:#E1E4E8"> bEnd </span><span style="color:#F97583">&amp;&amp;</span><span style="color:#E1E4E8"> bStart </span><span style="color:#F97583">&lt;</span><span style="color:#E1E4E8"> aEnd</span></span>
+<span class="line"><span style="color:#E1E4E8">}</span></span>
+<span class="line"></span>
+<span class="line"><span style="color:#F97583">function</span><span style="color:#B392F0"> slotTaken</span><span style="color:#E1E4E8">(</span><span style="color:#FFAB70">startAt</span><span style="color:#E1E4E8">, </span><span style="color:#FFAB70">durationMin</span><span style="color:#E1E4E8">, </span><span style="color:#FFAB70">bufferAfterMin</span><span style="color:#E1E4E8">, </span><span style="color:#FFAB70">bookings</span><span style="color:#E1E4E8">) {</span></span>
+<span class="line"><span style="color:#F97583">  const</span><span style="color:#79B8FF"> endAt</span><span style="color:#F97583"> =</span><span style="color:#F97583"> new</span><span style="color:#B392F0"> Date</span><span style="color:#E1E4E8">(startAt.</span><span style="color:#B392F0">getTime</span><span style="color:#E1E4E8">() </span><span style="color:#F97583">+</span><span style="color:#E1E4E8"> durationMin </span><span style="color:#F97583">*</span><span style="color:#79B8FF"> 60</span><span style="color:#F97583"> *</span><span style="color:#79B8FF"> 1000</span><span style="color:#E1E4E8">)</span></span>
+<span class="line"><span style="color:#F97583">  const</span><span style="color:#79B8FF"> blockedUntil</span><span style="color:#F97583"> =</span><span style="color:#F97583"> new</span><span style="color:#B392F0"> Date</span><span style="color:#E1E4E8">(endAt.</span><span style="color:#B392F0">getTime</span><span style="color:#E1E4E8">() </span><span style="color:#F97583">+</span><span style="color:#E1E4E8"> bufferAfterMin </span><span style="color:#F97583">*</span><span style="color:#79B8FF"> 60</span><span style="color:#F97583"> *</span><span style="color:#79B8FF"> 1000</span><span style="color:#E1E4E8">)</span></span>
+<span class="line"></span>
+<span class="line"><span style="color:#F97583">  return</span><span style="color:#E1E4E8"> bookings.</span><span style="color:#B392F0">some</span><span style="color:#E1E4E8">((</span><span style="color:#FFAB70">booking</span><span style="color:#E1E4E8">) </span><span style="color:#F97583">=&gt;</span><span style="color:#E1E4E8"> {</span></span>
+<span class="line"><span style="color:#F97583">    const</span><span style="color:#79B8FF"> bookedStart</span><span style="color:#F97583"> =</span><span style="color:#F97583"> new</span><span style="color:#B392F0"> Date</span><span style="color:#E1E4E8">(booking.startAt)</span></span>
+<span class="line"><span style="color:#F97583">    const</span><span style="color:#79B8FF"> bookedEnd</span><span style="color:#F97583"> =</span><span style="color:#F97583"> new</span><span style="color:#B392F0"> Date</span><span style="color:#E1E4E8">(bookedStart.</span><span style="color:#B392F0">getTime</span><span style="color:#E1E4E8">() </span><span style="color:#F97583">+</span><span style="color:#E1E4E8"> durationMin </span><span style="color:#F97583">*</span><span style="color:#79B8FF"> 60</span><span style="color:#F97583"> *</span><span style="color:#79B8FF"> 1000</span><span style="color:#E1E4E8">)</span></span>
+<span class="line"><span style="color:#F97583">    return</span><span style="color:#B392F0"> overlaps</span><span style="color:#E1E4E8">(startAt, blockedUntil, bookedStart, bookedEnd)</span></span>
+<span class="line"><span style="color:#E1E4E8">  })</span></span>
+<span class="line"><span style="color:#E1E4E8">}</span></span>
+<span class="line"></span>
+<span class="line"><span style="color:#B392F0">slotTaken</span><span style="color:#E1E4E8">(</span></span>
+<span class="line"><span style="color:#F97583">  new</span><span style="color:#B392F0"> Date</span><span style="color:#E1E4E8">(</span><span style="color:#9ECBFF">'2026-10-26T14:30:00.000Z'</span><span style="color:#E1E4E8">),</span></span>
+<span class="line"><span style="color:#79B8FF">  30</span><span style="color:#E1E4E8">,</span></span>
+<span class="line"><span style="color:#79B8FF">  15</span><span style="color:#E1E4E8">,</span></span>
+<span class="line"><span style="color:#E1E4E8">  [{ startAt: </span><span style="color:#9ECBFF">'2026-10-26T14:00:00.000Z'</span><span style="color:#E1E4E8"> }],</span></span>
+<span class="line"><span style="color:#E1E4E8">)</span></span>
+<span class="line"><span style="color:#6A737D">//true  14:30 sits inside the 15 minute buffer</span></span></code></pre>
+<p>The page should show a date strip and a list of start times. Empty days say so. Do not render a grid of disabled buttons for every 30-minute mark in the horizon.</p>
+<h3 id="what-to-check-after-slot-generation">What to check after slot generation</h3>
+<p>Open <code>/book/intro-30</code> as a guest. Switch the timezone to <code>Europe/Rome</code>. On Monday 26 October 2026, 14:00 UTC is 10:00 in New York and 15:00 in Rome. The label has to say that.</p>
+<p>A day past the 14-day horizon has no slots. A start two hours from now is hidden.</p>
+<p>Confirm that Monday is missing 14:00 UTC and 15:00 UTC. If 13:30 UTC still fits the window, it stays. 15:30 UTC is gone because of the buffer.</p>
+<p>If the list ignores bookings, the generator is reading hours only. Send the seed rows back.</p>
+<h2 id="prompt-4-book-the-slot-with-a-lock">Prompt 4. Book the slot with a lock</h2>
+<p>The second mini-prompt is “Two guests, one slot, exactly one winner”. Paste this after the generator works.</p>
+<pre class="astro-code github-dark" style="background-color:#24292e;color:#e1e4e8; overflow-x: auto;" tabindex="0" data-language="text"><code><span class="line"><span>Build the booking confirmation path.</span></span>
+<span class="line"><span></span></span>
+<span class="line"><span>When a guest picks a time, create a hold row: meeting_type_id,</span></span>
+<span class="line"><span>start_at, expires_at five minutes from now. Show the guest form</span></span>
+<span class="line"><span>for name, email, and timezone.</span></span>
+<span class="line"><span></span></span>
+<span class="line"><span>On submit, in one transaction:</span></span>
+<span class="line"><span>1. Re-check the slot against hours, notice, horizon, bookings,</span></span>
+<span class="line"><span>   and holds that have not expired.</span></span>
+<span class="line"><span>2. Insert the booking.</span></span>
+<span class="line"><span>3. Delete the hold.</span></span>
+<span class="line"><span></span></span>
+<span class="line"><span>Add a unique constraint on (meeting_type_id, start_at) for</span></span>
+<span class="line"><span>confirmed bookings. That is the last line of defense, not a</span></span>
+<span class="line"><span>courtesy check.</span></span>
+<span class="line"><span></span></span>
+<span class="line"><span>The loser sees a specific message: this slot just went, here</span></span>
+<span class="line"><span>are the nearest two alternatives. Expired holds release on</span></span>
+<span class="line"><span>read. No cleanup cron.</span></span>
+<span class="line"><span></span></span>
+<span class="line"><span>Guests do not get accounts. Do not send email yet. Show a</span></span>
+<span class="line"><span>confirmation screen with the UTC instant and both timezone</span></span>
+<span class="line"><span>labels.</span></span>
+<span class="line"><span></span></span>
+<span class="line"><span>Done when two concurrent submits for 13:00 UTC on</span></span>
+<span class="line"><span>2026-10-27 produce one booking and one slot-taken response.</span></span></code></pre>
+<p>A hold that only lives in memory is useless the moment you run two Workers. Put it in D1.</p>
+<pre class="astro-code github-dark" style="background-color:#24292e;color:#e1e4e8; overflow-x: auto;" tabindex="0" data-language="js"><code><span class="line"><span style="color:#F97583">async</span><span style="color:#F97583"> function</span><span style="color:#B392F0"> confirmBooking</span><span style="color:#E1E4E8">(</span><span style="color:#FFAB70">db</span><span style="color:#E1E4E8">, </span><span style="color:#FFAB70">draft</span><span style="color:#E1E4E8">) {</span></span>
+<span class="line"><span style="color:#F97583">  return</span><span style="color:#E1E4E8"> db.</span><span style="color:#B392F0">transaction</span><span style="color:#E1E4E8">(</span><span style="color:#F97583">async</span><span style="color:#E1E4E8"> (</span><span style="color:#FFAB70">tx</span><span style="color:#E1E4E8">) </span><span style="color:#F97583">=&gt;</span><span style="color:#E1E4E8"> {</span></span>
+<span class="line"><span style="color:#F97583">    const</span><span style="color:#79B8FF"> open</span><span style="color:#F97583"> =</span><span style="color:#F97583"> await</span><span style="color:#E1E4E8"> tx.</span><span style="color:#B392F0">slotStillOpen</span><span style="color:#E1E4E8">(draft.meetingTypeId, draft.startAt)</span></span>
+<span class="line"><span style="color:#F97583">    if</span><span style="color:#E1E4E8"> (</span><span style="color:#F97583">!</span><span style="color:#E1E4E8">open) {</span></span>
+<span class="line"><span style="color:#F97583">      return</span><span style="color:#E1E4E8"> { ok: </span><span style="color:#79B8FF">false</span><span style="color:#E1E4E8">, reason: </span><span style="color:#9ECBFF">'slot-taken'</span><span style="color:#E1E4E8"> }</span></span>
+<span class="line"><span style="color:#E1E4E8">    }</span></span>
+<span class="line"></span>
+<span class="line"><span style="color:#F97583">    try</span><span style="color:#E1E4E8"> {</span></span>
+<span class="line"><span style="color:#F97583">      const</span><span style="color:#79B8FF"> booking</span><span style="color:#F97583"> =</span><span style="color:#F97583"> await</span><span style="color:#E1E4E8"> tx.</span><span style="color:#B392F0">insertBooking</span><span style="color:#E1E4E8">({</span></span>
+<span class="line"><span style="color:#F97583">        ...</span><span style="color:#E1E4E8">draft,</span></span>
+<span class="line"><span style="color:#E1E4E8">        status: </span><span style="color:#9ECBFF">'confirmed'</span><span style="color:#E1E4E8">,</span></span>
+<span class="line"><span style="color:#E1E4E8">      })</span></span>
+<span class="line"><span style="color:#F97583">      await</span><span style="color:#E1E4E8"> tx.</span><span style="color:#B392F0">deleteHold</span><span style="color:#E1E4E8">(draft.holdId)</span></span>
+<span class="line"><span style="color:#F97583">      return</span><span style="color:#E1E4E8"> { ok: </span><span style="color:#79B8FF">true</span><span style="color:#E1E4E8">, booking }</span></span>
+<span class="line"><span style="color:#E1E4E8">    } </span><span style="color:#F97583">catch</span><span style="color:#E1E4E8"> (error) {</span></span>
+<span class="line"><span style="color:#F97583">      if</span><span style="color:#E1E4E8"> (error.code </span><span style="color:#F97583">===</span><span style="color:#9ECBFF"> 'UNIQUE'</span><span style="color:#E1E4E8">) {</span></span>
+<span class="line"><span style="color:#F97583">        return</span><span style="color:#E1E4E8"> { ok: </span><span style="color:#79B8FF">false</span><span style="color:#E1E4E8">, reason: </span><span style="color:#9ECBFF">'slot-taken'</span><span style="color:#E1E4E8"> }</span></span>
+<span class="line"><span style="color:#E1E4E8">      }</span></span>
+<span class="line"><span style="color:#F97583">      throw</span><span style="color:#E1E4E8"> error</span></span>
+<span class="line"><span style="color:#E1E4E8">    }</span></span>
+<span class="line"><span style="color:#E1E4E8">  })</span></span>
+<span class="line"><span style="color:#E1E4E8">}</span></span></code></pre>
+<p>Name and email stay server-validated. A missing <code>@</code> keeps the hold alive and the form filled.</p>
+<h3 id="what-to-check-after-the-lock">What to check after the lock</h3>
+<p>Book 13:00 UTC on 2026-10-27 as Jordan. The confirmation shows 13:00 UTC, 09:00 in New York, 14:00 in Rome. Refresh <code>/admin/bookings</code>. The row is there.</p>
+<p>Open the same slot in another browser. You get the slot-taken page, not a second row. Reload <code>/book/intro-30</code>. 13:00 UTC is gone.</p>
+<p>Wait out a hold without submitting. The slot comes back on the next read after <code>expires_at</code>.</p>
+<p>If two bookings share a start time, the unique constraint is missing. Add it before you decorate the confirmation screen.</p>
+<h2 id="failures-the-agent-ships-anyway">Failures the agent ships anyway</h2>
+<h3 id="google-calendar-in-step-one">Google Calendar in step one</h3>
+<p>The official journeys mention connecting a calendar. That is the 2-day row. If <code>CALENDAR_CLIENT_ID</code> appears in <code>.env.example</code> during the scaffold, delete it and paste the first prompt again.</p>
+<h3 id="floating-local-times">Floating local times</h3>
+<p>Agents store <code>2026-10-26 09:00</code> with no zone. A guest in Rome then books a slot that never existed in New York. Store UTC. Keep <code>America/New_York</code> on the meeting type and <code>Europe/Rome</code> on the booking.</p>
+<h3 id="dst-holes">DST holes</h3>
+<p>09:30 may not exist on a spring-forward Sunday. Generate from UTC instants, then format. Skip a local wall time that does not exist. Seed hours are weekdays, so you can leave Sunday closed in v1.</p>
+<h3 id="a-grey-button-is-not-a-lock">A grey button is not a lock</h3>
+<p>Two guests who loaded the page a minute ago both see 13:00 as free. Only the unique constraint and the transaction decide who gets the slot.</p>
+<h3 id="guest-accounts">Guest accounts</h3>
+<p>Guests type a name and an email. Magic links for guests are the 2-day row in disguise.</p>
+<p>A vote grid for times, without availability math, is <a href="/build-your-own-doodle/">Doodle</a>, $7–$9 a month, about 3 hours. Build Slot if you already know your hours.</p>
+<h2 id="deploy-the-booking-page">Deploy the booking page</h2>
+<p>The product pages put hosting this way: a focused replacement costs your build time plus close-to-zero hosting.</p>
+<p>Slot wants Astro, HTMX, and D1. Put it on a subdomain you already own, <code>book.flaviocopes.com</code>. The AHA prompt points at Cloudflare D1 for the tables and Workers for the endpoints.</p>
+<p>Ship with the seed meeting type. Book yourself from a phone. Confirm the admin list shows that row after a refresh. Point one real intro-call link at it for a week.</p>
+<p>If you miss reschedule links or a <code>.ics</code> attachment, those are the 2-day row and the last two mini-prompts on the card. Add them after a guest asks.</p>
+<p>Take a D1 backup, then cancel Calendly, or Cal.com, or SavvyCal, or Acuity, whichever one you pay for.</p>
+<h2 id="what-to-skip-on-purpose">What to skip on purpose</h2>
+<p>Leave out team routing, payments, and a second calendar provider.</p>
+<figure>
+<svg role="img" aria-label="Easy half versus skip half of a Calendly clone: six hours for one meeting type, weekly hours, slot math, and a booking lock, versus a month of team routing, payments, and every calendar provider" viewBox="0 0 360 348" xmlns="http://www.w3.org/2000/svg">
+  <rect x="18" y="10" width="324" height="152" fill="var(--surface)" stroke="var(--ink)" stroke-width="3"/>
+  <rect x="18" y="10" width="324" height="40" fill="var(--lime)" stroke="var(--ink)" stroke-width="3"/>
+  <text x="180" y="37" text-anchor="middle" font-family="Arial, Helvetica, sans-serif" font-weight="800" font-size="15" fill="var(--ink)">6-HOUR V1</text>
+  <text x="180" y="78" text-anchor="middle" font-family="Arial, Helvetica, sans-serif" font-weight="700" font-size="14" fill="var(--ink)">One meeting type and weekly hours</text>
+  <text x="180" y="106" text-anchor="middle" font-family="Arial, Helvetica, sans-serif" font-weight="700" font-size="14" fill="var(--ink)">Slots from hours minus bookings</text>
+  <text x="180" y="134" text-anchor="middle" font-family="Arial, Helvetica, sans-serif" font-weight="700" font-size="14" fill="var(--ink)">Hold, then one locking write</text>
+  <rect x="18" y="186" width="324" height="152" fill="var(--surface)" stroke="var(--ink)" stroke-width="3"/>
+  <rect x="18" y="186" width="324" height="40" fill="var(--coral)" stroke="var(--ink)" stroke-width="3"/>
+  <text x="180" y="213" text-anchor="middle" font-family="Arial, Helvetica, sans-serif" font-weight="800" font-size="15" fill="var(--ink)">SKIP THIS HALF</text>
+  <text x="180" y="254" text-anchor="middle" font-family="Arial, Helvetica, sans-serif" font-weight="700" font-size="14" fill="var(--ink)">Team routing and round robin</text>
+  <text x="180" y="282" text-anchor="middle" font-family="Arial, Helvetica, sans-serif" font-weight="700" font-size="14" fill="var(--ink)">Payments on the booking</text>
+  <text x="180" y="310" text-anchor="middle" font-family="Arial, Helvetica, sans-serif" font-weight="700" font-size="14" fill="var(--ink)">Every calendar provider</text>
+</svg>
+<figcaption>Ship the 6-hour page. Leave teams, payments, and extra calendars on the skip row.</figcaption>
+</figure>
+<p>Google Calendar sync is the honest next feature, not a v1 requirement. The teardown explains why busy times and DST make that row longer than it looks.</p>
+<p>A one-question intake form in front of the call is <a href="/build-your-own-typeform/">Typeform</a>, $29–$99 a month, about 2 hours. The <a href="/blog/a-typeform-replacement-is-a-form-and-a-table/">Typeform walkthrough</a> is that post.</p>
+<p>More writeups land on the <a href="/guides/">guides</a> index. The <a href="/#audit">audit</a> is the catalog if you want a smaller first ship.</p>
+<h2 id="start-now">Start now</h2>
+<p>Go to <a href="/build-your-own-calendly/">Build your own Calendly</a>. Copy the AHA prompt, or the stack you already write.</p>
+<p>Tell the agent the first estimate only: one meeting type, weekly hours, bookings. Six hours.</p>
+<p>Publish <code>book.flaviocopes.com</code>. Send one real intro-call link this week.</p>
+</div></article><section class="section" aria-labelledby="related-heading"><h2 id="related-heading">Products in this guide</h2><ul class="related-list"><li><a href="/build-your-own-calendly/">Build your own Calendly</a><span>$12–$20/mo · from 6 hours</span></li><li><a href="/build-your-own-doodle/">Build your own Doodle</a><span>$7–$9/mo · from 3 hours</span></li><li><a href="/build-your-own-typeform/">Build your own Typeform</a><span>$29–$99/mo · from 2 hours</span></li></ul><p class="related-home"><a href="/#audit">Browse all 109 buildable subscriptions →</a></p></section><section class="section" aria-labelledby="more-guides-heading"><h2 id="more-guides-heading">More guides</h2><ul class="related-list"><li><a href="/guides/how-to-build-a-typeform-alternative/">How to build a Typeform alternative</a><time datetime="2026-10-24">October 24, 2026</time></li><li><a href="/guides/build-your-own-link-shortener-step-by-step/">Build your own link shortener step by step</a><time datetime="2026-10-23">October 23, 2026</time></li><li><a href="/guides/how-to-build-a-linktree-alternative/">How to build a Linktree alternative</a><time datetime="2026-10-23">October 23, 2026</time></li></ul><p class="related-home"><a href="/guides/">All step-by-step guides →</a></p></section></main><footer><a class="logo footer-logo" href="/"><span class="logo-mark">EZ</span><span>ezvibecode</span></a><p><a href="/blog/">Blog</a></p><p><a href="/guides/">Guides</a></p><p><a href="/changelog/">Changelog</a></p><p>A tiny idea about tiny software.</p><p>Built with vibes, obviously.</p></footer><script type="module">var e=document.querySelector(`#theme-toggle`);localStorage.getItem(`vibe-theme`)===`dark`&&(document.documentElement.dataset.theme=`dark`),e?.addEventListener(`click`,()=>{let e=document.documentElement.dataset.theme!==`dark`;document.documentElement.dataset.theme=e?`dark`:`light`,localStorage.setItem(`vibe-theme`,e?`dark`:`light`)});</script><script type="module" src="https://static.cloudflareinsights.com/beacon.min.js/vce701823e78c4301a35b7e07294d87301792088814092" integrity="sha512-UKNk8GbxkABxKcXYuLkO16EleLGUkcvJWtpSNmExE0Too3ZaFAxTscNWEc1OdAv5/BikHawapSCaiD2XCmp+Bw==" data-cf-beacon='{"version":"2024.11.0","token":"228ace6b78e04bb494384851ece32c99","r":1,"spa":2}' crossorigin="anonymous"></script>
+</body></html>

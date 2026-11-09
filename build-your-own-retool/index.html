@@ -1,0 +1,390 @@
+<!DOCTYPE html><html lang="en"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width"><title>How to Vibe Code Your Own Retool Alternative</title><meta name="description" content="Learn how to build your own with ezvibecode Retool alternative with copyable AI prompts, a scoped feature list, and realistic build estimates starting at 4 days. The same build also replaces Appsmith and Superblocks."><link rel="canonical" href="https://ezvibecode.com/build-your-own-retool/"><meta name="theme-color" content="#f4f1e8"><link rel="icon" href="/favicon.ico" sizes="32x32"><link rel="icon" href="/favicon.png" type="image/png" sizes="512x512"><link rel="apple-touch-icon" href="/apple-touch-icon.png" sizes="180x180"><meta property="og:type" content="article"><meta property="og:site_name" content="ezvibecode"><meta property="og:title" content="How to Vibe Code Your Own Retool Alternative"><meta property="og:description" content="Learn how to build your own with ezvibecode Retool alternative with copyable AI prompts, a scoped feature list, and realistic build estimates starting at 4 days. The same build also replaces Appsmith and Superblocks."><meta property="og:url" content="https://ezvibecode.com/build-your-own-retool/"><meta property="og:image" content="https://ezvibecode.com/og/build-your-own-retool.png"><meta property="og:image:type" content="image/png"><meta property="og:image:width" content="1200"><meta property="og:image:height" content="630"><meta property="og:image:alt" content="How to Vibe Code Your Own Retool Alternative"><meta name="twitter:card" content="summary_large_image"><meta name="twitter:title" content="How to Vibe Code Your Own Retool Alternative"><meta name="twitter:description" content="Learn how to build your own with ezvibecode Retool alternative with copyable AI prompts, a scoped feature list, and realistic build estimates starting at 4 days. The same build also replaces Appsmith and Superblocks."><meta name="twitter:image" content="https://ezvibecode.com/og/build-your-own-retool.png"><meta name="twitter:image:alt" content="How to Vibe Code Your Own Retool Alternative"><script type="application/ld+json">{"@context":"https://schema.org","@type":"FAQPage","mainEntity":[{"@type":"Question","name":"How long does it take to build your own Retool?","acceptedAnswer":{"@type":"Answer","text":"A basic version — record lookup, ops dashboard, approval queue — takes about 4 days. Roughly 2 weeks+ gets you a solid v1 with roles, immutable audit log, validated write endpoints. Matching everything Retool really does (drag-and-drop builder, query ide, plugin system) is closer to 3 months+, which is exactly why you should scope down instead."}},{"@type":"Question","name":"How much does Retool cost if I keep subscribing?","acceptedAnswer":{"@type":"Answer","text":"Retool runs $12–$65 per person per month on public paid plans, which is $144–$780 per year for every person on your team. A focused self-built replacement costs your build time plus close-to-zero hosting."}},{"@type":"Question","name":"What stack should I use to build a Retool alternative?","acceptedAnswer":{"@type":"Answer","text":"The build prompt on this page ships in four flavors: the AHA stack (Astro, HTMX, Alpine.js), Next.js, Laravel, and Ruby on Rails. The capability context for this product is Astro, HTMX, D1. Pick the stack you already know — the scope matters more than the framework."}},{"@type":"Question","name":"What features does a minimal Retool replacement need?","acceptedAnswer":{"@type":"Answer","text":"A useful v1 needs: a record lookup and edit panel with typed fields and validation; an ops dashboard showing the handful of numbers the team actually checks; an approval queue with pending, approved, and rejected states; role-based access separating viewers, editors, and approvers; an immutable audit log of every sensitive read and every write. Everything else is scope creep until you personally miss it."}},{"@type":"Question","name":"What should I deliberately not build?","acceptedAnswer":{"@type":"Answer","text":"Do not build a drag-and-drop app builder, a query IDE, a plugin system, or a generic component library."}},{"@type":"Question","name":"Does this build also replace Appsmith and Superblocks?","acceptedAnswer":{"@type":"Answer","text":"Yes. Retool, Appsmith and Superblocks all solve the same core job — give the team safe, audited screens for the lookups, dashboards, and approvals they run every week. The scoped v1 on this page covers what most people use any of them for, so one focused build replaces whichever you currently pay for."}}]}</script><script type="application/ld+json">{"@context":"https://schema.org","@type":"BreadcrumbList","itemListElement":[{"@type":"ListItem","position":1,"name":"ezvibecode","item":"https://ezvibecode.com/"},{"@type":"ListItem","position":2,"name":"Build your own Retool","item":"https://ezvibecode.com/build-your-own-retool/"}]}</script><script type="application/ld+json">{"@context":"https://schema.org","@type":"TechArticle","headline":"How to Vibe Code Your Own Retool Alternative","description":"Learn how to build your own with ezvibecode Retool alternative with copyable AI prompts, a scoped feature list, and realistic build estimates starting at 4 days. The same build also replaces Appsmith and Superblocks.","url":"https://ezvibecode.com/build-your-own-retool/","image":"https://ezvibecode.com/og/build-your-own-retool.png","author":{"@type":"Organization","name":"ezvibecode","url":"https://ezvibecode.com/"}}</script><link rel="stylesheet" href="/_astro/build-your-own-_slug_.0qOs6ThE.css"></head><body><header class="site-header"><a class="logo" href="/" aria-label="ezvibecode home"><span class="logo-mark">EZ</span><span>ezvibecode</span></a><nav class="header-links" aria-label="Site"><a class="header-link" href="/blog/">Blog</a><a class="header-link" href="/guides/">Guides</a><a class="header-link" href="/#audit">All 109 apps</a></nav><button class="icon-button" id="theme-toggle" type="button" aria-label="Toggle dark mode" title="Toggle dark mode">◐</button></header><main><nav class="breadcrumb" aria-label="Breadcrumb"><a href="/">Home</a><span aria-hidden="true">/</span><span aria-current="page">Build your own Retool</span></nav><section class="hero"><p class="eyebrow">Operations · Side quest build</p><h1>How to Vibe Code Your Own <em>Retool Alternative</em></h1><p class="lede">Three internal tools beat one drag-and-drop empire. Retool charges $12–$65 per person per month — that’s $144–$780 a year per person — for something you can replace with focused software of your own. Here is the honest scope, the honest timeline, and the exact prompt to hand your coding agent.</p><div class="hero-meta"><span class="effort ambitious">from 4 days</span><span class="verdict">Tools, not the builder</span></div></section><section class="section" aria-labelledby="who-heading"><h2 id="who-heading">Who this replacement is for</h2><p>This build targets a small team that keeps opening the production database to answer questions. The goal: give the team safe, audited screens for the lookups, dashboards, and approvals they run every week. If you need more than that, keep paying — the point of building it yourself is owning a tool shaped exactly like your workflow, not re-implementing a venture-funded roadmap.</p><p class="also-replaces">Same build, different logo: this v1 also replaces <strong>Appsmith and Superblocks</strong> — they all solve the same core job.</p></section><section class="section" aria-labelledby="time-heading"><h2 id="time-heading">How long it actually takes</h2><p>One number would be a lie, so here are three. Each tier is a real, usable product — pick the one that matches how much of Retool you actually use.</p><table class="estimate-table"><thead><tr><th scope="col">Estimate</th><th scope="col">What you get</th></tr></thead><tbody><tr><th scope="row">4 days</th><td>record lookup, ops dashboard, approval queue</td></tr><tr><th scope="row">2 weeks+</th><td>roles, immutable audit log, validated write endpoints</td></tr><tr><th scope="row">3 months+</th><td>drag-and-drop builder, query ide, plugin system — the part you should probably skip</td></tr></tbody></table></section><section class="section" aria-labelledby="features-heading"><h2 id="features-heading">What a minimal Retool alternative needs</h2><ul class="feature-list"><li>a record lookup and edit panel with typed fields and validation</li><li>an ops dashboard showing the handful of numbers the team actually checks</li><li>an approval queue with pending, approved, and rejected states</li><li>role-based access separating viewers, editors, and approvers</li><li>an immutable audit log of every sensitive read and every write</li></ul><div class="fact-grid"><div class="fact"><h3>Data model</h3><p>User, Role, ApprovalRequest, AuditEntry</p></div><div class="fact"><h3>Integrations</h3><p>company OAuth provider</p></div><div class="fact"><h3>Capability context</h3><p>Astro, HTMX, D1</p></div></div><div class="callout guardrail"><h3>The guardrail</h3><p>Route every write through validated, permission-checked endpoints recorded in an append-only audit log, and never expose raw SQL to the browser.</p></div><div class="callout nongoal"><h3>Deliberate non-goals</h3><p>Do not build a drag-and-drop app builder, a query IDE, a plugin system, or a generic component library.</p></div></section><section class="section" aria-labelledby="prompt-heading"><h2 id="prompt-heading">The complete build prompt</h2><p>Copy this into your coding agent of choice. It is scoped for a useful v1 — journeys, screens, business rules, data model, security, tests, and acceptance scenarios included. Pick your stack:</p><div class="prompt-tabs" role="tablist" aria-label="Choose your stack"><button class="prompt-tab" id="prompt-tab-aha" type="button" role="tab" aria-selected="true" aria-controls="prompt-panel-aha" tabindex="0" data-framework="aha">AHA</button><button class="prompt-tab" id="prompt-tab-nextjs" type="button" role="tab" aria-selected="false" aria-controls="prompt-panel-nextjs" tabindex="-1" data-framework="nextjs">Next.js</button><button class="prompt-tab" id="prompt-tab-laravel" type="button" role="tab" aria-selected="false" aria-controls="prompt-panel-laravel" tabindex="-1" data-framework="laravel">Laravel</button><button class="prompt-tab" id="prompt-tab-rails" type="button" role="tab" aria-selected="false" aria-controls="prompt-panel-rails" tabindex="-1" data-framework="rails">Ruby on Rails</button></div><div class="prompt-box" id="prompt-panel-aha" role="tabpanel" aria-labelledby="prompt-tab-aha" tabindex="0"><pre>You are building a production-ready software product named “Backdesk”, a deliberately focused alternative to Retool. Build a complete, usable vertical slice—not a landing page, static mockup, or disconnected collection of components.
+
+WORKING AGREEMENT
+Before writing implementation code, produce a short technical plan that names the routes or pages, server actions or endpoints, data tables, important state transitions, authorization boundaries, background jobs, and external adapters. Resolve contradictions in favor of the narrow audience and non-goals below. Prefer a small, legible architecture over speculative abstraction, but do not omit persistence, validation, error handling, or tests.
+
+PRODUCT BRIEF
+Primary user: a small team that keeps opening the production database to answer questions.
+Primary outcome: give the team safe, audited screens for the lookups, dashboards, and approvals they run every week.
+Product principle: optimize the exact workflow below instead of copying the full breadth of Retool. A first-time user should understand what to do from the interface itself, without a tour or documentation.
+
+END-TO-END USER JOURNEYS
+Implement all of these flows through the real interface and persistent data layer:
+1. An operator signs in through the company OAuth provider, looks up a customer record, edits a typed field through validation, and the change lands in the audit log.
+2. A support agent submits a refund request into the approval queue; an approver reviews the attached record context, approves it, and the action executes exactly once.
+3. A manager opens the ops dashboard, checks the week’s key numbers, and drills into an anomaly without ever touching a database console.
+
+SCREENS AND INFORMATION ARCHITECTURE
+Build these as coherent responsive views. Each screen must specify its primary action, secondary actions, visible status, validation feedback, empty state, loading or pending state, success confirmation, and recoverable failure state.
+1. Record panel: search by ID or email, read view with sensitive fields masked, typed edit form with validation, and per-record change history.
+2. Ops dashboard: the agreed handful of metrics, a time-range selector, threshold highlights, and drill-down links to the records behind each number.
+3. Approval queue: pending, approved, and rejected tabs, request context, requester and approver identities, decision notes, and execution status.
+4. Admin: user list with roles, a role capability matrix, audit-log search by actor and record, and export.
+
+CORE CAPABILITIES
+1. a record lookup and edit panel with typed fields and validation
+2. an ops dashboard showing the handful of numbers the team actually checks
+3. an approval queue with pending, approved, and rejected states
+4. role-based access separating viewers, editors, and approvers
+5. an immutable audit log of every sensitive read and every write
+
+DETAILED BEHAVIOR AND BUSINESS RULES
+Treat these as server-enforced product requirements, not interface suggestions:
+1. Enforce roles on the server for every read and write; the browser never receives data or actions the current role does not permit.
+2. Append every sensitive read, write, approval decision, and role change to an immutable audit log with actor, timestamp, and before-and-after values.
+3. Require the approver to be a different person than the requester, make execution idempotent, and never re-execute a decided request.
+4. Accept writes only through validated, typed endpoints with allow-listed fields; no raw SQL or generic update path exists.
+
+DATA MODEL AND LIFECYCLE
+Design a small relational schema centered on User, Role, ApprovalRequest, AuditEntry. Before implementing it, document:
+1. Each table’s purpose, primary key, ownership or tenant boundary, timestamps, status fields, and important attributes.
+2. Foreign keys, uniqueness constraints, check constraints, indexes needed by the named screens, and transaction boundaries for multi-record changes.
+3. The allowed lifecycle or state transitions, who may trigger each transition, which transitions are terminal or reversible, and what audit history must remain immutable.
+4. Archive, retention, and deletion behavior, including what happens to dependent records and external files.
+5. Idempotency strategy for submissions, jobs, imports, notifications, webhooks, or retries where applicable.
+Use migrations rather than ad-hoc schema creation. Store time instants consistently and retain named timezone context whenever local schedules or dates matter. Never rely on a counter, disabled button, or client-side check to preserve a business invariant.
+
+USERS, AUTHENTICATION, AND PERMISSIONS
+Implement only the roles required by the stated audience. Make the ownership and visibility model explicit before coding. Enforce authorization in every server-side query and mutation, including search, exports, attachments, live updates, and guessed URLs—not merely by hiding controls. Use secure session defaults, protect state-changing requests, and provide an understandable signed-out, expired-session, and forbidden state. Seed distinct users when multiple roles are required so permissions can be demonstrated and tested.
+
+INTERACTION AND VISUAL DIRECTION
+The product should feel fast, calm, focused, and credible rather than like a generic admin template. Use a clear visual hierarchy, restrained color, readable typography, generous hit targets, and consistent placement for primary actions. Start with server-rendered HTML and progressively enhance only the interactions that benefit from it. The core workflow must remain understandable if enhancement fails.
+
+Start with server-rendered Astro pages and ordinary HTML forms. Use HTMX for form submissions, partial navigation, and server-driven updates, then Alpine.js only for small local browser state. The core workflow must remain understandable if either enhancement layer fails.
+
+Design mobile layouts intentionally instead of simply stacking desktop panels. Support keyboard navigation, visible focus, semantic landmarks, explicit labels, useful page titles, reduced-motion preferences, and screen-reader announcements for asynchronous results. Never use color alone to communicate state. Destructive actions require clear scope and confirmation; safe repeated actions should be idempotent.
+
+TECHNICAL DIRECTION
+Build this version with the AHA stack: Astro for routing, layouts, and server-rendered pages; HTMX for interactions that benefit from HTML fragment responses; and Alpine.js for small, local interface state. Prefer Cloudflare D1 for relational persistence, R2 for object storage, Workers for server endpoints and scheduled work, Durable Objects only for coordinated real-time state, and Workflows or Queues for durable background jobs—but only when the product requirements call for them.
+
+Keep domain rules in testable server-side modules instead of route handlers or UI components. Separate persistence, external providers, and background work behind small interfaces without building a framework. Prefer ordinary HTML forms and URLs for durable navigation; use optimistic interaction only when failure can be reconciled clearly.
+
+The product brief currently identifies Astro, HTMX, D1 as capability context. Preserve any required native, browser-only, edge, storage, real-time, or background-processing capability through a narrow adapter appropriate to the selected framework. If the core workflow genuinely requires native or browser APIs, keep that runtime as the primary execution surface rather than simulating inaccessible capabilities or inventing an unnecessary web surface.
+
+Integrate with company OAuth provider. For every integration:
+- List required environment variables in an .env.example without real secrets.
+- Add a small adapter with timeouts, normalized errors, and a deterministic local fake or development path.
+- Verify inbound signatures and deduplicate provider events where supported.
+- Keep credentials server-side, encrypt long-lived provider tokens at rest, and redact secrets and sensitive payloads from logs.
+- Define retry, backoff, and idempotency behavior for any side effect that can be repeated.
+
+SECURITY AND PRIVACY
+Route every write through validated, permission-checked endpoints recorded in an append-only audit log, and never expose raw SQL to the browser.
+Validate, normalize, and length-limit all untrusted input on the server. Escape rendered content by default, sanitize any intentionally accepted markup, rate-limit public or abuse-prone actions, and use private object storage plus short-lived authorized URLs for sensitive files. Collect the minimum personal data necessary for the named workflow. Document retention and deletion behavior. Add specific protections for the riskier surfaces in this app, such as uploads, redirects, outbound requests, email delivery, OAuth, webhooks, CSV import or export, and real-time connections.
+
+ACCEPTANCE SCENARIOS
+Automate these app-specific scenarios at the most appropriate level:
+1. Given a viewer role, opening a record shows masked sensitive fields and no edit controls, and a forged edit request is rejected server-side.
+2. Given two approvers acting on the same pending request at once, exactly one decision wins and the underlying action executes once.
+3. Given an edited customer field, the audit log records who changed it, when, and both old and new values, and the entry cannot be altered.
+
+TESTING
+Add focused unit tests for state transitions, authorization predicates, normalization, date or money calculations, and other risky domain rules. Add integration tests for persistence constraints and each external adapter’s success, timeout, retry, and rejection paths. Add at least one browser-level test for every end-to-end journey above, including one small-screen viewport. Tests must use isolated data and run through a documented single command.
+
+OPERATIONS AND FAILURE RECOVERY
+Add structured server logs with request, job, or event correlation IDs but no secrets or unnecessarily sensitive data. Make failures actionable in both the interface and logs. Background work must expose pending, succeeded, failed, and retrying states where relevant; do not silently swallow errors. Include safe database migration and rollback guidance, seed data, backup and restore notes, external-data cleanup behavior, and a basic health or diagnostic path appropriate to the stack.
+
+DELIVERABLES
+Ship the working application, migrations, representative seed data, tests, .env.example, and a concise README. The README must cover prerequisites, local setup, environment variables, migrations, seed and test commands, deployment, integration setup, backup and restore, security decisions, and known limitations. Seed data should exercise the happy path plus at least one empty, failed, overdue, expired, archived, or permission-restricted state relevant to the product.
+
+DEFINITION OF DONE
+The app is complete when a fresh developer can follow the README, create and migrate the database, run the app, sign in as each relevant role, complete every named journey using real persisted data, refresh without losing state, recover from common failures, and use the core interface on phone and desktop. All acceptance scenarios pass, permission boundaries are covered by tests, and no core screen is left as a placeholder.
+
+NON-GOALS
+Do not build a drag-and-drop app builder, a query IDE, a plugin system, or a generic component library.</pre></div><div class="prompt-box" id="prompt-panel-nextjs" role="tabpanel" aria-labelledby="prompt-tab-nextjs" tabindex="0" hidden><pre>You are building a production-ready software product named “Backdesk”, a deliberately focused alternative to Retool. Build a complete, usable vertical slice—not a landing page, static mockup, or disconnected collection of components.
+
+WORKING AGREEMENT
+Before writing implementation code, produce a short technical plan that names the routes or pages, server actions or endpoints, data tables, important state transitions, authorization boundaries, background jobs, and external adapters. Resolve contradictions in favor of the narrow audience and non-goals below. Prefer a small, legible architecture over speculative abstraction, but do not omit persistence, validation, error handling, or tests.
+
+PRODUCT BRIEF
+Primary user: a small team that keeps opening the production database to answer questions.
+Primary outcome: give the team safe, audited screens for the lookups, dashboards, and approvals they run every week.
+Product principle: optimize the exact workflow below instead of copying the full breadth of Retool. A first-time user should understand what to do from the interface itself, without a tour or documentation.
+
+END-TO-END USER JOURNEYS
+Implement all of these flows through the real interface and persistent data layer:
+1. An operator signs in through the company OAuth provider, looks up a customer record, edits a typed field through validation, and the change lands in the audit log.
+2. A support agent submits a refund request into the approval queue; an approver reviews the attached record context, approves it, and the action executes exactly once.
+3. A manager opens the ops dashboard, checks the week’s key numbers, and drills into an anomaly without ever touching a database console.
+
+SCREENS AND INFORMATION ARCHITECTURE
+Build these as coherent responsive views. Each screen must specify its primary action, secondary actions, visible status, validation feedback, empty state, loading or pending state, success confirmation, and recoverable failure state.
+1. Record panel: search by ID or email, read view with sensitive fields masked, typed edit form with validation, and per-record change history.
+2. Ops dashboard: the agreed handful of metrics, a time-range selector, threshold highlights, and drill-down links to the records behind each number.
+3. Approval queue: pending, approved, and rejected tabs, request context, requester and approver identities, decision notes, and execution status.
+4. Admin: user list with roles, a role capability matrix, audit-log search by actor and record, and export.
+
+CORE CAPABILITIES
+1. a record lookup and edit panel with typed fields and validation
+2. an ops dashboard showing the handful of numbers the team actually checks
+3. an approval queue with pending, approved, and rejected states
+4. role-based access separating viewers, editors, and approvers
+5. an immutable audit log of every sensitive read and every write
+
+DETAILED BEHAVIOR AND BUSINESS RULES
+Treat these as server-enforced product requirements, not interface suggestions:
+1. Enforce roles on the server for every read and write; the browser never receives data or actions the current role does not permit.
+2. Append every sensitive read, write, approval decision, and role change to an immutable audit log with actor, timestamp, and before-and-after values.
+3. Require the approver to be a different person than the requester, make execution idempotent, and never re-execute a decided request.
+4. Accept writes only through validated, typed endpoints with allow-listed fields; no raw SQL or generic update path exists.
+
+DATA MODEL AND LIFECYCLE
+Design a small relational schema centered on User, Role, ApprovalRequest, AuditEntry. Before implementing it, document:
+1. Each table’s purpose, primary key, ownership or tenant boundary, timestamps, status fields, and important attributes.
+2. Foreign keys, uniqueness constraints, check constraints, indexes needed by the named screens, and transaction boundaries for multi-record changes.
+3. The allowed lifecycle or state transitions, who may trigger each transition, which transitions are terminal or reversible, and what audit history must remain immutable.
+4. Archive, retention, and deletion behavior, including what happens to dependent records and external files.
+5. Idempotency strategy for submissions, jobs, imports, notifications, webhooks, or retries where applicable.
+Use migrations rather than ad-hoc schema creation. Store time instants consistently and retain named timezone context whenever local schedules or dates matter. Never rely on a counter, disabled button, or client-side check to preserve a business invariant.
+
+USERS, AUTHENTICATION, AND PERMISSIONS
+Implement only the roles required by the stated audience. Make the ownership and visibility model explicit before coding. Enforce authorization in every server-side query and mutation, including search, exports, attachments, live updates, and guessed URLs—not merely by hiding controls. Use secure session defaults, protect state-changing requests, and provide an understandable signed-out, expired-session, and forbidden state. Seed distinct users when multiple roles are required so permissions can be demonstrated and tested.
+
+INTERACTION AND VISUAL DIRECTION
+The product should feel fast, calm, focused, and credible rather than like a generic admin template. Use a clear visual hierarchy, restrained color, readable typography, generous hit targets, and consistent placement for primary actions. Start with server-rendered HTML and progressively enhance only the interactions that benefit from it. The core workflow must remain understandable if enhancement fails.
+
+Render with React Server Components by default. Use Server Actions for authenticated form mutations and add Client Components only for interactions that genuinely require browser state, browser APIs, drag-and-drop, or live updates. The core workflow must remain understandable before client-side JavaScript finishes loading.
+
+Design mobile layouts intentionally instead of simply stacking desktop panels. Support keyboard navigation, visible focus, semantic landmarks, explicit labels, useful page titles, reduced-motion preferences, and screen-reader announcements for asynchronous results. Never use color alone to communicate state. Destructive actions require clear scope and confirmation; safe repeated actions should be idempotent.
+
+TECHNICAL DIRECTION
+Build this version with Next.js, the App Router, and TypeScript. Use Server Components by default, Server Actions for authenticated mutations, and Route Handlers for public APIs, OAuth callbacks, webhooks, feeds, uploads, and downloads. Use PostgreSQL through Drizzle ORM with versioned migrations and an isolated test database. Access S3-compatible object storage through a server-only adapter, and run slow or retryable work in a real job or workflow system instead of the request lifecycle.
+
+Keep domain rules in testable server-side modules instead of route handlers or UI components. Separate persistence, external providers, and background work behind small interfaces without building a framework. Prefer ordinary HTML forms and URLs for durable navigation; use optimistic interaction only when failure can be reconciled clearly.
+
+The product brief currently identifies Astro, HTMX, D1 as capability context. Preserve any required native, browser-only, edge, storage, real-time, or background-processing capability through a narrow adapter appropriate to the selected framework. If the core workflow genuinely requires native or browser APIs, keep that runtime as the primary execution surface rather than simulating inaccessible capabilities or inventing an unnecessary web surface.
+
+Integrate with company OAuth provider. For every integration:
+- List required environment variables in an .env.example without real secrets.
+- Add a small adapter with timeouts, normalized errors, and a deterministic local fake or development path.
+- Verify inbound signatures and deduplicate provider events where supported.
+- Keep credentials server-side, encrypt long-lived provider tokens at rest, and redact secrets and sensitive payloads from logs.
+- Define retry, backoff, and idempotency behavior for any side effect that can be repeated.
+
+SECURITY AND PRIVACY
+Route every write through validated, permission-checked endpoints recorded in an append-only audit log, and never expose raw SQL to the browser.
+Validate, normalize, and length-limit all untrusted input on the server. Escape rendered content by default, sanitize any intentionally accepted markup, rate-limit public or abuse-prone actions, and use private object storage plus short-lived authorized URLs for sensitive files. Collect the minimum personal data necessary for the named workflow. Document retention and deletion behavior. Add specific protections for the riskier surfaces in this app, such as uploads, redirects, outbound requests, email delivery, OAuth, webhooks, CSV import or export, and real-time connections.
+
+ACCEPTANCE SCENARIOS
+Automate these app-specific scenarios at the most appropriate level:
+1. Given a viewer role, opening a record shows masked sensitive fields and no edit controls, and a forged edit request is rejected server-side.
+2. Given two approvers acting on the same pending request at once, exactly one decision wins and the underlying action executes once.
+3. Given an edited customer field, the audit log records who changed it, when, and both old and new values, and the entry cannot be altered.
+
+TESTING
+Add focused unit tests for state transitions, authorization predicates, normalization, date or money calculations, and other risky domain rules. Add integration tests for persistence constraints and each external adapter’s success, timeout, retry, and rejection paths. Add at least one browser-level test for every end-to-end journey above, including one small-screen viewport. Tests must use isolated data and run through a documented single command.
+
+OPERATIONS AND FAILURE RECOVERY
+Add structured server logs with request, job, or event correlation IDs but no secrets or unnecessarily sensitive data. Make failures actionable in both the interface and logs. Background work must expose pending, succeeded, failed, and retrying states where relevant; do not silently swallow errors. Include safe database migration and rollback guidance, seed data, backup and restore notes, external-data cleanup behavior, and a basic health or diagnostic path appropriate to the stack.
+
+DELIVERABLES
+Ship the working application, migrations, representative seed data, tests, .env.example, and a concise README. The README must cover prerequisites, local setup, environment variables, migrations, seed and test commands, deployment, integration setup, backup and restore, security decisions, and known limitations. Seed data should exercise the happy path plus at least one empty, failed, overdue, expired, archived, or permission-restricted state relevant to the product.
+
+DEFINITION OF DONE
+The app is complete when a fresh developer can follow the README, create and migrate the database, run the app, sign in as each relevant role, complete every named journey using real persisted data, refresh without losing state, recover from common failures, and use the core interface on phone and desktop. All acceptance scenarios pass, permission boundaries are covered by tests, and no core screen is left as a placeholder.
+
+NON-GOALS
+Do not build a drag-and-drop app builder, a query IDE, a plugin system, or a generic component library.</pre></div><div class="prompt-box" id="prompt-panel-laravel" role="tabpanel" aria-labelledby="prompt-tab-laravel" tabindex="0" hidden><pre>You are building a production-ready software product named “Backdesk”, a deliberately focused alternative to Retool. Build a complete, usable vertical slice—not a landing page, static mockup, or disconnected collection of components.
+
+WORKING AGREEMENT
+Before writing implementation code, produce a short technical plan that names the routes or pages, server actions or endpoints, data tables, important state transitions, authorization boundaries, background jobs, and external adapters. Resolve contradictions in favor of the narrow audience and non-goals below. Prefer a small, legible architecture over speculative abstraction, but do not omit persistence, validation, error handling, or tests.
+
+PRODUCT BRIEF
+Primary user: a small team that keeps opening the production database to answer questions.
+Primary outcome: give the team safe, audited screens for the lookups, dashboards, and approvals they run every week.
+Product principle: optimize the exact workflow below instead of copying the full breadth of Retool. A first-time user should understand what to do from the interface itself, without a tour or documentation.
+
+END-TO-END USER JOURNEYS
+Implement all of these flows through the real interface and persistent data layer:
+1. An operator signs in through the company OAuth provider, looks up a customer record, edits a typed field through validation, and the change lands in the audit log.
+2. A support agent submits a refund request into the approval queue; an approver reviews the attached record context, approves it, and the action executes exactly once.
+3. A manager opens the ops dashboard, checks the week’s key numbers, and drills into an anomaly without ever touching a database console.
+
+SCREENS AND INFORMATION ARCHITECTURE
+Build these as coherent responsive views. Each screen must specify its primary action, secondary actions, visible status, validation feedback, empty state, loading or pending state, success confirmation, and recoverable failure state.
+1. Record panel: search by ID or email, read view with sensitive fields masked, typed edit form with validation, and per-record change history.
+2. Ops dashboard: the agreed handful of metrics, a time-range selector, threshold highlights, and drill-down links to the records behind each number.
+3. Approval queue: pending, approved, and rejected tabs, request context, requester and approver identities, decision notes, and execution status.
+4. Admin: user list with roles, a role capability matrix, audit-log search by actor and record, and export.
+
+CORE CAPABILITIES
+1. a record lookup and edit panel with typed fields and validation
+2. an ops dashboard showing the handful of numbers the team actually checks
+3. an approval queue with pending, approved, and rejected states
+4. role-based access separating viewers, editors, and approvers
+5. an immutable audit log of every sensitive read and every write
+
+DETAILED BEHAVIOR AND BUSINESS RULES
+Treat these as server-enforced product requirements, not interface suggestions:
+1. Enforce roles on the server for every read and write; the browser never receives data or actions the current role does not permit.
+2. Append every sensitive read, write, approval decision, and role change to an immutable audit log with actor, timestamp, and before-and-after values.
+3. Require the approver to be a different person than the requester, make execution idempotent, and never re-execute a decided request.
+4. Accept writes only through validated, typed endpoints with allow-listed fields; no raw SQL or generic update path exists.
+
+DATA MODEL AND LIFECYCLE
+Design a small relational schema centered on User, Role, ApprovalRequest, AuditEntry. Before implementing it, document:
+1. Each table’s purpose, primary key, ownership or tenant boundary, timestamps, status fields, and important attributes.
+2. Foreign keys, uniqueness constraints, check constraints, indexes needed by the named screens, and transaction boundaries for multi-record changes.
+3. The allowed lifecycle or state transitions, who may trigger each transition, which transitions are terminal or reversible, and what audit history must remain immutable.
+4. Archive, retention, and deletion behavior, including what happens to dependent records and external files.
+5. Idempotency strategy for submissions, jobs, imports, notifications, webhooks, or retries where applicable.
+Use migrations rather than ad-hoc schema creation. Store time instants consistently and retain named timezone context whenever local schedules or dates matter. Never rely on a counter, disabled button, or client-side check to preserve a business invariant.
+
+USERS, AUTHENTICATION, AND PERMISSIONS
+Implement only the roles required by the stated audience. Make the ownership and visibility model explicit before coding. Enforce authorization in every server-side query and mutation, including search, exports, attachments, live updates, and guessed URLs—not merely by hiding controls. Use secure session defaults, protect state-changing requests, and provide an understandable signed-out, expired-session, and forbidden state. Seed distinct users when multiple roles are required so permissions can be demonstrated and tested.
+
+INTERACTION AND VISUAL DIRECTION
+The product should feel fast, calm, focused, and credible rather than like a generic admin template. Use a clear visual hierarchy, restrained color, readable typography, generous hit targets, and consistent placement for primary actions. Start with server-rendered HTML and progressively enhance only the interactions that benefit from it. The core workflow must remain understandable if enhancement fails.
+
+Start with server-rendered Blade views and ordinary forms. Use Livewire for focused server-driven interactions and Alpine.js only for small local interface state. The core workflow must remain understandable without relying on a client-side application shell.
+
+Design mobile layouts intentionally instead of simply stacking desktop panels. Support keyboard navigation, visible focus, semantic landmarks, explicit labels, useful page titles, reduced-motion preferences, and screen-reader announcements for asynchronous results. Never use color alone to communicate state. Destructive actions require clear scope and confirmation; safe repeated actions should be idempotent.
+
+TECHNICAL DIRECTION
+Build this version with Laravel, PHP, Blade, Livewire, and Alpine.js. Use controllers and Blade forms for durable navigation, Livewire for focused interactions, Form Requests for validation, Policies and Gates for authorization, and small application actions or services for domain transitions. Use Eloquent with migrations, database constraints, and transactions; Laravel Storage for private S3-compatible files; queued Jobs for retryable work; the Scheduler for recurring work; and Notifications or Mail for email.
+
+Keep domain rules in testable server-side modules instead of route handlers or UI components. Separate persistence, external providers, and background work behind small interfaces without building a framework. Prefer ordinary HTML forms and URLs for durable navigation; use optimistic interaction only when failure can be reconciled clearly.
+
+The product brief currently identifies Astro, HTMX, D1 as capability context. Preserve any required native, browser-only, edge, storage, real-time, or background-processing capability through a narrow adapter appropriate to the selected framework. If the core workflow genuinely requires native or browser APIs, keep that runtime as the primary execution surface rather than simulating inaccessible capabilities or inventing an unnecessary web surface.
+
+Integrate with company OAuth provider. For every integration:
+- List required environment variables in an .env.example without real secrets.
+- Add a small adapter with timeouts, normalized errors, and a deterministic local fake or development path.
+- Verify inbound signatures and deduplicate provider events where supported.
+- Keep credentials server-side, encrypt long-lived provider tokens at rest, and redact secrets and sensitive payloads from logs.
+- Define retry, backoff, and idempotency behavior for any side effect that can be repeated.
+
+SECURITY AND PRIVACY
+Route every write through validated, permission-checked endpoints recorded in an append-only audit log, and never expose raw SQL to the browser.
+Validate, normalize, and length-limit all untrusted input on the server. Escape rendered content by default, sanitize any intentionally accepted markup, rate-limit public or abuse-prone actions, and use private object storage plus short-lived authorized URLs for sensitive files. Collect the minimum personal data necessary for the named workflow. Document retention and deletion behavior. Add specific protections for the riskier surfaces in this app, such as uploads, redirects, outbound requests, email delivery, OAuth, webhooks, CSV import or export, and real-time connections.
+
+ACCEPTANCE SCENARIOS
+Automate these app-specific scenarios at the most appropriate level:
+1. Given a viewer role, opening a record shows masked sensitive fields and no edit controls, and a forged edit request is rejected server-side.
+2. Given two approvers acting on the same pending request at once, exactly one decision wins and the underlying action executes once.
+3. Given an edited customer field, the audit log records who changed it, when, and both old and new values, and the entry cannot be altered.
+
+TESTING
+Add focused unit tests for state transitions, authorization predicates, normalization, date or money calculations, and other risky domain rules. Add integration tests for persistence constraints and each external adapter’s success, timeout, retry, and rejection paths. Add at least one browser-level test for every end-to-end journey above, including one small-screen viewport. Tests must use isolated data and run through a documented single command.
+
+OPERATIONS AND FAILURE RECOVERY
+Add structured server logs with request, job, or event correlation IDs but no secrets or unnecessarily sensitive data. Make failures actionable in both the interface and logs. Background work must expose pending, succeeded, failed, and retrying states where relevant; do not silently swallow errors. Include safe database migration and rollback guidance, seed data, backup and restore notes, external-data cleanup behavior, and a basic health or diagnostic path appropriate to the stack.
+
+DELIVERABLES
+Ship the working application, migrations, representative seed data, tests, .env.example, and a concise README. The README must cover prerequisites, local setup, environment variables, migrations, seed and test commands, deployment, integration setup, backup and restore, security decisions, and known limitations. Seed data should exercise the happy path plus at least one empty, failed, overdue, expired, archived, or permission-restricted state relevant to the product.
+
+DEFINITION OF DONE
+The app is complete when a fresh developer can follow the README, create and migrate the database, run the app, sign in as each relevant role, complete every named journey using real persisted data, refresh without losing state, recover from common failures, and use the core interface on phone and desktop. All acceptance scenarios pass, permission boundaries are covered by tests, and no core screen is left as a placeholder.
+
+NON-GOALS
+Do not build a drag-and-drop app builder, a query IDE, a plugin system, or a generic component library.</pre></div><div class="prompt-box" id="prompt-panel-rails" role="tabpanel" aria-labelledby="prompt-tab-rails" tabindex="0" hidden><pre>You are building a production-ready software product named “Backdesk”, a deliberately focused alternative to Retool. Build a complete, usable vertical slice—not a landing page, static mockup, or disconnected collection of components.
+
+WORKING AGREEMENT
+Before writing implementation code, produce a short technical plan that names the routes or pages, server actions or endpoints, data tables, important state transitions, authorization boundaries, background jobs, and external adapters. Resolve contradictions in favor of the narrow audience and non-goals below. Prefer a small, legible architecture over speculative abstraction, but do not omit persistence, validation, error handling, or tests.
+
+PRODUCT BRIEF
+Primary user: a small team that keeps opening the production database to answer questions.
+Primary outcome: give the team safe, audited screens for the lookups, dashboards, and approvals they run every week.
+Product principle: optimize the exact workflow below instead of copying the full breadth of Retool. A first-time user should understand what to do from the interface itself, without a tour or documentation.
+
+END-TO-END USER JOURNEYS
+Implement all of these flows through the real interface and persistent data layer:
+1. An operator signs in through the company OAuth provider, looks up a customer record, edits a typed field through validation, and the change lands in the audit log.
+2. A support agent submits a refund request into the approval queue; an approver reviews the attached record context, approves it, and the action executes exactly once.
+3. A manager opens the ops dashboard, checks the week’s key numbers, and drills into an anomaly without ever touching a database console.
+
+SCREENS AND INFORMATION ARCHITECTURE
+Build these as coherent responsive views. Each screen must specify its primary action, secondary actions, visible status, validation feedback, empty state, loading or pending state, success confirmation, and recoverable failure state.
+1. Record panel: search by ID or email, read view with sensitive fields masked, typed edit form with validation, and per-record change history.
+2. Ops dashboard: the agreed handful of metrics, a time-range selector, threshold highlights, and drill-down links to the records behind each number.
+3. Approval queue: pending, approved, and rejected tabs, request context, requester and approver identities, decision notes, and execution status.
+4. Admin: user list with roles, a role capability matrix, audit-log search by actor and record, and export.
+
+CORE CAPABILITIES
+1. a record lookup and edit panel with typed fields and validation
+2. an ops dashboard showing the handful of numbers the team actually checks
+3. an approval queue with pending, approved, and rejected states
+4. role-based access separating viewers, editors, and approvers
+5. an immutable audit log of every sensitive read and every write
+
+DETAILED BEHAVIOR AND BUSINESS RULES
+Treat these as server-enforced product requirements, not interface suggestions:
+1. Enforce roles on the server for every read and write; the browser never receives data or actions the current role does not permit.
+2. Append every sensitive read, write, approval decision, and role change to an immutable audit log with actor, timestamp, and before-and-after values.
+3. Require the approver to be a different person than the requester, make execution idempotent, and never re-execute a decided request.
+4. Accept writes only through validated, typed endpoints with allow-listed fields; no raw SQL or generic update path exists.
+
+DATA MODEL AND LIFECYCLE
+Design a small relational schema centered on User, Role, ApprovalRequest, AuditEntry. Before implementing it, document:
+1. Each table’s purpose, primary key, ownership or tenant boundary, timestamps, status fields, and important attributes.
+2. Foreign keys, uniqueness constraints, check constraints, indexes needed by the named screens, and transaction boundaries for multi-record changes.
+3. The allowed lifecycle or state transitions, who may trigger each transition, which transitions are terminal or reversible, and what audit history must remain immutable.
+4. Archive, retention, and deletion behavior, including what happens to dependent records and external files.
+5. Idempotency strategy for submissions, jobs, imports, notifications, webhooks, or retries where applicable.
+Use migrations rather than ad-hoc schema creation. Store time instants consistently and retain named timezone context whenever local schedules or dates matter. Never rely on a counter, disabled button, or client-side check to preserve a business invariant.
+
+USERS, AUTHENTICATION, AND PERMISSIONS
+Implement only the roles required by the stated audience. Make the ownership and visibility model explicit before coding. Enforce authorization in every server-side query and mutation, including search, exports, attachments, live updates, and guessed URLs—not merely by hiding controls. Use secure session defaults, protect state-changing requests, and provide an understandable signed-out, expired-session, and forbidden state. Seed distinct users when multiple roles are required so permissions can be demonstrated and tested.
+
+INTERACTION AND VISUAL DIRECTION
+The product should feel fast, calm, focused, and credible rather than like a generic admin template. Use a clear visual hierarchy, restrained color, readable typography, generous hit targets, and consistent placement for primary actions. Start with server-rendered HTML and progressively enhance only the interactions that benefit from it. The core workflow must remain understandable if enhancement fails.
+
+Start with server-rendered Rails views and ordinary forms. Use Turbo for navigation, submissions, and server-driven updates, then Stimulus only for small browser-side behavior. Do not turn the product into a client-side SPA, and keep the core workflow usable when enhancement fails.
+
+Design mobile layouts intentionally instead of simply stacking desktop panels. Support keyboard navigation, visible focus, semantic landmarks, explicit labels, useful page titles, reduced-motion preferences, and screen-reader announcements for asynchronous results. Never use color alone to communicate state. Destructive actions require clear scope and confirmation; safe repeated actions should be idempotent.
+
+TECHNICAL DIRECTION
+Build this version with Ruby on Rails and Hotwire: Turbo for navigation, form submissions, and server-driven updates, and Stimulus for small browser-side behavior. Use RESTful controllers with strong parameters and explicit authorization, with domain transitions in testable models or small application services. Use Active Record migrations plus database-level constraints and transactions; Active Storage with an S3-compatible service for private files; Active Job with a durable queue backend for retryable work; Action Mailer for email; and Action Cable only when live updates are required.
+
+Keep domain rules in testable server-side modules instead of route handlers or UI components. Separate persistence, external providers, and background work behind small interfaces without building a framework. Prefer ordinary HTML forms and URLs for durable navigation; use optimistic interaction only when failure can be reconciled clearly.
+
+The product brief currently identifies Astro, HTMX, D1 as capability context. Preserve any required native, browser-only, edge, storage, real-time, or background-processing capability through a narrow adapter appropriate to the selected framework. If the core workflow genuinely requires native or browser APIs, keep that runtime as the primary execution surface rather than simulating inaccessible capabilities or inventing an unnecessary web surface.
+
+Integrate with company OAuth provider. For every integration:
+- List required environment variables in an .env.example without real secrets.
+- Add a small adapter with timeouts, normalized errors, and a deterministic local fake or development path.
+- Verify inbound signatures and deduplicate provider events where supported.
+- Keep credentials server-side, encrypt long-lived provider tokens at rest, and redact secrets and sensitive payloads from logs.
+- Define retry, backoff, and idempotency behavior for any side effect that can be repeated.
+
+SECURITY AND PRIVACY
+Route every write through validated, permission-checked endpoints recorded in an append-only audit log, and never expose raw SQL to the browser.
+Validate, normalize, and length-limit all untrusted input on the server. Escape rendered content by default, sanitize any intentionally accepted markup, rate-limit public or abuse-prone actions, and use private object storage plus short-lived authorized URLs for sensitive files. Collect the minimum personal data necessary for the named workflow. Document retention and deletion behavior. Add specific protections for the riskier surfaces in this app, such as uploads, redirects, outbound requests, email delivery, OAuth, webhooks, CSV import or export, and real-time connections.
+
+ACCEPTANCE SCENARIOS
+Automate these app-specific scenarios at the most appropriate level:
+1. Given a viewer role, opening a record shows masked sensitive fields and no edit controls, and a forged edit request is rejected server-side.
+2. Given two approvers acting on the same pending request at once, exactly one decision wins and the underlying action executes once.
+3. Given an edited customer field, the audit log records who changed it, when, and both old and new values, and the entry cannot be altered.
+
+TESTING
+Add focused unit tests for state transitions, authorization predicates, normalization, date or money calculations, and other risky domain rules. Add integration tests for persistence constraints and each external adapter’s success, timeout, retry, and rejection paths. Add at least one browser-level test for every end-to-end journey above, including one small-screen viewport. Tests must use isolated data and run through a documented single command.
+
+OPERATIONS AND FAILURE RECOVERY
+Add structured server logs with request, job, or event correlation IDs but no secrets or unnecessarily sensitive data. Make failures actionable in both the interface and logs. Background work must expose pending, succeeded, failed, and retrying states where relevant; do not silently swallow errors. Include safe database migration and rollback guidance, seed data, backup and restore notes, external-data cleanup behavior, and a basic health or diagnostic path appropriate to the stack.
+
+DELIVERABLES
+Ship the working application, migrations, representative seed data, tests, .env.example, and a concise README. The README must cover prerequisites, local setup, environment variables, migrations, seed and test commands, deployment, integration setup, backup and restore, security decisions, and known limitations. Seed data should exercise the happy path plus at least one empty, failed, overdue, expired, archived, or permission-restricted state relevant to the product.
+
+DEFINITION OF DONE
+The app is complete when a fresh developer can follow the README, create and migrate the database, run the app, sign in as each relevant role, complete every named journey using real persisted data, refresh without losing state, recover from common failures, and use the core interface on phone and desktop. All acceptance scenarios pass, permission boundaries are covered by tests, and no core screen is left as a placeholder.
+
+NON-GOALS
+Do not build a drag-and-drop app builder, a query IDE, a plugin system, or a generic component library.</pre></div><div class="prompt-actions"><button class="button primary" type="button" id="copy-prompt">Copy AHA prompt</button></div></section><section class="section" aria-labelledby="mini-heading"><h2 id="mini-heading">Build just one piece</h2><p>Not ready to replace all of Retool? Fine. These are the peculiar sub-problems hiding inside it — the parts that are actually interesting to build. Each one is a standalone prompt, scoped to an evening, no strings attached to the full build.</p><details class="mini"><summary><strong>The audit log you can’t quietly edit</strong><span>Append-only is a promise. Hash chains make it checkable.</span></summary><pre>Build a tamper-evident audit log for an internal admin tool, recording every sensitive read, every write, every approval decision, and every role change.
+
+Each entry captures actor, timestamp, action, the record touched, and before-and-after values for writes. Expose no update or delete path for entries at any layer, including the database user&#39;s permissions. Then make tampering detectable, not just forbidden: give every entry a hash computed over its own content plus the previous entry&#39;s hash, forming a chain, and store the chain head separately. A verify command rehashes the whole log and reports the first entry where the chain breaks. Corrections to wrong entries happen by appending a correcting entry that references the original, never by touching it. Handle concurrent writers without breaking the chain, either by serializing appends or by chaining per shard and verifying per shard.
+
+Done when: verification passes on a clean log, flipping one byte of an old entry directly in the database makes verify name that exact entry, and no API or ORM path can mutate an existing row.</pre><button class="mini-copy" type="button">Copy this prompt</button></details><details class="mini"><summary><strong>Two approvers, one refund, exactly once</strong><span>The race between two people clicking approve is not hypothetical.</span></summary><pre>Build the approval queue for an internal ops tool: agents submit sensitive requests, approvers decide, and the underlying action executes exactly once.
+
+A request moves from pending to approved or rejected, and the decision is a single atomic claim: a conditional update that succeeds only when the state is still pending. When two approvers act on the same request simultaneously, one wins, and the other gets a clear already-decided message with the winner&#39;s name and timestamp, not an error page. Enforce four-eyes server-side: the approver must be a different person than the requester, checked at decision time against identities the client cannot supply. Execution is a separate step from approval, guarded by its own idempotency key, so a retried or replayed execution after a timeout never runs the refund twice. Record request, decision, and execution outcome as separate audit entries.
+
+Done when: a hundred concurrent approve calls on one request yield exactly one decision and one execution, a requester approving their own request is rejected server-side even with a forged client, and a re-sent execution request is a no-op.</pre><button class="mini-copy" type="button">Copy this prompt</button></details><details class="mini"><summary><strong>Field masking the browser can’t unmask</strong><span>If the secret reached the client, the masking already failed.</span></summary><pre>Build role-based field masking for an internal record-lookup tool, where a viewer sees a customer&#39;s masked card number and an admin sees more, and the difference is enforced on the server.
+
+Define a per-field visibility policy: each sensitive field maps roles to full, masked, or hidden. Apply it in the serialization layer, so a masked field leaves the server already reduced to its display form, last four digits, redacted marker, whatever the policy says. The browser never receives the real value alongside a CSS trick; grep the API response to prove it. For legitimate needs, add an explicit reveal action: a separate endpoint, permission-checked, returning one field of one record, and writing an audit entry with actor, record, field, and timestamp, because sensitive reads deserve the same trail as writes. Rate-limit reveals per user so someone cannot bulk-harvest through the reveal button. Edits to masked fields go through write endpoints that accept new values without ever echoing old ones.
+
+Done when: the raw API response for a viewer contains no unmasked sensitive value anywhere, each reveal produces one audit entry, and a viewer calling the reveal endpoint directly gets a server-side rejection.</pre><button class="mini-copy" type="button">Copy this prompt</button></details><details class="mini"><summary><strong>The write endpoint that refuses to be generic</strong><span>No raw SQL, no patch-anything route, no exceptions for admins.</span></summary><pre>Build the write layer for an internal tool that edits production records, designed so no generic update path exists.
+
+Every editable record type gets a typed endpoint with an explicit allow-list of fields. Requests containing any field outside the list are rejected whole, not silently stripped, so a client bug or a crafted payload cannot smuggle a write to a column you never intended to expose, like a balance or a role. Validate each field by type and by business rule server-side: enum fields against their real set, references against existing rows, formats where formats matter. On success, compute the before-and-after diff inside the same transaction as the write and hand it to the audit log, so the trail can never disagree with what happened. Return validation failures per field. And enforce the discipline architecturally: the database user the app connects with has no generic table-wide update grant beyond what these endpoints need.
+
+Done when: a payload with one extra unknown field is rejected entirely, every successful edit produces an audit diff matching the actual change, and there is provably no route that accepts arbitrary column-value pairs.</pre><button class="mini-copy" type="button">Copy this prompt</button></details></section><section class="section" aria-labelledby="faq-heading"><h2 id="faq-heading">Frequently asked questions</h2><details class="faq"><summary>How long does it take to build your own Retool?</summary><p>A basic version — record lookup, ops dashboard, approval queue — takes about 4 days. Roughly 2 weeks+ gets you a solid v1 with roles, immutable audit log, validated write endpoints. Matching everything Retool really does (drag-and-drop builder, query ide, plugin system) is closer to 3 months+, which is exactly why you should scope down instead.</p></details><details class="faq"><summary>How much does Retool cost if I keep subscribing?</summary><p>Retool runs $12–$65 per person per month on public paid plans, which is $144–$780 per year for every person on your team. A focused self-built replacement costs your build time plus close-to-zero hosting.</p></details><details class="faq"><summary>What stack should I use to build a Retool alternative?</summary><p>The build prompt on this page ships in four flavors: the AHA stack (Astro, HTMX, Alpine.js), Next.js, Laravel, and Ruby on Rails. The capability context for this product is Astro, HTMX, D1. Pick the stack you already know — the scope matters more than the framework.</p></details><details class="faq"><summary>What features does a minimal Retool replacement need?</summary><p>A useful v1 needs: a record lookup and edit panel with typed fields and validation; an ops dashboard showing the handful of numbers the team actually checks; an approval queue with pending, approved, and rejected states; role-based access separating viewers, editors, and approvers; an immutable audit log of every sensitive read and every write. Everything else is scope creep until you personally miss it.</p></details><details class="faq"><summary>What should I deliberately not build?</summary><p>Do not build a drag-and-drop app builder, a query IDE, a plugin system, or a generic component library.</p></details><details class="faq"><summary>Does this build also replace Appsmith and Superblocks?</summary><p>Yes. Retool, Appsmith and Superblocks all solve the same core job — give the team safe, audited screens for the lookups, dashboards, and approvals they run every week. The scoped v1 on this page covers what most people use any of them for, so one focused build replaces whichever you currently pay for.</p></details></section><section class="section" aria-labelledby="related-heading"><h2 id="related-heading">More operations subscriptions to replace</h2><ul class="related-list"><li><a href="/build-your-own-airtable/">Build your own Airtable</a><span>$24–$54/mo · from 3 days</span></li><li><a href="/build-your-own-dropbox-transfer/">Build your own Dropbox Transfer</a><span>$20–$32/mo · from 3 hours</span></li><li><a href="/build-your-own-statuspage/">Build your own Statuspage</a><span>$29–$399/mo · from 3 hours</span></li><li><a href="/build-your-own-uptimerobot/">Build your own UptimeRobot</a><span>$24–$69/mo · from 6 hours</span></li></ul><p class="related-home"><a href="/#audit">Browse all 109 buildable subscriptions →</a></p></section></main><footer><a class="logo footer-logo" href="/"><span class="logo-mark">EZ</span><span>ezvibecode</span></a><p><a href="/blog/">Blog</a></p><p><a href="/guides/">Guides</a></p><p><a href="/changelog/">Changelog</a></p><p>A tiny idea about tiny software.</p><p>Built with vibes, obviously.</p></footer><div class="toast" id="toast" role="status" aria-live="polite">Prompt copied. Go ship it.</div><script type="module">var e=Array.from(document.querySelectorAll(`.prompt-tab`)),t=Array.from(document.querySelectorAll(`.prompt-box`)),n=document.querySelector(`#copy-prompt`),r=r=>{e.forEach(e=>{let t=e.dataset.framework===r;e.setAttribute(`aria-selected`,String(t)),e.tabIndex=t?0:-1}),t.forEach(e=>{e.hidden=e.id!==`prompt-panel-${r}`}),n.textContent=`Copy ${e.find(e=>e.dataset.framework===r)?.textContent||`prompt`} prompt`};e.forEach((t,n)=>{t.addEventListener(`click`,()=>r(t.dataset.framework)),t.addEventListener(`keydown`,t=>{let i;t.key===`ArrowRight`&&(i=(n+1)%e.length),t.key===`ArrowLeft`&&(i=(n-1+e.length)%e.length),t.key===`Home`&&(i=0),t.key===`End`&&(i=e.length-1),i!==void 0&&(t.preventDefault(),r(e[i].dataset.framework),e[i].focus())})}),n?.addEventListener(`click`,async()=>{let e=t.find(e=>!e.hidden);await navigator.clipboard.writeText(e?.querySelector(`pre`)?.textContent||``);let n=document.querySelector(`#toast`);n.classList.add(`show`),setTimeout(()=>n.classList.remove(`show`),2200)}),document.querySelectorAll(`.mini-copy`).forEach(e=>{e.addEventListener(`click`,async()=>{let t=e.closest(`.mini`)?.querySelector(`pre`)?.textContent||``;await navigator.clipboard.writeText(t);let n=document.querySelector(`#toast`);n.classList.add(`show`),setTimeout(()=>n.classList.remove(`show`),2200)})});var i=document.querySelector(`#theme-toggle`);localStorage.getItem(`vibe-theme`)===`dark`&&(document.documentElement.dataset.theme=`dark`),i?.addEventListener(`click`,()=>{let e=document.documentElement.dataset.theme!==`dark`;document.documentElement.dataset.theme=e?`dark`:`light`,localStorage.setItem(`vibe-theme`,e?`dark`:`light`)});</script><script type="module" src="https://static.cloudflareinsights.com/beacon.min.js/vce701823e78c4301a35b7e07294d87301792088814092" integrity="sha512-UKNk8GbxkABxKcXYuLkO16EleLGUkcvJWtpSNmExE0Too3ZaFAxTscNWEc1OdAv5/BikHawapSCaiD2XCmp+Bw==" data-cf-beacon='{"version":"2024.11.0","token":"228ace6b78e04bb494384851ece32c99","r":1,"spa":2}' crossorigin="anonymous"></script>
+</body></html>

@@ -1,0 +1,398 @@
+<!DOCTYPE html><html lang="en"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width"><title>How to Vibe Code Your Own Vimeo Alternative</title><meta name="description" content="Learn how to build your own with ezvibecode Vimeo alternative with copyable AI prompts, a scoped feature list, and realistic build estimates starting at 10 hours. The same build also replaces Wistia."><link rel="canonical" href="https://ezvibecode.com/build-your-own-vimeo/"><meta name="theme-color" content="#f4f1e8"><link rel="icon" href="/favicon.ico" sizes="32x32"><link rel="icon" href="/favicon.png" type="image/png" sizes="512x512"><link rel="apple-touch-icon" href="/apple-touch-icon.png" sizes="180x180"><meta property="og:type" content="article"><meta property="og:site_name" content="ezvibecode"><meta property="og:title" content="How to Vibe Code Your Own Vimeo Alternative"><meta property="og:description" content="Learn how to build your own with ezvibecode Vimeo alternative with copyable AI prompts, a scoped feature list, and realistic build estimates starting at 10 hours. The same build also replaces Wistia."><meta property="og:url" content="https://ezvibecode.com/build-your-own-vimeo/"><meta property="og:image" content="https://ezvibecode.com/og/build-your-own-vimeo.png"><meta property="og:image:type" content="image/png"><meta property="og:image:width" content="1200"><meta property="og:image:height" content="630"><meta property="og:image:alt" content="How to Vibe Code Your Own Vimeo Alternative"><meta name="twitter:card" content="summary_large_image"><meta name="twitter:title" content="How to Vibe Code Your Own Vimeo Alternative"><meta name="twitter:description" content="Learn how to build your own with ezvibecode Vimeo alternative with copyable AI prompts, a scoped feature list, and realistic build estimates starting at 10 hours. The same build also replaces Wistia."><meta name="twitter:image" content="https://ezvibecode.com/og/build-your-own-vimeo.png"><meta name="twitter:image:alt" content="How to Vibe Code Your Own Vimeo Alternative"><script type="application/ld+json">{"@context":"https://schema.org","@type":"FAQPage","mainEntity":[{"@type":"Question","name":"How long does it take to build your own Vimeo?","acceptedAnswer":{"@type":"Answer","text":"A basic version — uploads, branded player, unlisted links, view counts — takes about 10 hours. Roughly 3 days gets you a solid v1 with captions, chapters, folders, password links, analytics charts. Matching everything Vimeo really does (adaptive transcoding pipeline, drm, live streaming, apps) is closer to 3 months+, which is exactly why you should scope down instead."}},{"@type":"Question","name":"How much does Vimeo cost if I keep subscribing?","acceptedAnswer":{"@type":"Answer","text":"Vimeo runs $20–$65 per month on public paid plans, which is $240–$780 per year. A focused self-built replacement costs your build time plus close-to-zero hosting."}},{"@type":"Question","name":"What stack should I use to build a Vimeo alternative?","acceptedAnswer":{"@type":"Answer","text":"The build prompt on this page ships in four flavors: the AHA stack (Astro, HTMX, Alpine.js), Next.js, Laravel, and Ruby on Rails. The capability context for this product is Astro, R2, Workers. Pick the stack you already know — the scope matters more than the framework."}},{"@type":"Question","name":"What features does a minimal Vimeo replacement need?","acceptedAnswer":{"@type":"Answer","text":"A useful v1 needs: direct uploads to object storage with progress; a clean branded player page per video; unlisted share links with unguessable slugs; basic view counts per video per day; a copyable embed snippet for any site. Everything else is scope creep until you personally miss it."}},{"@type":"Question","name":"What should I deliberately not build?","acceptedAnswer":{"@type":"Answer","text":"Do not build adaptive-bitrate transcoding, live streaming, DRM, public channels, or a recommendation feed; v1 serves the uploaded file as-is."}},{"@type":"Question","name":"Does this build also replace Wistia?","acceptedAnswer":{"@type":"Answer","text":"Yes. Vimeo, Wistia all solve the same core job — upload videos once and share fast, branded player pages that don’t live on someone else’s platform. The scoped v1 on this page covers what most people use any of them for, so one focused build replaces whichever you currently pay for."}}]}</script><script type="application/ld+json">{"@context":"https://schema.org","@type":"BreadcrumbList","itemListElement":[{"@type":"ListItem","position":1,"name":"ezvibecode","item":"https://ezvibecode.com/"},{"@type":"ListItem","position":2,"name":"Build your own Vimeo","item":"https://ezvibecode.com/build-your-own-vimeo/"}]}</script><script type="application/ld+json">{"@context":"https://schema.org","@type":"TechArticle","headline":"How to Vibe Code Your Own Vimeo Alternative","description":"Learn how to build your own with ezvibecode Vimeo alternative with copyable AI prompts, a scoped feature list, and realistic build estimates starting at 10 hours. The same build also replaces Wistia.","url":"https://ezvibecode.com/build-your-own-vimeo/","image":"https://ezvibecode.com/og/build-your-own-vimeo.png","author":{"@type":"Organization","name":"ezvibecode","url":"https://ezvibecode.com/"}}</script><link rel="stylesheet" href="/_astro/build-your-own-_slug_.0qOs6ThE.css"></head><body><header class="site-header"><a class="logo" href="/" aria-label="ezvibecode home"><span class="logo-mark">EZ</span><span>ezvibecode</span></a><nav class="header-links" aria-label="Site"><a class="header-link" href="/blog/">Blog</a><a class="header-link" href="/guides/">Guides</a><a class="header-link" href="/#audit">All 109 apps</a></nav><button class="icon-button" id="theme-toggle" type="button" aria-label="Toggle dark mode" title="Toggle dark mode">◐</button></header><main><nav class="breadcrumb" aria-label="Breadcrumb"><a href="/">Home</a><span aria-hidden="true">/</span><span aria-current="page">Build your own Vimeo</span></nav><section class="hero"><p class="eyebrow">Marketing · Weekend build</p><h1>How to Vibe Code Your Own <em>Vimeo Alternative</em></h1><p class="lede">Your videos on your own domain, minus the platform chrome. Vimeo charges $20–$65 per month — that’s $240–$780 a year — for something you can replace with focused software of your own. Here is the honest scope, the honest timeline, and the exact prompt to hand your coding agent.</p><div class="hero-meta"><span class="effort weekend">from 10 hours</span><span class="verdict">The player is the easy part</span></div></section><section class="section" aria-labelledby="who-heading"><h2 id="who-heading">Who this replacement is for</h2><p>This build targets a founder hosting product demos and course videos. The goal: upload videos once and share fast, branded player pages that don’t live on someone else’s platform. If you need more than that, keep paying — the point of building it yourself is owning a tool shaped exactly like your workflow, not re-implementing a venture-funded roadmap.</p><p class="also-replaces">Same build, different logo: this v1 also replaces <strong>Wistia</strong> — they all solve the same core job.</p></section><section class="section" aria-labelledby="time-heading"><h2 id="time-heading">How long it actually takes</h2><p>One number would be a lie, so here are three. Each tier is a real, usable product — pick the one that matches how much of Vimeo you actually use.</p><table class="estimate-table"><thead><tr><th scope="col">Estimate</th><th scope="col">What you get</th></tr></thead><tbody><tr><th scope="row">10 hours</th><td>uploads, branded player, unlisted links, view counts</td></tr><tr><th scope="row">3 days</th><td>captions, chapters, folders, password links, analytics charts</td></tr><tr><th scope="row">3 months+</th><td>adaptive transcoding pipeline, drm, live streaming, apps — the part you should probably skip</td></tr></tbody></table></section><section class="section" aria-labelledby="features-heading"><h2 id="features-heading">What a minimal Vimeo alternative needs</h2><ul class="feature-list"><li>direct uploads to object storage with progress</li><li>a clean branded player page per video</li><li>unlisted share links with unguessable slugs</li><li>basic view counts per video per day</li><li>a copyable embed snippet for any site</li></ul><div class="fact-grid"><div class="fact"><h3>Data model</h3><p>Video, ShareLink, ViewEvent</p></div><div class="fact"><h3>Integrations</h3><p>R2 object storage, copyable embed snippet</p></div><div class="fact"><h3>Capability context</h3><p>Astro, R2, Workers</p></div></div><div class="callout guardrail"><h3>The guardrail</h3><p>Validate uploaded file types and sizes server-side, serve videos through unguessable URLs without ever listing the bucket publicly, and count views without fingerprinting visitors.</p></div><div class="callout nongoal"><h3>Deliberate non-goals</h3><p>Do not build adaptive-bitrate transcoding, live streaming, DRM, public channels, or a recommendation feed; v1 serves the uploaded file as-is.</p></div></section><section class="section" aria-labelledby="prompt-heading"><h2 id="prompt-heading">The complete build prompt</h2><p>Copy this into your coding agent of choice. It is scoped for a useful v1 — journeys, screens, business rules, data model, security, tests, and acceptance scenarios included. Pick your stack:</p><div class="prompt-tabs" role="tablist" aria-label="Choose your stack"><button class="prompt-tab" id="prompt-tab-aha" type="button" role="tab" aria-selected="true" aria-controls="prompt-panel-aha" tabindex="0" data-framework="aha">AHA</button><button class="prompt-tab" id="prompt-tab-nextjs" type="button" role="tab" aria-selected="false" aria-controls="prompt-panel-nextjs" tabindex="-1" data-framework="nextjs">Next.js</button><button class="prompt-tab" id="prompt-tab-laravel" type="button" role="tab" aria-selected="false" aria-controls="prompt-panel-laravel" tabindex="-1" data-framework="laravel">Laravel</button><button class="prompt-tab" id="prompt-tab-rails" type="button" role="tab" aria-selected="false" aria-controls="prompt-panel-rails" tabindex="-1" data-framework="rails">Ruby on Rails</button></div><div class="prompt-box" id="prompt-panel-aha" role="tabpanel" aria-labelledby="prompt-tab-aha" tabindex="0"><pre>You are building a production-ready software product named “Reelhouse”, a deliberately focused alternative to Vimeo. Build a complete, usable vertical slice—not a landing page, static mockup, or disconnected collection of components.
+
+WORKING AGREEMENT
+Before writing implementation code, produce a short technical plan that names the routes or pages, server actions or endpoints, data tables, important state transitions, authorization boundaries, background jobs, and external adapters. Resolve contradictions in favor of the narrow audience and non-goals below. Prefer a small, legible architecture over speculative abstraction, but do not omit persistence, validation, error handling, or tests.
+
+PRODUCT BRIEF
+Primary user: a founder hosting product demos and course videos.
+Primary outcome: upload videos once and share fast, branded player pages that don’t live on someone else’s platform.
+Product principle: optimize the exact workflow below instead of copying the full breadth of Vimeo. A first-time user should understand what to do from the interface itself, without a tour or documentation.
+
+END-TO-END USER JOURNEYS
+Implement all of these flows through the real interface and persistent data layer:
+1. The owner uploads a video with progress feedback, fills in title and description, picks a poster frame, and copies an unlisted share link.
+2. A viewer opens the share link, watches on the branded player page, and the owner later sees the view in that video’s daily counts.
+3. The owner pastes the embed snippet into a course page, confirms the player loads there, and revokes an old share link that leaked.
+
+SCREENS AND INFORMATION ARCHITECTURE
+Build these as coherent responsive views. Each screen must specify its primary action, secondary actions, visible status, validation feedback, empty state, loading or pending state, success confirmation, and recoverable failure state.
+1. Library: uploaded videos with thumbnails, duration, file size, view totals, share and embed actions, and progress for in-flight uploads.
+2. Upload: drag-and-drop with file validation, progress, title, description, and poster-frame selection.
+3. Player page: a branded header, the video player, title, and description, with nothing else competing for attention.
+4. Video detail: share links with created dates and revoke actions, a daily view chart, the embed snippet with a copy button, and a replace-file action.
+
+CORE CAPABILITIES
+1. direct uploads to object storage with progress
+2. a clean branded player page per video
+3. unlisted share links with unguessable slugs
+4. basic view counts per video per day
+5. a copyable embed snippet for any site
+
+DETAILED BEHAVIOR AND BUSINESS RULES
+Treat these as server-enforced product requirements, not interface suggestions:
+1. Store originals in object storage under unguessable keys and stream through URLs that cannot be enumerated or guessed.
+2. Validate file type and size server-side before accepting an upload and reject anything that isn’t a supported video container.
+3. Count a view once per session per video per day and store only the date and video, never a visitor identifier.
+4. Revoking a share link takes effect immediately while the video and its other links remain unaffected.
+
+DATA MODEL AND LIFECYCLE
+Design a small relational schema centered on Video, ShareLink, ViewEvent. Before implementing it, document:
+1. Each table’s purpose, primary key, ownership or tenant boundary, timestamps, status fields, and important attributes.
+2. Foreign keys, uniqueness constraints, check constraints, indexes needed by the named screens, and transaction boundaries for multi-record changes.
+3. The allowed lifecycle or state transitions, who may trigger each transition, which transitions are terminal or reversible, and what audit history must remain immutable.
+4. Archive, retention, and deletion behavior, including what happens to dependent records and external files.
+5. Idempotency strategy for submissions, jobs, imports, notifications, webhooks, or retries where applicable.
+Use migrations rather than ad-hoc schema creation. Store time instants consistently and retain named timezone context whenever local schedules or dates matter. Never rely on a counter, disabled button, or client-side check to preserve a business invariant.
+
+USERS, AUTHENTICATION, AND PERMISSIONS
+Implement only the roles required by the stated audience. Make the ownership and visibility model explicit before coding. Enforce authorization in every server-side query and mutation, including search, exports, attachments, live updates, and guessed URLs—not merely by hiding controls. Use secure session defaults, protect state-changing requests, and provide an understandable signed-out, expired-session, and forbidden state. Seed distinct users when multiple roles are required so permissions can be demonstrated and tested.
+
+INTERACTION AND VISUAL DIRECTION
+The product should feel fast, calm, focused, and credible rather than like a generic admin template. Use a clear visual hierarchy, restrained color, readable typography, generous hit targets, and consistent placement for primary actions. Start with server-rendered HTML and progressively enhance only the interactions that benefit from it. The core workflow must remain understandable if enhancement fails.
+
+Start with server-rendered Astro pages and ordinary HTML forms. Use HTMX for form submissions, partial navigation, and server-driven updates, then Alpine.js only for small local browser state. The core workflow must remain understandable if either enhancement layer fails.
+
+Design mobile layouts intentionally instead of simply stacking desktop panels. Support keyboard navigation, visible focus, semantic landmarks, explicit labels, useful page titles, reduced-motion preferences, and screen-reader announcements for asynchronous results. Never use color alone to communicate state. Destructive actions require clear scope and confirmation; safe repeated actions should be idempotent.
+
+TECHNICAL DIRECTION
+Build this version with the AHA stack: Astro for routing, layouts, and server-rendered pages; HTMX for interactions that benefit from HTML fragment responses; and Alpine.js for small, local interface state. Prefer Cloudflare D1 for relational persistence, R2 for object storage, Workers for server endpoints and scheduled work, Durable Objects only for coordinated real-time state, and Workflows or Queues for durable background jobs—but only when the product requirements call for them.
+
+Keep domain rules in testable server-side modules instead of route handlers or UI components. Separate persistence, external providers, and background work behind small interfaces without building a framework. Prefer ordinary HTML forms and URLs for durable navigation; use optimistic interaction only when failure can be reconciled clearly.
+
+The product brief currently identifies Astro, R2, Workers as capability context. Preserve any required native, browser-only, edge, storage, real-time, or background-processing capability through a narrow adapter appropriate to the selected framework. If the core workflow genuinely requires native or browser APIs, keep that runtime as the primary execution surface rather than simulating inaccessible capabilities or inventing an unnecessary web surface.
+
+Integrate with R2 object storage and copyable embed snippet. For every integration:
+- List required environment variables in an .env.example without real secrets.
+- Add a small adapter with timeouts, normalized errors, and a deterministic local fake or development path.
+- Verify inbound signatures and deduplicate provider events where supported.
+- Keep credentials server-side, encrypt long-lived provider tokens at rest, and redact secrets and sensitive payloads from logs.
+- Define retry, backoff, and idempotency behavior for any side effect that can be repeated.
+
+SECURITY AND PRIVACY
+Validate uploaded file types and sizes server-side, serve videos through unguessable URLs without ever listing the bucket publicly, and count views without fingerprinting visitors.
+Validate, normalize, and length-limit all untrusted input on the server. Escape rendered content by default, sanitize any intentionally accepted markup, rate-limit public or abuse-prone actions, and use private object storage plus short-lived authorized URLs for sensitive files. Collect the minimum personal data necessary for the named workflow. Document retention and deletion behavior. Add specific protections for the riskier surfaces in this app, such as uploads, redirects, outbound requests, email delivery, OAuth, webhooks, CSV import or export, and real-time connections.
+
+ACCEPTANCE SCENARIOS
+Automate these app-specific scenarios at the most appropriate level:
+1. An upload interrupted mid-transfer can be retried without leaving an orphaned, half-visible video in the library.
+2. A revoked share link returns a friendly gone page while the same video keeps playing through its remaining links and embeds.
+3. Given a browser that can’t play the uploaded codec, the player shows a clear unsupported-format message instead of an infinite spinner.
+
+TESTING
+Add focused unit tests for state transitions, authorization predicates, normalization, date or money calculations, and other risky domain rules. Add integration tests for persistence constraints and each external adapter’s success, timeout, retry, and rejection paths. Add at least one browser-level test for every end-to-end journey above, including one small-screen viewport. Tests must use isolated data and run through a documented single command.
+
+OPERATIONS AND FAILURE RECOVERY
+Add structured server logs with request, job, or event correlation IDs but no secrets or unnecessarily sensitive data. Make failures actionable in both the interface and logs. Background work must expose pending, succeeded, failed, and retrying states where relevant; do not silently swallow errors. Include safe database migration and rollback guidance, seed data, backup and restore notes, external-data cleanup behavior, and a basic health or diagnostic path appropriate to the stack.
+
+DELIVERABLES
+Ship the working application, migrations, representative seed data, tests, .env.example, and a concise README. The README must cover prerequisites, local setup, environment variables, migrations, seed and test commands, deployment, integration setup, backup and restore, security decisions, and known limitations. Seed data should exercise the happy path plus at least one empty, failed, overdue, expired, archived, or permission-restricted state relevant to the product.
+
+DEFINITION OF DONE
+The app is complete when a fresh developer can follow the README, create and migrate the database, run the app, sign in as each relevant role, complete every named journey using real persisted data, refresh without losing state, recover from common failures, and use the core interface on phone and desktop. All acceptance scenarios pass, permission boundaries are covered by tests, and no core screen is left as a placeholder.
+
+NON-GOALS
+Do not build adaptive-bitrate transcoding, live streaming, DRM, public channels, or a recommendation feed; v1 serves the uploaded file as-is.</pre></div><div class="prompt-box" id="prompt-panel-nextjs" role="tabpanel" aria-labelledby="prompt-tab-nextjs" tabindex="0" hidden><pre>You are building a production-ready software product named “Reelhouse”, a deliberately focused alternative to Vimeo. Build a complete, usable vertical slice—not a landing page, static mockup, or disconnected collection of components.
+
+WORKING AGREEMENT
+Before writing implementation code, produce a short technical plan that names the routes or pages, server actions or endpoints, data tables, important state transitions, authorization boundaries, background jobs, and external adapters. Resolve contradictions in favor of the narrow audience and non-goals below. Prefer a small, legible architecture over speculative abstraction, but do not omit persistence, validation, error handling, or tests.
+
+PRODUCT BRIEF
+Primary user: a founder hosting product demos and course videos.
+Primary outcome: upload videos once and share fast, branded player pages that don’t live on someone else’s platform.
+Product principle: optimize the exact workflow below instead of copying the full breadth of Vimeo. A first-time user should understand what to do from the interface itself, without a tour or documentation.
+
+END-TO-END USER JOURNEYS
+Implement all of these flows through the real interface and persistent data layer:
+1. The owner uploads a video with progress feedback, fills in title and description, picks a poster frame, and copies an unlisted share link.
+2. A viewer opens the share link, watches on the branded player page, and the owner later sees the view in that video’s daily counts.
+3. The owner pastes the embed snippet into a course page, confirms the player loads there, and revokes an old share link that leaked.
+
+SCREENS AND INFORMATION ARCHITECTURE
+Build these as coherent responsive views. Each screen must specify its primary action, secondary actions, visible status, validation feedback, empty state, loading or pending state, success confirmation, and recoverable failure state.
+1. Library: uploaded videos with thumbnails, duration, file size, view totals, share and embed actions, and progress for in-flight uploads.
+2. Upload: drag-and-drop with file validation, progress, title, description, and poster-frame selection.
+3. Player page: a branded header, the video player, title, and description, with nothing else competing for attention.
+4. Video detail: share links with created dates and revoke actions, a daily view chart, the embed snippet with a copy button, and a replace-file action.
+
+CORE CAPABILITIES
+1. direct uploads to object storage with progress
+2. a clean branded player page per video
+3. unlisted share links with unguessable slugs
+4. basic view counts per video per day
+5. a copyable embed snippet for any site
+
+DETAILED BEHAVIOR AND BUSINESS RULES
+Treat these as server-enforced product requirements, not interface suggestions:
+1. Store originals in object storage under unguessable keys and stream through URLs that cannot be enumerated or guessed.
+2. Validate file type and size server-side before accepting an upload and reject anything that isn’t a supported video container.
+3. Count a view once per session per video per day and store only the date and video, never a visitor identifier.
+4. Revoking a share link takes effect immediately while the video and its other links remain unaffected.
+
+DATA MODEL AND LIFECYCLE
+Design a small relational schema centered on Video, ShareLink, ViewEvent. Before implementing it, document:
+1. Each table’s purpose, primary key, ownership or tenant boundary, timestamps, status fields, and important attributes.
+2. Foreign keys, uniqueness constraints, check constraints, indexes needed by the named screens, and transaction boundaries for multi-record changes.
+3. The allowed lifecycle or state transitions, who may trigger each transition, which transitions are terminal or reversible, and what audit history must remain immutable.
+4. Archive, retention, and deletion behavior, including what happens to dependent records and external files.
+5. Idempotency strategy for submissions, jobs, imports, notifications, webhooks, or retries where applicable.
+Use migrations rather than ad-hoc schema creation. Store time instants consistently and retain named timezone context whenever local schedules or dates matter. Never rely on a counter, disabled button, or client-side check to preserve a business invariant.
+
+USERS, AUTHENTICATION, AND PERMISSIONS
+Implement only the roles required by the stated audience. Make the ownership and visibility model explicit before coding. Enforce authorization in every server-side query and mutation, including search, exports, attachments, live updates, and guessed URLs—not merely by hiding controls. Use secure session defaults, protect state-changing requests, and provide an understandable signed-out, expired-session, and forbidden state. Seed distinct users when multiple roles are required so permissions can be demonstrated and tested.
+
+INTERACTION AND VISUAL DIRECTION
+The product should feel fast, calm, focused, and credible rather than like a generic admin template. Use a clear visual hierarchy, restrained color, readable typography, generous hit targets, and consistent placement for primary actions. Start with server-rendered HTML and progressively enhance only the interactions that benefit from it. The core workflow must remain understandable if enhancement fails.
+
+Render with React Server Components by default. Use Server Actions for authenticated form mutations and add Client Components only for interactions that genuinely require browser state, browser APIs, drag-and-drop, or live updates. The core workflow must remain understandable before client-side JavaScript finishes loading.
+
+Design mobile layouts intentionally instead of simply stacking desktop panels. Support keyboard navigation, visible focus, semantic landmarks, explicit labels, useful page titles, reduced-motion preferences, and screen-reader announcements for asynchronous results. Never use color alone to communicate state. Destructive actions require clear scope and confirmation; safe repeated actions should be idempotent.
+
+TECHNICAL DIRECTION
+Build this version with Next.js, the App Router, and TypeScript. Use Server Components by default, Server Actions for authenticated mutations, and Route Handlers for public APIs, OAuth callbacks, webhooks, feeds, uploads, and downloads. Use PostgreSQL through Drizzle ORM with versioned migrations and an isolated test database. Access S3-compatible object storage through a server-only adapter, and run slow or retryable work in a real job or workflow system instead of the request lifecycle.
+
+Keep domain rules in testable server-side modules instead of route handlers or UI components. Separate persistence, external providers, and background work behind small interfaces without building a framework. Prefer ordinary HTML forms and URLs for durable navigation; use optimistic interaction only when failure can be reconciled clearly.
+
+The product brief currently identifies Astro, R2, Workers as capability context. Preserve any required native, browser-only, edge, storage, real-time, or background-processing capability through a narrow adapter appropriate to the selected framework. If the core workflow genuinely requires native or browser APIs, keep that runtime as the primary execution surface rather than simulating inaccessible capabilities or inventing an unnecessary web surface.
+
+Integrate with R2 object storage and copyable embed snippet. For every integration:
+- List required environment variables in an .env.example without real secrets.
+- Add a small adapter with timeouts, normalized errors, and a deterministic local fake or development path.
+- Verify inbound signatures and deduplicate provider events where supported.
+- Keep credentials server-side, encrypt long-lived provider tokens at rest, and redact secrets and sensitive payloads from logs.
+- Define retry, backoff, and idempotency behavior for any side effect that can be repeated.
+
+SECURITY AND PRIVACY
+Validate uploaded file types and sizes server-side, serve videos through unguessable URLs without ever listing the bucket publicly, and count views without fingerprinting visitors.
+Validate, normalize, and length-limit all untrusted input on the server. Escape rendered content by default, sanitize any intentionally accepted markup, rate-limit public or abuse-prone actions, and use private object storage plus short-lived authorized URLs for sensitive files. Collect the minimum personal data necessary for the named workflow. Document retention and deletion behavior. Add specific protections for the riskier surfaces in this app, such as uploads, redirects, outbound requests, email delivery, OAuth, webhooks, CSV import or export, and real-time connections.
+
+ACCEPTANCE SCENARIOS
+Automate these app-specific scenarios at the most appropriate level:
+1. An upload interrupted mid-transfer can be retried without leaving an orphaned, half-visible video in the library.
+2. A revoked share link returns a friendly gone page while the same video keeps playing through its remaining links and embeds.
+3. Given a browser that can’t play the uploaded codec, the player shows a clear unsupported-format message instead of an infinite spinner.
+
+TESTING
+Add focused unit tests for state transitions, authorization predicates, normalization, date or money calculations, and other risky domain rules. Add integration tests for persistence constraints and each external adapter’s success, timeout, retry, and rejection paths. Add at least one browser-level test for every end-to-end journey above, including one small-screen viewport. Tests must use isolated data and run through a documented single command.
+
+OPERATIONS AND FAILURE RECOVERY
+Add structured server logs with request, job, or event correlation IDs but no secrets or unnecessarily sensitive data. Make failures actionable in both the interface and logs. Background work must expose pending, succeeded, failed, and retrying states where relevant; do not silently swallow errors. Include safe database migration and rollback guidance, seed data, backup and restore notes, external-data cleanup behavior, and a basic health or diagnostic path appropriate to the stack.
+
+DELIVERABLES
+Ship the working application, migrations, representative seed data, tests, .env.example, and a concise README. The README must cover prerequisites, local setup, environment variables, migrations, seed and test commands, deployment, integration setup, backup and restore, security decisions, and known limitations. Seed data should exercise the happy path plus at least one empty, failed, overdue, expired, archived, or permission-restricted state relevant to the product.
+
+DEFINITION OF DONE
+The app is complete when a fresh developer can follow the README, create and migrate the database, run the app, sign in as each relevant role, complete every named journey using real persisted data, refresh without losing state, recover from common failures, and use the core interface on phone and desktop. All acceptance scenarios pass, permission boundaries are covered by tests, and no core screen is left as a placeholder.
+
+NON-GOALS
+Do not build adaptive-bitrate transcoding, live streaming, DRM, public channels, or a recommendation feed; v1 serves the uploaded file as-is.</pre></div><div class="prompt-box" id="prompt-panel-laravel" role="tabpanel" aria-labelledby="prompt-tab-laravel" tabindex="0" hidden><pre>You are building a production-ready software product named “Reelhouse”, a deliberately focused alternative to Vimeo. Build a complete, usable vertical slice—not a landing page, static mockup, or disconnected collection of components.
+
+WORKING AGREEMENT
+Before writing implementation code, produce a short technical plan that names the routes or pages, server actions or endpoints, data tables, important state transitions, authorization boundaries, background jobs, and external adapters. Resolve contradictions in favor of the narrow audience and non-goals below. Prefer a small, legible architecture over speculative abstraction, but do not omit persistence, validation, error handling, or tests.
+
+PRODUCT BRIEF
+Primary user: a founder hosting product demos and course videos.
+Primary outcome: upload videos once and share fast, branded player pages that don’t live on someone else’s platform.
+Product principle: optimize the exact workflow below instead of copying the full breadth of Vimeo. A first-time user should understand what to do from the interface itself, without a tour or documentation.
+
+END-TO-END USER JOURNEYS
+Implement all of these flows through the real interface and persistent data layer:
+1. The owner uploads a video with progress feedback, fills in title and description, picks a poster frame, and copies an unlisted share link.
+2. A viewer opens the share link, watches on the branded player page, and the owner later sees the view in that video’s daily counts.
+3. The owner pastes the embed snippet into a course page, confirms the player loads there, and revokes an old share link that leaked.
+
+SCREENS AND INFORMATION ARCHITECTURE
+Build these as coherent responsive views. Each screen must specify its primary action, secondary actions, visible status, validation feedback, empty state, loading or pending state, success confirmation, and recoverable failure state.
+1. Library: uploaded videos with thumbnails, duration, file size, view totals, share and embed actions, and progress for in-flight uploads.
+2. Upload: drag-and-drop with file validation, progress, title, description, and poster-frame selection.
+3. Player page: a branded header, the video player, title, and description, with nothing else competing for attention.
+4. Video detail: share links with created dates and revoke actions, a daily view chart, the embed snippet with a copy button, and a replace-file action.
+
+CORE CAPABILITIES
+1. direct uploads to object storage with progress
+2. a clean branded player page per video
+3. unlisted share links with unguessable slugs
+4. basic view counts per video per day
+5. a copyable embed snippet for any site
+
+DETAILED BEHAVIOR AND BUSINESS RULES
+Treat these as server-enforced product requirements, not interface suggestions:
+1. Store originals in object storage under unguessable keys and stream through URLs that cannot be enumerated or guessed.
+2. Validate file type and size server-side before accepting an upload and reject anything that isn’t a supported video container.
+3. Count a view once per session per video per day and store only the date and video, never a visitor identifier.
+4. Revoking a share link takes effect immediately while the video and its other links remain unaffected.
+
+DATA MODEL AND LIFECYCLE
+Design a small relational schema centered on Video, ShareLink, ViewEvent. Before implementing it, document:
+1. Each table’s purpose, primary key, ownership or tenant boundary, timestamps, status fields, and important attributes.
+2. Foreign keys, uniqueness constraints, check constraints, indexes needed by the named screens, and transaction boundaries for multi-record changes.
+3. The allowed lifecycle or state transitions, who may trigger each transition, which transitions are terminal or reversible, and what audit history must remain immutable.
+4. Archive, retention, and deletion behavior, including what happens to dependent records and external files.
+5. Idempotency strategy for submissions, jobs, imports, notifications, webhooks, or retries where applicable.
+Use migrations rather than ad-hoc schema creation. Store time instants consistently and retain named timezone context whenever local schedules or dates matter. Never rely on a counter, disabled button, or client-side check to preserve a business invariant.
+
+USERS, AUTHENTICATION, AND PERMISSIONS
+Implement only the roles required by the stated audience. Make the ownership and visibility model explicit before coding. Enforce authorization in every server-side query and mutation, including search, exports, attachments, live updates, and guessed URLs—not merely by hiding controls. Use secure session defaults, protect state-changing requests, and provide an understandable signed-out, expired-session, and forbidden state. Seed distinct users when multiple roles are required so permissions can be demonstrated and tested.
+
+INTERACTION AND VISUAL DIRECTION
+The product should feel fast, calm, focused, and credible rather than like a generic admin template. Use a clear visual hierarchy, restrained color, readable typography, generous hit targets, and consistent placement for primary actions. Start with server-rendered HTML and progressively enhance only the interactions that benefit from it. The core workflow must remain understandable if enhancement fails.
+
+Start with server-rendered Blade views and ordinary forms. Use Livewire for focused server-driven interactions and Alpine.js only for small local interface state. The core workflow must remain understandable without relying on a client-side application shell.
+
+Design mobile layouts intentionally instead of simply stacking desktop panels. Support keyboard navigation, visible focus, semantic landmarks, explicit labels, useful page titles, reduced-motion preferences, and screen-reader announcements for asynchronous results. Never use color alone to communicate state. Destructive actions require clear scope and confirmation; safe repeated actions should be idempotent.
+
+TECHNICAL DIRECTION
+Build this version with Laravel, PHP, Blade, Livewire, and Alpine.js. Use controllers and Blade forms for durable navigation, Livewire for focused interactions, Form Requests for validation, Policies and Gates for authorization, and small application actions or services for domain transitions. Use Eloquent with migrations, database constraints, and transactions; Laravel Storage for private S3-compatible files; queued Jobs for retryable work; the Scheduler for recurring work; and Notifications or Mail for email.
+
+Keep domain rules in testable server-side modules instead of route handlers or UI components. Separate persistence, external providers, and background work behind small interfaces without building a framework. Prefer ordinary HTML forms and URLs for durable navigation; use optimistic interaction only when failure can be reconciled clearly.
+
+The product brief currently identifies Astro, R2, Workers as capability context. Preserve any required native, browser-only, edge, storage, real-time, or background-processing capability through a narrow adapter appropriate to the selected framework. If the core workflow genuinely requires native or browser APIs, keep that runtime as the primary execution surface rather than simulating inaccessible capabilities or inventing an unnecessary web surface.
+
+Integrate with R2 object storage and copyable embed snippet. For every integration:
+- List required environment variables in an .env.example without real secrets.
+- Add a small adapter with timeouts, normalized errors, and a deterministic local fake or development path.
+- Verify inbound signatures and deduplicate provider events where supported.
+- Keep credentials server-side, encrypt long-lived provider tokens at rest, and redact secrets and sensitive payloads from logs.
+- Define retry, backoff, and idempotency behavior for any side effect that can be repeated.
+
+SECURITY AND PRIVACY
+Validate uploaded file types and sizes server-side, serve videos through unguessable URLs without ever listing the bucket publicly, and count views without fingerprinting visitors.
+Validate, normalize, and length-limit all untrusted input on the server. Escape rendered content by default, sanitize any intentionally accepted markup, rate-limit public or abuse-prone actions, and use private object storage plus short-lived authorized URLs for sensitive files. Collect the minimum personal data necessary for the named workflow. Document retention and deletion behavior. Add specific protections for the riskier surfaces in this app, such as uploads, redirects, outbound requests, email delivery, OAuth, webhooks, CSV import or export, and real-time connections.
+
+ACCEPTANCE SCENARIOS
+Automate these app-specific scenarios at the most appropriate level:
+1. An upload interrupted mid-transfer can be retried without leaving an orphaned, half-visible video in the library.
+2. A revoked share link returns a friendly gone page while the same video keeps playing through its remaining links and embeds.
+3. Given a browser that can’t play the uploaded codec, the player shows a clear unsupported-format message instead of an infinite spinner.
+
+TESTING
+Add focused unit tests for state transitions, authorization predicates, normalization, date or money calculations, and other risky domain rules. Add integration tests for persistence constraints and each external adapter’s success, timeout, retry, and rejection paths. Add at least one browser-level test for every end-to-end journey above, including one small-screen viewport. Tests must use isolated data and run through a documented single command.
+
+OPERATIONS AND FAILURE RECOVERY
+Add structured server logs with request, job, or event correlation IDs but no secrets or unnecessarily sensitive data. Make failures actionable in both the interface and logs. Background work must expose pending, succeeded, failed, and retrying states where relevant; do not silently swallow errors. Include safe database migration and rollback guidance, seed data, backup and restore notes, external-data cleanup behavior, and a basic health or diagnostic path appropriate to the stack.
+
+DELIVERABLES
+Ship the working application, migrations, representative seed data, tests, .env.example, and a concise README. The README must cover prerequisites, local setup, environment variables, migrations, seed and test commands, deployment, integration setup, backup and restore, security decisions, and known limitations. Seed data should exercise the happy path plus at least one empty, failed, overdue, expired, archived, or permission-restricted state relevant to the product.
+
+DEFINITION OF DONE
+The app is complete when a fresh developer can follow the README, create and migrate the database, run the app, sign in as each relevant role, complete every named journey using real persisted data, refresh without losing state, recover from common failures, and use the core interface on phone and desktop. All acceptance scenarios pass, permission boundaries are covered by tests, and no core screen is left as a placeholder.
+
+NON-GOALS
+Do not build adaptive-bitrate transcoding, live streaming, DRM, public channels, or a recommendation feed; v1 serves the uploaded file as-is.</pre></div><div class="prompt-box" id="prompt-panel-rails" role="tabpanel" aria-labelledby="prompt-tab-rails" tabindex="0" hidden><pre>You are building a production-ready software product named “Reelhouse”, a deliberately focused alternative to Vimeo. Build a complete, usable vertical slice—not a landing page, static mockup, or disconnected collection of components.
+
+WORKING AGREEMENT
+Before writing implementation code, produce a short technical plan that names the routes or pages, server actions or endpoints, data tables, important state transitions, authorization boundaries, background jobs, and external adapters. Resolve contradictions in favor of the narrow audience and non-goals below. Prefer a small, legible architecture over speculative abstraction, but do not omit persistence, validation, error handling, or tests.
+
+PRODUCT BRIEF
+Primary user: a founder hosting product demos and course videos.
+Primary outcome: upload videos once and share fast, branded player pages that don’t live on someone else’s platform.
+Product principle: optimize the exact workflow below instead of copying the full breadth of Vimeo. A first-time user should understand what to do from the interface itself, without a tour or documentation.
+
+END-TO-END USER JOURNEYS
+Implement all of these flows through the real interface and persistent data layer:
+1. The owner uploads a video with progress feedback, fills in title and description, picks a poster frame, and copies an unlisted share link.
+2. A viewer opens the share link, watches on the branded player page, and the owner later sees the view in that video’s daily counts.
+3. The owner pastes the embed snippet into a course page, confirms the player loads there, and revokes an old share link that leaked.
+
+SCREENS AND INFORMATION ARCHITECTURE
+Build these as coherent responsive views. Each screen must specify its primary action, secondary actions, visible status, validation feedback, empty state, loading or pending state, success confirmation, and recoverable failure state.
+1. Library: uploaded videos with thumbnails, duration, file size, view totals, share and embed actions, and progress for in-flight uploads.
+2. Upload: drag-and-drop with file validation, progress, title, description, and poster-frame selection.
+3. Player page: a branded header, the video player, title, and description, with nothing else competing for attention.
+4. Video detail: share links with created dates and revoke actions, a daily view chart, the embed snippet with a copy button, and a replace-file action.
+
+CORE CAPABILITIES
+1. direct uploads to object storage with progress
+2. a clean branded player page per video
+3. unlisted share links with unguessable slugs
+4. basic view counts per video per day
+5. a copyable embed snippet for any site
+
+DETAILED BEHAVIOR AND BUSINESS RULES
+Treat these as server-enforced product requirements, not interface suggestions:
+1. Store originals in object storage under unguessable keys and stream through URLs that cannot be enumerated or guessed.
+2. Validate file type and size server-side before accepting an upload and reject anything that isn’t a supported video container.
+3. Count a view once per session per video per day and store only the date and video, never a visitor identifier.
+4. Revoking a share link takes effect immediately while the video and its other links remain unaffected.
+
+DATA MODEL AND LIFECYCLE
+Design a small relational schema centered on Video, ShareLink, ViewEvent. Before implementing it, document:
+1. Each table’s purpose, primary key, ownership or tenant boundary, timestamps, status fields, and important attributes.
+2. Foreign keys, uniqueness constraints, check constraints, indexes needed by the named screens, and transaction boundaries for multi-record changes.
+3. The allowed lifecycle or state transitions, who may trigger each transition, which transitions are terminal or reversible, and what audit history must remain immutable.
+4. Archive, retention, and deletion behavior, including what happens to dependent records and external files.
+5. Idempotency strategy for submissions, jobs, imports, notifications, webhooks, or retries where applicable.
+Use migrations rather than ad-hoc schema creation. Store time instants consistently and retain named timezone context whenever local schedules or dates matter. Never rely on a counter, disabled button, or client-side check to preserve a business invariant.
+
+USERS, AUTHENTICATION, AND PERMISSIONS
+Implement only the roles required by the stated audience. Make the ownership and visibility model explicit before coding. Enforce authorization in every server-side query and mutation, including search, exports, attachments, live updates, and guessed URLs—not merely by hiding controls. Use secure session defaults, protect state-changing requests, and provide an understandable signed-out, expired-session, and forbidden state. Seed distinct users when multiple roles are required so permissions can be demonstrated and tested.
+
+INTERACTION AND VISUAL DIRECTION
+The product should feel fast, calm, focused, and credible rather than like a generic admin template. Use a clear visual hierarchy, restrained color, readable typography, generous hit targets, and consistent placement for primary actions. Start with server-rendered HTML and progressively enhance only the interactions that benefit from it. The core workflow must remain understandable if enhancement fails.
+
+Start with server-rendered Rails views and ordinary forms. Use Turbo for navigation, submissions, and server-driven updates, then Stimulus only for small browser-side behavior. Do not turn the product into a client-side SPA, and keep the core workflow usable when enhancement fails.
+
+Design mobile layouts intentionally instead of simply stacking desktop panels. Support keyboard navigation, visible focus, semantic landmarks, explicit labels, useful page titles, reduced-motion preferences, and screen-reader announcements for asynchronous results. Never use color alone to communicate state. Destructive actions require clear scope and confirmation; safe repeated actions should be idempotent.
+
+TECHNICAL DIRECTION
+Build this version with Ruby on Rails and Hotwire: Turbo for navigation, form submissions, and server-driven updates, and Stimulus for small browser-side behavior. Use RESTful controllers with strong parameters and explicit authorization, with domain transitions in testable models or small application services. Use Active Record migrations plus database-level constraints and transactions; Active Storage with an S3-compatible service for private files; Active Job with a durable queue backend for retryable work; Action Mailer for email; and Action Cable only when live updates are required.
+
+Keep domain rules in testable server-side modules instead of route handlers or UI components. Separate persistence, external providers, and background work behind small interfaces without building a framework. Prefer ordinary HTML forms and URLs for durable navigation; use optimistic interaction only when failure can be reconciled clearly.
+
+The product brief currently identifies Astro, R2, Workers as capability context. Preserve any required native, browser-only, edge, storage, real-time, or background-processing capability through a narrow adapter appropriate to the selected framework. If the core workflow genuinely requires native or browser APIs, keep that runtime as the primary execution surface rather than simulating inaccessible capabilities or inventing an unnecessary web surface.
+
+Integrate with R2 object storage and copyable embed snippet. For every integration:
+- List required environment variables in an .env.example without real secrets.
+- Add a small adapter with timeouts, normalized errors, and a deterministic local fake or development path.
+- Verify inbound signatures and deduplicate provider events where supported.
+- Keep credentials server-side, encrypt long-lived provider tokens at rest, and redact secrets and sensitive payloads from logs.
+- Define retry, backoff, and idempotency behavior for any side effect that can be repeated.
+
+SECURITY AND PRIVACY
+Validate uploaded file types and sizes server-side, serve videos through unguessable URLs without ever listing the bucket publicly, and count views without fingerprinting visitors.
+Validate, normalize, and length-limit all untrusted input on the server. Escape rendered content by default, sanitize any intentionally accepted markup, rate-limit public or abuse-prone actions, and use private object storage plus short-lived authorized URLs for sensitive files. Collect the minimum personal data necessary for the named workflow. Document retention and deletion behavior. Add specific protections for the riskier surfaces in this app, such as uploads, redirects, outbound requests, email delivery, OAuth, webhooks, CSV import or export, and real-time connections.
+
+ACCEPTANCE SCENARIOS
+Automate these app-specific scenarios at the most appropriate level:
+1. An upload interrupted mid-transfer can be retried without leaving an orphaned, half-visible video in the library.
+2. A revoked share link returns a friendly gone page while the same video keeps playing through its remaining links and embeds.
+3. Given a browser that can’t play the uploaded codec, the player shows a clear unsupported-format message instead of an infinite spinner.
+
+TESTING
+Add focused unit tests for state transitions, authorization predicates, normalization, date or money calculations, and other risky domain rules. Add integration tests for persistence constraints and each external adapter’s success, timeout, retry, and rejection paths. Add at least one browser-level test for every end-to-end journey above, including one small-screen viewport. Tests must use isolated data and run through a documented single command.
+
+OPERATIONS AND FAILURE RECOVERY
+Add structured server logs with request, job, or event correlation IDs but no secrets or unnecessarily sensitive data. Make failures actionable in both the interface and logs. Background work must expose pending, succeeded, failed, and retrying states where relevant; do not silently swallow errors. Include safe database migration and rollback guidance, seed data, backup and restore notes, external-data cleanup behavior, and a basic health or diagnostic path appropriate to the stack.
+
+DELIVERABLES
+Ship the working application, migrations, representative seed data, tests, .env.example, and a concise README. The README must cover prerequisites, local setup, environment variables, migrations, seed and test commands, deployment, integration setup, backup and restore, security decisions, and known limitations. Seed data should exercise the happy path plus at least one empty, failed, overdue, expired, archived, or permission-restricted state relevant to the product.
+
+DEFINITION OF DONE
+The app is complete when a fresh developer can follow the README, create and migrate the database, run the app, sign in as each relevant role, complete every named journey using real persisted data, refresh without losing state, recover from common failures, and use the core interface on phone and desktop. All acceptance scenarios pass, permission boundaries are covered by tests, and no core screen is left as a placeholder.
+
+NON-GOALS
+Do not build adaptive-bitrate transcoding, live streaming, DRM, public channels, or a recommendation feed; v1 serves the uploaded file as-is.</pre></div><div class="prompt-actions"><button class="button primary" type="button" id="copy-prompt">Copy AHA prompt</button></div></section><section class="section" aria-labelledby="mini-heading"><h2 id="mini-heading">Build just one piece</h2><p>Not ready to replace all of Vimeo? Fine. These are the peculiar sub-problems hiding inside it — the parts that are actually interesting to build. Each one is a standalone prompt, scoped to an evening, no strings attached to the full build.</p><details class="mini"><summary><strong>The upload that dies at 80% and picks itself back up</strong><span>Multipart uploads, resumable progress, and no half-visible zombie videos.</span></summary><pre>Build a resumable direct-to-storage upload flow for large video files.
+
+Browsers lose Wi-Fi, laptops sleep, and a 2GB upload that restarts from zero is a rage-quit. Split the file into parts, upload them directly to object storage with per-part progress, and persist enough state (upload id, completed part numbers) that a page reload can resume from the last finished part instead of byte zero.
+
+Keep the library honest: a video row is created in a pending state when the upload starts, becomes visible only when all parts are verified and assembled, and pending rows older than a cutoff get garbage-collected along with their orphaned parts in storage. Validate type and size server-side when issuing the upload grant, not just in the browser, and reject non-video containers before a single byte lands.
+
+Done when: killing the network mid-upload and retrying resumes from the last completed part, an abandoned upload never appears in the library, and storage contains no orphaned part debris after cleanup runs.</pre><button class="mini-copy" type="button">Copy this prompt</button></details><details class="mini"><summary><strong>The view counter that forgets your face immediately</strong><span>Once per session per day, no fingerprints, no visitor table at all.</span></summary><pre>Build view counting for a video host that stores nothing about viewers.
+
+A view increments a (video_id, day) counter, and that&#39;s the entire schema, no visitor ids, no IPs, no fingerprints. The problem is once per session per video per day without a durable identifier. Use ephemeral session state: a sessionStorage flag keyed by video and date on the client, so refreshes and rewatches within a session don&#39;t double-count, backed by counting only after a few seconds of actual playback so bounces and autoplays don&#39;t inflate numbers.
+
+Accept the tradeoff honestly: a cleared session counts again, and that&#39;s fine, you want trends, not surveillance. Increment atomically so a popular link shared in a group chat doesn&#39;t lose counts to races, and filter obvious bots and link-preview crawlers by user agent before counting.
+
+Done when: refreshing five times in one session yields one view, the database schema provably contains no viewer-identifying column, and concurrent viewers all land in the counter.</pre><button class="mini-copy" type="button">Copy this prompt</button></details><details class="mini"><summary><strong>The share link you can kill without killing the video</strong><span>Revocation in one place, playback everywhere else, and nobody can guess a URL.</span></summary><pre>Build unlisted share links with instant revocation for hosted videos.
+
+Store originals under unguessable object keys and never expose them. Each video can have many share links, random high-entropy slugs, and each link resolves to a player page only while it&#39;s live. Revoking one link kills it immediately with a friendly gone page while the video keeps playing through its other links and existing embeds. That means the link token, not the storage key, is the unit of access: the player fetches video content through short-lived signed URLs minted per playback, so a leaked media URL goes stale in minutes and a revoked link can&#39;t mint new ones.
+
+Never let the storage bucket be publicly listable, and make sure the gone page leaks nothing, no title, no thumbnail, no hint of what used to be there.
+
+Done when: a revoked link 404s on the next request while sibling links keep playing, media URLs harvested from devtools expire quickly, and no URL in the system can be enumerated.</pre><button class="mini-copy" type="button">Copy this prompt</button></details><details class="mini"><summary><strong>The poster frame picked from the video itself</strong><span>Scrub, pause, capture. Canvas does the transcoding-free thumbnail.</span></summary><pre>Build an in-browser poster-frame picker for uploaded videos.
+
+No server-side transcoding pipeline, so the browser does the work. Load the video in a muted player, let the user scrub to the frame they want, and capture it by drawing the current frame to a canvas and exporting a JPEG at a sensible size. The fiddly parts: seeking is asynchronous, so capture only after the seeked event fires or you&#39;ll grab the previous frame; a video element that hasn&#39;t rendered a frame yet produces a black capture, so wait for enough data before enabling the button; and preserve the aspect ratio when scaling to the thumbnail dimensions instead of letterboxing or stretching.
+
+Offer a fallback strip of auto-sampled frames at intervals through the video for one-click picking, and upload the chosen JPEG as the video&#39;s poster, shown before playback everywhere the video appears.
+
+Done when: the captured image matches the paused frame exactly, capture never fires before the seek completes, and the chosen poster survives a page reload on the player page.</pre><button class="mini-copy" type="button">Copy this prompt</button></details></section><section class="section" aria-labelledby="faq-heading"><h2 id="faq-heading">Frequently asked questions</h2><details class="faq"><summary>How long does it take to build your own Vimeo?</summary><p>A basic version — uploads, branded player, unlisted links, view counts — takes about 10 hours. Roughly 3 days gets you a solid v1 with captions, chapters, folders, password links, analytics charts. Matching everything Vimeo really does (adaptive transcoding pipeline, drm, live streaming, apps) is closer to 3 months+, which is exactly why you should scope down instead.</p></details><details class="faq"><summary>How much does Vimeo cost if I keep subscribing?</summary><p>Vimeo runs $20–$65 per month on public paid plans, which is $240–$780 per year. A focused self-built replacement costs your build time plus close-to-zero hosting.</p></details><details class="faq"><summary>What stack should I use to build a Vimeo alternative?</summary><p>The build prompt on this page ships in four flavors: the AHA stack (Astro, HTMX, Alpine.js), Next.js, Laravel, and Ruby on Rails. The capability context for this product is Astro, R2, Workers. Pick the stack you already know — the scope matters more than the framework.</p></details><details class="faq"><summary>What features does a minimal Vimeo replacement need?</summary><p>A useful v1 needs: direct uploads to object storage with progress; a clean branded player page per video; unlisted share links with unguessable slugs; basic view counts per video per day; a copyable embed snippet for any site. Everything else is scope creep until you personally miss it.</p></details><details class="faq"><summary>What should I deliberately not build?</summary><p>Do not build adaptive-bitrate transcoding, live streaming, DRM, public channels, or a recommendation feed; v1 serves the uploaded file as-is.</p></details><details class="faq"><summary>Does this build also replace Wistia?</summary><p>Yes. Vimeo, Wistia all solve the same core job — upload videos once and share fast, branded player pages that don’t live on someone else’s platform. The scoped v1 on this page covers what most people use any of them for, so one focused build replaces whichever you currently pay for.</p></details></section><section class="section" aria-labelledby="related-heading"><h2 id="related-heading">More marketing subscriptions to replace</h2><ul class="related-list"><li><a href="/build-your-own-typeform/">Build your own Typeform</a><span>$29–$99/mo · from 2 hours</span></li><li><a href="/build-your-own-buffer/">Build your own Buffer</a><span>$18–$36/mo · from 8 hours</span></li><li><a href="/build-your-own-mailchimp/">Build your own Mailchimp</a><span>$20–$350/mo · from 12 hours</span></li><li><a href="/build-your-own-kit/">Build your own Kit</a><span>$29–$79/mo · from 10 hours</span></li></ul><p class="related-home"><a href="/#audit">Browse all 109 buildable subscriptions →</a></p></section></main><footer><a class="logo footer-logo" href="/"><span class="logo-mark">EZ</span><span>ezvibecode</span></a><p><a href="/blog/">Blog</a></p><p><a href="/guides/">Guides</a></p><p><a href="/changelog/">Changelog</a></p><p>A tiny idea about tiny software.</p><p>Built with vibes, obviously.</p></footer><div class="toast" id="toast" role="status" aria-live="polite">Prompt copied. Go ship it.</div><script type="module">var e=Array.from(document.querySelectorAll(`.prompt-tab`)),t=Array.from(document.querySelectorAll(`.prompt-box`)),n=document.querySelector(`#copy-prompt`),r=r=>{e.forEach(e=>{let t=e.dataset.framework===r;e.setAttribute(`aria-selected`,String(t)),e.tabIndex=t?0:-1}),t.forEach(e=>{e.hidden=e.id!==`prompt-panel-${r}`}),n.textContent=`Copy ${e.find(e=>e.dataset.framework===r)?.textContent||`prompt`} prompt`};e.forEach((t,n)=>{t.addEventListener(`click`,()=>r(t.dataset.framework)),t.addEventListener(`keydown`,t=>{let i;t.key===`ArrowRight`&&(i=(n+1)%e.length),t.key===`ArrowLeft`&&(i=(n-1+e.length)%e.length),t.key===`Home`&&(i=0),t.key===`End`&&(i=e.length-1),i!==void 0&&(t.preventDefault(),r(e[i].dataset.framework),e[i].focus())})}),n?.addEventListener(`click`,async()=>{let e=t.find(e=>!e.hidden);await navigator.clipboard.writeText(e?.querySelector(`pre`)?.textContent||``);let n=document.querySelector(`#toast`);n.classList.add(`show`),setTimeout(()=>n.classList.remove(`show`),2200)}),document.querySelectorAll(`.mini-copy`).forEach(e=>{e.addEventListener(`click`,async()=>{let t=e.closest(`.mini`)?.querySelector(`pre`)?.textContent||``;await navigator.clipboard.writeText(t);let n=document.querySelector(`#toast`);n.classList.add(`show`),setTimeout(()=>n.classList.remove(`show`),2200)})});var i=document.querySelector(`#theme-toggle`);localStorage.getItem(`vibe-theme`)===`dark`&&(document.documentElement.dataset.theme=`dark`),i?.addEventListener(`click`,()=>{let e=document.documentElement.dataset.theme!==`dark`;document.documentElement.dataset.theme=e?`dark`:`light`,localStorage.setItem(`vibe-theme`,e?`dark`:`light`)});</script><script type="module" src="https://static.cloudflareinsights.com/beacon.min.js/vce701823e78c4301a35b7e07294d87301792088814092" integrity="sha512-UKNk8GbxkABxKcXYuLkO16EleLGUkcvJWtpSNmExE0Too3ZaFAxTscNWEc1OdAv5/BikHawapSCaiD2XCmp+Bw==" data-cf-beacon='{"version":"2024.11.0","token":"228ace6b78e04bb494384851ece32c99","r":1,"spa":2}' crossorigin="anonymous"></script>
+</body></html>

@@ -1,0 +1,404 @@
+<!DOCTYPE html><html lang="en"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width"><title>How to Vibe Code Your Own Make Alternative</title><meta name="description" content="Learn how to build your own with ezvibecode Make alternative with copyable AI prompts, a scoped feature list, and realistic build estimates starting at 4 days."><link rel="canonical" href="https://ezvibecode.com/build-your-own-make/"><meta name="theme-color" content="#f4f1e8"><link rel="icon" href="/favicon.ico" sizes="32x32"><link rel="icon" href="/favicon.png" type="image/png" sizes="512x512"><link rel="apple-touch-icon" href="/apple-touch-icon.png" sizes="180x180"><meta property="og:type" content="article"><meta property="og:site_name" content="ezvibecode"><meta property="og:title" content="How to Vibe Code Your Own Make Alternative"><meta property="og:description" content="Learn how to build your own with ezvibecode Make alternative with copyable AI prompts, a scoped feature list, and realistic build estimates starting at 4 days."><meta property="og:url" content="https://ezvibecode.com/build-your-own-make/"><meta property="og:image" content="https://ezvibecode.com/og/build-your-own-make.png"><meta property="og:image:type" content="image/png"><meta property="og:image:width" content="1200"><meta property="og:image:height" content="630"><meta property="og:image:alt" content="How to Vibe Code Your Own Make Alternative"><meta name="twitter:card" content="summary_large_image"><meta name="twitter:title" content="How to Vibe Code Your Own Make Alternative"><meta name="twitter:description" content="Learn how to build your own with ezvibecode Make alternative with copyable AI prompts, a scoped feature list, and realistic build estimates starting at 4 days."><meta name="twitter:image" content="https://ezvibecode.com/og/build-your-own-make.png"><meta name="twitter:image:alt" content="How to Vibe Code Your Own Make Alternative"><script type="application/ld+json">{"@context":"https://schema.org","@type":"FAQPage","mainEntity":[{"@type":"Question","name":"How long does it take to build your own Make?","acceptedAnswer":{"@type":"Answer","text":"A basic version — scheduled fetch, field mapping, one destination — takes about 4 days. Roughly 2 weeks+ gets you a solid v1 with visual run diagram, branching, dry runs, failure queue. Matching everything Make really does (connector ecosystem, arbitrary loops, visual canvas engine) is closer to 3 months+, which is exactly why you should scope down instead."}},{"@type":"Question","name":"How much does Make cost if I keep subscribing?","acceptedAnswer":{"@type":"Answer","text":"Make runs $10–$29 per month on public paid plans, which is $120–$348 per year. A focused self-built replacement costs your build time plus close-to-zero hosting."}},{"@type":"Question","name":"What stack should I use to build a Make alternative?","acceptedAnswer":{"@type":"Answer","text":"The build prompt on this page ships in four flavors: the AHA stack (Astro, HTMX, Alpine.js), Next.js, Laravel, and Ruby on Rails. The capability context for this product is Astro, Workflows, D1. Pick the stack you already know — the scope matters more than the framework."}},{"@type":"Question","name":"What features does a minimal Make replacement need?","acceptedAnswer":{"@type":"Answer","text":"A useful v1 needs: scheduled and webhook triggers; HTTP fetch, map fields, filter, branch, batch, and destination steps; visual left-to-right run diagram with step status; sample-data mapping editor and dry run; run history, failure queue, replay, and per-step logs. Everything else is scope creep until you personally miss it."}},{"@type":"Question","name":"What should I deliberately not build?","acceptedAnswer":{"@type":"Answer","text":"Do not build arbitrary loops, user code, thousands of connectors, or a general integration marketplace."}}]}</script><script type="application/ld+json">{"@context":"https://schema.org","@type":"BreadcrumbList","itemListElement":[{"@type":"ListItem","position":1,"name":"ezvibecode","item":"https://ezvibecode.com/"},{"@type":"ListItem","position":2,"name":"Build your own Make","item":"https://ezvibecode.com/build-your-own-make/"}]}</script><script type="application/ld+json">{"@context":"https://schema.org","@type":"TechArticle","headline":"How to Vibe Code Your Own Make Alternative","description":"Learn how to build your own with ezvibecode Make alternative with copyable AI prompts, a scoped feature list, and realistic build estimates starting at 4 days.","url":"https://ezvibecode.com/build-your-own-make/","image":"https://ezvibecode.com/og/build-your-own-make.png","author":{"@type":"Organization","name":"ezvibecode","url":"https://ezvibecode.com/"}}</script><link rel="stylesheet" href="/_astro/build-your-own-_slug_.0qOs6ThE.css"></head><body><header class="site-header"><a class="logo" href="/" aria-label="ezvibecode home"><span class="logo-mark">EZ</span><span>ezvibecode</span></a><nav class="header-links" aria-label="Site"><a class="header-link" href="/blog/">Blog</a><a class="header-link" href="/guides/">Guides</a><a class="header-link" href="/#audit">All 109 apps</a></nav><button class="icon-button" id="theme-toggle" type="button" aria-label="Toggle dark mode" title="Toggle dark mode">◐</button></header><main><nav class="breadcrumb" aria-label="Breadcrumb"><a href="/">Home</a><span aria-hidden="true">/</span><span aria-current="page">Build your own Make</span></nav><section class="hero"><p class="eyebrow">Operations · Side quest build</p><h1>How to Vibe Code Your Own <em>Make Alternative</em></h1><p class="lede">A visible data pipeline for the process only your company has. Make charges $10–$29 per month — that’s $120–$348 a year — for something you can replace with focused software of your own. Here is the honest scope, the honest timeline, and the exact prompt to hand your coding agent.</p><div class="hero-meta"><span class="effort ambitious">from 4 days</span><span class="verdict">Opinionate the pipeline</span></div></section><section class="section" aria-labelledby="who-heading"><h2 id="who-heading">Who this replacement is for</h2><p>This build targets a technical operations team moving records between three internal systems. The goal: run inspectable scheduled data pipelines with mapping, branching, and recovery. If you need more than that, keep paying — the point of building it yourself is owning a tool shaped exactly like your workflow, not re-implementing a venture-funded roadmap.</p></section><section class="section" aria-labelledby="time-heading"><h2 id="time-heading">How long it actually takes</h2><p>One number would be a lie, so here are three. Each tier is a real, usable product — pick the one that matches how much of Make you actually use.</p><table class="estimate-table"><thead><tr><th scope="col">Estimate</th><th scope="col">What you get</th></tr></thead><tbody><tr><th scope="row">4 days</th><td>scheduled fetch, field mapping, one destination</td></tr><tr><th scope="row">2 weeks+</th><td>visual run diagram, branching, dry runs, failure queue</td></tr><tr><th scope="row">3 months+</th><td>connector ecosystem, arbitrary loops, visual canvas engine — the part you should probably skip</td></tr></tbody></table></section><section class="section" aria-labelledby="features-heading"><h2 id="features-heading">What a minimal Make alternative needs</h2><ul class="feature-list"><li>scheduled and webhook triggers</li><li>HTTP fetch, map fields, filter, branch, batch, and destination steps</li><li>visual left-to-right run diagram with step status</li><li>sample-data mapping editor and dry run</li><li>run history, failure queue, replay, and per-step logs</li></ul><div class="fact-grid"><div class="fact"><h3>Data model</h3><p>Pipeline, Node, Edge, Run, NodeRun, Credential</p></div><div class="fact"><h3>Integrations</h3><p>HTTP APIs, Queues, Cron Triggers</p></div><div class="fact"><h3>Capability context</h3><p>Astro, Workflows, D1</p></div></div><div class="callout guardrail"><h3>The guardrail</h3><p>Encrypt credentials, cap payload sizes, redact logs, and require idempotency keys for writes.</p></div><div class="callout nongoal"><h3>Deliberate non-goals</h3><p>Do not build arbitrary loops, user code, thousands of connectors, or a general integration marketplace.</p></div></section><section class="section" aria-labelledby="prompt-heading"><h2 id="prompt-heading">The complete build prompt</h2><p>Copy this into your coding agent of choice. It is scoped for a useful v1 — journeys, screens, business rules, data model, security, tests, and acceptance scenarios included. Pick your stack:</p><div class="prompt-tabs" role="tablist" aria-label="Choose your stack"><button class="prompt-tab" id="prompt-tab-aha" type="button" role="tab" aria-selected="true" aria-controls="prompt-panel-aha" tabindex="0" data-framework="aha">AHA</button><button class="prompt-tab" id="prompt-tab-nextjs" type="button" role="tab" aria-selected="false" aria-controls="prompt-panel-nextjs" tabindex="-1" data-framework="nextjs">Next.js</button><button class="prompt-tab" id="prompt-tab-laravel" type="button" role="tab" aria-selected="false" aria-controls="prompt-panel-laravel" tabindex="-1" data-framework="laravel">Laravel</button><button class="prompt-tab" id="prompt-tab-rails" type="button" role="tab" aria-selected="false" aria-controls="prompt-panel-rails" tabindex="-1" data-framework="rails">Ruby on Rails</button></div><div class="prompt-box" id="prompt-panel-aha" role="tabpanel" aria-labelledby="prompt-tab-aha" tabindex="0"><pre>You are building a production-ready software product named “Pipeloop”, a deliberately focused alternative to Make. Build a complete, usable vertical slice—not a landing page, static mockup, or disconnected collection of components.
+
+WORKING AGREEMENT
+Before writing implementation code, produce a short technical plan that names the routes or pages, server actions or endpoints, data tables, important state transitions, authorization boundaries, background jobs, and external adapters. Resolve contradictions in favor of the narrow audience and non-goals below. Prefer a small, legible architecture over speculative abstraction, but do not omit persistence, validation, error handling, or tests.
+
+PRODUCT BRIEF
+Primary user: a technical operations team moving records between three internal systems.
+Primary outcome: run inspectable scheduled data pipelines with mapping, branching, and recovery.
+Product principle: optimize the exact workflow below instead of copying the full breadth of Make. A first-time user should understand what to do from the interface itself, without a tour or documentation.
+
+END-TO-END USER JOURNEYS
+Implement all of these flows through the real interface and persistent data layer:
+1. An operator creates a scheduled pipeline, loads sample source data, maps fields into the destination shape, adds a filter and branch, completes a dry run, then publishes and enables it.
+2. A webhook starts a published pipeline, records are fetched and batched, each record follows the matching branch, and the live run diagram shows counts and status at every node.
+3. A destination batch fails, enters the failure queue with redacted diagnostics, and is replayed after correction without refetching or duplicating already accepted records.
+
+SCREENS AND INFORMATION ARCHITECTURE
+Build these as coherent responsive views. Each screen must specify its primary action, secondary actions, visible status, validation feedback, empty state, loading or pending state, success confirmation, and recoverable failure state.
+1. Pipeline dashboard: enabled state, trigger type and schedule, published revision, last run, processed-record count, failures, create, pause, and manual-run actions.
+2. Visual builder: left-to-right nodes and edges, trigger, fetch, map, filter, branch, batch, and destination palette, credential references, validation, and publish controls.
+3. Mapping and dry-run inspector: sample input, field-path autocomplete, output preview, per-record branch result, validation errors, payload sizes, and no-write dry-run summary.
+4. Runs and failure queue: searchable run list, node diagram with timing and counts, per-node attempts and redacted logs, failed batches, replay scope, and cancellation state.
+
+CORE CAPABILITIES
+1. scheduled and webhook triggers
+2. HTTP fetch, map fields, filter, branch, batch, and destination steps
+3. visual left-to-right run diagram with step status
+4. sample-data mapping editor and dry run
+5. run history, failure queue, replay, and per-step logs
+
+DETAILED BEHAVIOR AND BUSINESS RULES
+Treat these as server-enforced product requirements, not interface suggestions:
+1. Validate every pipeline as a directed acyclic graph with one trigger, reachable nodes, compatible input and output shapes, bounded fan-out, and no orphaned destinations.
+2. Runs pin an immutable published pipeline revision and credential references; later edits cannot alter the graph or mapping used by an in-progress or historical run.
+3. Cap source payload, record count, batch size, branch fan-out, and stored diagnostic output; move large batches through queues rather than a single request lifecycle.
+4. Checkpoint each node and batch durably, redact credential and configured sensitive fields, and use pipeline, run, node, and record keys to make destination writes idempotent.
+
+DATA MODEL AND LIFECYCLE
+Design a small relational schema centered on Pipeline, Node, Edge, Run, NodeRun, Credential. Before implementing it, document:
+1. Each table’s purpose, primary key, ownership or tenant boundary, timestamps, status fields, and important attributes.
+2. Foreign keys, uniqueness constraints, check constraints, indexes needed by the named screens, and transaction boundaries for multi-record changes.
+3. The allowed lifecycle or state transitions, who may trigger each transition, which transitions are terminal or reversible, and what audit history must remain immutable.
+4. Archive, retention, and deletion behavior, including what happens to dependent records and external files.
+5. Idempotency strategy for submissions, jobs, imports, notifications, webhooks, or retries where applicable.
+Use migrations rather than ad-hoc schema creation. Store time instants consistently and retain named timezone context whenever local schedules or dates matter. Never rely on a counter, disabled button, or client-side check to preserve a business invariant.
+
+USERS, AUTHENTICATION, AND PERMISSIONS
+Implement only the roles required by the stated audience. Make the ownership and visibility model explicit before coding. Enforce authorization in every server-side query and mutation, including search, exports, attachments, live updates, and guessed URLs—not merely by hiding controls. Use secure session defaults, protect state-changing requests, and provide an understandable signed-out, expired-session, and forbidden state. Seed distinct users when multiple roles are required so permissions can be demonstrated and tested.
+
+INTERACTION AND VISUAL DIRECTION
+The product should feel fast, calm, focused, and credible rather than like a generic admin template. Use a clear visual hierarchy, restrained color, readable typography, generous hit targets, and consistent placement for primary actions. Start with server-rendered HTML and progressively enhance only the interactions that benefit from it. The core workflow must remain understandable if enhancement fails.
+
+Start with server-rendered Astro pages and ordinary HTML forms. Use HTMX for form submissions, partial navigation, and server-driven updates, then Alpine.js only for small local browser state. The core workflow must remain understandable if either enhancement layer fails.
+
+Design mobile layouts intentionally instead of simply stacking desktop panels. Support keyboard navigation, visible focus, semantic landmarks, explicit labels, useful page titles, reduced-motion preferences, and screen-reader announcements for asynchronous results. Never use color alone to communicate state. Destructive actions require clear scope and confirmation; safe repeated actions should be idempotent.
+
+TECHNICAL DIRECTION
+Build this version with the AHA stack: Astro for routing, layouts, and server-rendered pages; HTMX for interactions that benefit from HTML fragment responses; and Alpine.js for small, local interface state. Prefer Cloudflare D1 for relational persistence, R2 for object storage, Workers for server endpoints and scheduled work, Durable Objects only for coordinated real-time state, and Workflows or Queues for durable background jobs—but only when the product requirements call for them.
+
+Keep domain rules in testable server-side modules instead of route handlers or UI components. Separate persistence, external providers, and background work behind small interfaces without building a framework. Prefer ordinary HTML forms and URLs for durable navigation; use optimistic interaction only when failure can be reconciled clearly.
+
+The product brief currently identifies Astro, Workflows, D1 as capability context. Preserve any required native, browser-only, edge, storage, real-time, or background-processing capability through a narrow adapter appropriate to the selected framework. If the core workflow genuinely requires native or browser APIs, keep that runtime as the primary execution surface rather than simulating inaccessible capabilities or inventing an unnecessary web surface.
+
+Integrate with HTTP APIs and Queues and Cron Triggers. For every integration:
+- List required environment variables in an .env.example without real secrets.
+- Add a small adapter with timeouts, normalized errors, and a deterministic local fake or development path.
+- Verify inbound signatures and deduplicate provider events where supported.
+- Keep credentials server-side, encrypt long-lived provider tokens at rest, and redact secrets and sensitive payloads from logs.
+- Define retry, backoff, and idempotency behavior for any side effect that can be repeated.
+
+SECURITY AND PRIVACY
+Encrypt credentials, cap payload sizes, redact logs, and require idempotency keys for writes.
+Validate, normalize, and length-limit all untrusted input on the server. Escape rendered content by default, sanitize any intentionally accepted markup, rate-limit public or abuse-prone actions, and use private object storage plus short-lived authorized URLs for sensitive files. Collect the minimum personal data necessary for the named workflow. Document retention and deletion behavior. Add specific protections for the riskier surfaces in this app, such as uploads, redirects, outbound requests, email delivery, OAuth, webhooks, CSV import or export, and real-time connections.
+
+ACCEPTANCE SCENARIOS
+Automate these app-specific scenarios at the most appropriate level:
+1. Given sample data with a missing required destination field, dry run identifies the exact node and record and publishing remains blocked.
+2. Given records matching different branch conditions, each record reaches only the configured destination path and the node counts reconcile with the source total.
+3. Given one failed batch after other batches succeeded, replay processes only that failed batch and does not duplicate destination records already accepted.
+
+TESTING
+Add focused unit tests for state transitions, authorization predicates, normalization, date or money calculations, and other risky domain rules. Add integration tests for persistence constraints and each external adapter’s success, timeout, retry, and rejection paths. Add at least one browser-level test for every end-to-end journey above, including one small-screen viewport. Tests must use isolated data and run through a documented single command.
+
+OPERATIONS AND FAILURE RECOVERY
+Add structured server logs with request, job, or event correlation IDs but no secrets or unnecessarily sensitive data. Make failures actionable in both the interface and logs. Background work must expose pending, succeeded, failed, and retrying states where relevant; do not silently swallow errors. Include safe database migration and rollback guidance, seed data, backup and restore notes, external-data cleanup behavior, and a basic health or diagnostic path appropriate to the stack.
+
+DELIVERABLES
+Ship the working application, migrations, representative seed data, tests, .env.example, and a concise README. The README must cover prerequisites, local setup, environment variables, migrations, seed and test commands, deployment, integration setup, backup and restore, security decisions, and known limitations. Seed data should exercise the happy path plus at least one empty, failed, overdue, expired, archived, or permission-restricted state relevant to the product.
+
+DEFINITION OF DONE
+The app is complete when a fresh developer can follow the README, create and migrate the database, run the app, sign in as each relevant role, complete every named journey using real persisted data, refresh without losing state, recover from common failures, and use the core interface on phone and desktop. All acceptance scenarios pass, permission boundaries are covered by tests, and no core screen is left as a placeholder.
+
+NON-GOALS
+Do not build arbitrary loops, user code, thousands of connectors, or a general integration marketplace.</pre></div><div class="prompt-box" id="prompt-panel-nextjs" role="tabpanel" aria-labelledby="prompt-tab-nextjs" tabindex="0" hidden><pre>You are building a production-ready software product named “Pipeloop”, a deliberately focused alternative to Make. Build a complete, usable vertical slice—not a landing page, static mockup, or disconnected collection of components.
+
+WORKING AGREEMENT
+Before writing implementation code, produce a short technical plan that names the routes or pages, server actions or endpoints, data tables, important state transitions, authorization boundaries, background jobs, and external adapters. Resolve contradictions in favor of the narrow audience and non-goals below. Prefer a small, legible architecture over speculative abstraction, but do not omit persistence, validation, error handling, or tests.
+
+PRODUCT BRIEF
+Primary user: a technical operations team moving records between three internal systems.
+Primary outcome: run inspectable scheduled data pipelines with mapping, branching, and recovery.
+Product principle: optimize the exact workflow below instead of copying the full breadth of Make. A first-time user should understand what to do from the interface itself, without a tour or documentation.
+
+END-TO-END USER JOURNEYS
+Implement all of these flows through the real interface and persistent data layer:
+1. An operator creates a scheduled pipeline, loads sample source data, maps fields into the destination shape, adds a filter and branch, completes a dry run, then publishes and enables it.
+2. A webhook starts a published pipeline, records are fetched and batched, each record follows the matching branch, and the live run diagram shows counts and status at every node.
+3. A destination batch fails, enters the failure queue with redacted diagnostics, and is replayed after correction without refetching or duplicating already accepted records.
+
+SCREENS AND INFORMATION ARCHITECTURE
+Build these as coherent responsive views. Each screen must specify its primary action, secondary actions, visible status, validation feedback, empty state, loading or pending state, success confirmation, and recoverable failure state.
+1. Pipeline dashboard: enabled state, trigger type and schedule, published revision, last run, processed-record count, failures, create, pause, and manual-run actions.
+2. Visual builder: left-to-right nodes and edges, trigger, fetch, map, filter, branch, batch, and destination palette, credential references, validation, and publish controls.
+3. Mapping and dry-run inspector: sample input, field-path autocomplete, output preview, per-record branch result, validation errors, payload sizes, and no-write dry-run summary.
+4. Runs and failure queue: searchable run list, node diagram with timing and counts, per-node attempts and redacted logs, failed batches, replay scope, and cancellation state.
+
+CORE CAPABILITIES
+1. scheduled and webhook triggers
+2. HTTP fetch, map fields, filter, branch, batch, and destination steps
+3. visual left-to-right run diagram with step status
+4. sample-data mapping editor and dry run
+5. run history, failure queue, replay, and per-step logs
+
+DETAILED BEHAVIOR AND BUSINESS RULES
+Treat these as server-enforced product requirements, not interface suggestions:
+1. Validate every pipeline as a directed acyclic graph with one trigger, reachable nodes, compatible input and output shapes, bounded fan-out, and no orphaned destinations.
+2. Runs pin an immutable published pipeline revision and credential references; later edits cannot alter the graph or mapping used by an in-progress or historical run.
+3. Cap source payload, record count, batch size, branch fan-out, and stored diagnostic output; move large batches through queues rather than a single request lifecycle.
+4. Checkpoint each node and batch durably, redact credential and configured sensitive fields, and use pipeline, run, node, and record keys to make destination writes idempotent.
+
+DATA MODEL AND LIFECYCLE
+Design a small relational schema centered on Pipeline, Node, Edge, Run, NodeRun, Credential. Before implementing it, document:
+1. Each table’s purpose, primary key, ownership or tenant boundary, timestamps, status fields, and important attributes.
+2. Foreign keys, uniqueness constraints, check constraints, indexes needed by the named screens, and transaction boundaries for multi-record changes.
+3. The allowed lifecycle or state transitions, who may trigger each transition, which transitions are terminal or reversible, and what audit history must remain immutable.
+4. Archive, retention, and deletion behavior, including what happens to dependent records and external files.
+5. Idempotency strategy for submissions, jobs, imports, notifications, webhooks, or retries where applicable.
+Use migrations rather than ad-hoc schema creation. Store time instants consistently and retain named timezone context whenever local schedules or dates matter. Never rely on a counter, disabled button, or client-side check to preserve a business invariant.
+
+USERS, AUTHENTICATION, AND PERMISSIONS
+Implement only the roles required by the stated audience. Make the ownership and visibility model explicit before coding. Enforce authorization in every server-side query and mutation, including search, exports, attachments, live updates, and guessed URLs—not merely by hiding controls. Use secure session defaults, protect state-changing requests, and provide an understandable signed-out, expired-session, and forbidden state. Seed distinct users when multiple roles are required so permissions can be demonstrated and tested.
+
+INTERACTION AND VISUAL DIRECTION
+The product should feel fast, calm, focused, and credible rather than like a generic admin template. Use a clear visual hierarchy, restrained color, readable typography, generous hit targets, and consistent placement for primary actions. Start with server-rendered HTML and progressively enhance only the interactions that benefit from it. The core workflow must remain understandable if enhancement fails.
+
+Render with React Server Components by default. Use Server Actions for authenticated form mutations and add Client Components only for interactions that genuinely require browser state, browser APIs, drag-and-drop, or live updates. The core workflow must remain understandable before client-side JavaScript finishes loading.
+
+Design mobile layouts intentionally instead of simply stacking desktop panels. Support keyboard navigation, visible focus, semantic landmarks, explicit labels, useful page titles, reduced-motion preferences, and screen-reader announcements for asynchronous results. Never use color alone to communicate state. Destructive actions require clear scope and confirmation; safe repeated actions should be idempotent.
+
+TECHNICAL DIRECTION
+Build this version with Next.js, the App Router, and TypeScript. Use Server Components by default, Server Actions for authenticated mutations, and Route Handlers for public APIs, OAuth callbacks, webhooks, feeds, uploads, and downloads. Use PostgreSQL through Drizzle ORM with versioned migrations and an isolated test database. Access S3-compatible object storage through a server-only adapter, and run slow or retryable work in a real job or workflow system instead of the request lifecycle.
+
+Keep domain rules in testable server-side modules instead of route handlers or UI components. Separate persistence, external providers, and background work behind small interfaces without building a framework. Prefer ordinary HTML forms and URLs for durable navigation; use optimistic interaction only when failure can be reconciled clearly.
+
+The product brief currently identifies Astro, Workflows, D1 as capability context. Preserve any required native, browser-only, edge, storage, real-time, or background-processing capability through a narrow adapter appropriate to the selected framework. If the core workflow genuinely requires native or browser APIs, keep that runtime as the primary execution surface rather than simulating inaccessible capabilities or inventing an unnecessary web surface.
+
+Integrate with HTTP APIs and Queues and Cron Triggers. For every integration:
+- List required environment variables in an .env.example without real secrets.
+- Add a small adapter with timeouts, normalized errors, and a deterministic local fake or development path.
+- Verify inbound signatures and deduplicate provider events where supported.
+- Keep credentials server-side, encrypt long-lived provider tokens at rest, and redact secrets and sensitive payloads from logs.
+- Define retry, backoff, and idempotency behavior for any side effect that can be repeated.
+
+SECURITY AND PRIVACY
+Encrypt credentials, cap payload sizes, redact logs, and require idempotency keys for writes.
+Validate, normalize, and length-limit all untrusted input on the server. Escape rendered content by default, sanitize any intentionally accepted markup, rate-limit public or abuse-prone actions, and use private object storage plus short-lived authorized URLs for sensitive files. Collect the minimum personal data necessary for the named workflow. Document retention and deletion behavior. Add specific protections for the riskier surfaces in this app, such as uploads, redirects, outbound requests, email delivery, OAuth, webhooks, CSV import or export, and real-time connections.
+
+ACCEPTANCE SCENARIOS
+Automate these app-specific scenarios at the most appropriate level:
+1. Given sample data with a missing required destination field, dry run identifies the exact node and record and publishing remains blocked.
+2. Given records matching different branch conditions, each record reaches only the configured destination path and the node counts reconcile with the source total.
+3. Given one failed batch after other batches succeeded, replay processes only that failed batch and does not duplicate destination records already accepted.
+
+TESTING
+Add focused unit tests for state transitions, authorization predicates, normalization, date or money calculations, and other risky domain rules. Add integration tests for persistence constraints and each external adapter’s success, timeout, retry, and rejection paths. Add at least one browser-level test for every end-to-end journey above, including one small-screen viewport. Tests must use isolated data and run through a documented single command.
+
+OPERATIONS AND FAILURE RECOVERY
+Add structured server logs with request, job, or event correlation IDs but no secrets or unnecessarily sensitive data. Make failures actionable in both the interface and logs. Background work must expose pending, succeeded, failed, and retrying states where relevant; do not silently swallow errors. Include safe database migration and rollback guidance, seed data, backup and restore notes, external-data cleanup behavior, and a basic health or diagnostic path appropriate to the stack.
+
+DELIVERABLES
+Ship the working application, migrations, representative seed data, tests, .env.example, and a concise README. The README must cover prerequisites, local setup, environment variables, migrations, seed and test commands, deployment, integration setup, backup and restore, security decisions, and known limitations. Seed data should exercise the happy path plus at least one empty, failed, overdue, expired, archived, or permission-restricted state relevant to the product.
+
+DEFINITION OF DONE
+The app is complete when a fresh developer can follow the README, create and migrate the database, run the app, sign in as each relevant role, complete every named journey using real persisted data, refresh without losing state, recover from common failures, and use the core interface on phone and desktop. All acceptance scenarios pass, permission boundaries are covered by tests, and no core screen is left as a placeholder.
+
+NON-GOALS
+Do not build arbitrary loops, user code, thousands of connectors, or a general integration marketplace.</pre></div><div class="prompt-box" id="prompt-panel-laravel" role="tabpanel" aria-labelledby="prompt-tab-laravel" tabindex="0" hidden><pre>You are building a production-ready software product named “Pipeloop”, a deliberately focused alternative to Make. Build a complete, usable vertical slice—not a landing page, static mockup, or disconnected collection of components.
+
+WORKING AGREEMENT
+Before writing implementation code, produce a short technical plan that names the routes or pages, server actions or endpoints, data tables, important state transitions, authorization boundaries, background jobs, and external adapters. Resolve contradictions in favor of the narrow audience and non-goals below. Prefer a small, legible architecture over speculative abstraction, but do not omit persistence, validation, error handling, or tests.
+
+PRODUCT BRIEF
+Primary user: a technical operations team moving records between three internal systems.
+Primary outcome: run inspectable scheduled data pipelines with mapping, branching, and recovery.
+Product principle: optimize the exact workflow below instead of copying the full breadth of Make. A first-time user should understand what to do from the interface itself, without a tour or documentation.
+
+END-TO-END USER JOURNEYS
+Implement all of these flows through the real interface and persistent data layer:
+1. An operator creates a scheduled pipeline, loads sample source data, maps fields into the destination shape, adds a filter and branch, completes a dry run, then publishes and enables it.
+2. A webhook starts a published pipeline, records are fetched and batched, each record follows the matching branch, and the live run diagram shows counts and status at every node.
+3. A destination batch fails, enters the failure queue with redacted diagnostics, and is replayed after correction without refetching or duplicating already accepted records.
+
+SCREENS AND INFORMATION ARCHITECTURE
+Build these as coherent responsive views. Each screen must specify its primary action, secondary actions, visible status, validation feedback, empty state, loading or pending state, success confirmation, and recoverable failure state.
+1. Pipeline dashboard: enabled state, trigger type and schedule, published revision, last run, processed-record count, failures, create, pause, and manual-run actions.
+2. Visual builder: left-to-right nodes and edges, trigger, fetch, map, filter, branch, batch, and destination palette, credential references, validation, and publish controls.
+3. Mapping and dry-run inspector: sample input, field-path autocomplete, output preview, per-record branch result, validation errors, payload sizes, and no-write dry-run summary.
+4. Runs and failure queue: searchable run list, node diagram with timing and counts, per-node attempts and redacted logs, failed batches, replay scope, and cancellation state.
+
+CORE CAPABILITIES
+1. scheduled and webhook triggers
+2. HTTP fetch, map fields, filter, branch, batch, and destination steps
+3. visual left-to-right run diagram with step status
+4. sample-data mapping editor and dry run
+5. run history, failure queue, replay, and per-step logs
+
+DETAILED BEHAVIOR AND BUSINESS RULES
+Treat these as server-enforced product requirements, not interface suggestions:
+1. Validate every pipeline as a directed acyclic graph with one trigger, reachable nodes, compatible input and output shapes, bounded fan-out, and no orphaned destinations.
+2. Runs pin an immutable published pipeline revision and credential references; later edits cannot alter the graph or mapping used by an in-progress or historical run.
+3. Cap source payload, record count, batch size, branch fan-out, and stored diagnostic output; move large batches through queues rather than a single request lifecycle.
+4. Checkpoint each node and batch durably, redact credential and configured sensitive fields, and use pipeline, run, node, and record keys to make destination writes idempotent.
+
+DATA MODEL AND LIFECYCLE
+Design a small relational schema centered on Pipeline, Node, Edge, Run, NodeRun, Credential. Before implementing it, document:
+1. Each table’s purpose, primary key, ownership or tenant boundary, timestamps, status fields, and important attributes.
+2. Foreign keys, uniqueness constraints, check constraints, indexes needed by the named screens, and transaction boundaries for multi-record changes.
+3. The allowed lifecycle or state transitions, who may trigger each transition, which transitions are terminal or reversible, and what audit history must remain immutable.
+4. Archive, retention, and deletion behavior, including what happens to dependent records and external files.
+5. Idempotency strategy for submissions, jobs, imports, notifications, webhooks, or retries where applicable.
+Use migrations rather than ad-hoc schema creation. Store time instants consistently and retain named timezone context whenever local schedules or dates matter. Never rely on a counter, disabled button, or client-side check to preserve a business invariant.
+
+USERS, AUTHENTICATION, AND PERMISSIONS
+Implement only the roles required by the stated audience. Make the ownership and visibility model explicit before coding. Enforce authorization in every server-side query and mutation, including search, exports, attachments, live updates, and guessed URLs—not merely by hiding controls. Use secure session defaults, protect state-changing requests, and provide an understandable signed-out, expired-session, and forbidden state. Seed distinct users when multiple roles are required so permissions can be demonstrated and tested.
+
+INTERACTION AND VISUAL DIRECTION
+The product should feel fast, calm, focused, and credible rather than like a generic admin template. Use a clear visual hierarchy, restrained color, readable typography, generous hit targets, and consistent placement for primary actions. Start with server-rendered HTML and progressively enhance only the interactions that benefit from it. The core workflow must remain understandable if enhancement fails.
+
+Start with server-rendered Blade views and ordinary forms. Use Livewire for focused server-driven interactions and Alpine.js only for small local interface state. The core workflow must remain understandable without relying on a client-side application shell.
+
+Design mobile layouts intentionally instead of simply stacking desktop panels. Support keyboard navigation, visible focus, semantic landmarks, explicit labels, useful page titles, reduced-motion preferences, and screen-reader announcements for asynchronous results. Never use color alone to communicate state. Destructive actions require clear scope and confirmation; safe repeated actions should be idempotent.
+
+TECHNICAL DIRECTION
+Build this version with Laravel, PHP, Blade, Livewire, and Alpine.js. Use controllers and Blade forms for durable navigation, Livewire for focused interactions, Form Requests for validation, Policies and Gates for authorization, and small application actions or services for domain transitions. Use Eloquent with migrations, database constraints, and transactions; Laravel Storage for private S3-compatible files; queued Jobs for retryable work; the Scheduler for recurring work; and Notifications or Mail for email.
+
+Keep domain rules in testable server-side modules instead of route handlers or UI components. Separate persistence, external providers, and background work behind small interfaces without building a framework. Prefer ordinary HTML forms and URLs for durable navigation; use optimistic interaction only when failure can be reconciled clearly.
+
+The product brief currently identifies Astro, Workflows, D1 as capability context. Preserve any required native, browser-only, edge, storage, real-time, or background-processing capability through a narrow adapter appropriate to the selected framework. If the core workflow genuinely requires native or browser APIs, keep that runtime as the primary execution surface rather than simulating inaccessible capabilities or inventing an unnecessary web surface.
+
+Integrate with HTTP APIs and Queues and Cron Triggers. For every integration:
+- List required environment variables in an .env.example without real secrets.
+- Add a small adapter with timeouts, normalized errors, and a deterministic local fake or development path.
+- Verify inbound signatures and deduplicate provider events where supported.
+- Keep credentials server-side, encrypt long-lived provider tokens at rest, and redact secrets and sensitive payloads from logs.
+- Define retry, backoff, and idempotency behavior for any side effect that can be repeated.
+
+SECURITY AND PRIVACY
+Encrypt credentials, cap payload sizes, redact logs, and require idempotency keys for writes.
+Validate, normalize, and length-limit all untrusted input on the server. Escape rendered content by default, sanitize any intentionally accepted markup, rate-limit public or abuse-prone actions, and use private object storage plus short-lived authorized URLs for sensitive files. Collect the minimum personal data necessary for the named workflow. Document retention and deletion behavior. Add specific protections for the riskier surfaces in this app, such as uploads, redirects, outbound requests, email delivery, OAuth, webhooks, CSV import or export, and real-time connections.
+
+ACCEPTANCE SCENARIOS
+Automate these app-specific scenarios at the most appropriate level:
+1. Given sample data with a missing required destination field, dry run identifies the exact node and record and publishing remains blocked.
+2. Given records matching different branch conditions, each record reaches only the configured destination path and the node counts reconcile with the source total.
+3. Given one failed batch after other batches succeeded, replay processes only that failed batch and does not duplicate destination records already accepted.
+
+TESTING
+Add focused unit tests for state transitions, authorization predicates, normalization, date or money calculations, and other risky domain rules. Add integration tests for persistence constraints and each external adapter’s success, timeout, retry, and rejection paths. Add at least one browser-level test for every end-to-end journey above, including one small-screen viewport. Tests must use isolated data and run through a documented single command.
+
+OPERATIONS AND FAILURE RECOVERY
+Add structured server logs with request, job, or event correlation IDs but no secrets or unnecessarily sensitive data. Make failures actionable in both the interface and logs. Background work must expose pending, succeeded, failed, and retrying states where relevant; do not silently swallow errors. Include safe database migration and rollback guidance, seed data, backup and restore notes, external-data cleanup behavior, and a basic health or diagnostic path appropriate to the stack.
+
+DELIVERABLES
+Ship the working application, migrations, representative seed data, tests, .env.example, and a concise README. The README must cover prerequisites, local setup, environment variables, migrations, seed and test commands, deployment, integration setup, backup and restore, security decisions, and known limitations. Seed data should exercise the happy path plus at least one empty, failed, overdue, expired, archived, or permission-restricted state relevant to the product.
+
+DEFINITION OF DONE
+The app is complete when a fresh developer can follow the README, create and migrate the database, run the app, sign in as each relevant role, complete every named journey using real persisted data, refresh without losing state, recover from common failures, and use the core interface on phone and desktop. All acceptance scenarios pass, permission boundaries are covered by tests, and no core screen is left as a placeholder.
+
+NON-GOALS
+Do not build arbitrary loops, user code, thousands of connectors, or a general integration marketplace.</pre></div><div class="prompt-box" id="prompt-panel-rails" role="tabpanel" aria-labelledby="prompt-tab-rails" tabindex="0" hidden><pre>You are building a production-ready software product named “Pipeloop”, a deliberately focused alternative to Make. Build a complete, usable vertical slice—not a landing page, static mockup, or disconnected collection of components.
+
+WORKING AGREEMENT
+Before writing implementation code, produce a short technical plan that names the routes or pages, server actions or endpoints, data tables, important state transitions, authorization boundaries, background jobs, and external adapters. Resolve contradictions in favor of the narrow audience and non-goals below. Prefer a small, legible architecture over speculative abstraction, but do not omit persistence, validation, error handling, or tests.
+
+PRODUCT BRIEF
+Primary user: a technical operations team moving records between three internal systems.
+Primary outcome: run inspectable scheduled data pipelines with mapping, branching, and recovery.
+Product principle: optimize the exact workflow below instead of copying the full breadth of Make. A first-time user should understand what to do from the interface itself, without a tour or documentation.
+
+END-TO-END USER JOURNEYS
+Implement all of these flows through the real interface and persistent data layer:
+1. An operator creates a scheduled pipeline, loads sample source data, maps fields into the destination shape, adds a filter and branch, completes a dry run, then publishes and enables it.
+2. A webhook starts a published pipeline, records are fetched and batched, each record follows the matching branch, and the live run diagram shows counts and status at every node.
+3. A destination batch fails, enters the failure queue with redacted diagnostics, and is replayed after correction without refetching or duplicating already accepted records.
+
+SCREENS AND INFORMATION ARCHITECTURE
+Build these as coherent responsive views. Each screen must specify its primary action, secondary actions, visible status, validation feedback, empty state, loading or pending state, success confirmation, and recoverable failure state.
+1. Pipeline dashboard: enabled state, trigger type and schedule, published revision, last run, processed-record count, failures, create, pause, and manual-run actions.
+2. Visual builder: left-to-right nodes and edges, trigger, fetch, map, filter, branch, batch, and destination palette, credential references, validation, and publish controls.
+3. Mapping and dry-run inspector: sample input, field-path autocomplete, output preview, per-record branch result, validation errors, payload sizes, and no-write dry-run summary.
+4. Runs and failure queue: searchable run list, node diagram with timing and counts, per-node attempts and redacted logs, failed batches, replay scope, and cancellation state.
+
+CORE CAPABILITIES
+1. scheduled and webhook triggers
+2. HTTP fetch, map fields, filter, branch, batch, and destination steps
+3. visual left-to-right run diagram with step status
+4. sample-data mapping editor and dry run
+5. run history, failure queue, replay, and per-step logs
+
+DETAILED BEHAVIOR AND BUSINESS RULES
+Treat these as server-enforced product requirements, not interface suggestions:
+1. Validate every pipeline as a directed acyclic graph with one trigger, reachable nodes, compatible input and output shapes, bounded fan-out, and no orphaned destinations.
+2. Runs pin an immutable published pipeline revision and credential references; later edits cannot alter the graph or mapping used by an in-progress or historical run.
+3. Cap source payload, record count, batch size, branch fan-out, and stored diagnostic output; move large batches through queues rather than a single request lifecycle.
+4. Checkpoint each node and batch durably, redact credential and configured sensitive fields, and use pipeline, run, node, and record keys to make destination writes idempotent.
+
+DATA MODEL AND LIFECYCLE
+Design a small relational schema centered on Pipeline, Node, Edge, Run, NodeRun, Credential. Before implementing it, document:
+1. Each table’s purpose, primary key, ownership or tenant boundary, timestamps, status fields, and important attributes.
+2. Foreign keys, uniqueness constraints, check constraints, indexes needed by the named screens, and transaction boundaries for multi-record changes.
+3. The allowed lifecycle or state transitions, who may trigger each transition, which transitions are terminal or reversible, and what audit history must remain immutable.
+4. Archive, retention, and deletion behavior, including what happens to dependent records and external files.
+5. Idempotency strategy for submissions, jobs, imports, notifications, webhooks, or retries where applicable.
+Use migrations rather than ad-hoc schema creation. Store time instants consistently and retain named timezone context whenever local schedules or dates matter. Never rely on a counter, disabled button, or client-side check to preserve a business invariant.
+
+USERS, AUTHENTICATION, AND PERMISSIONS
+Implement only the roles required by the stated audience. Make the ownership and visibility model explicit before coding. Enforce authorization in every server-side query and mutation, including search, exports, attachments, live updates, and guessed URLs—not merely by hiding controls. Use secure session defaults, protect state-changing requests, and provide an understandable signed-out, expired-session, and forbidden state. Seed distinct users when multiple roles are required so permissions can be demonstrated and tested.
+
+INTERACTION AND VISUAL DIRECTION
+The product should feel fast, calm, focused, and credible rather than like a generic admin template. Use a clear visual hierarchy, restrained color, readable typography, generous hit targets, and consistent placement for primary actions. Start with server-rendered HTML and progressively enhance only the interactions that benefit from it. The core workflow must remain understandable if enhancement fails.
+
+Start with server-rendered Rails views and ordinary forms. Use Turbo for navigation, submissions, and server-driven updates, then Stimulus only for small browser-side behavior. Do not turn the product into a client-side SPA, and keep the core workflow usable when enhancement fails.
+
+Design mobile layouts intentionally instead of simply stacking desktop panels. Support keyboard navigation, visible focus, semantic landmarks, explicit labels, useful page titles, reduced-motion preferences, and screen-reader announcements for asynchronous results. Never use color alone to communicate state. Destructive actions require clear scope and confirmation; safe repeated actions should be idempotent.
+
+TECHNICAL DIRECTION
+Build this version with Ruby on Rails and Hotwire: Turbo for navigation, form submissions, and server-driven updates, and Stimulus for small browser-side behavior. Use RESTful controllers with strong parameters and explicit authorization, with domain transitions in testable models or small application services. Use Active Record migrations plus database-level constraints and transactions; Active Storage with an S3-compatible service for private files; Active Job with a durable queue backend for retryable work; Action Mailer for email; and Action Cable only when live updates are required.
+
+Keep domain rules in testable server-side modules instead of route handlers or UI components. Separate persistence, external providers, and background work behind small interfaces without building a framework. Prefer ordinary HTML forms and URLs for durable navigation; use optimistic interaction only when failure can be reconciled clearly.
+
+The product brief currently identifies Astro, Workflows, D1 as capability context. Preserve any required native, browser-only, edge, storage, real-time, or background-processing capability through a narrow adapter appropriate to the selected framework. If the core workflow genuinely requires native or browser APIs, keep that runtime as the primary execution surface rather than simulating inaccessible capabilities or inventing an unnecessary web surface.
+
+Integrate with HTTP APIs and Queues and Cron Triggers. For every integration:
+- List required environment variables in an .env.example without real secrets.
+- Add a small adapter with timeouts, normalized errors, and a deterministic local fake or development path.
+- Verify inbound signatures and deduplicate provider events where supported.
+- Keep credentials server-side, encrypt long-lived provider tokens at rest, and redact secrets and sensitive payloads from logs.
+- Define retry, backoff, and idempotency behavior for any side effect that can be repeated.
+
+SECURITY AND PRIVACY
+Encrypt credentials, cap payload sizes, redact logs, and require idempotency keys for writes.
+Validate, normalize, and length-limit all untrusted input on the server. Escape rendered content by default, sanitize any intentionally accepted markup, rate-limit public or abuse-prone actions, and use private object storage plus short-lived authorized URLs for sensitive files. Collect the minimum personal data necessary for the named workflow. Document retention and deletion behavior. Add specific protections for the riskier surfaces in this app, such as uploads, redirects, outbound requests, email delivery, OAuth, webhooks, CSV import or export, and real-time connections.
+
+ACCEPTANCE SCENARIOS
+Automate these app-specific scenarios at the most appropriate level:
+1. Given sample data with a missing required destination field, dry run identifies the exact node and record and publishing remains blocked.
+2. Given records matching different branch conditions, each record reaches only the configured destination path and the node counts reconcile with the source total.
+3. Given one failed batch after other batches succeeded, replay processes only that failed batch and does not duplicate destination records already accepted.
+
+TESTING
+Add focused unit tests for state transitions, authorization predicates, normalization, date or money calculations, and other risky domain rules. Add integration tests for persistence constraints and each external adapter’s success, timeout, retry, and rejection paths. Add at least one browser-level test for every end-to-end journey above, including one small-screen viewport. Tests must use isolated data and run through a documented single command.
+
+OPERATIONS AND FAILURE RECOVERY
+Add structured server logs with request, job, or event correlation IDs but no secrets or unnecessarily sensitive data. Make failures actionable in both the interface and logs. Background work must expose pending, succeeded, failed, and retrying states where relevant; do not silently swallow errors. Include safe database migration and rollback guidance, seed data, backup and restore notes, external-data cleanup behavior, and a basic health or diagnostic path appropriate to the stack.
+
+DELIVERABLES
+Ship the working application, migrations, representative seed data, tests, .env.example, and a concise README. The README must cover prerequisites, local setup, environment variables, migrations, seed and test commands, deployment, integration setup, backup and restore, security decisions, and known limitations. Seed data should exercise the happy path plus at least one empty, failed, overdue, expired, archived, or permission-restricted state relevant to the product.
+
+DEFINITION OF DONE
+The app is complete when a fresh developer can follow the README, create and migrate the database, run the app, sign in as each relevant role, complete every named journey using real persisted data, refresh without losing state, recover from common failures, and use the core interface on phone and desktop. All acceptance scenarios pass, permission boundaries are covered by tests, and no core screen is left as a placeholder.
+
+NON-GOALS
+Do not build arbitrary loops, user code, thousands of connectors, or a general integration marketplace.</pre></div><div class="prompt-actions"><button class="button primary" type="button" id="copy-prompt">Copy AHA prompt</button></div></section><section class="section" aria-labelledby="mini-heading"><h2 id="mini-heading">Build just one piece</h2><p>Not ready to replace all of Make? Fine. These are the peculiar sub-problems hiding inside it — the parts that are actually interesting to build. Each one is a standalone prompt, scoped to an evening, no strings attached to the full build.</p><details class="mini"><summary><strong>The graph validator that blocks bad pipelines at the door</strong><span>One trigger, no cycles, compatible shapes, bounded fan-out — or no publish.</span></summary><pre>Build the publish-time validator for a visual data pipeline builder, where pipelines are graphs of nodes (trigger, fetch, map, filter, branch, batch, destination) connected by edges.
+
+Validate structure first: exactly one trigger, every node reachable from it, no cycles (a DAG check with any cycle reported by its member nodes, not a generic error), no orphaned destinations, and branch fan-out within a configured bound. Then validate shapes: each node declares what it emits, and each edge is checked so a consumer&#39;s required input fields exist in the producer&#39;s output — a destination needing customer_id fed by a map step that never produces it is a publish-time error naming the node, the field, and the upstream culprit.
+
+Run the full validation on every publish attempt and refuse partial passes; a pipeline that is 90 percent valid is 100 percent broken at 3 AM. Keep the checks pure functions over the graph definition so the editor can run them live while the operator drags nodes around.
+
+Done when: cycles and unreachable nodes are rejected with specific node names, a field-shape mismatch names both ends of the bad edge, and validation runs identically in editor and publish paths.</pre><button class="mini-copy" type="button">Copy this prompt</button></details><details class="mini"><summary><strong>The dry run that writes nothing and hides nothing</strong><span>Full pipeline simulation on sample data, with the failing record pinpointed.</span></summary><pre>Build dry-run mode for a data pipeline tool: execute the whole pipeline against sample data with destination writes replaced by a report of what would have been written.
+
+Load a sample (captured webhook payload or a bounded fetch) and push it through every real stage — mapping, filters, branching, batching — using the exact production code paths, not a parallel simulation that can drift. Only the final writes are stubbed. For each record, show its journey: which branch it matched, what its mapped output looks like, and the payload size it would produce.
+
+Precision is the feature: when a record fails, report the exact node and the exact record — &quot;record 47 is missing required destination field customer_id after the map step&quot; — never a generic mapping-error summary. Aggregate results into per-node counts (in, out, filtered, errored) that reconcile with the sample total.
+
+Wire dry-run into publishing: a pipeline whose latest dry run failed on required-field errors remains blocked from publish until a clean run passes.
+
+Done when: a dry run leaves every destination untouched, a bad record is identified by node and index, and publish is blocked while the sample still fails.</pre><button class="mini-copy" type="button">Copy this prompt</button></details><details class="mini"><summary><strong>Replaying the one batch that failed</strong><span>Idempotent destination keys so recovery never duplicates accepted records.</span></summary><pre>Build the failure queue and replay mechanism for a batch data pipeline — recovery that touches only what actually failed.
+
+When a destination batch fails (timeout, 500, auth expiry), park it in a failure queue with redacted diagnostics: status code, error category, attempt count, but credential values and configured sensitive fields scrubbed. The rest of the run continues; one bad batch must not abort its siblings.
+
+Replay is scoped: the operator fixes the cause and replays exactly the failed batch, from durable checkpointed data — no refetching from the source, which may have moved on, and no reprocessing of batches already accepted. The duplication guard: every destination write carries an idempotency key derived from pipeline, run, node, and record identity, so the murky failure mode — destination accepted the batch but the response timed out — resolves safely when the replayed write arrives with the same keys and the destination (or your dedupe wrapper) recognizes them.
+
+Cap replay attempts and keep parked batches inspectable, with payload sizes bounded.
+
+Done when: replaying a failed batch leaves previously accepted records single, diagnostics contain no secrets, and a timeout-after-accept followed by replay produces zero duplicates downstream.</pre><button class="mini-copy" type="button">Copy this prompt</button></details><details class="mini"><summary><strong>The run diagram where the numbers have to add up</strong><span>Durable per-node checkpoints feeding counts that reconcile with the source.</span></summary><pre>Build the live run view for a data pipeline: a left-to-right diagram of nodes where each shows its status and running record counts — and the counts must reconcile.
+
+Instrument every node with durable counters: records in, records out, filtered, errored, currently in flight. Update them from checkpoints, not from optimistic in-memory state — after each batch completes a node, persist the count delta with the checkpoint in one write, so a crashed worker resumes without double-counting or losing progress. The invariant to enforce and display: source total equals the sum of every terminal outcome (delivered per destination, filtered, errored, still in flight). If the books do not balance, show the discrepancy as an error state rather than quietly rendering plausible numbers — a run view that lies is worse than none.
+
+Branch nodes make this interesting: each record takes exactly one branch, so branch outputs must sum to the branch node&#39;s input.
+
+Stream updates to the browser while the run executes, and freeze the final counts immutably when it completes.
+
+Done when: a mid-run crash and resume preserves exact counts, branch outputs sum to their input, and any imbalance is surfaced instead of smoothed over.</pre><button class="mini-copy" type="button">Copy this prompt</button></details></section><section class="section" aria-labelledby="faq-heading"><h2 id="faq-heading">Frequently asked questions</h2><details class="faq"><summary>How long does it take to build your own Make?</summary><p>A basic version — scheduled fetch, field mapping, one destination — takes about 4 days. Roughly 2 weeks+ gets you a solid v1 with visual run diagram, branching, dry runs, failure queue. Matching everything Make really does (connector ecosystem, arbitrary loops, visual canvas engine) is closer to 3 months+, which is exactly why you should scope down instead.</p></details><details class="faq"><summary>How much does Make cost if I keep subscribing?</summary><p>Make runs $10–$29 per month on public paid plans, which is $120–$348 per year. A focused self-built replacement costs your build time plus close-to-zero hosting.</p></details><details class="faq"><summary>What stack should I use to build a Make alternative?</summary><p>The build prompt on this page ships in four flavors: the AHA stack (Astro, HTMX, Alpine.js), Next.js, Laravel, and Ruby on Rails. The capability context for this product is Astro, Workflows, D1. Pick the stack you already know — the scope matters more than the framework.</p></details><details class="faq"><summary>What features does a minimal Make replacement need?</summary><p>A useful v1 needs: scheduled and webhook triggers; HTTP fetch, map fields, filter, branch, batch, and destination steps; visual left-to-right run diagram with step status; sample-data mapping editor and dry run; run history, failure queue, replay, and per-step logs. Everything else is scope creep until you personally miss it.</p></details><details class="faq"><summary>What should I deliberately not build?</summary><p>Do not build arbitrary loops, user code, thousands of connectors, or a general integration marketplace.</p></details></section><section class="section" aria-labelledby="related-heading"><h2 id="related-heading">More operations subscriptions to replace</h2><ul class="related-list"><li><a href="/build-your-own-airtable/">Build your own Airtable</a><span>$24–$54/mo · from 3 days</span></li><li><a href="/build-your-own-dropbox-transfer/">Build your own Dropbox Transfer</a><span>$20–$32/mo · from 3 hours</span></li><li><a href="/build-your-own-statuspage/">Build your own Statuspage</a><span>$29–$399/mo · from 3 hours</span></li><li><a href="/build-your-own-uptimerobot/">Build your own UptimeRobot</a><span>$24–$69/mo · from 6 hours</span></li></ul><p class="related-home"><a href="/#audit">Browse all 109 buildable subscriptions →</a></p></section></main><footer><a class="logo footer-logo" href="/"><span class="logo-mark">EZ</span><span>ezvibecode</span></a><p><a href="/blog/">Blog</a></p><p><a href="/guides/">Guides</a></p><p><a href="/changelog/">Changelog</a></p><p>A tiny idea about tiny software.</p><p>Built with vibes, obviously.</p></footer><div class="toast" id="toast" role="status" aria-live="polite">Prompt copied. Go ship it.</div><script type="module">var e=Array.from(document.querySelectorAll(`.prompt-tab`)),t=Array.from(document.querySelectorAll(`.prompt-box`)),n=document.querySelector(`#copy-prompt`),r=r=>{e.forEach(e=>{let t=e.dataset.framework===r;e.setAttribute(`aria-selected`,String(t)),e.tabIndex=t?0:-1}),t.forEach(e=>{e.hidden=e.id!==`prompt-panel-${r}`}),n.textContent=`Copy ${e.find(e=>e.dataset.framework===r)?.textContent||`prompt`} prompt`};e.forEach((t,n)=>{t.addEventListener(`click`,()=>r(t.dataset.framework)),t.addEventListener(`keydown`,t=>{let i;t.key===`ArrowRight`&&(i=(n+1)%e.length),t.key===`ArrowLeft`&&(i=(n-1+e.length)%e.length),t.key===`Home`&&(i=0),t.key===`End`&&(i=e.length-1),i!==void 0&&(t.preventDefault(),r(e[i].dataset.framework),e[i].focus())})}),n?.addEventListener(`click`,async()=>{let e=t.find(e=>!e.hidden);await navigator.clipboard.writeText(e?.querySelector(`pre`)?.textContent||``);let n=document.querySelector(`#toast`);n.classList.add(`show`),setTimeout(()=>n.classList.remove(`show`),2200)}),document.querySelectorAll(`.mini-copy`).forEach(e=>{e.addEventListener(`click`,async()=>{let t=e.closest(`.mini`)?.querySelector(`pre`)?.textContent||``;await navigator.clipboard.writeText(t);let n=document.querySelector(`#toast`);n.classList.add(`show`),setTimeout(()=>n.classList.remove(`show`),2200)})});var i=document.querySelector(`#theme-toggle`);localStorage.getItem(`vibe-theme`)===`dark`&&(document.documentElement.dataset.theme=`dark`),i?.addEventListener(`click`,()=>{let e=document.documentElement.dataset.theme!==`dark`;document.documentElement.dataset.theme=e?`dark`:`light`,localStorage.setItem(`vibe-theme`,e?`dark`:`light`)});</script><script type="module" src="https://static.cloudflareinsights.com/beacon.min.js/vce701823e78c4301a35b7e07294d87301792088814092" integrity="sha512-UKNk8GbxkABxKcXYuLkO16EleLGUkcvJWtpSNmExE0Too3ZaFAxTscNWEc1OdAv5/BikHawapSCaiD2XCmp+Bw==" data-cf-beacon='{"version":"2024.11.0","token":"228ace6b78e04bb494384851ece32c99","r":1,"spa":2}' crossorigin="anonymous"></script>
+</body></html>

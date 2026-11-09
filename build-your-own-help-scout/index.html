@@ -1,0 +1,406 @@
+<!DOCTYPE html><html lang="en"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width"><title>How to Vibe Code Your Own Help Scout Alternative</title><meta name="description" content="Learn how to build your own with ezvibecode Help Scout alternative with copyable AI prompts, a scoped feature list, and realistic build estimates starting at 3 days. The same build also replaces Zendesk, Freshdesk and Chatwoot."><link rel="canonical" href="https://ezvibecode.com/build-your-own-help-scout/"><meta name="theme-color" content="#f4f1e8"><link rel="icon" href="/favicon.ico" sizes="32x32"><link rel="icon" href="/favicon.png" type="image/png" sizes="512x512"><link rel="apple-touch-icon" href="/apple-touch-icon.png" sizes="180x180"><meta property="og:type" content="article"><meta property="og:site_name" content="ezvibecode"><meta property="og:title" content="How to Vibe Code Your Own Help Scout Alternative"><meta property="og:description" content="Learn how to build your own with ezvibecode Help Scout alternative with copyable AI prompts, a scoped feature list, and realistic build estimates starting at 3 days. The same build also replaces Zendesk, Freshdesk and Chatwoot."><meta property="og:url" content="https://ezvibecode.com/build-your-own-help-scout/"><meta property="og:image" content="https://ezvibecode.com/og/build-your-own-help-scout.png"><meta property="og:image:type" content="image/png"><meta property="og:image:width" content="1200"><meta property="og:image:height" content="630"><meta property="og:image:alt" content="How to Vibe Code Your Own Help Scout Alternative"><meta name="twitter:card" content="summary_large_image"><meta name="twitter:title" content="How to Vibe Code Your Own Help Scout Alternative"><meta name="twitter:description" content="Learn how to build your own with ezvibecode Help Scout alternative with copyable AI prompts, a scoped feature list, and realistic build estimates starting at 3 days. The same build also replaces Zendesk, Freshdesk and Chatwoot."><meta name="twitter:image" content="https://ezvibecode.com/og/build-your-own-help-scout.png"><meta name="twitter:image:alt" content="How to Vibe Code Your Own Help Scout Alternative"><script type="application/ld+json">{"@context":"https://schema.org","@type":"FAQPage","mainEntity":[{"@type":"Question","name":"How long does it take to build your own Help Scout?","acceptedAnswer":{"@type":"Answer","text":"A basic version — inbound email threading, assignment, replies — takes about 3 days. Roughly 2 weeks+ gets you a solid v1 with queues, collision warnings, saved replies, reports. Matching everything Help Scout really does (deliverability infrastructure, live chat, knowledge base, apps) is closer to 1 month+, which is exactly why you should scope down instead."}},{"@type":"Question","name":"How much does Help Scout cost if I keep subscribing?","acceptedAnswer":{"@type":"Answer","text":"Help Scout runs $25–$75 per person per month on public paid plans, which is $300–$900 per year for every person on your team. A focused self-built replacement costs your build time plus close-to-zero hosting."}},{"@type":"Question","name":"What stack should I use to build a Help Scout alternative?","acceptedAnswer":{"@type":"Answer","text":"The build prompt on this page ships in four flavors: the AHA stack (Astro, HTMX, Alpine.js), Next.js, Laravel, and Ruby on Rails. The capability context for this product is Workers, Astro, D1. Pick the stack you already know — the scope matters more than the framework."}},{"@type":"Question","name":"What features does a minimal Help Scout replacement need?","acceptedAnswer":{"@type":"Answer","text":"A useful v1 needs: inbound email parsing into threaded conversations; unassigned, mine, waiting, and closed queues; assignment, tags, collision warnings, and internal notes; reply editor with attachments and saved replies; customer history plus response-time and volume reports. Everything else is scope creep until you personally miss it."}},{"@type":"Question","name":"What should I deliberately not build?","acceptedAnswer":{"@type":"Answer","text":"Do not add live chat, phone, knowledge base, AI replies, or multiple mailboxes in v1."}},{"@type":"Question","name":"Does this build also replace Zendesk, Freshdesk and Chatwoot?","acceptedAnswer":{"@type":"Answer","text":"Yes. Help Scout, Zendesk, Freshdesk and Chatwoot all solve the same core job — receive support mail, assign it, collaborate privately, and reply from one place. The scoped v1 on this page covers what most people use any of them for, so one focused build replaces whichever you currently pay for."}}]}</script><script type="application/ld+json">{"@context":"https://schema.org","@type":"BreadcrumbList","itemListElement":[{"@type":"ListItem","position":1,"name":"ezvibecode","item":"https://ezvibecode.com/"},{"@type":"ListItem","position":2,"name":"Build your own Help Scout","item":"https://ezvibecode.com/build-your-own-help-scout/"}]}</script><script type="application/ld+json">{"@context":"https://schema.org","@type":"TechArticle","headline":"How to Vibe Code Your Own Help Scout Alternative","description":"Learn how to build your own with ezvibecode Help Scout alternative with copyable AI prompts, a scoped feature list, and realistic build estimates starting at 3 days. The same build also replaces Zendesk, Freshdesk and Chatwoot.","url":"https://ezvibecode.com/build-your-own-help-scout/","image":"https://ezvibecode.com/og/build-your-own-help-scout.png","author":{"@type":"Organization","name":"ezvibecode","url":"https://ezvibecode.com/"}}</script><link rel="stylesheet" href="/_astro/build-your-own-_slug_.0qOs6ThE.css"></head><body><header class="site-header"><a class="logo" href="/" aria-label="ezvibecode home"><span class="logo-mark">EZ</span><span>ezvibecode</span></a><nav class="header-links" aria-label="Site"><a class="header-link" href="/blog/">Blog</a><a class="header-link" href="/guides/">Guides</a><a class="header-link" href="/#audit">All 109 apps</a></nav><button class="icon-button" id="theme-toggle" type="button" aria-label="Toggle dark mode" title="Toggle dark mode">◐</button></header><main><nav class="breadcrumb" aria-label="Breadcrumb"><a href="/">Home</a><span aria-hidden="true">/</span><span aria-current="page">Build your own Help Scout</span></nav><section class="hero"><p class="eyebrow">Support · Side quest build</p><h1>How to Vibe Code Your Own <em>Help Scout Alternative</em></h1><p class="lede">Turn support email into accountable team work. Help Scout charges $25–$75 per person per month — that’s $300–$900 a year per person — for something you can replace with focused software of your own. Here is the honest scope, the honest timeline, and the exact prompt to hand your coding agent.</p><div class="hero-meta"><span class="effort ambitious">from 3 days</span><span class="verdict">Great for one inbox</span></div></section><section class="section" aria-labelledby="who-heading"><h2 id="who-heading">Who this replacement is for</h2><p>This build targets a five-person support team sharing one email address. The goal: receive support mail, assign it, collaborate privately, and reply from one place. If you need more than that, keep paying — the point of building it yourself is owning a tool shaped exactly like your workflow, not re-implementing a venture-funded roadmap.</p><p class="also-replaces">Same build, different logo: this v1 also replaces <strong>Zendesk, Freshdesk and Chatwoot</strong> — they all solve the same core job.</p></section><section class="section" aria-labelledby="time-heading"><h2 id="time-heading">How long it actually takes</h2><p>One number would be a lie, so here are three. Each tier is a real, usable product — pick the one that matches how much of Help Scout you actually use.</p><table class="estimate-table"><thead><tr><th scope="col">Estimate</th><th scope="col">What you get</th></tr></thead><tbody><tr><th scope="row">3 days</th><td>inbound email threading, assignment, replies</td></tr><tr><th scope="row">2 weeks+</th><td>queues, collision warnings, saved replies, reports</td></tr><tr><th scope="row">1 month+</th><td>deliverability infrastructure, live chat, knowledge base, apps — the part you should probably skip</td></tr></tbody></table></section><section class="section" aria-labelledby="features-heading"><h2 id="features-heading">What a minimal Help Scout alternative needs</h2><ul class="feature-list"><li>inbound email parsing into threaded conversations</li><li>unassigned, mine, waiting, and closed queues</li><li>assignment, tags, collision warnings, and internal notes</li><li>reply editor with attachments and saved replies</li><li>customer history plus response-time and volume reports</li></ul><div class="fact-grid"><div class="fact"><h3>Data model</h3><p>Mailbox, Customer, Conversation, Message, Assignment</p></div><div class="fact"><h3>Integrations</h3><p>email routing, transactional email, object storage</p></div><div class="fact"><h3>Capability context</h3><p>Workers, Astro, D1</p></div></div><div class="callout guardrail"><h3>The guardrail</h3><p>Separate private notes from outbound replies and sanitize inbound HTML and attachments.</p></div><div class="callout nongoal"><h3>Deliberate non-goals</h3><p>Do not add live chat, phone, knowledge base, AI replies, or multiple mailboxes in v1.</p></div></section><section class="section" aria-labelledby="prompt-heading"><h2 id="prompt-heading">The complete build prompt</h2><p>Copy this into your coding agent of choice. It is scoped for a useful v1 — journeys, screens, business rules, data model, security, tests, and acceptance scenarios included. Pick your stack:</p><div class="prompt-tabs" role="tablist" aria-label="Choose your stack"><button class="prompt-tab" id="prompt-tab-aha" type="button" role="tab" aria-selected="true" aria-controls="prompt-panel-aha" tabindex="0" data-framework="aha">AHA</button><button class="prompt-tab" id="prompt-tab-nextjs" type="button" role="tab" aria-selected="false" aria-controls="prompt-panel-nextjs" tabindex="-1" data-framework="nextjs">Next.js</button><button class="prompt-tab" id="prompt-tab-laravel" type="button" role="tab" aria-selected="false" aria-controls="prompt-panel-laravel" tabindex="-1" data-framework="laravel">Laravel</button><button class="prompt-tab" id="prompt-tab-rails" type="button" role="tab" aria-selected="false" aria-controls="prompt-panel-rails" tabindex="-1" data-framework="rails">Ruby on Rails</button></div><div class="prompt-box" id="prompt-panel-aha" role="tabpanel" aria-labelledby="prompt-tab-aha" tabindex="0"><pre>You are building a production-ready software product named “Mailbox”, a deliberately focused alternative to Help Scout. Build a complete, usable vertical slice—not a landing page, static mockup, or disconnected collection of components.
+
+WORKING AGREEMENT
+Before writing implementation code, produce a short technical plan that names the routes or pages, server actions or endpoints, data tables, important state transitions, authorization boundaries, background jobs, and external adapters. Resolve contradictions in favor of the narrow audience and non-goals below. Prefer a small, legible architecture over speculative abstraction, but do not omit persistence, validation, error handling, or tests.
+
+PRODUCT BRIEF
+Primary user: a five-person support team sharing one email address.
+Primary outcome: receive support mail, assign it, collaborate privately, and reply from one place.
+Product principle: optimize the exact workflow below instead of copying the full breadth of Help Scout. A first-time user should understand what to do from the interface itself, without a tour or documentation.
+
+END-TO-END USER JOURNEYS
+Implement all of these flows through the real interface and persistent data layer:
+1. A customer emails the shared address with attachments; the inbound worker authenticates the provider, sanitizes the content, threads the message, and places a new conversation in Unassigned.
+2. An agent claims the conversation, reviews earlier customer history, adds a private note for a teammate, inserts a saved reply, attaches a file, and sends from the shared address.
+3. A teammate moves the conversation to waiting, the customer replies in the same email thread, and the conversation reopens with preserved ownership, chronology, and collision awareness.
+
+SCREENS AND INFORMATION ARCHITECTURE
+Build these as coherent responsive views. Each screen must specify its primary action, secondary actions, visible status, validation feedback, empty state, loading or pending state, success confirmation, and recoverable failure state.
+1. Queue workspace: Unassigned, Mine, Waiting, and Closed counts, search, tags, assignee and age filters, conversation preview, bulk assignment, and live activity indicators.
+2. Conversation detail: sanitized email thread, reply and private-note modes, attachment controls, saved replies, assignee, tags, status, collision warning, and immutable activity timeline.
+3. Customer panel: contact details, previous conversations, recent subjects and states, internal customer notes, merge suggestion, and safe links to related threads.
+4. Reports and mailbox settings: response-time and volume charts, workload by assignee, sender and inbound-route health, signature, saved replies, attachment limits, and delivery failures.
+
+CORE CAPABILITIES
+1. inbound email parsing into threaded conversations
+2. unassigned, mine, waiting, and closed queues
+3. assignment, tags, collision warnings, and internal notes
+4. reply editor with attachments and saved replies
+5. customer history plus response-time and volume reports
+
+DETAILED BEHAVIOR AND BUSINESS RULES
+Treat these as server-enforced product requirements, not interface suggestions:
+1. Authenticate inbound webhooks and deduplicate provider message identifiers; thread primarily by reply token and Message-ID references, never by subject alone.
+2. Represent replies, inbound messages, and internal notes as explicit immutable message types, and prevent note content from entering outbound MIME bodies under every send path.
+3. Sanitize inbound HTML, retain a safe plain-text alternative, quarantine unsupported or oversized attachments, and serve accepted files only through authorized signed URLs.
+4. Queue outbound mail after the conversation transaction commits, use an idempotency key per reply, and record delivered, bounced, or failed status without duplicating the message.
+
+DATA MODEL AND LIFECYCLE
+Design a small relational schema centered on Mailbox, Customer, Conversation, Message, Assignment. Before implementing it, document:
+1. Each table’s purpose, primary key, ownership or tenant boundary, timestamps, status fields, and important attributes.
+2. Foreign keys, uniqueness constraints, check constraints, indexes needed by the named screens, and transaction boundaries for multi-record changes.
+3. The allowed lifecycle or state transitions, who may trigger each transition, which transitions are terminal or reversible, and what audit history must remain immutable.
+4. Archive, retention, and deletion behavior, including what happens to dependent records and external files.
+5. Idempotency strategy for submissions, jobs, imports, notifications, webhooks, or retries where applicable.
+Use migrations rather than ad-hoc schema creation. Store time instants consistently and retain named timezone context whenever local schedules or dates matter. Never rely on a counter, disabled button, or client-side check to preserve a business invariant.
+
+USERS, AUTHENTICATION, AND PERMISSIONS
+Implement only the roles required by the stated audience. Make the ownership and visibility model explicit before coding. Enforce authorization in every server-side query and mutation, including search, exports, attachments, live updates, and guessed URLs—not merely by hiding controls. Use secure session defaults, protect state-changing requests, and provide an understandable signed-out, expired-session, and forbidden state. Seed distinct users when multiple roles are required so permissions can be demonstrated and tested.
+
+INTERACTION AND VISUAL DIRECTION
+The product should feel fast, calm, focused, and credible rather than like a generic admin template. Use a clear visual hierarchy, restrained color, readable typography, generous hit targets, and consistent placement for primary actions. Start with server-rendered HTML and progressively enhance only the interactions that benefit from it. The core workflow must remain understandable if enhancement fails.
+
+Start with server-rendered Astro pages and ordinary HTML forms. Use HTMX for form submissions, partial navigation, and server-driven updates, then Alpine.js only for small local browser state. The core workflow must remain understandable if either enhancement layer fails.
+
+Design mobile layouts intentionally instead of simply stacking desktop panels. Support keyboard navigation, visible focus, semantic landmarks, explicit labels, useful page titles, reduced-motion preferences, and screen-reader announcements for asynchronous results. Never use color alone to communicate state. Destructive actions require clear scope and confirmation; safe repeated actions should be idempotent.
+
+TECHNICAL DIRECTION
+Build this version with the AHA stack: Astro for routing, layouts, and server-rendered pages; HTMX for interactions that benefit from HTML fragment responses; and Alpine.js for small, local interface state. Prefer Cloudflare D1 for relational persistence, R2 for object storage, Workers for server endpoints and scheduled work, Durable Objects only for coordinated real-time state, and Workflows or Queues for durable background jobs—but only when the product requirements call for them.
+
+Keep domain rules in testable server-side modules instead of route handlers or UI components. Separate persistence, external providers, and background work behind small interfaces without building a framework. Prefer ordinary HTML forms and URLs for durable navigation; use optimistic interaction only when failure can be reconciled clearly.
+
+The product brief currently identifies Workers, Astro, D1 as capability context. Preserve any required native, browser-only, edge, storage, real-time, or background-processing capability through a narrow adapter appropriate to the selected framework. If the core workflow genuinely requires native or browser APIs, keep that runtime as the primary execution surface rather than simulating inaccessible capabilities or inventing an unnecessary web surface.
+
+Integrate with email routing and transactional email and object storage. For every integration:
+- List required environment variables in an .env.example without real secrets.
+- Add a small adapter with timeouts, normalized errors, and a deterministic local fake or development path.
+- Verify inbound signatures and deduplicate provider events where supported.
+- Keep credentials server-side, encrypt long-lived provider tokens at rest, and redact secrets and sensitive payloads from logs.
+- Define retry, backoff, and idempotency behavior for any side effect that can be repeated.
+
+SECURITY AND PRIVACY
+Separate private notes from outbound replies and sanitize inbound HTML and attachments.
+Validate, normalize, and length-limit all untrusted input on the server. Escape rendered content by default, sanitize any intentionally accepted markup, rate-limit public or abuse-prone actions, and use private object storage plus short-lived authorized URLs for sensitive files. Collect the minimum personal data necessary for the named workflow. Document retention and deletion behavior. Add specific protections for the riskier surfaces in this app, such as uploads, redirects, outbound requests, email delivery, OAuth, webhooks, CSV import or export, and real-time connections.
+
+ACCEPTANCE SCENARIOS
+Automate these app-specific scenarios at the most appropriate level:
+1. Given the inbound provider retries the same email webhook, one message appears in one conversation and queue counts increase only once.
+2. Given a customer reply containing the valid conversation token, the existing waiting conversation reopens and preserves its assignee even if the email subject changed.
+3. Given an agent switches from private note to reply, the composer makes the audience explicit and no previously typed private content is sent without confirmation.
+
+TESTING
+Add focused unit tests for state transitions, authorization predicates, normalization, date or money calculations, and other risky domain rules. Add integration tests for persistence constraints and each external adapter’s success, timeout, retry, and rejection paths. Add at least one browser-level test for every end-to-end journey above, including one small-screen viewport. Tests must use isolated data and run through a documented single command.
+
+OPERATIONS AND FAILURE RECOVERY
+Add structured server logs with request, job, or event correlation IDs but no secrets or unnecessarily sensitive data. Make failures actionable in both the interface and logs. Background work must expose pending, succeeded, failed, and retrying states where relevant; do not silently swallow errors. Include safe database migration and rollback guidance, seed data, backup and restore notes, external-data cleanup behavior, and a basic health or diagnostic path appropriate to the stack.
+
+DELIVERABLES
+Ship the working application, migrations, representative seed data, tests, .env.example, and a concise README. The README must cover prerequisites, local setup, environment variables, migrations, seed and test commands, deployment, integration setup, backup and restore, security decisions, and known limitations. Seed data should exercise the happy path plus at least one empty, failed, overdue, expired, archived, or permission-restricted state relevant to the product.
+
+DEFINITION OF DONE
+The app is complete when a fresh developer can follow the README, create and migrate the database, run the app, sign in as each relevant role, complete every named journey using real persisted data, refresh without losing state, recover from common failures, and use the core interface on phone and desktop. All acceptance scenarios pass, permission boundaries are covered by tests, and no core screen is left as a placeholder.
+
+NON-GOALS
+Do not add live chat, phone, knowledge base, AI replies, or multiple mailboxes in v1.</pre></div><div class="prompt-box" id="prompt-panel-nextjs" role="tabpanel" aria-labelledby="prompt-tab-nextjs" tabindex="0" hidden><pre>You are building a production-ready software product named “Mailbox”, a deliberately focused alternative to Help Scout. Build a complete, usable vertical slice—not a landing page, static mockup, or disconnected collection of components.
+
+WORKING AGREEMENT
+Before writing implementation code, produce a short technical plan that names the routes or pages, server actions or endpoints, data tables, important state transitions, authorization boundaries, background jobs, and external adapters. Resolve contradictions in favor of the narrow audience and non-goals below. Prefer a small, legible architecture over speculative abstraction, but do not omit persistence, validation, error handling, or tests.
+
+PRODUCT BRIEF
+Primary user: a five-person support team sharing one email address.
+Primary outcome: receive support mail, assign it, collaborate privately, and reply from one place.
+Product principle: optimize the exact workflow below instead of copying the full breadth of Help Scout. A first-time user should understand what to do from the interface itself, without a tour or documentation.
+
+END-TO-END USER JOURNEYS
+Implement all of these flows through the real interface and persistent data layer:
+1. A customer emails the shared address with attachments; the inbound worker authenticates the provider, sanitizes the content, threads the message, and places a new conversation in Unassigned.
+2. An agent claims the conversation, reviews earlier customer history, adds a private note for a teammate, inserts a saved reply, attaches a file, and sends from the shared address.
+3. A teammate moves the conversation to waiting, the customer replies in the same email thread, and the conversation reopens with preserved ownership, chronology, and collision awareness.
+
+SCREENS AND INFORMATION ARCHITECTURE
+Build these as coherent responsive views. Each screen must specify its primary action, secondary actions, visible status, validation feedback, empty state, loading or pending state, success confirmation, and recoverable failure state.
+1. Queue workspace: Unassigned, Mine, Waiting, and Closed counts, search, tags, assignee and age filters, conversation preview, bulk assignment, and live activity indicators.
+2. Conversation detail: sanitized email thread, reply and private-note modes, attachment controls, saved replies, assignee, tags, status, collision warning, and immutable activity timeline.
+3. Customer panel: contact details, previous conversations, recent subjects and states, internal customer notes, merge suggestion, and safe links to related threads.
+4. Reports and mailbox settings: response-time and volume charts, workload by assignee, sender and inbound-route health, signature, saved replies, attachment limits, and delivery failures.
+
+CORE CAPABILITIES
+1. inbound email parsing into threaded conversations
+2. unassigned, mine, waiting, and closed queues
+3. assignment, tags, collision warnings, and internal notes
+4. reply editor with attachments and saved replies
+5. customer history plus response-time and volume reports
+
+DETAILED BEHAVIOR AND BUSINESS RULES
+Treat these as server-enforced product requirements, not interface suggestions:
+1. Authenticate inbound webhooks and deduplicate provider message identifiers; thread primarily by reply token and Message-ID references, never by subject alone.
+2. Represent replies, inbound messages, and internal notes as explicit immutable message types, and prevent note content from entering outbound MIME bodies under every send path.
+3. Sanitize inbound HTML, retain a safe plain-text alternative, quarantine unsupported or oversized attachments, and serve accepted files only through authorized signed URLs.
+4. Queue outbound mail after the conversation transaction commits, use an idempotency key per reply, and record delivered, bounced, or failed status without duplicating the message.
+
+DATA MODEL AND LIFECYCLE
+Design a small relational schema centered on Mailbox, Customer, Conversation, Message, Assignment. Before implementing it, document:
+1. Each table’s purpose, primary key, ownership or tenant boundary, timestamps, status fields, and important attributes.
+2. Foreign keys, uniqueness constraints, check constraints, indexes needed by the named screens, and transaction boundaries for multi-record changes.
+3. The allowed lifecycle or state transitions, who may trigger each transition, which transitions are terminal or reversible, and what audit history must remain immutable.
+4. Archive, retention, and deletion behavior, including what happens to dependent records and external files.
+5. Idempotency strategy for submissions, jobs, imports, notifications, webhooks, or retries where applicable.
+Use migrations rather than ad-hoc schema creation. Store time instants consistently and retain named timezone context whenever local schedules or dates matter. Never rely on a counter, disabled button, or client-side check to preserve a business invariant.
+
+USERS, AUTHENTICATION, AND PERMISSIONS
+Implement only the roles required by the stated audience. Make the ownership and visibility model explicit before coding. Enforce authorization in every server-side query and mutation, including search, exports, attachments, live updates, and guessed URLs—not merely by hiding controls. Use secure session defaults, protect state-changing requests, and provide an understandable signed-out, expired-session, and forbidden state. Seed distinct users when multiple roles are required so permissions can be demonstrated and tested.
+
+INTERACTION AND VISUAL DIRECTION
+The product should feel fast, calm, focused, and credible rather than like a generic admin template. Use a clear visual hierarchy, restrained color, readable typography, generous hit targets, and consistent placement for primary actions. Start with server-rendered HTML and progressively enhance only the interactions that benefit from it. The core workflow must remain understandable if enhancement fails.
+
+Render with React Server Components by default. Use Server Actions for authenticated form mutations and add Client Components only for interactions that genuinely require browser state, browser APIs, drag-and-drop, or live updates. The core workflow must remain understandable before client-side JavaScript finishes loading.
+
+Design mobile layouts intentionally instead of simply stacking desktop panels. Support keyboard navigation, visible focus, semantic landmarks, explicit labels, useful page titles, reduced-motion preferences, and screen-reader announcements for asynchronous results. Never use color alone to communicate state. Destructive actions require clear scope and confirmation; safe repeated actions should be idempotent.
+
+TECHNICAL DIRECTION
+Build this version with Next.js, the App Router, and TypeScript. Use Server Components by default, Server Actions for authenticated mutations, and Route Handlers for public APIs, OAuth callbacks, webhooks, feeds, uploads, and downloads. Use PostgreSQL through Drizzle ORM with versioned migrations and an isolated test database. Access S3-compatible object storage through a server-only adapter, and run slow or retryable work in a real job or workflow system instead of the request lifecycle.
+
+Keep domain rules in testable server-side modules instead of route handlers or UI components. Separate persistence, external providers, and background work behind small interfaces without building a framework. Prefer ordinary HTML forms and URLs for durable navigation; use optimistic interaction only when failure can be reconciled clearly.
+
+The product brief currently identifies Workers, Astro, D1 as capability context. Preserve any required native, browser-only, edge, storage, real-time, or background-processing capability through a narrow adapter appropriate to the selected framework. If the core workflow genuinely requires native or browser APIs, keep that runtime as the primary execution surface rather than simulating inaccessible capabilities or inventing an unnecessary web surface.
+
+Integrate with email routing and transactional email and object storage. For every integration:
+- List required environment variables in an .env.example without real secrets.
+- Add a small adapter with timeouts, normalized errors, and a deterministic local fake or development path.
+- Verify inbound signatures and deduplicate provider events where supported.
+- Keep credentials server-side, encrypt long-lived provider tokens at rest, and redact secrets and sensitive payloads from logs.
+- Define retry, backoff, and idempotency behavior for any side effect that can be repeated.
+
+SECURITY AND PRIVACY
+Separate private notes from outbound replies and sanitize inbound HTML and attachments.
+Validate, normalize, and length-limit all untrusted input on the server. Escape rendered content by default, sanitize any intentionally accepted markup, rate-limit public or abuse-prone actions, and use private object storage plus short-lived authorized URLs for sensitive files. Collect the minimum personal data necessary for the named workflow. Document retention and deletion behavior. Add specific protections for the riskier surfaces in this app, such as uploads, redirects, outbound requests, email delivery, OAuth, webhooks, CSV import or export, and real-time connections.
+
+ACCEPTANCE SCENARIOS
+Automate these app-specific scenarios at the most appropriate level:
+1. Given the inbound provider retries the same email webhook, one message appears in one conversation and queue counts increase only once.
+2. Given a customer reply containing the valid conversation token, the existing waiting conversation reopens and preserves its assignee even if the email subject changed.
+3. Given an agent switches from private note to reply, the composer makes the audience explicit and no previously typed private content is sent without confirmation.
+
+TESTING
+Add focused unit tests for state transitions, authorization predicates, normalization, date or money calculations, and other risky domain rules. Add integration tests for persistence constraints and each external adapter’s success, timeout, retry, and rejection paths. Add at least one browser-level test for every end-to-end journey above, including one small-screen viewport. Tests must use isolated data and run through a documented single command.
+
+OPERATIONS AND FAILURE RECOVERY
+Add structured server logs with request, job, or event correlation IDs but no secrets or unnecessarily sensitive data. Make failures actionable in both the interface and logs. Background work must expose pending, succeeded, failed, and retrying states where relevant; do not silently swallow errors. Include safe database migration and rollback guidance, seed data, backup and restore notes, external-data cleanup behavior, and a basic health or diagnostic path appropriate to the stack.
+
+DELIVERABLES
+Ship the working application, migrations, representative seed data, tests, .env.example, and a concise README. The README must cover prerequisites, local setup, environment variables, migrations, seed and test commands, deployment, integration setup, backup and restore, security decisions, and known limitations. Seed data should exercise the happy path plus at least one empty, failed, overdue, expired, archived, or permission-restricted state relevant to the product.
+
+DEFINITION OF DONE
+The app is complete when a fresh developer can follow the README, create and migrate the database, run the app, sign in as each relevant role, complete every named journey using real persisted data, refresh without losing state, recover from common failures, and use the core interface on phone and desktop. All acceptance scenarios pass, permission boundaries are covered by tests, and no core screen is left as a placeholder.
+
+NON-GOALS
+Do not add live chat, phone, knowledge base, AI replies, or multiple mailboxes in v1.</pre></div><div class="prompt-box" id="prompt-panel-laravel" role="tabpanel" aria-labelledby="prompt-tab-laravel" tabindex="0" hidden><pre>You are building a production-ready software product named “Mailbox”, a deliberately focused alternative to Help Scout. Build a complete, usable vertical slice—not a landing page, static mockup, or disconnected collection of components.
+
+WORKING AGREEMENT
+Before writing implementation code, produce a short technical plan that names the routes or pages, server actions or endpoints, data tables, important state transitions, authorization boundaries, background jobs, and external adapters. Resolve contradictions in favor of the narrow audience and non-goals below. Prefer a small, legible architecture over speculative abstraction, but do not omit persistence, validation, error handling, or tests.
+
+PRODUCT BRIEF
+Primary user: a five-person support team sharing one email address.
+Primary outcome: receive support mail, assign it, collaborate privately, and reply from one place.
+Product principle: optimize the exact workflow below instead of copying the full breadth of Help Scout. A first-time user should understand what to do from the interface itself, without a tour or documentation.
+
+END-TO-END USER JOURNEYS
+Implement all of these flows through the real interface and persistent data layer:
+1. A customer emails the shared address with attachments; the inbound worker authenticates the provider, sanitizes the content, threads the message, and places a new conversation in Unassigned.
+2. An agent claims the conversation, reviews earlier customer history, adds a private note for a teammate, inserts a saved reply, attaches a file, and sends from the shared address.
+3. A teammate moves the conversation to waiting, the customer replies in the same email thread, and the conversation reopens with preserved ownership, chronology, and collision awareness.
+
+SCREENS AND INFORMATION ARCHITECTURE
+Build these as coherent responsive views. Each screen must specify its primary action, secondary actions, visible status, validation feedback, empty state, loading or pending state, success confirmation, and recoverable failure state.
+1. Queue workspace: Unassigned, Mine, Waiting, and Closed counts, search, tags, assignee and age filters, conversation preview, bulk assignment, and live activity indicators.
+2. Conversation detail: sanitized email thread, reply and private-note modes, attachment controls, saved replies, assignee, tags, status, collision warning, and immutable activity timeline.
+3. Customer panel: contact details, previous conversations, recent subjects and states, internal customer notes, merge suggestion, and safe links to related threads.
+4. Reports and mailbox settings: response-time and volume charts, workload by assignee, sender and inbound-route health, signature, saved replies, attachment limits, and delivery failures.
+
+CORE CAPABILITIES
+1. inbound email parsing into threaded conversations
+2. unassigned, mine, waiting, and closed queues
+3. assignment, tags, collision warnings, and internal notes
+4. reply editor with attachments and saved replies
+5. customer history plus response-time and volume reports
+
+DETAILED BEHAVIOR AND BUSINESS RULES
+Treat these as server-enforced product requirements, not interface suggestions:
+1. Authenticate inbound webhooks and deduplicate provider message identifiers; thread primarily by reply token and Message-ID references, never by subject alone.
+2. Represent replies, inbound messages, and internal notes as explicit immutable message types, and prevent note content from entering outbound MIME bodies under every send path.
+3. Sanitize inbound HTML, retain a safe plain-text alternative, quarantine unsupported or oversized attachments, and serve accepted files only through authorized signed URLs.
+4. Queue outbound mail after the conversation transaction commits, use an idempotency key per reply, and record delivered, bounced, or failed status without duplicating the message.
+
+DATA MODEL AND LIFECYCLE
+Design a small relational schema centered on Mailbox, Customer, Conversation, Message, Assignment. Before implementing it, document:
+1. Each table’s purpose, primary key, ownership or tenant boundary, timestamps, status fields, and important attributes.
+2. Foreign keys, uniqueness constraints, check constraints, indexes needed by the named screens, and transaction boundaries for multi-record changes.
+3. The allowed lifecycle or state transitions, who may trigger each transition, which transitions are terminal or reversible, and what audit history must remain immutable.
+4. Archive, retention, and deletion behavior, including what happens to dependent records and external files.
+5. Idempotency strategy for submissions, jobs, imports, notifications, webhooks, or retries where applicable.
+Use migrations rather than ad-hoc schema creation. Store time instants consistently and retain named timezone context whenever local schedules or dates matter. Never rely on a counter, disabled button, or client-side check to preserve a business invariant.
+
+USERS, AUTHENTICATION, AND PERMISSIONS
+Implement only the roles required by the stated audience. Make the ownership and visibility model explicit before coding. Enforce authorization in every server-side query and mutation, including search, exports, attachments, live updates, and guessed URLs—not merely by hiding controls. Use secure session defaults, protect state-changing requests, and provide an understandable signed-out, expired-session, and forbidden state. Seed distinct users when multiple roles are required so permissions can be demonstrated and tested.
+
+INTERACTION AND VISUAL DIRECTION
+The product should feel fast, calm, focused, and credible rather than like a generic admin template. Use a clear visual hierarchy, restrained color, readable typography, generous hit targets, and consistent placement for primary actions. Start with server-rendered HTML and progressively enhance only the interactions that benefit from it. The core workflow must remain understandable if enhancement fails.
+
+Start with server-rendered Blade views and ordinary forms. Use Livewire for focused server-driven interactions and Alpine.js only for small local interface state. The core workflow must remain understandable without relying on a client-side application shell.
+
+Design mobile layouts intentionally instead of simply stacking desktop panels. Support keyboard navigation, visible focus, semantic landmarks, explicit labels, useful page titles, reduced-motion preferences, and screen-reader announcements for asynchronous results. Never use color alone to communicate state. Destructive actions require clear scope and confirmation; safe repeated actions should be idempotent.
+
+TECHNICAL DIRECTION
+Build this version with Laravel, PHP, Blade, Livewire, and Alpine.js. Use controllers and Blade forms for durable navigation, Livewire for focused interactions, Form Requests for validation, Policies and Gates for authorization, and small application actions or services for domain transitions. Use Eloquent with migrations, database constraints, and transactions; Laravel Storage for private S3-compatible files; queued Jobs for retryable work; the Scheduler for recurring work; and Notifications or Mail for email.
+
+Keep domain rules in testable server-side modules instead of route handlers or UI components. Separate persistence, external providers, and background work behind small interfaces without building a framework. Prefer ordinary HTML forms and URLs for durable navigation; use optimistic interaction only when failure can be reconciled clearly.
+
+The product brief currently identifies Workers, Astro, D1 as capability context. Preserve any required native, browser-only, edge, storage, real-time, or background-processing capability through a narrow adapter appropriate to the selected framework. If the core workflow genuinely requires native or browser APIs, keep that runtime as the primary execution surface rather than simulating inaccessible capabilities or inventing an unnecessary web surface.
+
+Integrate with email routing and transactional email and object storage. For every integration:
+- List required environment variables in an .env.example without real secrets.
+- Add a small adapter with timeouts, normalized errors, and a deterministic local fake or development path.
+- Verify inbound signatures and deduplicate provider events where supported.
+- Keep credentials server-side, encrypt long-lived provider tokens at rest, and redact secrets and sensitive payloads from logs.
+- Define retry, backoff, and idempotency behavior for any side effect that can be repeated.
+
+SECURITY AND PRIVACY
+Separate private notes from outbound replies and sanitize inbound HTML and attachments.
+Validate, normalize, and length-limit all untrusted input on the server. Escape rendered content by default, sanitize any intentionally accepted markup, rate-limit public or abuse-prone actions, and use private object storage plus short-lived authorized URLs for sensitive files. Collect the minimum personal data necessary for the named workflow. Document retention and deletion behavior. Add specific protections for the riskier surfaces in this app, such as uploads, redirects, outbound requests, email delivery, OAuth, webhooks, CSV import or export, and real-time connections.
+
+ACCEPTANCE SCENARIOS
+Automate these app-specific scenarios at the most appropriate level:
+1. Given the inbound provider retries the same email webhook, one message appears in one conversation and queue counts increase only once.
+2. Given a customer reply containing the valid conversation token, the existing waiting conversation reopens and preserves its assignee even if the email subject changed.
+3. Given an agent switches from private note to reply, the composer makes the audience explicit and no previously typed private content is sent without confirmation.
+
+TESTING
+Add focused unit tests for state transitions, authorization predicates, normalization, date or money calculations, and other risky domain rules. Add integration tests for persistence constraints and each external adapter’s success, timeout, retry, and rejection paths. Add at least one browser-level test for every end-to-end journey above, including one small-screen viewport. Tests must use isolated data and run through a documented single command.
+
+OPERATIONS AND FAILURE RECOVERY
+Add structured server logs with request, job, or event correlation IDs but no secrets or unnecessarily sensitive data. Make failures actionable in both the interface and logs. Background work must expose pending, succeeded, failed, and retrying states where relevant; do not silently swallow errors. Include safe database migration and rollback guidance, seed data, backup and restore notes, external-data cleanup behavior, and a basic health or diagnostic path appropriate to the stack.
+
+DELIVERABLES
+Ship the working application, migrations, representative seed data, tests, .env.example, and a concise README. The README must cover prerequisites, local setup, environment variables, migrations, seed and test commands, deployment, integration setup, backup and restore, security decisions, and known limitations. Seed data should exercise the happy path plus at least one empty, failed, overdue, expired, archived, or permission-restricted state relevant to the product.
+
+DEFINITION OF DONE
+The app is complete when a fresh developer can follow the README, create and migrate the database, run the app, sign in as each relevant role, complete every named journey using real persisted data, refresh without losing state, recover from common failures, and use the core interface on phone and desktop. All acceptance scenarios pass, permission boundaries are covered by tests, and no core screen is left as a placeholder.
+
+NON-GOALS
+Do not add live chat, phone, knowledge base, AI replies, or multiple mailboxes in v1.</pre></div><div class="prompt-box" id="prompt-panel-rails" role="tabpanel" aria-labelledby="prompt-tab-rails" tabindex="0" hidden><pre>You are building a production-ready software product named “Mailbox”, a deliberately focused alternative to Help Scout. Build a complete, usable vertical slice—not a landing page, static mockup, or disconnected collection of components.
+
+WORKING AGREEMENT
+Before writing implementation code, produce a short technical plan that names the routes or pages, server actions or endpoints, data tables, important state transitions, authorization boundaries, background jobs, and external adapters. Resolve contradictions in favor of the narrow audience and non-goals below. Prefer a small, legible architecture over speculative abstraction, but do not omit persistence, validation, error handling, or tests.
+
+PRODUCT BRIEF
+Primary user: a five-person support team sharing one email address.
+Primary outcome: receive support mail, assign it, collaborate privately, and reply from one place.
+Product principle: optimize the exact workflow below instead of copying the full breadth of Help Scout. A first-time user should understand what to do from the interface itself, without a tour or documentation.
+
+END-TO-END USER JOURNEYS
+Implement all of these flows through the real interface and persistent data layer:
+1. A customer emails the shared address with attachments; the inbound worker authenticates the provider, sanitizes the content, threads the message, and places a new conversation in Unassigned.
+2. An agent claims the conversation, reviews earlier customer history, adds a private note for a teammate, inserts a saved reply, attaches a file, and sends from the shared address.
+3. A teammate moves the conversation to waiting, the customer replies in the same email thread, and the conversation reopens with preserved ownership, chronology, and collision awareness.
+
+SCREENS AND INFORMATION ARCHITECTURE
+Build these as coherent responsive views. Each screen must specify its primary action, secondary actions, visible status, validation feedback, empty state, loading or pending state, success confirmation, and recoverable failure state.
+1. Queue workspace: Unassigned, Mine, Waiting, and Closed counts, search, tags, assignee and age filters, conversation preview, bulk assignment, and live activity indicators.
+2. Conversation detail: sanitized email thread, reply and private-note modes, attachment controls, saved replies, assignee, tags, status, collision warning, and immutable activity timeline.
+3. Customer panel: contact details, previous conversations, recent subjects and states, internal customer notes, merge suggestion, and safe links to related threads.
+4. Reports and mailbox settings: response-time and volume charts, workload by assignee, sender and inbound-route health, signature, saved replies, attachment limits, and delivery failures.
+
+CORE CAPABILITIES
+1. inbound email parsing into threaded conversations
+2. unassigned, mine, waiting, and closed queues
+3. assignment, tags, collision warnings, and internal notes
+4. reply editor with attachments and saved replies
+5. customer history plus response-time and volume reports
+
+DETAILED BEHAVIOR AND BUSINESS RULES
+Treat these as server-enforced product requirements, not interface suggestions:
+1. Authenticate inbound webhooks and deduplicate provider message identifiers; thread primarily by reply token and Message-ID references, never by subject alone.
+2. Represent replies, inbound messages, and internal notes as explicit immutable message types, and prevent note content from entering outbound MIME bodies under every send path.
+3. Sanitize inbound HTML, retain a safe plain-text alternative, quarantine unsupported or oversized attachments, and serve accepted files only through authorized signed URLs.
+4. Queue outbound mail after the conversation transaction commits, use an idempotency key per reply, and record delivered, bounced, or failed status without duplicating the message.
+
+DATA MODEL AND LIFECYCLE
+Design a small relational schema centered on Mailbox, Customer, Conversation, Message, Assignment. Before implementing it, document:
+1. Each table’s purpose, primary key, ownership or tenant boundary, timestamps, status fields, and important attributes.
+2. Foreign keys, uniqueness constraints, check constraints, indexes needed by the named screens, and transaction boundaries for multi-record changes.
+3. The allowed lifecycle or state transitions, who may trigger each transition, which transitions are terminal or reversible, and what audit history must remain immutable.
+4. Archive, retention, and deletion behavior, including what happens to dependent records and external files.
+5. Idempotency strategy for submissions, jobs, imports, notifications, webhooks, or retries where applicable.
+Use migrations rather than ad-hoc schema creation. Store time instants consistently and retain named timezone context whenever local schedules or dates matter. Never rely on a counter, disabled button, or client-side check to preserve a business invariant.
+
+USERS, AUTHENTICATION, AND PERMISSIONS
+Implement only the roles required by the stated audience. Make the ownership and visibility model explicit before coding. Enforce authorization in every server-side query and mutation, including search, exports, attachments, live updates, and guessed URLs—not merely by hiding controls. Use secure session defaults, protect state-changing requests, and provide an understandable signed-out, expired-session, and forbidden state. Seed distinct users when multiple roles are required so permissions can be demonstrated and tested.
+
+INTERACTION AND VISUAL DIRECTION
+The product should feel fast, calm, focused, and credible rather than like a generic admin template. Use a clear visual hierarchy, restrained color, readable typography, generous hit targets, and consistent placement for primary actions. Start with server-rendered HTML and progressively enhance only the interactions that benefit from it. The core workflow must remain understandable if enhancement fails.
+
+Start with server-rendered Rails views and ordinary forms. Use Turbo for navigation, submissions, and server-driven updates, then Stimulus only for small browser-side behavior. Do not turn the product into a client-side SPA, and keep the core workflow usable when enhancement fails.
+
+Design mobile layouts intentionally instead of simply stacking desktop panels. Support keyboard navigation, visible focus, semantic landmarks, explicit labels, useful page titles, reduced-motion preferences, and screen-reader announcements for asynchronous results. Never use color alone to communicate state. Destructive actions require clear scope and confirmation; safe repeated actions should be idempotent.
+
+TECHNICAL DIRECTION
+Build this version with Ruby on Rails and Hotwire: Turbo for navigation, form submissions, and server-driven updates, and Stimulus for small browser-side behavior. Use RESTful controllers with strong parameters and explicit authorization, with domain transitions in testable models or small application services. Use Active Record migrations plus database-level constraints and transactions; Active Storage with an S3-compatible service for private files; Active Job with a durable queue backend for retryable work; Action Mailer for email; and Action Cable only when live updates are required.
+
+Keep domain rules in testable server-side modules instead of route handlers or UI components. Separate persistence, external providers, and background work behind small interfaces without building a framework. Prefer ordinary HTML forms and URLs for durable navigation; use optimistic interaction only when failure can be reconciled clearly.
+
+The product brief currently identifies Workers, Astro, D1 as capability context. Preserve any required native, browser-only, edge, storage, real-time, or background-processing capability through a narrow adapter appropriate to the selected framework. If the core workflow genuinely requires native or browser APIs, keep that runtime as the primary execution surface rather than simulating inaccessible capabilities or inventing an unnecessary web surface.
+
+Integrate with email routing and transactional email and object storage. For every integration:
+- List required environment variables in an .env.example without real secrets.
+- Add a small adapter with timeouts, normalized errors, and a deterministic local fake or development path.
+- Verify inbound signatures and deduplicate provider events where supported.
+- Keep credentials server-side, encrypt long-lived provider tokens at rest, and redact secrets and sensitive payloads from logs.
+- Define retry, backoff, and idempotency behavior for any side effect that can be repeated.
+
+SECURITY AND PRIVACY
+Separate private notes from outbound replies and sanitize inbound HTML and attachments.
+Validate, normalize, and length-limit all untrusted input on the server. Escape rendered content by default, sanitize any intentionally accepted markup, rate-limit public or abuse-prone actions, and use private object storage plus short-lived authorized URLs for sensitive files. Collect the minimum personal data necessary for the named workflow. Document retention and deletion behavior. Add specific protections for the riskier surfaces in this app, such as uploads, redirects, outbound requests, email delivery, OAuth, webhooks, CSV import or export, and real-time connections.
+
+ACCEPTANCE SCENARIOS
+Automate these app-specific scenarios at the most appropriate level:
+1. Given the inbound provider retries the same email webhook, one message appears in one conversation and queue counts increase only once.
+2. Given a customer reply containing the valid conversation token, the existing waiting conversation reopens and preserves its assignee even if the email subject changed.
+3. Given an agent switches from private note to reply, the composer makes the audience explicit and no previously typed private content is sent without confirmation.
+
+TESTING
+Add focused unit tests for state transitions, authorization predicates, normalization, date or money calculations, and other risky domain rules. Add integration tests for persistence constraints and each external adapter’s success, timeout, retry, and rejection paths. Add at least one browser-level test for every end-to-end journey above, including one small-screen viewport. Tests must use isolated data and run through a documented single command.
+
+OPERATIONS AND FAILURE RECOVERY
+Add structured server logs with request, job, or event correlation IDs but no secrets or unnecessarily sensitive data. Make failures actionable in both the interface and logs. Background work must expose pending, succeeded, failed, and retrying states where relevant; do not silently swallow errors. Include safe database migration and rollback guidance, seed data, backup and restore notes, external-data cleanup behavior, and a basic health or diagnostic path appropriate to the stack.
+
+DELIVERABLES
+Ship the working application, migrations, representative seed data, tests, .env.example, and a concise README. The README must cover prerequisites, local setup, environment variables, migrations, seed and test commands, deployment, integration setup, backup and restore, security decisions, and known limitations. Seed data should exercise the happy path plus at least one empty, failed, overdue, expired, archived, or permission-restricted state relevant to the product.
+
+DEFINITION OF DONE
+The app is complete when a fresh developer can follow the README, create and migrate the database, run the app, sign in as each relevant role, complete every named journey using real persisted data, refresh without losing state, recover from common failures, and use the core interface on phone and desktop. All acceptance scenarios pass, permission boundaries are covered by tests, and no core screen is left as a placeholder.
+
+NON-GOALS
+Do not add live chat, phone, knowledge base, AI replies, or multiple mailboxes in v1.</pre></div><div class="prompt-actions"><button class="button primary" type="button" id="copy-prompt">Copy AHA prompt</button></div></section><section class="section" aria-labelledby="mini-heading"><h2 id="mini-heading">Build just one piece</h2><p>Not ready to replace all of Help Scout? Fine. These are the peculiar sub-problems hiding inside it — the parts that are actually interesting to build. Each one is a standalone prompt, scoped to an evening, no strings attached to the full build.</p><details class="mini"><summary><strong>Threading email without trusting the subject line</strong><span>Reply tokens and Message-ID references, because customers rename everything.</span></summary><pre>Build email threading for a shared support inbox: incoming mail must land in the right conversation even when everything mutable has changed.
+
+Thread by two signals, in order. First, a reply token you control: every outbound reply embeds a conversation token (in a plus-address like support+abc123@ or a Reply-To). An inbound message carrying a valid token belongs to that conversation, full stop — even if the customer changed the subject, forwarded through another address, or replied to a month-old message. Second, standard headers: match In-Reply-To and References against Message-IDs you have seen. Never thread by subject alone; &quot;Re: Help&quot; would merge half your inbox.
+
+Handle the reopen case: a reply arriving on a waiting or closed conversation reopens it into the correct queue with its assignee preserved — the person who was handling it should get it back, not the unassigned pile.
+
+When no signal matches, create a new conversation and link the sender to any existing customer record by normalized email.
+
+Done when: a subject-renamed reply threads correctly via token, header-based matching catches token-stripped replies, and reopening preserves ownership.</pre><button class="mini-copy" type="button">Copy this prompt</button></details><details class="mini"><summary><strong>Defusing inbound email before agents touch it</strong><span>HTML sanitization, attachment quarantine, and signed URLs for everything served.</span></summary><pre>Build the sanitization pipeline that stands between raw inbound email and your support agents&#39; browsers.
+
+Email HTML is attacker-controlled input that your team opens all day. Sanitize with a strict allowlist: keep formatting tags, strip scripts, event handlers, forms, and external stylesheet loads. Neutralize remote images behind a click-to-load proxy — tracking pixels tell senders when agents read mail, and you owe your team better. Always retain a plain-text alternative rendered from the source, both as fallback and as the safe view for suspicious messages.
+
+Attachments: enforce size and count limits, check real content type against the claimed one, and quarantine executables and other unsupported types — visible in the thread as blocked, with a reason, rather than silently vanishing. Accepted files go to private object storage and are served only through short-lived signed URLs generated per authorized viewer; no permanent public links, ever.
+
+Keep the raw original immutably stored for audit, separate from the sanitized rendering.
+
+Done when: a message with embedded script renders inert, a renamed .exe is quarantined with an explanation, and no attachment URL works after its signature expires.</pre><button class="mini-copy" type="button">Copy this prompt</button></details><details class="mini"><summary><strong>The webhook that arrives twice but counts once</strong><span>Authenticated inbound mail events, deduplicated by provider message ID.</span></summary><pre>Build the inbound email webhook handler for a support tool — the front door where the email provider delivers every customer message, sometimes more than once.
+
+Authenticate first: verify the provider&#39;s signature or token on every delivery, and reject unauthenticated posts outright — this endpoint accepts content that will render in your agents&#39; browsers, so a forged webhook is an injection vector.
+
+Then deduplicate: providers retry on timeouts and redeliver during their own incidents. Record each provider message identifier durably at ingestion; a webhook carrying an already-seen identifier acknowledges success and changes nothing. The guarantee: one email becomes exactly one message in exactly one conversation, and queue counts move once. Get the ordering right — dedupe check and message insert must be atomic, or two concurrent deliveries of the same retry can both pass the check.
+
+Acknowledge fast and process heavier work (sanitization, threading, notifications) asynchronously; a slow handler causes the very retries that test your dedupe.
+
+Done when: replaying a delivery five times yields one message, concurrent duplicate deliveries yield one message, and unauthenticated posts are rejected before parsing.</pre><button class="mini-copy" type="button">Copy this prompt</button></details><details class="mini"><summary><strong>Replies that send after the dust settles</strong><span>Queue outbound mail post-commit, with one idempotency key per reply.</span></summary><pre>Build the outbound reply path for a shared inbox, ordered so failures cannot strand or duplicate email.
+
+The rule: commit the conversation transaction first (message row, state change, assignment update), then enqueue the actual email send. Never send inside the transaction — a rollback after a successful send means a customer got an email your database denies exists. The queue worker picks up committed sends and talks to the email provider using one stable idempotency key per reply, so worker crashes, retries, and redeliveries produce at most one email.
+
+Track delivery status per reply: queued, sent, delivered, bounced, failed — updated from provider events, processed idempotently, and never by duplicating the message row. Surface hard failures in the conversation thread itself (&quot;this reply bounced: mailbox full&quot;) so agents notice instead of assuming the customer went quiet.
+
+Failed sends retry with backoff up to a cap, then park as failed with a manual resend action that reuses the same message content under a new key.
+
+Done when: a crash between commit and enqueue is recovered without duplicate email, provider event replays do not flap status, and a bounce is visible in-thread.</pre><button class="mini-copy" type="button">Copy this prompt</button></details></section><section class="section" aria-labelledby="faq-heading"><h2 id="faq-heading">Frequently asked questions</h2><details class="faq"><summary>How long does it take to build your own Help Scout?</summary><p>A basic version — inbound email threading, assignment, replies — takes about 3 days. Roughly 2 weeks+ gets you a solid v1 with queues, collision warnings, saved replies, reports. Matching everything Help Scout really does (deliverability infrastructure, live chat, knowledge base, apps) is closer to 1 month+, which is exactly why you should scope down instead.</p></details><details class="faq"><summary>How much does Help Scout cost if I keep subscribing?</summary><p>Help Scout runs $25–$75 per person per month on public paid plans, which is $300–$900 per year for every person on your team. A focused self-built replacement costs your build time plus close-to-zero hosting.</p></details><details class="faq"><summary>What stack should I use to build a Help Scout alternative?</summary><p>The build prompt on this page ships in four flavors: the AHA stack (Astro, HTMX, Alpine.js), Next.js, Laravel, and Ruby on Rails. The capability context for this product is Workers, Astro, D1. Pick the stack you already know — the scope matters more than the framework.</p></details><details class="faq"><summary>What features does a minimal Help Scout replacement need?</summary><p>A useful v1 needs: inbound email parsing into threaded conversations; unassigned, mine, waiting, and closed queues; assignment, tags, collision warnings, and internal notes; reply editor with attachments and saved replies; customer history plus response-time and volume reports. Everything else is scope creep until you personally miss it.</p></details><details class="faq"><summary>What should I deliberately not build?</summary><p>Do not add live chat, phone, knowledge base, AI replies, or multiple mailboxes in v1.</p></details><details class="faq"><summary>Does this build also replace Zendesk, Freshdesk and Chatwoot?</summary><p>Yes. Help Scout, Zendesk, Freshdesk and Chatwoot all solve the same core job — receive support mail, assign it, collaborate privately, and reply from one place. The scoped v1 on this page covers what most people use any of them for, so one focused build replaces whichever you currently pay for.</p></details></section><section class="section" aria-labelledby="related-heading"><h2 id="related-heading">More support subscriptions to replace</h2><ul class="related-list"><li><a href="/build-your-own-intercom/">Build your own Intercom</a><span>$74–$139/mo · from 4 days</span></li><li><a href="/build-your-own-chatbase/">Build your own Chatbase</a><span>$40–$150/mo · from 2 days</span></li><li><a href="/build-your-own-readme/">Build your own ReadMe</a><span>$250–$250/mo · from 3 days</span></li><li><a href="/build-your-own-helpdocs/">Build your own HelpDocs</a><span>$99–$399/mo · from 10 hours</span></li></ul><p class="related-home"><a href="/#audit">Browse all 109 buildable subscriptions →</a></p></section></main><footer><a class="logo footer-logo" href="/"><span class="logo-mark">EZ</span><span>ezvibecode</span></a><p><a href="/blog/">Blog</a></p><p><a href="/guides/">Guides</a></p><p><a href="/changelog/">Changelog</a></p><p>A tiny idea about tiny software.</p><p>Built with vibes, obviously.</p></footer><div class="toast" id="toast" role="status" aria-live="polite">Prompt copied. Go ship it.</div><script type="module">var e=Array.from(document.querySelectorAll(`.prompt-tab`)),t=Array.from(document.querySelectorAll(`.prompt-box`)),n=document.querySelector(`#copy-prompt`),r=r=>{e.forEach(e=>{let t=e.dataset.framework===r;e.setAttribute(`aria-selected`,String(t)),e.tabIndex=t?0:-1}),t.forEach(e=>{e.hidden=e.id!==`prompt-panel-${r}`}),n.textContent=`Copy ${e.find(e=>e.dataset.framework===r)?.textContent||`prompt`} prompt`};e.forEach((t,n)=>{t.addEventListener(`click`,()=>r(t.dataset.framework)),t.addEventListener(`keydown`,t=>{let i;t.key===`ArrowRight`&&(i=(n+1)%e.length),t.key===`ArrowLeft`&&(i=(n-1+e.length)%e.length),t.key===`Home`&&(i=0),t.key===`End`&&(i=e.length-1),i!==void 0&&(t.preventDefault(),r(e[i].dataset.framework),e[i].focus())})}),n?.addEventListener(`click`,async()=>{let e=t.find(e=>!e.hidden);await navigator.clipboard.writeText(e?.querySelector(`pre`)?.textContent||``);let n=document.querySelector(`#toast`);n.classList.add(`show`),setTimeout(()=>n.classList.remove(`show`),2200)}),document.querySelectorAll(`.mini-copy`).forEach(e=>{e.addEventListener(`click`,async()=>{let t=e.closest(`.mini`)?.querySelector(`pre`)?.textContent||``;await navigator.clipboard.writeText(t);let n=document.querySelector(`#toast`);n.classList.add(`show`),setTimeout(()=>n.classList.remove(`show`),2200)})});var i=document.querySelector(`#theme-toggle`);localStorage.getItem(`vibe-theme`)===`dark`&&(document.documentElement.dataset.theme=`dark`),i?.addEventListener(`click`,()=>{let e=document.documentElement.dataset.theme!==`dark`;document.documentElement.dataset.theme=e?`dark`:`light`,localStorage.setItem(`vibe-theme`,e?`dark`:`light`)});</script><script type="module" src="https://static.cloudflareinsights.com/beacon.min.js/vce701823e78c4301a35b7e07294d87301792088814092" integrity="sha512-UKNk8GbxkABxKcXYuLkO16EleLGUkcvJWtpSNmExE0Too3ZaFAxTscNWEc1OdAv5/BikHawapSCaiD2XCmp+Bw==" data-cf-beacon='{"version":"2024.11.0","token":"228ace6b78e04bb494384851ece32c99","r":1,"spa":2}' crossorigin="anonymous"></script>
+</body></html>

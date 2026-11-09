@@ -1,0 +1,406 @@
+<!DOCTYPE html><html lang="en"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width"><title>How to Vibe Code Your Own Canny Alternative</title><meta name="description" content="Learn how to build your own with ezvibecode Canny alternative with copyable AI prompts, a scoped feature list, and realistic build estimates starting at 10 hours. The same build also replaces Featurebase, Nolt and Upvoty."><link rel="canonical" href="https://ezvibecode.com/build-your-own-canny/"><meta name="theme-color" content="#f4f1e8"><link rel="icon" href="/favicon.ico" sizes="32x32"><link rel="icon" href="/favicon.png" type="image/png" sizes="512x512"><link rel="apple-touch-icon" href="/apple-touch-icon.png" sizes="180x180"><meta property="og:type" content="article"><meta property="og:site_name" content="ezvibecode"><meta property="og:title" content="How to Vibe Code Your Own Canny Alternative"><meta property="og:description" content="Learn how to build your own with ezvibecode Canny alternative with copyable AI prompts, a scoped feature list, and realistic build estimates starting at 10 hours. The same build also replaces Featurebase, Nolt and Upvoty."><meta property="og:url" content="https://ezvibecode.com/build-your-own-canny/"><meta property="og:image" content="https://ezvibecode.com/og/build-your-own-canny.png"><meta property="og:image:type" content="image/png"><meta property="og:image:width" content="1200"><meta property="og:image:height" content="630"><meta property="og:image:alt" content="How to Vibe Code Your Own Canny Alternative"><meta name="twitter:card" content="summary_large_image"><meta name="twitter:title" content="How to Vibe Code Your Own Canny Alternative"><meta name="twitter:description" content="Learn how to build your own with ezvibecode Canny alternative with copyable AI prompts, a scoped feature list, and realistic build estimates starting at 10 hours. The same build also replaces Featurebase, Nolt and Upvoty."><meta name="twitter:image" content="https://ezvibecode.com/og/build-your-own-canny.png"><meta name="twitter:image:alt" content="How to Vibe Code Your Own Canny Alternative"><script type="application/ld+json">{"@context":"https://schema.org","@type":"FAQPage","mainEntity":[{"@type":"Question","name":"How long does it take to build your own Canny?","acceptedAnswer":{"@type":"Answer","text":"A basic version — feedback board, votes, statuses — takes about 10 hours. Roughly 1 week gets you a solid v1 with comments, roadmap view, changelog, sso, email notifications. Matching everything Canny really does (ai deduplication, crm sync, multi-workspace saas) is closer to 1 month+, which is exactly why you should scope down instead."}},{"@type":"Question","name":"How much does Canny cost if I keep subscribing?","acceptedAnswer":{"@type":"Answer","text":"Canny runs $79–$99 per month on public paid plans, which is $948–$1188 per year. A focused self-built replacement costs your build time plus close-to-zero hosting."}},{"@type":"Question","name":"What stack should I use to build a Canny alternative?","acceptedAnswer":{"@type":"Answer","text":"The build prompt on this page ships in four flavors: the AHA stack (Astro, HTMX, Alpine.js), Next.js, Laravel, and Ruby on Rails. The capability context for this product is Astro, HTMX, D1. Pick the stack you already know — the scope matters more than the framework."}},{"@type":"Question","name":"What features does a minimal Canny replacement need?","acceptedAnswer":{"@type":"Answer","text":"A useful v1 needs: public or private feedback board with search before posting; request title, detail, category, author, and vote count; one vote per user plus comments and team-only notes; planned, in progress, complete, and declined statuses; roadmap view and changelog entries linked to completed requests. Everything else is scope creep until you personally miss it."}},{"@type":"Question","name":"What should I deliberately not build?","acceptedAnswer":{"@type":"Answer","text":"Do not add NPS surveys, CRM enrichment, AI deduplication, or multiple workspaces."}},{"@type":"Question","name":"Does this build also replace Featurebase, Nolt and Upvoty?","acceptedAnswer":{"@type":"Answer","text":"Yes. Canny, Featurebase, Nolt and Upvoty all solve the same core job — centralize feature requests and visibly communicate what happens next. The scoped v1 on this page covers what most people use any of them for, so one focused build replaces whichever you currently pay for."}}]}</script><script type="application/ld+json">{"@context":"https://schema.org","@type":"BreadcrumbList","itemListElement":[{"@type":"ListItem","position":1,"name":"ezvibecode","item":"https://ezvibecode.com/"},{"@type":"ListItem","position":2,"name":"Build your own Canny","item":"https://ezvibecode.com/build-your-own-canny/"}]}</script><script type="application/ld+json">{"@context":"https://schema.org","@type":"TechArticle","headline":"How to Vibe Code Your Own Canny Alternative","description":"Learn how to build your own with ezvibecode Canny alternative with copyable AI prompts, a scoped feature list, and realistic build estimates starting at 10 hours. The same build also replaces Featurebase, Nolt and Upvoty.","url":"https://ezvibecode.com/build-your-own-canny/","image":"https://ezvibecode.com/og/build-your-own-canny.png","author":{"@type":"Organization","name":"ezvibecode","url":"https://ezvibecode.com/"}}</script><link rel="stylesheet" href="/_astro/build-your-own-_slug_.0qOs6ThE.css"></head><body><header class="site-header"><a class="logo" href="/" aria-label="ezvibecode home"><span class="logo-mark">EZ</span><span>ezvibecode</span></a><nav class="header-links" aria-label="Site"><a class="header-link" href="/blog/">Blog</a><a class="header-link" href="/guides/">Guides</a><a class="header-link" href="/#audit">All 109 apps</a></nav><button class="icon-button" id="theme-toggle" type="button" aria-label="Toggle dark mode" title="Toggle dark mode">◐</button></header><main><nav class="breadcrumb" aria-label="Breadcrumb"><a href="/">Home</a><span aria-hidden="true">/</span><span aria-current="page">Build your own Canny</span></nav><section class="hero"><p class="eyebrow">Productivity · Weekend build</p><h1>How to Vibe Code Your Own <em>Canny Alternative</em></h1><p class="lede">Collect requests, count votes, close the loop. Canny charges $79–$99 per month — that’s $948–$1188 a year — for something you can replace with focused software of your own. Here is the honest scope, the honest timeline, and the exact prompt to hand your coding agent.</p><div class="hero-meta"><span class="effort weekend">from 10 hours</span><span class="verdict">Painfully replaceable</span></div></section><section class="section" aria-labelledby="who-heading"><h2 id="who-heading">Who this replacement is for</h2><p>This build targets a product team collecting feedback from existing customers. The goal: centralize feature requests and visibly communicate what happens next. If you need more than that, keep paying — the point of building it yourself is owning a tool shaped exactly like your workflow, not re-implementing a venture-funded roadmap.</p><p class="also-replaces">Same build, different logo: this v1 also replaces <strong>Featurebase, Nolt and Upvoty</strong> — they all solve the same core job.</p></section><section class="section" aria-labelledby="time-heading"><h2 id="time-heading">How long it actually takes</h2><p>One number would be a lie, so here are three. Each tier is a real, usable product — pick the one that matches how much of Canny you actually use.</p><table class="estimate-table"><thead><tr><th scope="col">Estimate</th><th scope="col">What you get</th></tr></thead><tbody><tr><th scope="row">10 hours</th><td>feedback board, votes, statuses</td></tr><tr><th scope="row">1 week</th><td>comments, roadmap view, changelog, sso, email notifications</td></tr><tr><th scope="row">1 month+</th><td>ai deduplication, crm sync, multi-workspace saas — the part you should probably skip</td></tr></tbody></table></section><section class="section" aria-labelledby="features-heading"><h2 id="features-heading">What a minimal Canny alternative needs</h2><ul class="feature-list"><li>public or private feedback board with search before posting</li><li>request title, detail, category, author, and vote count</li><li>one vote per user plus comments and team-only notes</li><li>planned, in progress, complete, and declined statuses</li><li>roadmap view and changelog entries linked to completed requests</li></ul><div class="fact-grid"><div class="fact"><h3>Data model</h3><p>User, Request, Vote, Comment, ChangelogEntry</p></div><div class="fact"><h3>Integrations</h3><p>app single sign-on payload, email notifications</p></div><div class="fact"><h3>Capability context</h3><p>Astro, HTMX, D1</p></div></div><div class="callout guardrail"><h3>The guardrail</h3><p>Prevent vote stuffing and never expose private customer or team-note data.</p></div><div class="callout nongoal"><h3>Deliberate non-goals</h3><p>Do not add NPS surveys, CRM enrichment, AI deduplication, or multiple workspaces.</p></div></section><section class="section" aria-labelledby="prompt-heading"><h2 id="prompt-heading">The complete build prompt</h2><p>Copy this into your coding agent of choice. It is scoped for a useful v1 — journeys, screens, business rules, data model, security, tests, and acceptance scenarios included. Pick your stack:</p><div class="prompt-tabs" role="tablist" aria-label="Choose your stack"><button class="prompt-tab" id="prompt-tab-aha" type="button" role="tab" aria-selected="true" aria-controls="prompt-panel-aha" tabindex="0" data-framework="aha">AHA</button><button class="prompt-tab" id="prompt-tab-nextjs" type="button" role="tab" aria-selected="false" aria-controls="prompt-panel-nextjs" tabindex="-1" data-framework="nextjs">Next.js</button><button class="prompt-tab" id="prompt-tab-laravel" type="button" role="tab" aria-selected="false" aria-controls="prompt-panel-laravel" tabindex="-1" data-framework="laravel">Laravel</button><button class="prompt-tab" id="prompt-tab-rails" type="button" role="tab" aria-selected="false" aria-controls="prompt-panel-rails" tabindex="-1" data-framework="rails">Ruby on Rails</button></div><div class="prompt-box" id="prompt-panel-aha" role="tabpanel" aria-labelledby="prompt-tab-aha" tabindex="0"><pre>You are building a production-ready software product named “Wantboard”, a deliberately focused alternative to Canny. Build a complete, usable vertical slice—not a landing page, static mockup, or disconnected collection of components.
+
+WORKING AGREEMENT
+Before writing implementation code, produce a short technical plan that names the routes or pages, server actions or endpoints, data tables, important state transitions, authorization boundaries, background jobs, and external adapters. Resolve contradictions in favor of the narrow audience and non-goals below. Prefer a small, legible architecture over speculative abstraction, but do not omit persistence, validation, error handling, or tests.
+
+PRODUCT BRIEF
+Primary user: a product team collecting feedback from existing customers.
+Primary outcome: centralize feature requests and visibly communicate what happens next.
+Product principle: optimize the exact workflow below instead of copying the full breadth of Canny. A first-time user should understand what to do from the interface itself, without a tour or documentation.
+
+END-TO-END USER JOURNEYS
+Implement all of these flows through the real interface and persistent data layer:
+1. A signed-in customer searches existing requests before posting, opens a relevant result, votes for it, adds context, and subscribes to future updates.
+2. A product teammate reviews a new request, edits its category, leaves a team-only note, changes it to planned, and makes it visible on the roadmap.
+3. The team marks a request complete, publishes a linked changelog entry, and voters receive one notification that explains what shipped.
+
+SCREENS AND INFORMATION ARCHITECTURE
+Build these as coherent responsive views. Each screen must specify its primary action, secondary actions, visible status, validation feedback, empty state, loading or pending state, success confirmation, and recoverable failure state.
+1. Feedback board: search, category and status filters, request cards with vote count and author, sort by top, new, or recent activity, and submit-request action.
+2. Request detail: title, description, category, author, status, vote control, public comments, subscription state, related changelog entry, and staff actions.
+3. Team triage: new and unreviewed queues, duplicate-search suggestions, category and status editing, team-only notes, roadmap visibility, and bulk notification preview.
+4. Roadmap and changelog: planned, in-progress, and completed columns; published release entries with date, summary, linked requests, and subscriber notification status.
+
+CORE CAPABILITIES
+1. public or private feedback board with search before posting
+2. request title, detail, category, author, and vote count
+3. one vote per user plus comments and team-only notes
+4. planned, in progress, complete, and declined statuses
+5. roadmap view and changelog entries linked to completed requests
+
+DETAILED BEHAVIOR AND BUSINESS RULES
+Treat these as server-enforced product requirements, not interface suggestions:
+1. Verify the app-provided identity signature server-side, map its stable external user ID to one local user, and require authentication for private boards.
+2. Enforce one vote per user and request with a unique constraint, update displayed totals transactionally, and make repeated vote requests safe.
+3. Store public comments and team-only notes as distinct visibility types and apply authorization before querying, rendering, exporting, or notifying.
+4. Record every status transition with actor and time; queue notifications only after commit and deduplicate them per user, request, and transition.
+
+DATA MODEL AND LIFECYCLE
+Design a small relational schema centered on User, Request, Vote, Comment, ChangelogEntry. Before implementing it, document:
+1. Each table’s purpose, primary key, ownership or tenant boundary, timestamps, status fields, and important attributes.
+2. Foreign keys, uniqueness constraints, check constraints, indexes needed by the named screens, and transaction boundaries for multi-record changes.
+3. The allowed lifecycle or state transitions, who may trigger each transition, which transitions are terminal or reversible, and what audit history must remain immutable.
+4. Archive, retention, and deletion behavior, including what happens to dependent records and external files.
+5. Idempotency strategy for submissions, jobs, imports, notifications, webhooks, or retries where applicable.
+Use migrations rather than ad-hoc schema creation. Store time instants consistently and retain named timezone context whenever local schedules or dates matter. Never rely on a counter, disabled button, or client-side check to preserve a business invariant.
+
+USERS, AUTHENTICATION, AND PERMISSIONS
+Implement only the roles required by the stated audience. Make the ownership and visibility model explicit before coding. Enforce authorization in every server-side query and mutation, including search, exports, attachments, live updates, and guessed URLs—not merely by hiding controls. Use secure session defaults, protect state-changing requests, and provide an understandable signed-out, expired-session, and forbidden state. Seed distinct users when multiple roles are required so permissions can be demonstrated and tested.
+
+INTERACTION AND VISUAL DIRECTION
+The product should feel fast, calm, focused, and credible rather than like a generic admin template. Use a clear visual hierarchy, restrained color, readable typography, generous hit targets, and consistent placement for primary actions. Start with server-rendered HTML and progressively enhance only the interactions that benefit from it. The core workflow must remain understandable if enhancement fails.
+
+Start with server-rendered Astro pages and ordinary HTML forms. Use HTMX for form submissions, partial navigation, and server-driven updates, then Alpine.js only for small local browser state. The core workflow must remain understandable if either enhancement layer fails.
+
+Design mobile layouts intentionally instead of simply stacking desktop panels. Support keyboard navigation, visible focus, semantic landmarks, explicit labels, useful page titles, reduced-motion preferences, and screen-reader announcements for asynchronous results. Never use color alone to communicate state. Destructive actions require clear scope and confirmation; safe repeated actions should be idempotent.
+
+TECHNICAL DIRECTION
+Build this version with the AHA stack: Astro for routing, layouts, and server-rendered pages; HTMX for interactions that benefit from HTML fragment responses; and Alpine.js for small, local interface state. Prefer Cloudflare D1 for relational persistence, R2 for object storage, Workers for server endpoints and scheduled work, Durable Objects only for coordinated real-time state, and Workflows or Queues for durable background jobs—but only when the product requirements call for them.
+
+Keep domain rules in testable server-side modules instead of route handlers or UI components. Separate persistence, external providers, and background work behind small interfaces without building a framework. Prefer ordinary HTML forms and URLs for durable navigation; use optimistic interaction only when failure can be reconciled clearly.
+
+The product brief currently identifies Astro, HTMX, D1 as capability context. Preserve any required native, browser-only, edge, storage, real-time, or background-processing capability through a narrow adapter appropriate to the selected framework. If the core workflow genuinely requires native or browser APIs, keep that runtime as the primary execution surface rather than simulating inaccessible capabilities or inventing an unnecessary web surface.
+
+Integrate with app single sign-on payload and email notifications. For every integration:
+- List required environment variables in an .env.example without real secrets.
+- Add a small adapter with timeouts, normalized errors, and a deterministic local fake or development path.
+- Verify inbound signatures and deduplicate provider events where supported.
+- Keep credentials server-side, encrypt long-lived provider tokens at rest, and redact secrets and sensitive payloads from logs.
+- Define retry, backoff, and idempotency behavior for any side effect that can be repeated.
+
+SECURITY AND PRIVACY
+Prevent vote stuffing and never expose private customer or team-note data.
+Validate, normalize, and length-limit all untrusted input on the server. Escape rendered content by default, sanitize any intentionally accepted markup, rate-limit public or abuse-prone actions, and use private object storage plus short-lived authorized URLs for sensitive files. Collect the minimum personal data necessary for the named workflow. Document retention and deletion behavior. Add specific protections for the riskier surfaces in this app, such as uploads, redirects, outbound requests, email delivery, OAuth, webhooks, CSV import or export, and real-time connections.
+
+ACCEPTANCE SCENARIOS
+Automate these app-specific scenarios at the most appropriate level:
+1. Given a customer who already voted, repeating the vote request leaves the request at one vote from that user and returns the current state.
+2. Given a private board and an invalid identity payload, no request titles, comments, vote totals, or roadmap data are disclosed.
+3. Given a completed request linked to a published changelog entry, each subscribed voter receives one update and the public detail page shows what shipped.
+
+TESTING
+Add focused unit tests for state transitions, authorization predicates, normalization, date or money calculations, and other risky domain rules. Add integration tests for persistence constraints and each external adapter’s success, timeout, retry, and rejection paths. Add at least one browser-level test for every end-to-end journey above, including one small-screen viewport. Tests must use isolated data and run through a documented single command.
+
+OPERATIONS AND FAILURE RECOVERY
+Add structured server logs with request, job, or event correlation IDs but no secrets or unnecessarily sensitive data. Make failures actionable in both the interface and logs. Background work must expose pending, succeeded, failed, and retrying states where relevant; do not silently swallow errors. Include safe database migration and rollback guidance, seed data, backup and restore notes, external-data cleanup behavior, and a basic health or diagnostic path appropriate to the stack.
+
+DELIVERABLES
+Ship the working application, migrations, representative seed data, tests, .env.example, and a concise README. The README must cover prerequisites, local setup, environment variables, migrations, seed and test commands, deployment, integration setup, backup and restore, security decisions, and known limitations. Seed data should exercise the happy path plus at least one empty, failed, overdue, expired, archived, or permission-restricted state relevant to the product.
+
+DEFINITION OF DONE
+The app is complete when a fresh developer can follow the README, create and migrate the database, run the app, sign in as each relevant role, complete every named journey using real persisted data, refresh without losing state, recover from common failures, and use the core interface on phone and desktop. All acceptance scenarios pass, permission boundaries are covered by tests, and no core screen is left as a placeholder.
+
+NON-GOALS
+Do not add NPS surveys, CRM enrichment, AI deduplication, or multiple workspaces.</pre></div><div class="prompt-box" id="prompt-panel-nextjs" role="tabpanel" aria-labelledby="prompt-tab-nextjs" tabindex="0" hidden><pre>You are building a production-ready software product named “Wantboard”, a deliberately focused alternative to Canny. Build a complete, usable vertical slice—not a landing page, static mockup, or disconnected collection of components.
+
+WORKING AGREEMENT
+Before writing implementation code, produce a short technical plan that names the routes or pages, server actions or endpoints, data tables, important state transitions, authorization boundaries, background jobs, and external adapters. Resolve contradictions in favor of the narrow audience and non-goals below. Prefer a small, legible architecture over speculative abstraction, but do not omit persistence, validation, error handling, or tests.
+
+PRODUCT BRIEF
+Primary user: a product team collecting feedback from existing customers.
+Primary outcome: centralize feature requests and visibly communicate what happens next.
+Product principle: optimize the exact workflow below instead of copying the full breadth of Canny. A first-time user should understand what to do from the interface itself, without a tour or documentation.
+
+END-TO-END USER JOURNEYS
+Implement all of these flows through the real interface and persistent data layer:
+1. A signed-in customer searches existing requests before posting, opens a relevant result, votes for it, adds context, and subscribes to future updates.
+2. A product teammate reviews a new request, edits its category, leaves a team-only note, changes it to planned, and makes it visible on the roadmap.
+3. The team marks a request complete, publishes a linked changelog entry, and voters receive one notification that explains what shipped.
+
+SCREENS AND INFORMATION ARCHITECTURE
+Build these as coherent responsive views. Each screen must specify its primary action, secondary actions, visible status, validation feedback, empty state, loading or pending state, success confirmation, and recoverable failure state.
+1. Feedback board: search, category and status filters, request cards with vote count and author, sort by top, new, or recent activity, and submit-request action.
+2. Request detail: title, description, category, author, status, vote control, public comments, subscription state, related changelog entry, and staff actions.
+3. Team triage: new and unreviewed queues, duplicate-search suggestions, category and status editing, team-only notes, roadmap visibility, and bulk notification preview.
+4. Roadmap and changelog: planned, in-progress, and completed columns; published release entries with date, summary, linked requests, and subscriber notification status.
+
+CORE CAPABILITIES
+1. public or private feedback board with search before posting
+2. request title, detail, category, author, and vote count
+3. one vote per user plus comments and team-only notes
+4. planned, in progress, complete, and declined statuses
+5. roadmap view and changelog entries linked to completed requests
+
+DETAILED BEHAVIOR AND BUSINESS RULES
+Treat these as server-enforced product requirements, not interface suggestions:
+1. Verify the app-provided identity signature server-side, map its stable external user ID to one local user, and require authentication for private boards.
+2. Enforce one vote per user and request with a unique constraint, update displayed totals transactionally, and make repeated vote requests safe.
+3. Store public comments and team-only notes as distinct visibility types and apply authorization before querying, rendering, exporting, or notifying.
+4. Record every status transition with actor and time; queue notifications only after commit and deduplicate them per user, request, and transition.
+
+DATA MODEL AND LIFECYCLE
+Design a small relational schema centered on User, Request, Vote, Comment, ChangelogEntry. Before implementing it, document:
+1. Each table’s purpose, primary key, ownership or tenant boundary, timestamps, status fields, and important attributes.
+2. Foreign keys, uniqueness constraints, check constraints, indexes needed by the named screens, and transaction boundaries for multi-record changes.
+3. The allowed lifecycle or state transitions, who may trigger each transition, which transitions are terminal or reversible, and what audit history must remain immutable.
+4. Archive, retention, and deletion behavior, including what happens to dependent records and external files.
+5. Idempotency strategy for submissions, jobs, imports, notifications, webhooks, or retries where applicable.
+Use migrations rather than ad-hoc schema creation. Store time instants consistently and retain named timezone context whenever local schedules or dates matter. Never rely on a counter, disabled button, or client-side check to preserve a business invariant.
+
+USERS, AUTHENTICATION, AND PERMISSIONS
+Implement only the roles required by the stated audience. Make the ownership and visibility model explicit before coding. Enforce authorization in every server-side query and mutation, including search, exports, attachments, live updates, and guessed URLs—not merely by hiding controls. Use secure session defaults, protect state-changing requests, and provide an understandable signed-out, expired-session, and forbidden state. Seed distinct users when multiple roles are required so permissions can be demonstrated and tested.
+
+INTERACTION AND VISUAL DIRECTION
+The product should feel fast, calm, focused, and credible rather than like a generic admin template. Use a clear visual hierarchy, restrained color, readable typography, generous hit targets, and consistent placement for primary actions. Start with server-rendered HTML and progressively enhance only the interactions that benefit from it. The core workflow must remain understandable if enhancement fails.
+
+Render with React Server Components by default. Use Server Actions for authenticated form mutations and add Client Components only for interactions that genuinely require browser state, browser APIs, drag-and-drop, or live updates. The core workflow must remain understandable before client-side JavaScript finishes loading.
+
+Design mobile layouts intentionally instead of simply stacking desktop panels. Support keyboard navigation, visible focus, semantic landmarks, explicit labels, useful page titles, reduced-motion preferences, and screen-reader announcements for asynchronous results. Never use color alone to communicate state. Destructive actions require clear scope and confirmation; safe repeated actions should be idempotent.
+
+TECHNICAL DIRECTION
+Build this version with Next.js, the App Router, and TypeScript. Use Server Components by default, Server Actions for authenticated mutations, and Route Handlers for public APIs, OAuth callbacks, webhooks, feeds, uploads, and downloads. Use PostgreSQL through Drizzle ORM with versioned migrations and an isolated test database. Access S3-compatible object storage through a server-only adapter, and run slow or retryable work in a real job or workflow system instead of the request lifecycle.
+
+Keep domain rules in testable server-side modules instead of route handlers or UI components. Separate persistence, external providers, and background work behind small interfaces without building a framework. Prefer ordinary HTML forms and URLs for durable navigation; use optimistic interaction only when failure can be reconciled clearly.
+
+The product brief currently identifies Astro, HTMX, D1 as capability context. Preserve any required native, browser-only, edge, storage, real-time, or background-processing capability through a narrow adapter appropriate to the selected framework. If the core workflow genuinely requires native or browser APIs, keep that runtime as the primary execution surface rather than simulating inaccessible capabilities or inventing an unnecessary web surface.
+
+Integrate with app single sign-on payload and email notifications. For every integration:
+- List required environment variables in an .env.example without real secrets.
+- Add a small adapter with timeouts, normalized errors, and a deterministic local fake or development path.
+- Verify inbound signatures and deduplicate provider events where supported.
+- Keep credentials server-side, encrypt long-lived provider tokens at rest, and redact secrets and sensitive payloads from logs.
+- Define retry, backoff, and idempotency behavior for any side effect that can be repeated.
+
+SECURITY AND PRIVACY
+Prevent vote stuffing and never expose private customer or team-note data.
+Validate, normalize, and length-limit all untrusted input on the server. Escape rendered content by default, sanitize any intentionally accepted markup, rate-limit public or abuse-prone actions, and use private object storage plus short-lived authorized URLs for sensitive files. Collect the minimum personal data necessary for the named workflow. Document retention and deletion behavior. Add specific protections for the riskier surfaces in this app, such as uploads, redirects, outbound requests, email delivery, OAuth, webhooks, CSV import or export, and real-time connections.
+
+ACCEPTANCE SCENARIOS
+Automate these app-specific scenarios at the most appropriate level:
+1. Given a customer who already voted, repeating the vote request leaves the request at one vote from that user and returns the current state.
+2. Given a private board and an invalid identity payload, no request titles, comments, vote totals, or roadmap data are disclosed.
+3. Given a completed request linked to a published changelog entry, each subscribed voter receives one update and the public detail page shows what shipped.
+
+TESTING
+Add focused unit tests for state transitions, authorization predicates, normalization, date or money calculations, and other risky domain rules. Add integration tests for persistence constraints and each external adapter’s success, timeout, retry, and rejection paths. Add at least one browser-level test for every end-to-end journey above, including one small-screen viewport. Tests must use isolated data and run through a documented single command.
+
+OPERATIONS AND FAILURE RECOVERY
+Add structured server logs with request, job, or event correlation IDs but no secrets or unnecessarily sensitive data. Make failures actionable in both the interface and logs. Background work must expose pending, succeeded, failed, and retrying states where relevant; do not silently swallow errors. Include safe database migration and rollback guidance, seed data, backup and restore notes, external-data cleanup behavior, and a basic health or diagnostic path appropriate to the stack.
+
+DELIVERABLES
+Ship the working application, migrations, representative seed data, tests, .env.example, and a concise README. The README must cover prerequisites, local setup, environment variables, migrations, seed and test commands, deployment, integration setup, backup and restore, security decisions, and known limitations. Seed data should exercise the happy path plus at least one empty, failed, overdue, expired, archived, or permission-restricted state relevant to the product.
+
+DEFINITION OF DONE
+The app is complete when a fresh developer can follow the README, create and migrate the database, run the app, sign in as each relevant role, complete every named journey using real persisted data, refresh without losing state, recover from common failures, and use the core interface on phone and desktop. All acceptance scenarios pass, permission boundaries are covered by tests, and no core screen is left as a placeholder.
+
+NON-GOALS
+Do not add NPS surveys, CRM enrichment, AI deduplication, or multiple workspaces.</pre></div><div class="prompt-box" id="prompt-panel-laravel" role="tabpanel" aria-labelledby="prompt-tab-laravel" tabindex="0" hidden><pre>You are building a production-ready software product named “Wantboard”, a deliberately focused alternative to Canny. Build a complete, usable vertical slice—not a landing page, static mockup, or disconnected collection of components.
+
+WORKING AGREEMENT
+Before writing implementation code, produce a short technical plan that names the routes or pages, server actions or endpoints, data tables, important state transitions, authorization boundaries, background jobs, and external adapters. Resolve contradictions in favor of the narrow audience and non-goals below. Prefer a small, legible architecture over speculative abstraction, but do not omit persistence, validation, error handling, or tests.
+
+PRODUCT BRIEF
+Primary user: a product team collecting feedback from existing customers.
+Primary outcome: centralize feature requests and visibly communicate what happens next.
+Product principle: optimize the exact workflow below instead of copying the full breadth of Canny. A first-time user should understand what to do from the interface itself, without a tour or documentation.
+
+END-TO-END USER JOURNEYS
+Implement all of these flows through the real interface and persistent data layer:
+1. A signed-in customer searches existing requests before posting, opens a relevant result, votes for it, adds context, and subscribes to future updates.
+2. A product teammate reviews a new request, edits its category, leaves a team-only note, changes it to planned, and makes it visible on the roadmap.
+3. The team marks a request complete, publishes a linked changelog entry, and voters receive one notification that explains what shipped.
+
+SCREENS AND INFORMATION ARCHITECTURE
+Build these as coherent responsive views. Each screen must specify its primary action, secondary actions, visible status, validation feedback, empty state, loading or pending state, success confirmation, and recoverable failure state.
+1. Feedback board: search, category and status filters, request cards with vote count and author, sort by top, new, or recent activity, and submit-request action.
+2. Request detail: title, description, category, author, status, vote control, public comments, subscription state, related changelog entry, and staff actions.
+3. Team triage: new and unreviewed queues, duplicate-search suggestions, category and status editing, team-only notes, roadmap visibility, and bulk notification preview.
+4. Roadmap and changelog: planned, in-progress, and completed columns; published release entries with date, summary, linked requests, and subscriber notification status.
+
+CORE CAPABILITIES
+1. public or private feedback board with search before posting
+2. request title, detail, category, author, and vote count
+3. one vote per user plus comments and team-only notes
+4. planned, in progress, complete, and declined statuses
+5. roadmap view and changelog entries linked to completed requests
+
+DETAILED BEHAVIOR AND BUSINESS RULES
+Treat these as server-enforced product requirements, not interface suggestions:
+1. Verify the app-provided identity signature server-side, map its stable external user ID to one local user, and require authentication for private boards.
+2. Enforce one vote per user and request with a unique constraint, update displayed totals transactionally, and make repeated vote requests safe.
+3. Store public comments and team-only notes as distinct visibility types and apply authorization before querying, rendering, exporting, or notifying.
+4. Record every status transition with actor and time; queue notifications only after commit and deduplicate them per user, request, and transition.
+
+DATA MODEL AND LIFECYCLE
+Design a small relational schema centered on User, Request, Vote, Comment, ChangelogEntry. Before implementing it, document:
+1. Each table’s purpose, primary key, ownership or tenant boundary, timestamps, status fields, and important attributes.
+2. Foreign keys, uniqueness constraints, check constraints, indexes needed by the named screens, and transaction boundaries for multi-record changes.
+3. The allowed lifecycle or state transitions, who may trigger each transition, which transitions are terminal or reversible, and what audit history must remain immutable.
+4. Archive, retention, and deletion behavior, including what happens to dependent records and external files.
+5. Idempotency strategy for submissions, jobs, imports, notifications, webhooks, or retries where applicable.
+Use migrations rather than ad-hoc schema creation. Store time instants consistently and retain named timezone context whenever local schedules or dates matter. Never rely on a counter, disabled button, or client-side check to preserve a business invariant.
+
+USERS, AUTHENTICATION, AND PERMISSIONS
+Implement only the roles required by the stated audience. Make the ownership and visibility model explicit before coding. Enforce authorization in every server-side query and mutation, including search, exports, attachments, live updates, and guessed URLs—not merely by hiding controls. Use secure session defaults, protect state-changing requests, and provide an understandable signed-out, expired-session, and forbidden state. Seed distinct users when multiple roles are required so permissions can be demonstrated and tested.
+
+INTERACTION AND VISUAL DIRECTION
+The product should feel fast, calm, focused, and credible rather than like a generic admin template. Use a clear visual hierarchy, restrained color, readable typography, generous hit targets, and consistent placement for primary actions. Start with server-rendered HTML and progressively enhance only the interactions that benefit from it. The core workflow must remain understandable if enhancement fails.
+
+Start with server-rendered Blade views and ordinary forms. Use Livewire for focused server-driven interactions and Alpine.js only for small local interface state. The core workflow must remain understandable without relying on a client-side application shell.
+
+Design mobile layouts intentionally instead of simply stacking desktop panels. Support keyboard navigation, visible focus, semantic landmarks, explicit labels, useful page titles, reduced-motion preferences, and screen-reader announcements for asynchronous results. Never use color alone to communicate state. Destructive actions require clear scope and confirmation; safe repeated actions should be idempotent.
+
+TECHNICAL DIRECTION
+Build this version with Laravel, PHP, Blade, Livewire, and Alpine.js. Use controllers and Blade forms for durable navigation, Livewire for focused interactions, Form Requests for validation, Policies and Gates for authorization, and small application actions or services for domain transitions. Use Eloquent with migrations, database constraints, and transactions; Laravel Storage for private S3-compatible files; queued Jobs for retryable work; the Scheduler for recurring work; and Notifications or Mail for email.
+
+Keep domain rules in testable server-side modules instead of route handlers or UI components. Separate persistence, external providers, and background work behind small interfaces without building a framework. Prefer ordinary HTML forms and URLs for durable navigation; use optimistic interaction only when failure can be reconciled clearly.
+
+The product brief currently identifies Astro, HTMX, D1 as capability context. Preserve any required native, browser-only, edge, storage, real-time, or background-processing capability through a narrow adapter appropriate to the selected framework. If the core workflow genuinely requires native or browser APIs, keep that runtime as the primary execution surface rather than simulating inaccessible capabilities or inventing an unnecessary web surface.
+
+Integrate with app single sign-on payload and email notifications. For every integration:
+- List required environment variables in an .env.example without real secrets.
+- Add a small adapter with timeouts, normalized errors, and a deterministic local fake or development path.
+- Verify inbound signatures and deduplicate provider events where supported.
+- Keep credentials server-side, encrypt long-lived provider tokens at rest, and redact secrets and sensitive payloads from logs.
+- Define retry, backoff, and idempotency behavior for any side effect that can be repeated.
+
+SECURITY AND PRIVACY
+Prevent vote stuffing and never expose private customer or team-note data.
+Validate, normalize, and length-limit all untrusted input on the server. Escape rendered content by default, sanitize any intentionally accepted markup, rate-limit public or abuse-prone actions, and use private object storage plus short-lived authorized URLs for sensitive files. Collect the minimum personal data necessary for the named workflow. Document retention and deletion behavior. Add specific protections for the riskier surfaces in this app, such as uploads, redirects, outbound requests, email delivery, OAuth, webhooks, CSV import or export, and real-time connections.
+
+ACCEPTANCE SCENARIOS
+Automate these app-specific scenarios at the most appropriate level:
+1. Given a customer who already voted, repeating the vote request leaves the request at one vote from that user and returns the current state.
+2. Given a private board and an invalid identity payload, no request titles, comments, vote totals, or roadmap data are disclosed.
+3. Given a completed request linked to a published changelog entry, each subscribed voter receives one update and the public detail page shows what shipped.
+
+TESTING
+Add focused unit tests for state transitions, authorization predicates, normalization, date or money calculations, and other risky domain rules. Add integration tests for persistence constraints and each external adapter’s success, timeout, retry, and rejection paths. Add at least one browser-level test for every end-to-end journey above, including one small-screen viewport. Tests must use isolated data and run through a documented single command.
+
+OPERATIONS AND FAILURE RECOVERY
+Add structured server logs with request, job, or event correlation IDs but no secrets or unnecessarily sensitive data. Make failures actionable in both the interface and logs. Background work must expose pending, succeeded, failed, and retrying states where relevant; do not silently swallow errors. Include safe database migration and rollback guidance, seed data, backup and restore notes, external-data cleanup behavior, and a basic health or diagnostic path appropriate to the stack.
+
+DELIVERABLES
+Ship the working application, migrations, representative seed data, tests, .env.example, and a concise README. The README must cover prerequisites, local setup, environment variables, migrations, seed and test commands, deployment, integration setup, backup and restore, security decisions, and known limitations. Seed data should exercise the happy path plus at least one empty, failed, overdue, expired, archived, or permission-restricted state relevant to the product.
+
+DEFINITION OF DONE
+The app is complete when a fresh developer can follow the README, create and migrate the database, run the app, sign in as each relevant role, complete every named journey using real persisted data, refresh without losing state, recover from common failures, and use the core interface on phone and desktop. All acceptance scenarios pass, permission boundaries are covered by tests, and no core screen is left as a placeholder.
+
+NON-GOALS
+Do not add NPS surveys, CRM enrichment, AI deduplication, or multiple workspaces.</pre></div><div class="prompt-box" id="prompt-panel-rails" role="tabpanel" aria-labelledby="prompt-tab-rails" tabindex="0" hidden><pre>You are building a production-ready software product named “Wantboard”, a deliberately focused alternative to Canny. Build a complete, usable vertical slice—not a landing page, static mockup, or disconnected collection of components.
+
+WORKING AGREEMENT
+Before writing implementation code, produce a short technical plan that names the routes or pages, server actions or endpoints, data tables, important state transitions, authorization boundaries, background jobs, and external adapters. Resolve contradictions in favor of the narrow audience and non-goals below. Prefer a small, legible architecture over speculative abstraction, but do not omit persistence, validation, error handling, or tests.
+
+PRODUCT BRIEF
+Primary user: a product team collecting feedback from existing customers.
+Primary outcome: centralize feature requests and visibly communicate what happens next.
+Product principle: optimize the exact workflow below instead of copying the full breadth of Canny. A first-time user should understand what to do from the interface itself, without a tour or documentation.
+
+END-TO-END USER JOURNEYS
+Implement all of these flows through the real interface and persistent data layer:
+1. A signed-in customer searches existing requests before posting, opens a relevant result, votes for it, adds context, and subscribes to future updates.
+2. A product teammate reviews a new request, edits its category, leaves a team-only note, changes it to planned, and makes it visible on the roadmap.
+3. The team marks a request complete, publishes a linked changelog entry, and voters receive one notification that explains what shipped.
+
+SCREENS AND INFORMATION ARCHITECTURE
+Build these as coherent responsive views. Each screen must specify its primary action, secondary actions, visible status, validation feedback, empty state, loading or pending state, success confirmation, and recoverable failure state.
+1. Feedback board: search, category and status filters, request cards with vote count and author, sort by top, new, or recent activity, and submit-request action.
+2. Request detail: title, description, category, author, status, vote control, public comments, subscription state, related changelog entry, and staff actions.
+3. Team triage: new and unreviewed queues, duplicate-search suggestions, category and status editing, team-only notes, roadmap visibility, and bulk notification preview.
+4. Roadmap and changelog: planned, in-progress, and completed columns; published release entries with date, summary, linked requests, and subscriber notification status.
+
+CORE CAPABILITIES
+1. public or private feedback board with search before posting
+2. request title, detail, category, author, and vote count
+3. one vote per user plus comments and team-only notes
+4. planned, in progress, complete, and declined statuses
+5. roadmap view and changelog entries linked to completed requests
+
+DETAILED BEHAVIOR AND BUSINESS RULES
+Treat these as server-enforced product requirements, not interface suggestions:
+1. Verify the app-provided identity signature server-side, map its stable external user ID to one local user, and require authentication for private boards.
+2. Enforce one vote per user and request with a unique constraint, update displayed totals transactionally, and make repeated vote requests safe.
+3. Store public comments and team-only notes as distinct visibility types and apply authorization before querying, rendering, exporting, or notifying.
+4. Record every status transition with actor and time; queue notifications only after commit and deduplicate them per user, request, and transition.
+
+DATA MODEL AND LIFECYCLE
+Design a small relational schema centered on User, Request, Vote, Comment, ChangelogEntry. Before implementing it, document:
+1. Each table’s purpose, primary key, ownership or tenant boundary, timestamps, status fields, and important attributes.
+2. Foreign keys, uniqueness constraints, check constraints, indexes needed by the named screens, and transaction boundaries for multi-record changes.
+3. The allowed lifecycle or state transitions, who may trigger each transition, which transitions are terminal or reversible, and what audit history must remain immutable.
+4. Archive, retention, and deletion behavior, including what happens to dependent records and external files.
+5. Idempotency strategy for submissions, jobs, imports, notifications, webhooks, or retries where applicable.
+Use migrations rather than ad-hoc schema creation. Store time instants consistently and retain named timezone context whenever local schedules or dates matter. Never rely on a counter, disabled button, or client-side check to preserve a business invariant.
+
+USERS, AUTHENTICATION, AND PERMISSIONS
+Implement only the roles required by the stated audience. Make the ownership and visibility model explicit before coding. Enforce authorization in every server-side query and mutation, including search, exports, attachments, live updates, and guessed URLs—not merely by hiding controls. Use secure session defaults, protect state-changing requests, and provide an understandable signed-out, expired-session, and forbidden state. Seed distinct users when multiple roles are required so permissions can be demonstrated and tested.
+
+INTERACTION AND VISUAL DIRECTION
+The product should feel fast, calm, focused, and credible rather than like a generic admin template. Use a clear visual hierarchy, restrained color, readable typography, generous hit targets, and consistent placement for primary actions. Start with server-rendered HTML and progressively enhance only the interactions that benefit from it. The core workflow must remain understandable if enhancement fails.
+
+Start with server-rendered Rails views and ordinary forms. Use Turbo for navigation, submissions, and server-driven updates, then Stimulus only for small browser-side behavior. Do not turn the product into a client-side SPA, and keep the core workflow usable when enhancement fails.
+
+Design mobile layouts intentionally instead of simply stacking desktop panels. Support keyboard navigation, visible focus, semantic landmarks, explicit labels, useful page titles, reduced-motion preferences, and screen-reader announcements for asynchronous results. Never use color alone to communicate state. Destructive actions require clear scope and confirmation; safe repeated actions should be idempotent.
+
+TECHNICAL DIRECTION
+Build this version with Ruby on Rails and Hotwire: Turbo for navigation, form submissions, and server-driven updates, and Stimulus for small browser-side behavior. Use RESTful controllers with strong parameters and explicit authorization, with domain transitions in testable models or small application services. Use Active Record migrations plus database-level constraints and transactions; Active Storage with an S3-compatible service for private files; Active Job with a durable queue backend for retryable work; Action Mailer for email; and Action Cable only when live updates are required.
+
+Keep domain rules in testable server-side modules instead of route handlers or UI components. Separate persistence, external providers, and background work behind small interfaces without building a framework. Prefer ordinary HTML forms and URLs for durable navigation; use optimistic interaction only when failure can be reconciled clearly.
+
+The product brief currently identifies Astro, HTMX, D1 as capability context. Preserve any required native, browser-only, edge, storage, real-time, or background-processing capability through a narrow adapter appropriate to the selected framework. If the core workflow genuinely requires native or browser APIs, keep that runtime as the primary execution surface rather than simulating inaccessible capabilities or inventing an unnecessary web surface.
+
+Integrate with app single sign-on payload and email notifications. For every integration:
+- List required environment variables in an .env.example without real secrets.
+- Add a small adapter with timeouts, normalized errors, and a deterministic local fake or development path.
+- Verify inbound signatures and deduplicate provider events where supported.
+- Keep credentials server-side, encrypt long-lived provider tokens at rest, and redact secrets and sensitive payloads from logs.
+- Define retry, backoff, and idempotency behavior for any side effect that can be repeated.
+
+SECURITY AND PRIVACY
+Prevent vote stuffing and never expose private customer or team-note data.
+Validate, normalize, and length-limit all untrusted input on the server. Escape rendered content by default, sanitize any intentionally accepted markup, rate-limit public or abuse-prone actions, and use private object storage plus short-lived authorized URLs for sensitive files. Collect the minimum personal data necessary for the named workflow. Document retention and deletion behavior. Add specific protections for the riskier surfaces in this app, such as uploads, redirects, outbound requests, email delivery, OAuth, webhooks, CSV import or export, and real-time connections.
+
+ACCEPTANCE SCENARIOS
+Automate these app-specific scenarios at the most appropriate level:
+1. Given a customer who already voted, repeating the vote request leaves the request at one vote from that user and returns the current state.
+2. Given a private board and an invalid identity payload, no request titles, comments, vote totals, or roadmap data are disclosed.
+3. Given a completed request linked to a published changelog entry, each subscribed voter receives one update and the public detail page shows what shipped.
+
+TESTING
+Add focused unit tests for state transitions, authorization predicates, normalization, date or money calculations, and other risky domain rules. Add integration tests for persistence constraints and each external adapter’s success, timeout, retry, and rejection paths. Add at least one browser-level test for every end-to-end journey above, including one small-screen viewport. Tests must use isolated data and run through a documented single command.
+
+OPERATIONS AND FAILURE RECOVERY
+Add structured server logs with request, job, or event correlation IDs but no secrets or unnecessarily sensitive data. Make failures actionable in both the interface and logs. Background work must expose pending, succeeded, failed, and retrying states where relevant; do not silently swallow errors. Include safe database migration and rollback guidance, seed data, backup and restore notes, external-data cleanup behavior, and a basic health or diagnostic path appropriate to the stack.
+
+DELIVERABLES
+Ship the working application, migrations, representative seed data, tests, .env.example, and a concise README. The README must cover prerequisites, local setup, environment variables, migrations, seed and test commands, deployment, integration setup, backup and restore, security decisions, and known limitations. Seed data should exercise the happy path plus at least one empty, failed, overdue, expired, archived, or permission-restricted state relevant to the product.
+
+DEFINITION OF DONE
+The app is complete when a fresh developer can follow the README, create and migrate the database, run the app, sign in as each relevant role, complete every named journey using real persisted data, refresh without losing state, recover from common failures, and use the core interface on phone and desktop. All acceptance scenarios pass, permission boundaries are covered by tests, and no core screen is left as a placeholder.
+
+NON-GOALS
+Do not add NPS surveys, CRM enrichment, AI deduplication, or multiple workspaces.</pre></div><div class="prompt-actions"><button class="button primary" type="button" id="copy-prompt">Copy AHA prompt</button></div></section><section class="section" aria-labelledby="mini-heading"><h2 id="mini-heading">Build just one piece</h2><p>Not ready to replace all of Canny? Fine. These are the peculiar sub-problems hiding inside it — the parts that are actually interesting to build. Each one is a standalone prompt, scoped to an evening, no strings attached to the full build.</p><details class="mini"><summary><strong>One person, one vote, no matter how hard they click</strong><span>A unique constraint and transactional counters make vote stuffing boring.</span></summary><pre>Build the voting system for a feature-request board where totals drive roadmap decisions, so they had better be true.
+
+Enforce one vote per (user, request) with a database unique constraint — the application-level check is a courtesy; the constraint is the guarantee. Voting is idempotent: a repeated vote request (double-click, retry, replayed API call) hits the constraint, changes nothing, and returns the current state as success. Unvoting removes the row and is equally safe to repeat.
+
+Keep the displayed total as a denormalized counter on the request, updated in the same transaction as the vote row insert or delete — a counter maintained separately will drift, and a periodic reconciliation job comparing counters against actual vote rows is cheap insurance worth writing.
+
+Identity comes from the app&#39;s verified sign-on payload, not from anything client-supplied, so one human cannot manufacture voters. Handle the toggle race: rapid vote-unvote-vote sequences must serialize to a correct final state.
+
+Done when: hammering the vote button yields one vote, counter and row count agree under concurrent load, and a replayed API request returns success without incrementing.</pre><button class="mini-copy" type="button">Copy this prompt</button></details><details class="mini"><summary><strong>Search before you post, merge when they post anyway</strong><span>Dedupe suggestions at submission time, and vote-preserving merges after.</span></summary><pre>Build duplicate management for a feedback board, attacking the problem at both ends.
+
+Prevention first: as a user types a new request title, search existing requests live and show matches prominently with their vote counts — &quot;12 people already want this&quot; converts a duplicate post into a vote. Match on title and description with enough fuzziness to catch &quot;dark mode&quot; versus &quot;night theme&quot;; simple stemmed keyword overlap goes surprisingly far before you need anything fancier.
+
+Cure second: duplicates get posted anyway, so build merge for the triage flow. Merging folds a duplicate into a canonical request: votes combine as the union of distinct voters, never the sum — users who voted for both count once. Comments move over with a provenance marker, subscribers merge deduplicated, and the duplicate&#39;s URL permanently redirects to the canonical request so old links keep working.
+
+Record the merge in the request&#39;s history, and notify the duplicate&#39;s participants once about where their request now lives.
+
+Done when: typing a near-duplicate title surfaces the original, merging two requests with overlapping voters yields the distinct-voter count, and the old URL redirects.</pre><button class="mini-copy" type="button">Copy this prompt</button></details><details class="mini"><summary><strong>Close the loop exactly once</strong><span>Status transitions that notify every voter, after commit, without duplicates.</span></summary><pre>Build status-change notifications for a feature-request board — the close-the-loop machinery that tells 200 voters their request shipped, exactly once each.
+
+Record every status transition (open, planned, in progress, complete, declined) as an immutable event with actor, timestamp, and optional note. Notifications fan out from that event to voters, commenters, and subscribers — but enqueue them only after the transition commits. Notifying inside the transaction is the classic bug: a rollback after enqueue means 200 people learn about a status change that never happened.
+
+Deduplicate at the recipient level with a key per (user, request, transition event): a retried worker, a redelivered queue message, or an admin toggling complete-open-complete in quick succession must not multiply emails. A user who is voter, commenter, and subscriber at once gets one notification, not three.
+
+Batch sends with per-recipient failure isolation, and link the complete transition to its changelog entry so the email says what actually shipped.
+
+Done when: a retried notification job sends zero duplicates, a rolled-back transition notifies nobody, and a triple-role user receives exactly one email.</pre><button class="mini-copy" type="button">Copy this prompt</button></details><details class="mini"><summary><strong>Team notes the customers can never see</strong><span>Distinct visibility types enforced at query, render, export, and notify.</span></summary><pre>Build visibility isolation for a feedback board that mixes public conversation with internal product-team discussion on the same requests.
+
+Model public comments and team-only notes as distinct types, not a flag on one table — a boolean is one missing filter away from leaking &quot;customer is churning, lowball them&quot; to the customer in question. Enforce authorization at every boundary where content leaves the system: list queries filter by viewer role at the database level, rendering uses serializers with explicit per-audience field allowlists, exports run through the same serializers, and notification emails are composed only from customer-visible content. A team note added to a request must never appear in the notification that voters receive about it.
+
+Apply the same discipline to private boards: an unauthenticated or invalid-identity request discloses nothing — no request titles, no vote totals, no roadmap columns, and no different error responses that confirm a board exists.
+
+Write the leak test: create a note, then assert its absence from public API responses, rendered pages, exports, and outbound email.
+
+Done when: the leak test passes at all four boundaries, private boards return nothing to invalid identities, and team notes are structurally excluded from notifications.</pre><button class="mini-copy" type="button">Copy this prompt</button></details></section><section class="section" aria-labelledby="faq-heading"><h2 id="faq-heading">Frequently asked questions</h2><details class="faq"><summary>How long does it take to build your own Canny?</summary><p>A basic version — feedback board, votes, statuses — takes about 10 hours. Roughly 1 week gets you a solid v1 with comments, roadmap view, changelog, sso, email notifications. Matching everything Canny really does (ai deduplication, crm sync, multi-workspace saas) is closer to 1 month+, which is exactly why you should scope down instead.</p></details><details class="faq"><summary>How much does Canny cost if I keep subscribing?</summary><p>Canny runs $79–$99 per month on public paid plans, which is $948–$1188 per year. A focused self-built replacement costs your build time plus close-to-zero hosting.</p></details><details class="faq"><summary>What stack should I use to build a Canny alternative?</summary><p>The build prompt on this page ships in four flavors: the AHA stack (Astro, HTMX, Alpine.js), Next.js, Laravel, and Ruby on Rails. The capability context for this product is Astro, HTMX, D1. Pick the stack you already know — the scope matters more than the framework.</p></details><details class="faq"><summary>What features does a minimal Canny replacement need?</summary><p>A useful v1 needs: public or private feedback board with search before posting; request title, detail, category, author, and vote count; one vote per user plus comments and team-only notes; planned, in progress, complete, and declined statuses; roadmap view and changelog entries linked to completed requests. Everything else is scope creep until you personally miss it.</p></details><details class="faq"><summary>What should I deliberately not build?</summary><p>Do not add NPS surveys, CRM enrichment, AI deduplication, or multiple workspaces.</p></details><details class="faq"><summary>Does this build also replace Featurebase, Nolt and Upvoty?</summary><p>Yes. Canny, Featurebase, Nolt and Upvoty all solve the same core job — centralize feature requests and visibly communicate what happens next. The scoped v1 on this page covers what most people use any of them for, so one focused build replaces whichever you currently pay for.</p></details></section><section class="section" aria-labelledby="related-heading"><h2 id="related-heading">More productivity subscriptions to replace</h2><ul class="related-list"><li><a href="/build-your-own-calendly/">Build your own Calendly</a><span>$12–$20/mo · from 6 hours</span></li><li><a href="/build-your-own-notion/">Build your own Notion</a><span>$12–$24/mo · from 10 hours</span></li><li><a href="/build-your-own-trello/">Build your own Trello</a><span>$10–$17.5/mo · from 3 hours</span></li><li><a href="/build-your-own-linear/">Build your own Linear</a><span>$10–$16/mo · from 12 hours</span></li></ul><p class="related-home"><a href="/#audit">Browse all 109 buildable subscriptions →</a></p></section></main><footer><a class="logo footer-logo" href="/"><span class="logo-mark">EZ</span><span>ezvibecode</span></a><p><a href="/blog/">Blog</a></p><p><a href="/guides/">Guides</a></p><p><a href="/changelog/">Changelog</a></p><p>A tiny idea about tiny software.</p><p>Built with vibes, obviously.</p></footer><div class="toast" id="toast" role="status" aria-live="polite">Prompt copied. Go ship it.</div><script type="module">var e=Array.from(document.querySelectorAll(`.prompt-tab`)),t=Array.from(document.querySelectorAll(`.prompt-box`)),n=document.querySelector(`#copy-prompt`),r=r=>{e.forEach(e=>{let t=e.dataset.framework===r;e.setAttribute(`aria-selected`,String(t)),e.tabIndex=t?0:-1}),t.forEach(e=>{e.hidden=e.id!==`prompt-panel-${r}`}),n.textContent=`Copy ${e.find(e=>e.dataset.framework===r)?.textContent||`prompt`} prompt`};e.forEach((t,n)=>{t.addEventListener(`click`,()=>r(t.dataset.framework)),t.addEventListener(`keydown`,t=>{let i;t.key===`ArrowRight`&&(i=(n+1)%e.length),t.key===`ArrowLeft`&&(i=(n-1+e.length)%e.length),t.key===`Home`&&(i=0),t.key===`End`&&(i=e.length-1),i!==void 0&&(t.preventDefault(),r(e[i].dataset.framework),e[i].focus())})}),n?.addEventListener(`click`,async()=>{let e=t.find(e=>!e.hidden);await navigator.clipboard.writeText(e?.querySelector(`pre`)?.textContent||``);let n=document.querySelector(`#toast`);n.classList.add(`show`),setTimeout(()=>n.classList.remove(`show`),2200)}),document.querySelectorAll(`.mini-copy`).forEach(e=>{e.addEventListener(`click`,async()=>{let t=e.closest(`.mini`)?.querySelector(`pre`)?.textContent||``;await navigator.clipboard.writeText(t);let n=document.querySelector(`#toast`);n.classList.add(`show`),setTimeout(()=>n.classList.remove(`show`),2200)})});var i=document.querySelector(`#theme-toggle`);localStorage.getItem(`vibe-theme`)===`dark`&&(document.documentElement.dataset.theme=`dark`),i?.addEventListener(`click`,()=>{let e=document.documentElement.dataset.theme!==`dark`;document.documentElement.dataset.theme=e?`dark`:`light`,localStorage.setItem(`vibe-theme`,e?`dark`:`light`)});</script><script type="module" src="https://static.cloudflareinsights.com/beacon.min.js/vce701823e78c4301a35b7e07294d87301792088814092" integrity="sha512-UKNk8GbxkABxKcXYuLkO16EleLGUkcvJWtpSNmExE0Too3ZaFAxTscNWEc1OdAv5/BikHawapSCaiD2XCmp+Bw==" data-cf-beacon='{"version":"2024.11.0","token":"228ace6b78e04bb494384851ece32c99","r":1,"spa":2}' crossorigin="anonymous"></script>
+</body></html>

@@ -1,0 +1,406 @@
+<!DOCTYPE html><html lang="en"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width"><title>How to Vibe Code Your Own YNAB Alternative</title><meta name="description" content="Learn how to build your own with ezvibecode YNAB alternative with copyable AI prompts, a scoped feature list, and realistic build estimates starting at 12 hours. The same build also replaces Monarch Money, Copilot Money and Lunch Money."><link rel="canonical" href="https://ezvibecode.com/build-your-own-ynab/"><meta name="theme-color" content="#f4f1e8"><link rel="icon" href="/favicon.ico" sizes="32x32"><link rel="icon" href="/favicon.png" type="image/png" sizes="512x512"><link rel="apple-touch-icon" href="/apple-touch-icon.png" sizes="180x180"><meta property="og:type" content="article"><meta property="og:site_name" content="ezvibecode"><meta property="og:title" content="How to Vibe Code Your Own YNAB Alternative"><meta property="og:description" content="Learn how to build your own with ezvibecode YNAB alternative with copyable AI prompts, a scoped feature list, and realistic build estimates starting at 12 hours. The same build also replaces Monarch Money, Copilot Money and Lunch Money."><meta property="og:url" content="https://ezvibecode.com/build-your-own-ynab/"><meta property="og:image" content="https://ezvibecode.com/og/build-your-own-ynab.png"><meta property="og:image:type" content="image/png"><meta property="og:image:width" content="1200"><meta property="og:image:height" content="630"><meta property="og:image:alt" content="How to Vibe Code Your Own YNAB Alternative"><meta name="twitter:card" content="summary_large_image"><meta name="twitter:title" content="How to Vibe Code Your Own YNAB Alternative"><meta name="twitter:description" content="Learn how to build your own with ezvibecode YNAB alternative with copyable AI prompts, a scoped feature list, and realistic build estimates starting at 12 hours. The same build also replaces Monarch Money, Copilot Money and Lunch Money."><meta name="twitter:image" content="https://ezvibecode.com/og/build-your-own-ynab.png"><meta name="twitter:image:alt" content="How to Vibe Code Your Own YNAB Alternative"><script type="application/ld+json">{"@context":"https://schema.org","@type":"FAQPage","mainEntity":[{"@type":"Question","name":"How long does it take to build your own YNAB?","acceptedAnswer":{"@type":"Answer","text":"A basic version — accounts, categories, manual transactions — takes about 12 hours. Roughly 4 days gets you a solid v1 with funding targets, csv import, reconciliation, reports. Matching everything YNAB really does (bank sync, mobile apps, shared budgets) is closer to 1 month+, which is exactly why you should scope down instead."}},{"@type":"Question","name":"How much does YNAB cost if I keep subscribing?","acceptedAnswer":{"@type":"Answer","text":"YNAB runs $9.08–$14.99 per month on public paid plans, which is $109–$180 per year. A focused self-built replacement costs your build time plus close-to-zero hosting."}},{"@type":"Question","name":"What stack should I use to build a YNAB alternative?","acceptedAnswer":{"@type":"Answer","text":"The build prompt on this page ships in four flavors: the AHA stack (Astro, HTMX, Alpine.js), Next.js, Laravel, and Ruby on Rails. The capability context for this product is Astro, HTMX, D1. Pick the stack you already know — the scope matters more than the framework."}},{"@type":"Question","name":"What features does a minimal YNAB replacement need?","acceptedAnswer":{"@type":"Answer","text":"A useful v1 needs: on-budget cash, checking, savings, and credit-card accounts with reconciled balances; monthly category groups with assigned, activity, and available amounts; scheduled and entered transactions with payee, category, memo, and cleared state; funding targets with progress, underfunded totals, and one-click assignment suggestions; CSV transaction import with duplicate review plus spending and net-worth reports. Everything else is scope creep until you personally miss it."}},{"@type":"Question","name":"What should I deliberately not build?","acceptedAnswer":{"@type":"Answer","text":"Do not connect directly to banks, move money, recommend investments, calculate taxes, or support multiple currencies in one budget."}},{"@type":"Question","name":"Does this build also replace Monarch Money, Copilot Money and Lunch Money?","acceptedAnswer":{"@type":"Answer","text":"Yes. YNAB, Monarch Money, Copilot Money and Lunch Money all solve the same core job — allocate available money, record spending, and know what is safe to spend before the next payday. The scoped v1 on this page covers what most people use any of them for, so one focused build replaces whichever you currently pay for."}}]}</script><script type="application/ld+json">{"@context":"https://schema.org","@type":"BreadcrumbList","itemListElement":[{"@type":"ListItem","position":1,"name":"ezvibecode","item":"https://ezvibecode.com/"},{"@type":"ListItem","position":2,"name":"Build your own YNAB","item":"https://ezvibecode.com/build-your-own-ynab/"}]}</script><script type="application/ld+json">{"@context":"https://schema.org","@type":"TechArticle","headline":"How to Vibe Code Your Own YNAB Alternative","description":"Learn how to build your own with ezvibecode YNAB alternative with copyable AI prompts, a scoped feature list, and realistic build estimates starting at 12 hours. The same build also replaces Monarch Money, Copilot Money and Lunch Money.","url":"https://ezvibecode.com/build-your-own-ynab/","image":"https://ezvibecode.com/og/build-your-own-ynab.png","author":{"@type":"Organization","name":"ezvibecode","url":"https://ezvibecode.com/"}}</script><link rel="stylesheet" href="/_astro/build-your-own-_slug_.0qOs6ThE.css"></head><body><header class="site-header"><a class="logo" href="/" aria-label="ezvibecode home"><span class="logo-mark">EZ</span><span>ezvibecode</span></a><nav class="header-links" aria-label="Site"><a class="header-link" href="/blog/">Blog</a><a class="header-link" href="/guides/">Guides</a><a class="header-link" href="/#audit">All 109 apps</a></nav><button class="icon-button" id="theme-toggle" type="button" aria-label="Toggle dark mode" title="Toggle dark mode">◐</button></header><main><nav class="breadcrumb" aria-label="Breadcrumb"><a href="/">Home</a><span aria-hidden="true">/</span><span aria-current="page">Build your own YNAB</span></nav><section class="hero"><p class="eyebrow">Personal · Weekend build</p><h1>How to Vibe Code Your Own <em>YNAB Alternative</em></h1><p class="lede">Give every dollar a job without giving a company your bank history. YNAB charges $9.08–$14.99 per month — that’s $109–$180 a year — for something you can replace with focused software of your own. Here is the honest scope, the honest timeline, and the exact prompt to hand your coding agent.</p><div class="hero-meta"><span class="effort weekend">from 12 hours</span><span class="verdict">Your budget, your rules</span></div></section><section class="section" aria-labelledby="who-heading"><h2 id="who-heading">Who this replacement is for</h2><p>This build targets one person or household who wants a private, hands-on spending plan. The goal: allocate available money, record spending, and know what is safe to spend before the next payday. If you need more than that, keep paying — the point of building it yourself is owning a tool shaped exactly like your workflow, not re-implementing a venture-funded roadmap.</p><p class="also-replaces">Same build, different logo: this v1 also replaces <strong>Monarch Money, Copilot Money and Lunch Money</strong> — they all solve the same core job.</p></section><section class="section" aria-labelledby="time-heading"><h2 id="time-heading">How long it actually takes</h2><p>One number would be a lie, so here are three. Each tier is a real, usable product — pick the one that matches how much of YNAB you actually use.</p><table class="estimate-table"><thead><tr><th scope="col">Estimate</th><th scope="col">What you get</th></tr></thead><tbody><tr><th scope="row">12 hours</th><td>accounts, categories, manual transactions</td></tr><tr><th scope="row">4 days</th><td>funding targets, csv import, reconciliation, reports</td></tr><tr><th scope="row">1 month+</th><td>bank sync, mobile apps, shared budgets — the part you should probably skip</td></tr></tbody></table></section><section class="section" aria-labelledby="features-heading"><h2 id="features-heading">What a minimal YNAB alternative needs</h2><ul class="feature-list"><li>on-budget cash, checking, savings, and credit-card accounts with reconciled balances</li><li>monthly category groups with assigned, activity, and available amounts</li><li>scheduled and entered transactions with payee, category, memo, and cleared state</li><li>funding targets with progress, underfunded totals, and one-click assignment suggestions</li><li>CSV transaction import with duplicate review plus spending and net-worth reports</li></ul><div class="fact-grid"><div class="fact"><h3>Data model</h3><p>Budget, Account, CategoryGroup, Category, Transaction, Target</p></div><div class="fact"><h3>Integrations</h3><p>CSV file import</p></div><div class="fact"><h3>Capability context</h3><p>Astro, HTMX, D1</p></div></div><div class="callout guardrail"><h3>The guardrail</h3><p>Store amounts as integer minor units, isolate every budget by owner, and never treat projections or category balances as financial advice.</p></div><div class="callout nongoal"><h3>Deliberate non-goals</h3><p>Do not connect directly to banks, move money, recommend investments, calculate taxes, or support multiple currencies in one budget.</p></div></section><section class="section" aria-labelledby="prompt-heading"><h2 id="prompt-heading">The complete build prompt</h2><p>Copy this into your coding agent of choice. It is scoped for a useful v1 — journeys, screens, business rules, data model, security, tests, and acceptance scenarios included. Pick your stack:</p><div class="prompt-tabs" role="tablist" aria-label="Choose your stack"><button class="prompt-tab" id="prompt-tab-aha" type="button" role="tab" aria-selected="true" aria-controls="prompt-panel-aha" tabindex="0" data-framework="aha">AHA</button><button class="prompt-tab" id="prompt-tab-nextjs" type="button" role="tab" aria-selected="false" aria-controls="prompt-panel-nextjs" tabindex="-1" data-framework="nextjs">Next.js</button><button class="prompt-tab" id="prompt-tab-laravel" type="button" role="tab" aria-selected="false" aria-controls="prompt-panel-laravel" tabindex="-1" data-framework="laravel">Laravel</button><button class="prompt-tab" id="prompt-tab-rails" type="button" role="tab" aria-selected="false" aria-controls="prompt-panel-rails" tabindex="-1" data-framework="rails">Ruby on Rails</button></div><div class="prompt-box" id="prompt-panel-aha" role="tabpanel" aria-labelledby="prompt-tab-aha" tabindex="0"><pre>You are building a production-ready software product named “Pocketplan”, a deliberately focused alternative to YNAB. Build a complete, usable vertical slice—not a landing page, static mockup, or disconnected collection of components.
+
+WORKING AGREEMENT
+Before writing implementation code, produce a short technical plan that names the routes or pages, server actions or endpoints, data tables, important state transitions, authorization boundaries, background jobs, and external adapters. Resolve contradictions in favor of the narrow audience and non-goals below. Prefer a small, legible architecture over speculative abstraction, but do not omit persistence, validation, error handling, or tests.
+
+PRODUCT BRIEF
+Primary user: one person or household who wants a private, hands-on spending plan.
+Primary outcome: allocate available money, record spending, and know what is safe to spend before the next payday.
+Product principle: optimize the exact workflow below instead of copying the full breadth of YNAB. A first-time user should understand what to do from the interface itself, without a tour or documentation.
+
+END-TO-END USER JOURNEYS
+Implement all of these flows through the real interface and persistent data layer:
+1. The user creates a budget in one currency, adds current account balances, organizes categories, and assigns every available dollar until the ready-to-assign amount reaches zero.
+2. The user records income and spending, moves money between categories when priorities change, clears imported transactions, and reconciles each account to its real-world balance.
+3. The user sets a monthly savings target, reviews underfunded categories and upcoming transactions, applies assignment suggestions, and checks spending and net-worth trends.
+
+SCREENS AND INFORMATION ARCHITECTURE
+Build these as coherent responsive views. Each screen must specify its primary action, secondary actions, visible status, validation feedback, empty state, loading or pending state, success confirmation, and recoverable failure state.
+1. Budget setup: budget name, currency, account types and opening balances, starter category groups, validation, and an explicit opening-balance review.
+2. Monthly plan: previous and next month navigation, ready-to-assign total, grouped categories with assigned, activity, available, target progress, quick assignment, and move-money controls.
+3. Account register: working and cleared balances, searchable transactions, scheduled items, add and edit forms, bulk clear, CSV import review, transfer handling, and reconciliation flow.
+4. Reflect: date and account filters, spending by category and payee, income versus expense, net-worth trend, empty states, and drill-down to contributing transactions.
+
+CORE CAPABILITIES
+1. on-budget cash, checking, savings, and credit-card accounts with reconciled balances
+2. monthly category groups with assigned, activity, and available amounts
+3. scheduled and entered transactions with payee, category, memo, and cleared state
+4. funding targets with progress, underfunded totals, and one-click assignment suggestions
+5. CSV transaction import with duplicate review plus spending and net-worth reports
+
+DETAILED BEHAVIOR AND BUSINESS RULES
+Treat these as server-enforced product requirements, not interface suggestions:
+1. Store every amount as an integer in the budget currency’s minor unit and derive account, category, ready-to-assign, and report totals from immutable transaction and assignment records.
+2. An inflow becomes ready to assign only in its effective month; assigning money moves it between ready-to-assign and a category, while moving money between categories never changes the budget total.
+3. Transfers create linked account entries with no spending category, credit-card spending moves available cash to the card-payment category, and editing or deleting either side preserves ledger consistency.
+4. CSV imports require an explicit account and column mapping, normalize dates and amounts before preview, detect likely duplicates without silently dropping rows, and commit accepted rows atomically.
+
+DATA MODEL AND LIFECYCLE
+Design a small relational schema centered on Budget, Account, CategoryGroup, Category, Transaction, Target. Before implementing it, document:
+1. Each table’s purpose, primary key, ownership or tenant boundary, timestamps, status fields, and important attributes.
+2. Foreign keys, uniqueness constraints, check constraints, indexes needed by the named screens, and transaction boundaries for multi-record changes.
+3. The allowed lifecycle or state transitions, who may trigger each transition, which transitions are terminal or reversible, and what audit history must remain immutable.
+4. Archive, retention, and deletion behavior, including what happens to dependent records and external files.
+5. Idempotency strategy for submissions, jobs, imports, notifications, webhooks, or retries where applicable.
+Use migrations rather than ad-hoc schema creation. Store time instants consistently and retain named timezone context whenever local schedules or dates matter. Never rely on a counter, disabled button, or client-side check to preserve a business invariant.
+
+USERS, AUTHENTICATION, AND PERMISSIONS
+Implement only the roles required by the stated audience. Make the ownership and visibility model explicit before coding. Enforce authorization in every server-side query and mutation, including search, exports, attachments, live updates, and guessed URLs—not merely by hiding controls. Use secure session defaults, protect state-changing requests, and provide an understandable signed-out, expired-session, and forbidden state. Seed distinct users when multiple roles are required so permissions can be demonstrated and tested.
+
+INTERACTION AND VISUAL DIRECTION
+The product should feel fast, calm, focused, and credible rather than like a generic admin template. Use a clear visual hierarchy, restrained color, readable typography, generous hit targets, and consistent placement for primary actions. Start with server-rendered HTML and progressively enhance only the interactions that benefit from it. The core workflow must remain understandable if enhancement fails.
+
+Start with server-rendered Astro pages and ordinary HTML forms. Use HTMX for form submissions, partial navigation, and server-driven updates, then Alpine.js only for small local browser state. The core workflow must remain understandable if either enhancement layer fails.
+
+Design mobile layouts intentionally instead of simply stacking desktop panels. Support keyboard navigation, visible focus, semantic landmarks, explicit labels, useful page titles, reduced-motion preferences, and screen-reader announcements for asynchronous results. Never use color alone to communicate state. Destructive actions require clear scope and confirmation; safe repeated actions should be idempotent.
+
+TECHNICAL DIRECTION
+Build this version with the AHA stack: Astro for routing, layouts, and server-rendered pages; HTMX for interactions that benefit from HTML fragment responses; and Alpine.js for small, local interface state. Prefer Cloudflare D1 for relational persistence, R2 for object storage, Workers for server endpoints and scheduled work, Durable Objects only for coordinated real-time state, and Workflows or Queues for durable background jobs—but only when the product requirements call for them.
+
+Keep domain rules in testable server-side modules instead of route handlers or UI components. Separate persistence, external providers, and background work behind small interfaces without building a framework. Prefer ordinary HTML forms and URLs for durable navigation; use optimistic interaction only when failure can be reconciled clearly.
+
+The product brief currently identifies Astro, HTMX, D1 as capability context. Preserve any required native, browser-only, edge, storage, real-time, or background-processing capability through a narrow adapter appropriate to the selected framework. If the core workflow genuinely requires native or browser APIs, keep that runtime as the primary execution surface rather than simulating inaccessible capabilities or inventing an unnecessary web surface.
+
+Integrate with CSV file import. For every integration:
+- List required environment variables in an .env.example without real secrets.
+- Add a small adapter with timeouts, normalized errors, and a deterministic local fake or development path.
+- Verify inbound signatures and deduplicate provider events where supported.
+- Keep credentials server-side, encrypt long-lived provider tokens at rest, and redact secrets and sensitive payloads from logs.
+- Define retry, backoff, and idempotency behavior for any side effect that can be repeated.
+
+SECURITY AND PRIVACY
+Store amounts as integer minor units, isolate every budget by owner, and never treat projections or category balances as financial advice.
+Validate, normalize, and length-limit all untrusted input on the server. Escape rendered content by default, sanitize any intentionally accepted markup, rate-limit public or abuse-prone actions, and use private object storage plus short-lived authorized URLs for sensitive files. Collect the minimum personal data necessary for the named workflow. Document retention and deletion behavior. Add specific protections for the riskier surfaces in this app, such as uploads, redirects, outbound requests, email delivery, OAuth, webhooks, CSV import or export, and real-time connections.
+
+ACCEPTANCE SCENARIOS
+Automate these app-specific scenarios at the most appropriate level:
+1. Given $1,000 of new income, assigning $700 to rent and $300 to groceries leaves ready to assign at zero and survives month navigation and refresh.
+2. Given a $40 categorized card purchase, the spending category falls by $40, the card-payment category rises by $40, and the account register and reports agree.
+3. Given a CSV containing valid, duplicate, and malformed rows, import identifies each class, accepts only confirmed valid rows once, and leaves the account balance reproducible from its ledger.
+
+TESTING
+Add focused unit tests for state transitions, authorization predicates, normalization, date or money calculations, and other risky domain rules. Add integration tests for persistence constraints and each external adapter’s success, timeout, retry, and rejection paths. Add at least one browser-level test for every end-to-end journey above, including one small-screen viewport. Tests must use isolated data and run through a documented single command.
+
+OPERATIONS AND FAILURE RECOVERY
+Add structured server logs with request, job, or event correlation IDs but no secrets or unnecessarily sensitive data. Make failures actionable in both the interface and logs. Background work must expose pending, succeeded, failed, and retrying states where relevant; do not silently swallow errors. Include safe database migration and rollback guidance, seed data, backup and restore notes, external-data cleanup behavior, and a basic health or diagnostic path appropriate to the stack.
+
+DELIVERABLES
+Ship the working application, migrations, representative seed data, tests, .env.example, and a concise README. The README must cover prerequisites, local setup, environment variables, migrations, seed and test commands, deployment, integration setup, backup and restore, security decisions, and known limitations. Seed data should exercise the happy path plus at least one empty, failed, overdue, expired, archived, or permission-restricted state relevant to the product.
+
+DEFINITION OF DONE
+The app is complete when a fresh developer can follow the README, create and migrate the database, run the app, sign in as each relevant role, complete every named journey using real persisted data, refresh without losing state, recover from common failures, and use the core interface on phone and desktop. All acceptance scenarios pass, permission boundaries are covered by tests, and no core screen is left as a placeholder.
+
+NON-GOALS
+Do not connect directly to banks, move money, recommend investments, calculate taxes, or support multiple currencies in one budget.</pre></div><div class="prompt-box" id="prompt-panel-nextjs" role="tabpanel" aria-labelledby="prompt-tab-nextjs" tabindex="0" hidden><pre>You are building a production-ready software product named “Pocketplan”, a deliberately focused alternative to YNAB. Build a complete, usable vertical slice—not a landing page, static mockup, or disconnected collection of components.
+
+WORKING AGREEMENT
+Before writing implementation code, produce a short technical plan that names the routes or pages, server actions or endpoints, data tables, important state transitions, authorization boundaries, background jobs, and external adapters. Resolve contradictions in favor of the narrow audience and non-goals below. Prefer a small, legible architecture over speculative abstraction, but do not omit persistence, validation, error handling, or tests.
+
+PRODUCT BRIEF
+Primary user: one person or household who wants a private, hands-on spending plan.
+Primary outcome: allocate available money, record spending, and know what is safe to spend before the next payday.
+Product principle: optimize the exact workflow below instead of copying the full breadth of YNAB. A first-time user should understand what to do from the interface itself, without a tour or documentation.
+
+END-TO-END USER JOURNEYS
+Implement all of these flows through the real interface and persistent data layer:
+1. The user creates a budget in one currency, adds current account balances, organizes categories, and assigns every available dollar until the ready-to-assign amount reaches zero.
+2. The user records income and spending, moves money between categories when priorities change, clears imported transactions, and reconciles each account to its real-world balance.
+3. The user sets a monthly savings target, reviews underfunded categories and upcoming transactions, applies assignment suggestions, and checks spending and net-worth trends.
+
+SCREENS AND INFORMATION ARCHITECTURE
+Build these as coherent responsive views. Each screen must specify its primary action, secondary actions, visible status, validation feedback, empty state, loading or pending state, success confirmation, and recoverable failure state.
+1. Budget setup: budget name, currency, account types and opening balances, starter category groups, validation, and an explicit opening-balance review.
+2. Monthly plan: previous and next month navigation, ready-to-assign total, grouped categories with assigned, activity, available, target progress, quick assignment, and move-money controls.
+3. Account register: working and cleared balances, searchable transactions, scheduled items, add and edit forms, bulk clear, CSV import review, transfer handling, and reconciliation flow.
+4. Reflect: date and account filters, spending by category and payee, income versus expense, net-worth trend, empty states, and drill-down to contributing transactions.
+
+CORE CAPABILITIES
+1. on-budget cash, checking, savings, and credit-card accounts with reconciled balances
+2. monthly category groups with assigned, activity, and available amounts
+3. scheduled and entered transactions with payee, category, memo, and cleared state
+4. funding targets with progress, underfunded totals, and one-click assignment suggestions
+5. CSV transaction import with duplicate review plus spending and net-worth reports
+
+DETAILED BEHAVIOR AND BUSINESS RULES
+Treat these as server-enforced product requirements, not interface suggestions:
+1. Store every amount as an integer in the budget currency’s minor unit and derive account, category, ready-to-assign, and report totals from immutable transaction and assignment records.
+2. An inflow becomes ready to assign only in its effective month; assigning money moves it between ready-to-assign and a category, while moving money between categories never changes the budget total.
+3. Transfers create linked account entries with no spending category, credit-card spending moves available cash to the card-payment category, and editing or deleting either side preserves ledger consistency.
+4. CSV imports require an explicit account and column mapping, normalize dates and amounts before preview, detect likely duplicates without silently dropping rows, and commit accepted rows atomically.
+
+DATA MODEL AND LIFECYCLE
+Design a small relational schema centered on Budget, Account, CategoryGroup, Category, Transaction, Target. Before implementing it, document:
+1. Each table’s purpose, primary key, ownership or tenant boundary, timestamps, status fields, and important attributes.
+2. Foreign keys, uniqueness constraints, check constraints, indexes needed by the named screens, and transaction boundaries for multi-record changes.
+3. The allowed lifecycle or state transitions, who may trigger each transition, which transitions are terminal or reversible, and what audit history must remain immutable.
+4. Archive, retention, and deletion behavior, including what happens to dependent records and external files.
+5. Idempotency strategy for submissions, jobs, imports, notifications, webhooks, or retries where applicable.
+Use migrations rather than ad-hoc schema creation. Store time instants consistently and retain named timezone context whenever local schedules or dates matter. Never rely on a counter, disabled button, or client-side check to preserve a business invariant.
+
+USERS, AUTHENTICATION, AND PERMISSIONS
+Implement only the roles required by the stated audience. Make the ownership and visibility model explicit before coding. Enforce authorization in every server-side query and mutation, including search, exports, attachments, live updates, and guessed URLs—not merely by hiding controls. Use secure session defaults, protect state-changing requests, and provide an understandable signed-out, expired-session, and forbidden state. Seed distinct users when multiple roles are required so permissions can be demonstrated and tested.
+
+INTERACTION AND VISUAL DIRECTION
+The product should feel fast, calm, focused, and credible rather than like a generic admin template. Use a clear visual hierarchy, restrained color, readable typography, generous hit targets, and consistent placement for primary actions. Start with server-rendered HTML and progressively enhance only the interactions that benefit from it. The core workflow must remain understandable if enhancement fails.
+
+Render with React Server Components by default. Use Server Actions for authenticated form mutations and add Client Components only for interactions that genuinely require browser state, browser APIs, drag-and-drop, or live updates. The core workflow must remain understandable before client-side JavaScript finishes loading.
+
+Design mobile layouts intentionally instead of simply stacking desktop panels. Support keyboard navigation, visible focus, semantic landmarks, explicit labels, useful page titles, reduced-motion preferences, and screen-reader announcements for asynchronous results. Never use color alone to communicate state. Destructive actions require clear scope and confirmation; safe repeated actions should be idempotent.
+
+TECHNICAL DIRECTION
+Build this version with Next.js, the App Router, and TypeScript. Use Server Components by default, Server Actions for authenticated mutations, and Route Handlers for public APIs, OAuth callbacks, webhooks, feeds, uploads, and downloads. Use PostgreSQL through Drizzle ORM with versioned migrations and an isolated test database. Access S3-compatible object storage through a server-only adapter, and run slow or retryable work in a real job or workflow system instead of the request lifecycle.
+
+Keep domain rules in testable server-side modules instead of route handlers or UI components. Separate persistence, external providers, and background work behind small interfaces without building a framework. Prefer ordinary HTML forms and URLs for durable navigation; use optimistic interaction only when failure can be reconciled clearly.
+
+The product brief currently identifies Astro, HTMX, D1 as capability context. Preserve any required native, browser-only, edge, storage, real-time, or background-processing capability through a narrow adapter appropriate to the selected framework. If the core workflow genuinely requires native or browser APIs, keep that runtime as the primary execution surface rather than simulating inaccessible capabilities or inventing an unnecessary web surface.
+
+Integrate with CSV file import. For every integration:
+- List required environment variables in an .env.example without real secrets.
+- Add a small adapter with timeouts, normalized errors, and a deterministic local fake or development path.
+- Verify inbound signatures and deduplicate provider events where supported.
+- Keep credentials server-side, encrypt long-lived provider tokens at rest, and redact secrets and sensitive payloads from logs.
+- Define retry, backoff, and idempotency behavior for any side effect that can be repeated.
+
+SECURITY AND PRIVACY
+Store amounts as integer minor units, isolate every budget by owner, and never treat projections or category balances as financial advice.
+Validate, normalize, and length-limit all untrusted input on the server. Escape rendered content by default, sanitize any intentionally accepted markup, rate-limit public or abuse-prone actions, and use private object storage plus short-lived authorized URLs for sensitive files. Collect the minimum personal data necessary for the named workflow. Document retention and deletion behavior. Add specific protections for the riskier surfaces in this app, such as uploads, redirects, outbound requests, email delivery, OAuth, webhooks, CSV import or export, and real-time connections.
+
+ACCEPTANCE SCENARIOS
+Automate these app-specific scenarios at the most appropriate level:
+1. Given $1,000 of new income, assigning $700 to rent and $300 to groceries leaves ready to assign at zero and survives month navigation and refresh.
+2. Given a $40 categorized card purchase, the spending category falls by $40, the card-payment category rises by $40, and the account register and reports agree.
+3. Given a CSV containing valid, duplicate, and malformed rows, import identifies each class, accepts only confirmed valid rows once, and leaves the account balance reproducible from its ledger.
+
+TESTING
+Add focused unit tests for state transitions, authorization predicates, normalization, date or money calculations, and other risky domain rules. Add integration tests for persistence constraints and each external adapter’s success, timeout, retry, and rejection paths. Add at least one browser-level test for every end-to-end journey above, including one small-screen viewport. Tests must use isolated data and run through a documented single command.
+
+OPERATIONS AND FAILURE RECOVERY
+Add structured server logs with request, job, or event correlation IDs but no secrets or unnecessarily sensitive data. Make failures actionable in both the interface and logs. Background work must expose pending, succeeded, failed, and retrying states where relevant; do not silently swallow errors. Include safe database migration and rollback guidance, seed data, backup and restore notes, external-data cleanup behavior, and a basic health or diagnostic path appropriate to the stack.
+
+DELIVERABLES
+Ship the working application, migrations, representative seed data, tests, .env.example, and a concise README. The README must cover prerequisites, local setup, environment variables, migrations, seed and test commands, deployment, integration setup, backup and restore, security decisions, and known limitations. Seed data should exercise the happy path plus at least one empty, failed, overdue, expired, archived, or permission-restricted state relevant to the product.
+
+DEFINITION OF DONE
+The app is complete when a fresh developer can follow the README, create and migrate the database, run the app, sign in as each relevant role, complete every named journey using real persisted data, refresh without losing state, recover from common failures, and use the core interface on phone and desktop. All acceptance scenarios pass, permission boundaries are covered by tests, and no core screen is left as a placeholder.
+
+NON-GOALS
+Do not connect directly to banks, move money, recommend investments, calculate taxes, or support multiple currencies in one budget.</pre></div><div class="prompt-box" id="prompt-panel-laravel" role="tabpanel" aria-labelledby="prompt-tab-laravel" tabindex="0" hidden><pre>You are building a production-ready software product named “Pocketplan”, a deliberately focused alternative to YNAB. Build a complete, usable vertical slice—not a landing page, static mockup, or disconnected collection of components.
+
+WORKING AGREEMENT
+Before writing implementation code, produce a short technical plan that names the routes or pages, server actions or endpoints, data tables, important state transitions, authorization boundaries, background jobs, and external adapters. Resolve contradictions in favor of the narrow audience and non-goals below. Prefer a small, legible architecture over speculative abstraction, but do not omit persistence, validation, error handling, or tests.
+
+PRODUCT BRIEF
+Primary user: one person or household who wants a private, hands-on spending plan.
+Primary outcome: allocate available money, record spending, and know what is safe to spend before the next payday.
+Product principle: optimize the exact workflow below instead of copying the full breadth of YNAB. A first-time user should understand what to do from the interface itself, without a tour or documentation.
+
+END-TO-END USER JOURNEYS
+Implement all of these flows through the real interface and persistent data layer:
+1. The user creates a budget in one currency, adds current account balances, organizes categories, and assigns every available dollar until the ready-to-assign amount reaches zero.
+2. The user records income and spending, moves money between categories when priorities change, clears imported transactions, and reconciles each account to its real-world balance.
+3. The user sets a monthly savings target, reviews underfunded categories and upcoming transactions, applies assignment suggestions, and checks spending and net-worth trends.
+
+SCREENS AND INFORMATION ARCHITECTURE
+Build these as coherent responsive views. Each screen must specify its primary action, secondary actions, visible status, validation feedback, empty state, loading or pending state, success confirmation, and recoverable failure state.
+1. Budget setup: budget name, currency, account types and opening balances, starter category groups, validation, and an explicit opening-balance review.
+2. Monthly plan: previous and next month navigation, ready-to-assign total, grouped categories with assigned, activity, available, target progress, quick assignment, and move-money controls.
+3. Account register: working and cleared balances, searchable transactions, scheduled items, add and edit forms, bulk clear, CSV import review, transfer handling, and reconciliation flow.
+4. Reflect: date and account filters, spending by category and payee, income versus expense, net-worth trend, empty states, and drill-down to contributing transactions.
+
+CORE CAPABILITIES
+1. on-budget cash, checking, savings, and credit-card accounts with reconciled balances
+2. monthly category groups with assigned, activity, and available amounts
+3. scheduled and entered transactions with payee, category, memo, and cleared state
+4. funding targets with progress, underfunded totals, and one-click assignment suggestions
+5. CSV transaction import with duplicate review plus spending and net-worth reports
+
+DETAILED BEHAVIOR AND BUSINESS RULES
+Treat these as server-enforced product requirements, not interface suggestions:
+1. Store every amount as an integer in the budget currency’s minor unit and derive account, category, ready-to-assign, and report totals from immutable transaction and assignment records.
+2. An inflow becomes ready to assign only in its effective month; assigning money moves it between ready-to-assign and a category, while moving money between categories never changes the budget total.
+3. Transfers create linked account entries with no spending category, credit-card spending moves available cash to the card-payment category, and editing or deleting either side preserves ledger consistency.
+4. CSV imports require an explicit account and column mapping, normalize dates and amounts before preview, detect likely duplicates without silently dropping rows, and commit accepted rows atomically.
+
+DATA MODEL AND LIFECYCLE
+Design a small relational schema centered on Budget, Account, CategoryGroup, Category, Transaction, Target. Before implementing it, document:
+1. Each table’s purpose, primary key, ownership or tenant boundary, timestamps, status fields, and important attributes.
+2. Foreign keys, uniqueness constraints, check constraints, indexes needed by the named screens, and transaction boundaries for multi-record changes.
+3. The allowed lifecycle or state transitions, who may trigger each transition, which transitions are terminal or reversible, and what audit history must remain immutable.
+4. Archive, retention, and deletion behavior, including what happens to dependent records and external files.
+5. Idempotency strategy for submissions, jobs, imports, notifications, webhooks, or retries where applicable.
+Use migrations rather than ad-hoc schema creation. Store time instants consistently and retain named timezone context whenever local schedules or dates matter. Never rely on a counter, disabled button, or client-side check to preserve a business invariant.
+
+USERS, AUTHENTICATION, AND PERMISSIONS
+Implement only the roles required by the stated audience. Make the ownership and visibility model explicit before coding. Enforce authorization in every server-side query and mutation, including search, exports, attachments, live updates, and guessed URLs—not merely by hiding controls. Use secure session defaults, protect state-changing requests, and provide an understandable signed-out, expired-session, and forbidden state. Seed distinct users when multiple roles are required so permissions can be demonstrated and tested.
+
+INTERACTION AND VISUAL DIRECTION
+The product should feel fast, calm, focused, and credible rather than like a generic admin template. Use a clear visual hierarchy, restrained color, readable typography, generous hit targets, and consistent placement for primary actions. Start with server-rendered HTML and progressively enhance only the interactions that benefit from it. The core workflow must remain understandable if enhancement fails.
+
+Start with server-rendered Blade views and ordinary forms. Use Livewire for focused server-driven interactions and Alpine.js only for small local interface state. The core workflow must remain understandable without relying on a client-side application shell.
+
+Design mobile layouts intentionally instead of simply stacking desktop panels. Support keyboard navigation, visible focus, semantic landmarks, explicit labels, useful page titles, reduced-motion preferences, and screen-reader announcements for asynchronous results. Never use color alone to communicate state. Destructive actions require clear scope and confirmation; safe repeated actions should be idempotent.
+
+TECHNICAL DIRECTION
+Build this version with Laravel, PHP, Blade, Livewire, and Alpine.js. Use controllers and Blade forms for durable navigation, Livewire for focused interactions, Form Requests for validation, Policies and Gates for authorization, and small application actions or services for domain transitions. Use Eloquent with migrations, database constraints, and transactions; Laravel Storage for private S3-compatible files; queued Jobs for retryable work; the Scheduler for recurring work; and Notifications or Mail for email.
+
+Keep domain rules in testable server-side modules instead of route handlers or UI components. Separate persistence, external providers, and background work behind small interfaces without building a framework. Prefer ordinary HTML forms and URLs for durable navigation; use optimistic interaction only when failure can be reconciled clearly.
+
+The product brief currently identifies Astro, HTMX, D1 as capability context. Preserve any required native, browser-only, edge, storage, real-time, or background-processing capability through a narrow adapter appropriate to the selected framework. If the core workflow genuinely requires native or browser APIs, keep that runtime as the primary execution surface rather than simulating inaccessible capabilities or inventing an unnecessary web surface.
+
+Integrate with CSV file import. For every integration:
+- List required environment variables in an .env.example without real secrets.
+- Add a small adapter with timeouts, normalized errors, and a deterministic local fake or development path.
+- Verify inbound signatures and deduplicate provider events where supported.
+- Keep credentials server-side, encrypt long-lived provider tokens at rest, and redact secrets and sensitive payloads from logs.
+- Define retry, backoff, and idempotency behavior for any side effect that can be repeated.
+
+SECURITY AND PRIVACY
+Store amounts as integer minor units, isolate every budget by owner, and never treat projections or category balances as financial advice.
+Validate, normalize, and length-limit all untrusted input on the server. Escape rendered content by default, sanitize any intentionally accepted markup, rate-limit public or abuse-prone actions, and use private object storage plus short-lived authorized URLs for sensitive files. Collect the minimum personal data necessary for the named workflow. Document retention and deletion behavior. Add specific protections for the riskier surfaces in this app, such as uploads, redirects, outbound requests, email delivery, OAuth, webhooks, CSV import or export, and real-time connections.
+
+ACCEPTANCE SCENARIOS
+Automate these app-specific scenarios at the most appropriate level:
+1. Given $1,000 of new income, assigning $700 to rent and $300 to groceries leaves ready to assign at zero and survives month navigation and refresh.
+2. Given a $40 categorized card purchase, the spending category falls by $40, the card-payment category rises by $40, and the account register and reports agree.
+3. Given a CSV containing valid, duplicate, and malformed rows, import identifies each class, accepts only confirmed valid rows once, and leaves the account balance reproducible from its ledger.
+
+TESTING
+Add focused unit tests for state transitions, authorization predicates, normalization, date or money calculations, and other risky domain rules. Add integration tests for persistence constraints and each external adapter’s success, timeout, retry, and rejection paths. Add at least one browser-level test for every end-to-end journey above, including one small-screen viewport. Tests must use isolated data and run through a documented single command.
+
+OPERATIONS AND FAILURE RECOVERY
+Add structured server logs with request, job, or event correlation IDs but no secrets or unnecessarily sensitive data. Make failures actionable in both the interface and logs. Background work must expose pending, succeeded, failed, and retrying states where relevant; do not silently swallow errors. Include safe database migration and rollback guidance, seed data, backup and restore notes, external-data cleanup behavior, and a basic health or diagnostic path appropriate to the stack.
+
+DELIVERABLES
+Ship the working application, migrations, representative seed data, tests, .env.example, and a concise README. The README must cover prerequisites, local setup, environment variables, migrations, seed and test commands, deployment, integration setup, backup and restore, security decisions, and known limitations. Seed data should exercise the happy path plus at least one empty, failed, overdue, expired, archived, or permission-restricted state relevant to the product.
+
+DEFINITION OF DONE
+The app is complete when a fresh developer can follow the README, create and migrate the database, run the app, sign in as each relevant role, complete every named journey using real persisted data, refresh without losing state, recover from common failures, and use the core interface on phone and desktop. All acceptance scenarios pass, permission boundaries are covered by tests, and no core screen is left as a placeholder.
+
+NON-GOALS
+Do not connect directly to banks, move money, recommend investments, calculate taxes, or support multiple currencies in one budget.</pre></div><div class="prompt-box" id="prompt-panel-rails" role="tabpanel" aria-labelledby="prompt-tab-rails" tabindex="0" hidden><pre>You are building a production-ready software product named “Pocketplan”, a deliberately focused alternative to YNAB. Build a complete, usable vertical slice—not a landing page, static mockup, or disconnected collection of components.
+
+WORKING AGREEMENT
+Before writing implementation code, produce a short technical plan that names the routes or pages, server actions or endpoints, data tables, important state transitions, authorization boundaries, background jobs, and external adapters. Resolve contradictions in favor of the narrow audience and non-goals below. Prefer a small, legible architecture over speculative abstraction, but do not omit persistence, validation, error handling, or tests.
+
+PRODUCT BRIEF
+Primary user: one person or household who wants a private, hands-on spending plan.
+Primary outcome: allocate available money, record spending, and know what is safe to spend before the next payday.
+Product principle: optimize the exact workflow below instead of copying the full breadth of YNAB. A first-time user should understand what to do from the interface itself, without a tour or documentation.
+
+END-TO-END USER JOURNEYS
+Implement all of these flows through the real interface and persistent data layer:
+1. The user creates a budget in one currency, adds current account balances, organizes categories, and assigns every available dollar until the ready-to-assign amount reaches zero.
+2. The user records income and spending, moves money between categories when priorities change, clears imported transactions, and reconciles each account to its real-world balance.
+3. The user sets a monthly savings target, reviews underfunded categories and upcoming transactions, applies assignment suggestions, and checks spending and net-worth trends.
+
+SCREENS AND INFORMATION ARCHITECTURE
+Build these as coherent responsive views. Each screen must specify its primary action, secondary actions, visible status, validation feedback, empty state, loading or pending state, success confirmation, and recoverable failure state.
+1. Budget setup: budget name, currency, account types and opening balances, starter category groups, validation, and an explicit opening-balance review.
+2. Monthly plan: previous and next month navigation, ready-to-assign total, grouped categories with assigned, activity, available, target progress, quick assignment, and move-money controls.
+3. Account register: working and cleared balances, searchable transactions, scheduled items, add and edit forms, bulk clear, CSV import review, transfer handling, and reconciliation flow.
+4. Reflect: date and account filters, spending by category and payee, income versus expense, net-worth trend, empty states, and drill-down to contributing transactions.
+
+CORE CAPABILITIES
+1. on-budget cash, checking, savings, and credit-card accounts with reconciled balances
+2. monthly category groups with assigned, activity, and available amounts
+3. scheduled and entered transactions with payee, category, memo, and cleared state
+4. funding targets with progress, underfunded totals, and one-click assignment suggestions
+5. CSV transaction import with duplicate review plus spending and net-worth reports
+
+DETAILED BEHAVIOR AND BUSINESS RULES
+Treat these as server-enforced product requirements, not interface suggestions:
+1. Store every amount as an integer in the budget currency’s minor unit and derive account, category, ready-to-assign, and report totals from immutable transaction and assignment records.
+2. An inflow becomes ready to assign only in its effective month; assigning money moves it between ready-to-assign and a category, while moving money between categories never changes the budget total.
+3. Transfers create linked account entries with no spending category, credit-card spending moves available cash to the card-payment category, and editing or deleting either side preserves ledger consistency.
+4. CSV imports require an explicit account and column mapping, normalize dates and amounts before preview, detect likely duplicates without silently dropping rows, and commit accepted rows atomically.
+
+DATA MODEL AND LIFECYCLE
+Design a small relational schema centered on Budget, Account, CategoryGroup, Category, Transaction, Target. Before implementing it, document:
+1. Each table’s purpose, primary key, ownership or tenant boundary, timestamps, status fields, and important attributes.
+2. Foreign keys, uniqueness constraints, check constraints, indexes needed by the named screens, and transaction boundaries for multi-record changes.
+3. The allowed lifecycle or state transitions, who may trigger each transition, which transitions are terminal or reversible, and what audit history must remain immutable.
+4. Archive, retention, and deletion behavior, including what happens to dependent records and external files.
+5. Idempotency strategy for submissions, jobs, imports, notifications, webhooks, or retries where applicable.
+Use migrations rather than ad-hoc schema creation. Store time instants consistently and retain named timezone context whenever local schedules or dates matter. Never rely on a counter, disabled button, or client-side check to preserve a business invariant.
+
+USERS, AUTHENTICATION, AND PERMISSIONS
+Implement only the roles required by the stated audience. Make the ownership and visibility model explicit before coding. Enforce authorization in every server-side query and mutation, including search, exports, attachments, live updates, and guessed URLs—not merely by hiding controls. Use secure session defaults, protect state-changing requests, and provide an understandable signed-out, expired-session, and forbidden state. Seed distinct users when multiple roles are required so permissions can be demonstrated and tested.
+
+INTERACTION AND VISUAL DIRECTION
+The product should feel fast, calm, focused, and credible rather than like a generic admin template. Use a clear visual hierarchy, restrained color, readable typography, generous hit targets, and consistent placement for primary actions. Start with server-rendered HTML and progressively enhance only the interactions that benefit from it. The core workflow must remain understandable if enhancement fails.
+
+Start with server-rendered Rails views and ordinary forms. Use Turbo for navigation, submissions, and server-driven updates, then Stimulus only for small browser-side behavior. Do not turn the product into a client-side SPA, and keep the core workflow usable when enhancement fails.
+
+Design mobile layouts intentionally instead of simply stacking desktop panels. Support keyboard navigation, visible focus, semantic landmarks, explicit labels, useful page titles, reduced-motion preferences, and screen-reader announcements for asynchronous results. Never use color alone to communicate state. Destructive actions require clear scope and confirmation; safe repeated actions should be idempotent.
+
+TECHNICAL DIRECTION
+Build this version with Ruby on Rails and Hotwire: Turbo for navigation, form submissions, and server-driven updates, and Stimulus for small browser-side behavior. Use RESTful controllers with strong parameters and explicit authorization, with domain transitions in testable models or small application services. Use Active Record migrations plus database-level constraints and transactions; Active Storage with an S3-compatible service for private files; Active Job with a durable queue backend for retryable work; Action Mailer for email; and Action Cable only when live updates are required.
+
+Keep domain rules in testable server-side modules instead of route handlers or UI components. Separate persistence, external providers, and background work behind small interfaces without building a framework. Prefer ordinary HTML forms and URLs for durable navigation; use optimistic interaction only when failure can be reconciled clearly.
+
+The product brief currently identifies Astro, HTMX, D1 as capability context. Preserve any required native, browser-only, edge, storage, real-time, or background-processing capability through a narrow adapter appropriate to the selected framework. If the core workflow genuinely requires native or browser APIs, keep that runtime as the primary execution surface rather than simulating inaccessible capabilities or inventing an unnecessary web surface.
+
+Integrate with CSV file import. For every integration:
+- List required environment variables in an .env.example without real secrets.
+- Add a small adapter with timeouts, normalized errors, and a deterministic local fake or development path.
+- Verify inbound signatures and deduplicate provider events where supported.
+- Keep credentials server-side, encrypt long-lived provider tokens at rest, and redact secrets and sensitive payloads from logs.
+- Define retry, backoff, and idempotency behavior for any side effect that can be repeated.
+
+SECURITY AND PRIVACY
+Store amounts as integer minor units, isolate every budget by owner, and never treat projections or category balances as financial advice.
+Validate, normalize, and length-limit all untrusted input on the server. Escape rendered content by default, sanitize any intentionally accepted markup, rate-limit public or abuse-prone actions, and use private object storage plus short-lived authorized URLs for sensitive files. Collect the minimum personal data necessary for the named workflow. Document retention and deletion behavior. Add specific protections for the riskier surfaces in this app, such as uploads, redirects, outbound requests, email delivery, OAuth, webhooks, CSV import or export, and real-time connections.
+
+ACCEPTANCE SCENARIOS
+Automate these app-specific scenarios at the most appropriate level:
+1. Given $1,000 of new income, assigning $700 to rent and $300 to groceries leaves ready to assign at zero and survives month navigation and refresh.
+2. Given a $40 categorized card purchase, the spending category falls by $40, the card-payment category rises by $40, and the account register and reports agree.
+3. Given a CSV containing valid, duplicate, and malformed rows, import identifies each class, accepts only confirmed valid rows once, and leaves the account balance reproducible from its ledger.
+
+TESTING
+Add focused unit tests for state transitions, authorization predicates, normalization, date or money calculations, and other risky domain rules. Add integration tests for persistence constraints and each external adapter’s success, timeout, retry, and rejection paths. Add at least one browser-level test for every end-to-end journey above, including one small-screen viewport. Tests must use isolated data and run through a documented single command.
+
+OPERATIONS AND FAILURE RECOVERY
+Add structured server logs with request, job, or event correlation IDs but no secrets or unnecessarily sensitive data. Make failures actionable in both the interface and logs. Background work must expose pending, succeeded, failed, and retrying states where relevant; do not silently swallow errors. Include safe database migration and rollback guidance, seed data, backup and restore notes, external-data cleanup behavior, and a basic health or diagnostic path appropriate to the stack.
+
+DELIVERABLES
+Ship the working application, migrations, representative seed data, tests, .env.example, and a concise README. The README must cover prerequisites, local setup, environment variables, migrations, seed and test commands, deployment, integration setup, backup and restore, security decisions, and known limitations. Seed data should exercise the happy path plus at least one empty, failed, overdue, expired, archived, or permission-restricted state relevant to the product.
+
+DEFINITION OF DONE
+The app is complete when a fresh developer can follow the README, create and migrate the database, run the app, sign in as each relevant role, complete every named journey using real persisted data, refresh without losing state, recover from common failures, and use the core interface on phone and desktop. All acceptance scenarios pass, permission boundaries are covered by tests, and no core screen is left as a placeholder.
+
+NON-GOALS
+Do not connect directly to banks, move money, recommend investments, calculate taxes, or support multiple currencies in one budget.</pre></div><div class="prompt-actions"><button class="button primary" type="button" id="copy-prompt">Copy AHA prompt</button></div></section><section class="section" aria-labelledby="mini-heading"><h2 id="mini-heading">Build just one piece</h2><p>Not ready to replace all of YNAB? Fine. These are the peculiar sub-problems hiding inside it — the parts that are actually interesting to build. Each one is a standalone prompt, scoped to an evening, no strings attached to the full build.</p><details class="mini"><summary><strong>Every dollar has a job, and it’s an integer</strong><span>Integer cents, derived totals, and a budget that always sums.</span></summary><pre>Build the core ledger for an envelope-style budgeting app, and get the money math boringly correct.
+
+Every amount is an integer in the currency&#39;s minor unit. Cents, not floats, ever. Nothing stores a running total: account balances, category activity, category available amounts, and the ready-to-assign number are all derived from two immutable record types, transactions and assignments. An edit creates new derivation inputs; it never mutates a cached total.
+
+The invariants to enforce: an inflow enters ready-to-assign only in its effective month; assigning moves money from ready-to-assign into a category; and moving money between categories changes exactly those two categories — the budget total is conserved. A category overspent last month affects this month by one explicit, documented rule, not by accident.
+
+Make derivation fast with month-bucketed queries, but correctness wins: a full recompute from raw records must always equal the displayed numbers.
+
+Done when: assigning 700 and 300 from a 1000 inflow leaves ready-to-assign at exactly zero across refreshes and month navigation, every on-screen total matches a from-scratch recompute, and no float appears anywhere in the money path.</pre><button class="mini-copy" type="button">Copy this prompt</button></details><details class="mini"><summary><strong>The credit card category that pays for itself</strong><span>Card spending reserves the payment cash, automatically and reversibly.</span></summary><pre>Build credit-card handling for an envelope budget — the mechanism that keeps card spending honest.
+
+The idea: a 40-dollar grocery purchase on a credit card pays nobody yet; it creates debt. So a categorized card transaction does two things atomically: it reduces the groceries category&#39;s available amount by 40, and increases the card-payment category&#39;s available by 40. The cash to pay the bill is now reserved. Paying the card is a transfer between accounts with no spending category, consuming the card-payment category&#39;s balance.
+
+The reversals are where implementations rot: a refund on the card reverses both movements; recategorizing a card transaction shifts the reserved amount between the affected categories; and deleting either side of a card-payment transfer must delete or flag its twin — never leave a one-legged transfer.
+
+Overspending a category on the card means the card-payment category only received what was actually budgeted. Surface that gap instead of hiding it.
+
+Done when: a 40 card purchase moves exactly 40 into the card-payment category, refund and recategorize both round-trip to the original state, and account registers always agree with the category math.</pre><button class="mini-copy" type="button">Copy this prompt</button></details><details class="mini"><summary><strong>Import the bank CSV without importing it twice</strong><span>Explicit mappings, fuzzy duplicates, and an atomic commit at the end.</span></summary><pre>Build bank-CSV import with duplicate detection, for banks that have never agreed on anything.
+
+Import starts with explicit choices: which account, and a column mapping — date, amount (or separate debit and credit columns), payee, memo. Normalize before preview: dates parsed against an explicitly chosen format, never guessed from an ambiguous 03/04, and amounts handling both 1,234.56 and 1.234,56 conventions, negative signs, and parenthesized negatives, all landing as integer minor units.
+
+Then the preview: every row classified as new, likely duplicate, or malformed. Duplicate matching is fuzzy on purpose — same amount, date within a few days, similar payee — because banks post transactions late with mangled names. Show suspected matches side by side for per-row confirmation. Never silently drop a row: malformed rows display their specific parsing failure.
+
+Commit is atomic and all-or-nothing for the accepted set, and re-importing the same file flags everything as duplicate rather than doubling the account.
+
+Done when: a file with valid, duplicate, and malformed rows imports exactly the confirmed valid set once, both decimal conventions parse correctly, and running the same import twice changes nothing.</pre><button class="mini-copy" type="button">Copy this prompt</button></details><details class="mini"><summary><strong>Reconciliation: making the app agree with the bank</strong><span>Cleared versus working balances, locked history, and honest adjustments.</span></summary><pre>Build account reconciliation — the ritual where the app confesses whether it matches the bank.
+
+Each account shows two balances: working (all transactions) and cleared (only transactions marked cleared). Reconciliation starts with the user entering the bank&#39;s actual current balance. If the cleared balance matches, lock it in: all cleared transactions become reconciled, a state that resists casual editing — modifying or deleting a reconciled transaction demands an explicit warning, because it silently invalidates every reconciliation after it.
+
+If the numbers disagree, help hunt the gap: show the difference, list cleared transactions since the last checkpoint, and support quick cleared-state toggling with a live delta. If the user gives up, offer a balance-adjustment transaction for exactly the difference — visible, categorized as an adjustment, and auditable, not a buried fudge.
+
+Record each reconciliation as an immutable checkpoint: date, bank balance, adjustment if any. The next session starts from the last checkpoint, and history shows them all.
+
+Done when: a matching reconciliation locks cleared transactions with warnings on later edits, a mismatch produces a traceable adjustment for the exact difference, and checkpoints form an unbroken auditable chain.</pre><button class="mini-copy" type="button">Copy this prompt</button></details></section><section class="section" aria-labelledby="faq-heading"><h2 id="faq-heading">Frequently asked questions</h2><details class="faq"><summary>How long does it take to build your own YNAB?</summary><p>A basic version — accounts, categories, manual transactions — takes about 12 hours. Roughly 4 days gets you a solid v1 with funding targets, csv import, reconciliation, reports. Matching everything YNAB really does (bank sync, mobile apps, shared budgets) is closer to 1 month+, which is exactly why you should scope down instead.</p></details><details class="faq"><summary>How much does YNAB cost if I keep subscribing?</summary><p>YNAB runs $9.08–$14.99 per month on public paid plans, which is $109–$180 per year. A focused self-built replacement costs your build time plus close-to-zero hosting.</p></details><details class="faq"><summary>What stack should I use to build a YNAB alternative?</summary><p>The build prompt on this page ships in four flavors: the AHA stack (Astro, HTMX, Alpine.js), Next.js, Laravel, and Ruby on Rails. The capability context for this product is Astro, HTMX, D1. Pick the stack you already know — the scope matters more than the framework.</p></details><details class="faq"><summary>What features does a minimal YNAB replacement need?</summary><p>A useful v1 needs: on-budget cash, checking, savings, and credit-card accounts with reconciled balances; monthly category groups with assigned, activity, and available amounts; scheduled and entered transactions with payee, category, memo, and cleared state; funding targets with progress, underfunded totals, and one-click assignment suggestions; CSV transaction import with duplicate review plus spending and net-worth reports. Everything else is scope creep until you personally miss it.</p></details><details class="faq"><summary>What should I deliberately not build?</summary><p>Do not connect directly to banks, move money, recommend investments, calculate taxes, or support multiple currencies in one budget.</p></details><details class="faq"><summary>Does this build also replace Monarch Money, Copilot Money and Lunch Money?</summary><p>Yes. YNAB, Monarch Money, Copilot Money and Lunch Money all solve the same core job — allocate available money, record spending, and know what is safe to spend before the next payday. The scoped v1 on this page covers what most people use any of them for, so one focused build replaces whichever you currently pay for.</p></details></section><section class="section" aria-labelledby="related-heading"><h2 id="related-heading">More personal subscriptions to replace</h2><ul class="related-list"><li><a href="/build-your-own-linktree/">Build your own Linktree</a><span>$9–$24/mo · from 30 min</span></li><li><a href="/build-your-own-readwise-reader/">Build your own Readwise Reader</a><span>$10–$12.99/mo · from 2 days</span></li><li><a href="/build-your-own-tinypng-pro/">Build your own TinyPNG Pro</a><span>$25–$39/mo · from 60 min</span></li><li><a href="/build-your-own-cleanmymac/">Build your own CleanMyMac</a><span>$3.33–$9.95/mo · from 8 hours</span></li></ul><p class="related-home"><a href="/#audit">Browse all 109 buildable subscriptions →</a></p></section></main><footer><a class="logo footer-logo" href="/"><span class="logo-mark">EZ</span><span>ezvibecode</span></a><p><a href="/blog/">Blog</a></p><p><a href="/guides/">Guides</a></p><p><a href="/changelog/">Changelog</a></p><p>A tiny idea about tiny software.</p><p>Built with vibes, obviously.</p></footer><div class="toast" id="toast" role="status" aria-live="polite">Prompt copied. Go ship it.</div><script type="module">var e=Array.from(document.querySelectorAll(`.prompt-tab`)),t=Array.from(document.querySelectorAll(`.prompt-box`)),n=document.querySelector(`#copy-prompt`),r=r=>{e.forEach(e=>{let t=e.dataset.framework===r;e.setAttribute(`aria-selected`,String(t)),e.tabIndex=t?0:-1}),t.forEach(e=>{e.hidden=e.id!==`prompt-panel-${r}`}),n.textContent=`Copy ${e.find(e=>e.dataset.framework===r)?.textContent||`prompt`} prompt`};e.forEach((t,n)=>{t.addEventListener(`click`,()=>r(t.dataset.framework)),t.addEventListener(`keydown`,t=>{let i;t.key===`ArrowRight`&&(i=(n+1)%e.length),t.key===`ArrowLeft`&&(i=(n-1+e.length)%e.length),t.key===`Home`&&(i=0),t.key===`End`&&(i=e.length-1),i!==void 0&&(t.preventDefault(),r(e[i].dataset.framework),e[i].focus())})}),n?.addEventListener(`click`,async()=>{let e=t.find(e=>!e.hidden);await navigator.clipboard.writeText(e?.querySelector(`pre`)?.textContent||``);let n=document.querySelector(`#toast`);n.classList.add(`show`),setTimeout(()=>n.classList.remove(`show`),2200)}),document.querySelectorAll(`.mini-copy`).forEach(e=>{e.addEventListener(`click`,async()=>{let t=e.closest(`.mini`)?.querySelector(`pre`)?.textContent||``;await navigator.clipboard.writeText(t);let n=document.querySelector(`#toast`);n.classList.add(`show`),setTimeout(()=>n.classList.remove(`show`),2200)})});var i=document.querySelector(`#theme-toggle`);localStorage.getItem(`vibe-theme`)===`dark`&&(document.documentElement.dataset.theme=`dark`),i?.addEventListener(`click`,()=>{let e=document.documentElement.dataset.theme!==`dark`;document.documentElement.dataset.theme=e?`dark`:`light`,localStorage.setItem(`vibe-theme`,e?`dark`:`light`)});</script><script type="module" src="https://static.cloudflareinsights.com/beacon.min.js/vce701823e78c4301a35b7e07294d87301792088814092" integrity="sha512-UKNk8GbxkABxKcXYuLkO16EleLGUkcvJWtpSNmExE0Too3ZaFAxTscNWEc1OdAv5/BikHawapSCaiD2XCmp+Bw==" data-cf-beacon='{"version":"2024.11.0","token":"228ace6b78e04bb494384851ece32c99","r":1,"spa":2}' crossorigin="anonymous"></script>
+</body></html>

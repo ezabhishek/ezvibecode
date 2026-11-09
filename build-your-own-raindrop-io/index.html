@@ -1,0 +1,400 @@
+<!DOCTYPE html><html lang="en"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width"><title>How to Vibe Code Your Own Raindrop.io Alternative</title><meta name="description" content="Learn how to build your own with ezvibecode Raindrop.io alternative with copyable AI prompts, a scoped feature list, and realistic build estimates starting at 3 hours. The same build also replaces Pinboard and GoodLinks."><link rel="canonical" href="https://ezvibecode.com/build-your-own-raindrop-io/"><meta name="theme-color" content="#f4f1e8"><link rel="icon" href="/favicon.ico" sizes="32x32"><link rel="icon" href="/favicon.png" type="image/png" sizes="512x512"><link rel="apple-touch-icon" href="/apple-touch-icon.png" sizes="180x180"><meta property="og:type" content="article"><meta property="og:site_name" content="ezvibecode"><meta property="og:title" content="How to Vibe Code Your Own Raindrop.io Alternative"><meta property="og:description" content="Learn how to build your own with ezvibecode Raindrop.io alternative with copyable AI prompts, a scoped feature list, and realistic build estimates starting at 3 hours. The same build also replaces Pinboard and GoodLinks."><meta property="og:url" content="https://ezvibecode.com/build-your-own-raindrop-io/"><meta property="og:image" content="https://ezvibecode.com/og/build-your-own-raindrop-io.png"><meta property="og:image:type" content="image/png"><meta property="og:image:width" content="1200"><meta property="og:image:height" content="630"><meta property="og:image:alt" content="How to Vibe Code Your Own Raindrop.io Alternative"><meta name="twitter:card" content="summary_large_image"><meta name="twitter:title" content="How to Vibe Code Your Own Raindrop.io Alternative"><meta name="twitter:description" content="Learn how to build your own with ezvibecode Raindrop.io alternative with copyable AI prompts, a scoped feature list, and realistic build estimates starting at 3 hours. The same build also replaces Pinboard and GoodLinks."><meta name="twitter:image" content="https://ezvibecode.com/og/build-your-own-raindrop-io.png"><meta name="twitter:image:alt" content="How to Vibe Code Your Own Raindrop.io Alternative"><script type="application/ld+json">{"@context":"https://schema.org","@type":"FAQPage","mainEntity":[{"@type":"Question","name":"How long does it take to build your own Raindrop.io?","acceptedAnswer":{"@type":"Answer","text":"A basic version — save links, tags, search — takes about 3 hours. Roughly 1 day gets you a solid v1 with bookmarklet, collections, duplicate detection, excerpts. Matching everything Raindrop.io really does (browser extensions, mobile apps, full-page archiving) is closer to 1 month+, which is exactly why you should scope down instead."}},{"@type":"Question","name":"How much does Raindrop.io cost if I keep subscribing?","acceptedAnswer":{"@type":"Answer","text":"Raindrop.io runs $2.33–$3 per month on public paid plans, which is $28–$36 per year. A focused self-built replacement costs your build time plus close-to-zero hosting."}},{"@type":"Question","name":"What stack should I use to build a Raindrop.io alternative?","acceptedAnswer":{"@type":"Answer","text":"The build prompt on this page ships in four flavors: the AHA stack (Astro, HTMX, Alpine.js), Next.js, Laravel, and Ruby on Rails. The capability context for this product is Astro, HTMX, D1. Pick the stack you already know — the scope matters more than the framework."}},{"@type":"Question","name":"What features does a minimal Raindrop.io replacement need?","acceptedAnswer":{"@type":"Answer","text":"A useful v1 needs: one-click saving via a bookmarklet with autofilled title and description; tags, collections, and favorites; full-text search across titles, descriptions, and stored excerpts; card and list views with domain favicons; duplicate detection by normalized URL. Everything else is scope creep until you personally miss it."}},{"@type":"Question","name":"What should I deliberately not build?","acceptedAnswer":{"@type":"Answer","text":"Do not build team sharing, public collections, AI summaries, or a full read-later reading experience."}},{"@type":"Question","name":"Does this build also replace Pinboard and GoodLinks?","acceptedAnswer":{"@type":"Answer","text":"Yes. Raindrop.io, Pinboard and GoodLinks all solve the same core job — save links with tags and collections in one place and actually find them again. The scoped v1 on this page covers what most people use any of them for, so one focused build replaces whichever you currently pay for."}}]}</script><script type="application/ld+json">{"@context":"https://schema.org","@type":"BreadcrumbList","itemListElement":[{"@type":"ListItem","position":1,"name":"ezvibecode","item":"https://ezvibecode.com/"},{"@type":"ListItem","position":2,"name":"Build your own Raindrop.io","item":"https://ezvibecode.com/build-your-own-raindrop-io/"}]}</script><script type="application/ld+json">{"@context":"https://schema.org","@type":"TechArticle","headline":"How to Vibe Code Your Own Raindrop.io Alternative","description":"Learn how to build your own with ezvibecode Raindrop.io alternative with copyable AI prompts, a scoped feature list, and realistic build estimates starting at 3 hours. The same build also replaces Pinboard and GoodLinks.","url":"https://ezvibecode.com/build-your-own-raindrop-io/","image":"https://ezvibecode.com/og/build-your-own-raindrop-io.png","author":{"@type":"Organization","name":"ezvibecode","url":"https://ezvibecode.com/"}}</script><link rel="stylesheet" href="/_astro/build-your-own-_slug_.0qOs6ThE.css"></head><body><header class="site-header"><a class="logo" href="/" aria-label="ezvibecode home"><span class="logo-mark">EZ</span><span>ezvibecode</span></a><nav class="header-links" aria-label="Site"><a class="header-link" href="/blog/">Blog</a><a class="header-link" href="/guides/">Guides</a><a class="header-link" href="/#audit">All 109 apps</a></nav><button class="icon-button" id="theme-toggle" type="button" aria-label="Toggle dark mode" title="Toggle dark mode">◐</button></header><main><nav class="breadcrumb" aria-label="Breadcrumb"><a href="/">Home</a><span aria-hidden="true">/</span><span aria-current="page">Build your own Raindrop.io</span></nav><section class="hero"><p class="eyebrow">Personal · Tonight build</p><h1>How to Vibe Code Your Own <em>Raindrop.io Alternative</em></h1><p class="lede">Every link you swore you’d revisit, findable this time. Raindrop.io charges $2.33–$3 per month — that’s $28–$36 a year — for something you can replace with focused software of your own. Here is the honest scope, the honest timeline, and the exact prompt to hand your coding agent.</p><div class="hero-meta"><span class="effort easy">from 3 hours</span><span class="verdict">Satisfyingly simple</span></div></section><section class="section" aria-labelledby="who-heading"><h2 id="who-heading">Who this replacement is for</h2><p>This build targets one person hoarding links across every device. The goal: save links with tags and collections in one place and actually find them again. If you need more than that, keep paying — the point of building it yourself is owning a tool shaped exactly like your workflow, not re-implementing a venture-funded roadmap.</p><p class="also-replaces">Same build, different logo: this v1 also replaces <strong>Pinboard and GoodLinks</strong> — they all solve the same core job.</p></section><section class="section" aria-labelledby="time-heading"><h2 id="time-heading">How long it actually takes</h2><p>One number would be a lie, so here are three. Each tier is a real, usable product — pick the one that matches how much of Raindrop.io you actually use.</p><table class="estimate-table"><thead><tr><th scope="col">Estimate</th><th scope="col">What you get</th></tr></thead><tbody><tr><th scope="row">3 hours</th><td>save links, tags, search</td></tr><tr><th scope="row">1 day</th><td>bookmarklet, collections, duplicate detection, excerpts</td></tr><tr><th scope="row">1 month+</th><td>browser extensions, mobile apps, full-page archiving — the part you should probably skip</td></tr></tbody></table></section><section class="section" aria-labelledby="features-heading"><h2 id="features-heading">What a minimal Raindrop.io alternative needs</h2><ul class="feature-list"><li>one-click saving via a bookmarklet with autofilled title and description</li><li>tags, collections, and favorites</li><li>full-text search across titles, descriptions, and stored excerpts</li><li>card and list views with domain favicons</li><li>duplicate detection by normalized URL</li></ul><div class="fact-grid"><div class="fact"><h3>Data model</h3><p>Bookmark, Collection, Tag</p></div><div class="fact"><h3>Integrations</h3><p>bookmarklet, page metadata extraction</p></div><div class="fact"><h3>Capability context</h3><p>Astro, HTMX, D1</p></div></div><div class="callout guardrail"><h3>The guardrail</h3><p>Fetch metadata server-side with timeouts and size caps, and store only the excerpt needed for search.</p></div><div class="callout nongoal"><h3>Deliberate non-goals</h3><p>Do not build team sharing, public collections, AI summaries, or a full read-later reading experience.</p></div></section><section class="section" aria-labelledby="prompt-heading"><h2 id="prompt-heading">The complete build prompt</h2><p>Copy this into your coding agent of choice. It is scoped for a useful v1 — journeys, screens, business rules, data model, security, tests, and acceptance scenarios included. Pick your stack:</p><div class="prompt-tabs" role="tablist" aria-label="Choose your stack"><button class="prompt-tab" id="prompt-tab-aha" type="button" role="tab" aria-selected="true" aria-controls="prompt-panel-aha" tabindex="0" data-framework="aha">AHA</button><button class="prompt-tab" id="prompt-tab-nextjs" type="button" role="tab" aria-selected="false" aria-controls="prompt-panel-nextjs" tabindex="-1" data-framework="nextjs">Next.js</button><button class="prompt-tab" id="prompt-tab-laravel" type="button" role="tab" aria-selected="false" aria-controls="prompt-panel-laravel" tabindex="-1" data-framework="laravel">Laravel</button><button class="prompt-tab" id="prompt-tab-rails" type="button" role="tab" aria-selected="false" aria-controls="prompt-panel-rails" tabindex="-1" data-framework="rails">Ruby on Rails</button></div><div class="prompt-box" id="prompt-panel-aha" role="tabpanel" aria-labelledby="prompt-tab-aha" tabindex="0"><pre>You are building a production-ready software product named “Pincushion”, a deliberately focused alternative to Raindrop.io. Build a complete, usable vertical slice—not a landing page, static mockup, or disconnected collection of components.
+
+WORKING AGREEMENT
+Before writing implementation code, produce a short technical plan that names the routes or pages, server actions or endpoints, data tables, important state transitions, authorization boundaries, background jobs, and external adapters. Resolve contradictions in favor of the narrow audience and non-goals below. Prefer a small, legible architecture over speculative abstraction, but do not omit persistence, validation, error handling, or tests.
+
+PRODUCT BRIEF
+Primary user: one person hoarding links across every device.
+Primary outcome: save links with tags and collections in one place and actually find them again.
+Product principle: optimize the exact workflow below instead of copying the full breadth of Raindrop.io. A first-time user should understand what to do from the interface itself, without a tour or documentation.
+
+END-TO-END USER JOURNEYS
+Implement all of these flows through the real interface and persistent data layer:
+1. The owner drags the bookmarklet to the toolbar, saves a page from any site, and sees the title, description, and favicon filled in automatically.
+2. The owner tags a batch of saved links, moves them into a collection, and browses the collection in card view.
+3. The owner searches a half-remembered phrase, finds the bookmark through its stored excerpt, opens it, and marks it a favorite.
+
+SCREENS AND INFORMATION ARCHITECTURE
+Build these as coherent responsive views. Each screen must specify its primary action, secondary actions, visible status, validation feedback, empty state, loading or pending state, success confirmation, and recoverable failure state.
+1. Library: card and list toggle, collection sidebar, tag filters, favorites, sort controls, and quick edit and delete actions.
+2. Save view: URL field, autofilled title, description, and excerpt, tag picker, collection selector, and duplicate warning.
+3. Search: single query box, matches highlighted in titles and excerpts, tag and collection filters, and an empty-state with tips.
+4. Bookmarklet setup: draggable bookmarklet, a copy-paste fallback, and a test-save flow that confirms everything works.
+
+CORE CAPABILITIES
+1. one-click saving via a bookmarklet with autofilled title and description
+2. tags, collections, and favorites
+3. full-text search across titles, descriptions, and stored excerpts
+4. card and list views with domain favicons
+5. duplicate detection by normalized URL
+
+DETAILED BEHAVIOR AND BUSINESS RULES
+Treat these as server-enforced product requirements, not interface suggestions:
+1. Normalize URLs before saving and detect duplicates by normalized URL, offering to update the existing bookmark instead.
+2. Fetch page metadata server-side with a timeout, a size cap, and no execution of remote scripts.
+3. Store only the text excerpt needed for search and index it so search stays fast as the library grows.
+4. Authenticate every save, including bookmarklet requests, with a token the owner can rotate.
+
+DATA MODEL AND LIFECYCLE
+Design a small relational schema centered on Bookmark, Collection, Tag. Before implementing it, document:
+1. Each table’s purpose, primary key, ownership or tenant boundary, timestamps, status fields, and important attributes.
+2. Foreign keys, uniqueness constraints, check constraints, indexes needed by the named screens, and transaction boundaries for multi-record changes.
+3. The allowed lifecycle or state transitions, who may trigger each transition, which transitions are terminal or reversible, and what audit history must remain immutable.
+4. Archive, retention, and deletion behavior, including what happens to dependent records and external files.
+5. Idempotency strategy for submissions, jobs, imports, notifications, webhooks, or retries where applicable.
+Use migrations rather than ad-hoc schema creation. Store time instants consistently and retain named timezone context whenever local schedules or dates matter. Never rely on a counter, disabled button, or client-side check to preserve a business invariant.
+
+USERS, AUTHENTICATION, AND PERMISSIONS
+Implement only the roles required by the stated audience. Make the ownership and visibility model explicit before coding. Enforce authorization in every server-side query and mutation, including search, exports, attachments, live updates, and guessed URLs—not merely by hiding controls. Use secure session defaults, protect state-changing requests, and provide an understandable signed-out, expired-session, and forbidden state. Seed distinct users when multiple roles are required so permissions can be demonstrated and tested.
+
+INTERACTION AND VISUAL DIRECTION
+The product should feel fast, calm, focused, and credible rather than like a generic admin template. Use a clear visual hierarchy, restrained color, readable typography, generous hit targets, and consistent placement for primary actions. Start with server-rendered HTML and progressively enhance only the interactions that benefit from it. The core workflow must remain understandable if enhancement fails.
+
+Start with server-rendered Astro pages and ordinary HTML forms. Use HTMX for form submissions, partial navigation, and server-driven updates, then Alpine.js only for small local browser state. The core workflow must remain understandable if either enhancement layer fails.
+
+Design mobile layouts intentionally instead of simply stacking desktop panels. Support keyboard navigation, visible focus, semantic landmarks, explicit labels, useful page titles, reduced-motion preferences, and screen-reader announcements for asynchronous results. Never use color alone to communicate state. Destructive actions require clear scope and confirmation; safe repeated actions should be idempotent.
+
+TECHNICAL DIRECTION
+Build this version with the AHA stack: Astro for routing, layouts, and server-rendered pages; HTMX for interactions that benefit from HTML fragment responses; and Alpine.js for small, local interface state. Prefer Cloudflare D1 for relational persistence, R2 for object storage, Workers for server endpoints and scheduled work, Durable Objects only for coordinated real-time state, and Workflows or Queues for durable background jobs—but only when the product requirements call for them.
+
+Keep domain rules in testable server-side modules instead of route handlers or UI components. Separate persistence, external providers, and background work behind small interfaces without building a framework. Prefer ordinary HTML forms and URLs for durable navigation; use optimistic interaction only when failure can be reconciled clearly.
+
+The product brief currently identifies Astro, HTMX, D1 as capability context. Preserve any required native, browser-only, edge, storage, real-time, or background-processing capability through a narrow adapter appropriate to the selected framework. If the core workflow genuinely requires native or browser APIs, keep that runtime as the primary execution surface rather than simulating inaccessible capabilities or inventing an unnecessary web surface.
+
+Integrate with bookmarklet and page metadata extraction. For every integration:
+- List required environment variables in an .env.example without real secrets.
+- Add a small adapter with timeouts, normalized errors, and a deterministic local fake or development path.
+- Verify inbound signatures and deduplicate provider events where supported.
+- Keep credentials server-side, encrypt long-lived provider tokens at rest, and redact secrets and sensitive payloads from logs.
+- Define retry, backoff, and idempotency behavior for any side effect that can be repeated.
+
+SECURITY AND PRIVACY
+Fetch metadata server-side with timeouts and size caps, and store only the excerpt needed for search.
+Validate, normalize, and length-limit all untrusted input on the server. Escape rendered content by default, sanitize any intentionally accepted markup, rate-limit public or abuse-prone actions, and use private object storage plus short-lived authorized URLs for sensitive files. Collect the minimum personal data necessary for the named workflow. Document retention and deletion behavior. Add specific protections for the riskier surfaces in this app, such as uploads, redirects, outbound requests, email delivery, OAuth, webhooks, CSV import or export, and real-time connections.
+
+ACCEPTANCE SCENARIOS
+Automate these app-specific scenarios at the most appropriate level:
+1. Given a page that blocks metadata fetching, the bookmark still saves with the URL and a manually editable title.
+2. Given the same URL saved twice, the library keeps one bookmark and merges the newer tags into it.
+3. Given a search for a phrase that appears only in a stored excerpt, the matching bookmark is returned with the phrase highlighted.
+
+TESTING
+Add focused unit tests for state transitions, authorization predicates, normalization, date or money calculations, and other risky domain rules. Add integration tests for persistence constraints and each external adapter’s success, timeout, retry, and rejection paths. Add at least one browser-level test for every end-to-end journey above, including one small-screen viewport. Tests must use isolated data and run through a documented single command.
+
+OPERATIONS AND FAILURE RECOVERY
+Add structured server logs with request, job, or event correlation IDs but no secrets or unnecessarily sensitive data. Make failures actionable in both the interface and logs. Background work must expose pending, succeeded, failed, and retrying states where relevant; do not silently swallow errors. Include safe database migration and rollback guidance, seed data, backup and restore notes, external-data cleanup behavior, and a basic health or diagnostic path appropriate to the stack.
+
+DELIVERABLES
+Ship the working application, migrations, representative seed data, tests, .env.example, and a concise README. The README must cover prerequisites, local setup, environment variables, migrations, seed and test commands, deployment, integration setup, backup and restore, security decisions, and known limitations. Seed data should exercise the happy path plus at least one empty, failed, overdue, expired, archived, or permission-restricted state relevant to the product.
+
+DEFINITION OF DONE
+The app is complete when a fresh developer can follow the README, create and migrate the database, run the app, sign in as each relevant role, complete every named journey using real persisted data, refresh without losing state, recover from common failures, and use the core interface on phone and desktop. All acceptance scenarios pass, permission boundaries are covered by tests, and no core screen is left as a placeholder.
+
+NON-GOALS
+Do not build team sharing, public collections, AI summaries, or a full read-later reading experience.</pre></div><div class="prompt-box" id="prompt-panel-nextjs" role="tabpanel" aria-labelledby="prompt-tab-nextjs" tabindex="0" hidden><pre>You are building a production-ready software product named “Pincushion”, a deliberately focused alternative to Raindrop.io. Build a complete, usable vertical slice—not a landing page, static mockup, or disconnected collection of components.
+
+WORKING AGREEMENT
+Before writing implementation code, produce a short technical plan that names the routes or pages, server actions or endpoints, data tables, important state transitions, authorization boundaries, background jobs, and external adapters. Resolve contradictions in favor of the narrow audience and non-goals below. Prefer a small, legible architecture over speculative abstraction, but do not omit persistence, validation, error handling, or tests.
+
+PRODUCT BRIEF
+Primary user: one person hoarding links across every device.
+Primary outcome: save links with tags and collections in one place and actually find them again.
+Product principle: optimize the exact workflow below instead of copying the full breadth of Raindrop.io. A first-time user should understand what to do from the interface itself, without a tour or documentation.
+
+END-TO-END USER JOURNEYS
+Implement all of these flows through the real interface and persistent data layer:
+1. The owner drags the bookmarklet to the toolbar, saves a page from any site, and sees the title, description, and favicon filled in automatically.
+2. The owner tags a batch of saved links, moves them into a collection, and browses the collection in card view.
+3. The owner searches a half-remembered phrase, finds the bookmark through its stored excerpt, opens it, and marks it a favorite.
+
+SCREENS AND INFORMATION ARCHITECTURE
+Build these as coherent responsive views. Each screen must specify its primary action, secondary actions, visible status, validation feedback, empty state, loading or pending state, success confirmation, and recoverable failure state.
+1. Library: card and list toggle, collection sidebar, tag filters, favorites, sort controls, and quick edit and delete actions.
+2. Save view: URL field, autofilled title, description, and excerpt, tag picker, collection selector, and duplicate warning.
+3. Search: single query box, matches highlighted in titles and excerpts, tag and collection filters, and an empty-state with tips.
+4. Bookmarklet setup: draggable bookmarklet, a copy-paste fallback, and a test-save flow that confirms everything works.
+
+CORE CAPABILITIES
+1. one-click saving via a bookmarklet with autofilled title and description
+2. tags, collections, and favorites
+3. full-text search across titles, descriptions, and stored excerpts
+4. card and list views with domain favicons
+5. duplicate detection by normalized URL
+
+DETAILED BEHAVIOR AND BUSINESS RULES
+Treat these as server-enforced product requirements, not interface suggestions:
+1. Normalize URLs before saving and detect duplicates by normalized URL, offering to update the existing bookmark instead.
+2. Fetch page metadata server-side with a timeout, a size cap, and no execution of remote scripts.
+3. Store only the text excerpt needed for search and index it so search stays fast as the library grows.
+4. Authenticate every save, including bookmarklet requests, with a token the owner can rotate.
+
+DATA MODEL AND LIFECYCLE
+Design a small relational schema centered on Bookmark, Collection, Tag. Before implementing it, document:
+1. Each table’s purpose, primary key, ownership or tenant boundary, timestamps, status fields, and important attributes.
+2. Foreign keys, uniqueness constraints, check constraints, indexes needed by the named screens, and transaction boundaries for multi-record changes.
+3. The allowed lifecycle or state transitions, who may trigger each transition, which transitions are terminal or reversible, and what audit history must remain immutable.
+4. Archive, retention, and deletion behavior, including what happens to dependent records and external files.
+5. Idempotency strategy for submissions, jobs, imports, notifications, webhooks, or retries where applicable.
+Use migrations rather than ad-hoc schema creation. Store time instants consistently and retain named timezone context whenever local schedules or dates matter. Never rely on a counter, disabled button, or client-side check to preserve a business invariant.
+
+USERS, AUTHENTICATION, AND PERMISSIONS
+Implement only the roles required by the stated audience. Make the ownership and visibility model explicit before coding. Enforce authorization in every server-side query and mutation, including search, exports, attachments, live updates, and guessed URLs—not merely by hiding controls. Use secure session defaults, protect state-changing requests, and provide an understandable signed-out, expired-session, and forbidden state. Seed distinct users when multiple roles are required so permissions can be demonstrated and tested.
+
+INTERACTION AND VISUAL DIRECTION
+The product should feel fast, calm, focused, and credible rather than like a generic admin template. Use a clear visual hierarchy, restrained color, readable typography, generous hit targets, and consistent placement for primary actions. Start with server-rendered HTML and progressively enhance only the interactions that benefit from it. The core workflow must remain understandable if enhancement fails.
+
+Render with React Server Components by default. Use Server Actions for authenticated form mutations and add Client Components only for interactions that genuinely require browser state, browser APIs, drag-and-drop, or live updates. The core workflow must remain understandable before client-side JavaScript finishes loading.
+
+Design mobile layouts intentionally instead of simply stacking desktop panels. Support keyboard navigation, visible focus, semantic landmarks, explicit labels, useful page titles, reduced-motion preferences, and screen-reader announcements for asynchronous results. Never use color alone to communicate state. Destructive actions require clear scope and confirmation; safe repeated actions should be idempotent.
+
+TECHNICAL DIRECTION
+Build this version with Next.js, the App Router, and TypeScript. Use Server Components by default, Server Actions for authenticated mutations, and Route Handlers for public APIs, OAuth callbacks, webhooks, feeds, uploads, and downloads. Use PostgreSQL through Drizzle ORM with versioned migrations and an isolated test database. Access S3-compatible object storage through a server-only adapter, and run slow or retryable work in a real job or workflow system instead of the request lifecycle.
+
+Keep domain rules in testable server-side modules instead of route handlers or UI components. Separate persistence, external providers, and background work behind small interfaces without building a framework. Prefer ordinary HTML forms and URLs for durable navigation; use optimistic interaction only when failure can be reconciled clearly.
+
+The product brief currently identifies Astro, HTMX, D1 as capability context. Preserve any required native, browser-only, edge, storage, real-time, or background-processing capability through a narrow adapter appropriate to the selected framework. If the core workflow genuinely requires native or browser APIs, keep that runtime as the primary execution surface rather than simulating inaccessible capabilities or inventing an unnecessary web surface.
+
+Integrate with bookmarklet and page metadata extraction. For every integration:
+- List required environment variables in an .env.example without real secrets.
+- Add a small adapter with timeouts, normalized errors, and a deterministic local fake or development path.
+- Verify inbound signatures and deduplicate provider events where supported.
+- Keep credentials server-side, encrypt long-lived provider tokens at rest, and redact secrets and sensitive payloads from logs.
+- Define retry, backoff, and idempotency behavior for any side effect that can be repeated.
+
+SECURITY AND PRIVACY
+Fetch metadata server-side with timeouts and size caps, and store only the excerpt needed for search.
+Validate, normalize, and length-limit all untrusted input on the server. Escape rendered content by default, sanitize any intentionally accepted markup, rate-limit public or abuse-prone actions, and use private object storage plus short-lived authorized URLs for sensitive files. Collect the minimum personal data necessary for the named workflow. Document retention and deletion behavior. Add specific protections for the riskier surfaces in this app, such as uploads, redirects, outbound requests, email delivery, OAuth, webhooks, CSV import or export, and real-time connections.
+
+ACCEPTANCE SCENARIOS
+Automate these app-specific scenarios at the most appropriate level:
+1. Given a page that blocks metadata fetching, the bookmark still saves with the URL and a manually editable title.
+2. Given the same URL saved twice, the library keeps one bookmark and merges the newer tags into it.
+3. Given a search for a phrase that appears only in a stored excerpt, the matching bookmark is returned with the phrase highlighted.
+
+TESTING
+Add focused unit tests for state transitions, authorization predicates, normalization, date or money calculations, and other risky domain rules. Add integration tests for persistence constraints and each external adapter’s success, timeout, retry, and rejection paths. Add at least one browser-level test for every end-to-end journey above, including one small-screen viewport. Tests must use isolated data and run through a documented single command.
+
+OPERATIONS AND FAILURE RECOVERY
+Add structured server logs with request, job, or event correlation IDs but no secrets or unnecessarily sensitive data. Make failures actionable in both the interface and logs. Background work must expose pending, succeeded, failed, and retrying states where relevant; do not silently swallow errors. Include safe database migration and rollback guidance, seed data, backup and restore notes, external-data cleanup behavior, and a basic health or diagnostic path appropriate to the stack.
+
+DELIVERABLES
+Ship the working application, migrations, representative seed data, tests, .env.example, and a concise README. The README must cover prerequisites, local setup, environment variables, migrations, seed and test commands, deployment, integration setup, backup and restore, security decisions, and known limitations. Seed data should exercise the happy path plus at least one empty, failed, overdue, expired, archived, or permission-restricted state relevant to the product.
+
+DEFINITION OF DONE
+The app is complete when a fresh developer can follow the README, create and migrate the database, run the app, sign in as each relevant role, complete every named journey using real persisted data, refresh without losing state, recover from common failures, and use the core interface on phone and desktop. All acceptance scenarios pass, permission boundaries are covered by tests, and no core screen is left as a placeholder.
+
+NON-GOALS
+Do not build team sharing, public collections, AI summaries, or a full read-later reading experience.</pre></div><div class="prompt-box" id="prompt-panel-laravel" role="tabpanel" aria-labelledby="prompt-tab-laravel" tabindex="0" hidden><pre>You are building a production-ready software product named “Pincushion”, a deliberately focused alternative to Raindrop.io. Build a complete, usable vertical slice—not a landing page, static mockup, or disconnected collection of components.
+
+WORKING AGREEMENT
+Before writing implementation code, produce a short technical plan that names the routes or pages, server actions or endpoints, data tables, important state transitions, authorization boundaries, background jobs, and external adapters. Resolve contradictions in favor of the narrow audience and non-goals below. Prefer a small, legible architecture over speculative abstraction, but do not omit persistence, validation, error handling, or tests.
+
+PRODUCT BRIEF
+Primary user: one person hoarding links across every device.
+Primary outcome: save links with tags and collections in one place and actually find them again.
+Product principle: optimize the exact workflow below instead of copying the full breadth of Raindrop.io. A first-time user should understand what to do from the interface itself, without a tour or documentation.
+
+END-TO-END USER JOURNEYS
+Implement all of these flows through the real interface and persistent data layer:
+1. The owner drags the bookmarklet to the toolbar, saves a page from any site, and sees the title, description, and favicon filled in automatically.
+2. The owner tags a batch of saved links, moves them into a collection, and browses the collection in card view.
+3. The owner searches a half-remembered phrase, finds the bookmark through its stored excerpt, opens it, and marks it a favorite.
+
+SCREENS AND INFORMATION ARCHITECTURE
+Build these as coherent responsive views. Each screen must specify its primary action, secondary actions, visible status, validation feedback, empty state, loading or pending state, success confirmation, and recoverable failure state.
+1. Library: card and list toggle, collection sidebar, tag filters, favorites, sort controls, and quick edit and delete actions.
+2. Save view: URL field, autofilled title, description, and excerpt, tag picker, collection selector, and duplicate warning.
+3. Search: single query box, matches highlighted in titles and excerpts, tag and collection filters, and an empty-state with tips.
+4. Bookmarklet setup: draggable bookmarklet, a copy-paste fallback, and a test-save flow that confirms everything works.
+
+CORE CAPABILITIES
+1. one-click saving via a bookmarklet with autofilled title and description
+2. tags, collections, and favorites
+3. full-text search across titles, descriptions, and stored excerpts
+4. card and list views with domain favicons
+5. duplicate detection by normalized URL
+
+DETAILED BEHAVIOR AND BUSINESS RULES
+Treat these as server-enforced product requirements, not interface suggestions:
+1. Normalize URLs before saving and detect duplicates by normalized URL, offering to update the existing bookmark instead.
+2. Fetch page metadata server-side with a timeout, a size cap, and no execution of remote scripts.
+3. Store only the text excerpt needed for search and index it so search stays fast as the library grows.
+4. Authenticate every save, including bookmarklet requests, with a token the owner can rotate.
+
+DATA MODEL AND LIFECYCLE
+Design a small relational schema centered on Bookmark, Collection, Tag. Before implementing it, document:
+1. Each table’s purpose, primary key, ownership or tenant boundary, timestamps, status fields, and important attributes.
+2. Foreign keys, uniqueness constraints, check constraints, indexes needed by the named screens, and transaction boundaries for multi-record changes.
+3. The allowed lifecycle or state transitions, who may trigger each transition, which transitions are terminal or reversible, and what audit history must remain immutable.
+4. Archive, retention, and deletion behavior, including what happens to dependent records and external files.
+5. Idempotency strategy for submissions, jobs, imports, notifications, webhooks, or retries where applicable.
+Use migrations rather than ad-hoc schema creation. Store time instants consistently and retain named timezone context whenever local schedules or dates matter. Never rely on a counter, disabled button, or client-side check to preserve a business invariant.
+
+USERS, AUTHENTICATION, AND PERMISSIONS
+Implement only the roles required by the stated audience. Make the ownership and visibility model explicit before coding. Enforce authorization in every server-side query and mutation, including search, exports, attachments, live updates, and guessed URLs—not merely by hiding controls. Use secure session defaults, protect state-changing requests, and provide an understandable signed-out, expired-session, and forbidden state. Seed distinct users when multiple roles are required so permissions can be demonstrated and tested.
+
+INTERACTION AND VISUAL DIRECTION
+The product should feel fast, calm, focused, and credible rather than like a generic admin template. Use a clear visual hierarchy, restrained color, readable typography, generous hit targets, and consistent placement for primary actions. Start with server-rendered HTML and progressively enhance only the interactions that benefit from it. The core workflow must remain understandable if enhancement fails.
+
+Start with server-rendered Blade views and ordinary forms. Use Livewire for focused server-driven interactions and Alpine.js only for small local interface state. The core workflow must remain understandable without relying on a client-side application shell.
+
+Design mobile layouts intentionally instead of simply stacking desktop panels. Support keyboard navigation, visible focus, semantic landmarks, explicit labels, useful page titles, reduced-motion preferences, and screen-reader announcements for asynchronous results. Never use color alone to communicate state. Destructive actions require clear scope and confirmation; safe repeated actions should be idempotent.
+
+TECHNICAL DIRECTION
+Build this version with Laravel, PHP, Blade, Livewire, and Alpine.js. Use controllers and Blade forms for durable navigation, Livewire for focused interactions, Form Requests for validation, Policies and Gates for authorization, and small application actions or services for domain transitions. Use Eloquent with migrations, database constraints, and transactions; Laravel Storage for private S3-compatible files; queued Jobs for retryable work; the Scheduler for recurring work; and Notifications or Mail for email.
+
+Keep domain rules in testable server-side modules instead of route handlers or UI components. Separate persistence, external providers, and background work behind small interfaces without building a framework. Prefer ordinary HTML forms and URLs for durable navigation; use optimistic interaction only when failure can be reconciled clearly.
+
+The product brief currently identifies Astro, HTMX, D1 as capability context. Preserve any required native, browser-only, edge, storage, real-time, or background-processing capability through a narrow adapter appropriate to the selected framework. If the core workflow genuinely requires native or browser APIs, keep that runtime as the primary execution surface rather than simulating inaccessible capabilities or inventing an unnecessary web surface.
+
+Integrate with bookmarklet and page metadata extraction. For every integration:
+- List required environment variables in an .env.example without real secrets.
+- Add a small adapter with timeouts, normalized errors, and a deterministic local fake or development path.
+- Verify inbound signatures and deduplicate provider events where supported.
+- Keep credentials server-side, encrypt long-lived provider tokens at rest, and redact secrets and sensitive payloads from logs.
+- Define retry, backoff, and idempotency behavior for any side effect that can be repeated.
+
+SECURITY AND PRIVACY
+Fetch metadata server-side with timeouts and size caps, and store only the excerpt needed for search.
+Validate, normalize, and length-limit all untrusted input on the server. Escape rendered content by default, sanitize any intentionally accepted markup, rate-limit public or abuse-prone actions, and use private object storage plus short-lived authorized URLs for sensitive files. Collect the minimum personal data necessary for the named workflow. Document retention and deletion behavior. Add specific protections for the riskier surfaces in this app, such as uploads, redirects, outbound requests, email delivery, OAuth, webhooks, CSV import or export, and real-time connections.
+
+ACCEPTANCE SCENARIOS
+Automate these app-specific scenarios at the most appropriate level:
+1. Given a page that blocks metadata fetching, the bookmark still saves with the URL and a manually editable title.
+2. Given the same URL saved twice, the library keeps one bookmark and merges the newer tags into it.
+3. Given a search for a phrase that appears only in a stored excerpt, the matching bookmark is returned with the phrase highlighted.
+
+TESTING
+Add focused unit tests for state transitions, authorization predicates, normalization, date or money calculations, and other risky domain rules. Add integration tests for persistence constraints and each external adapter’s success, timeout, retry, and rejection paths. Add at least one browser-level test for every end-to-end journey above, including one small-screen viewport. Tests must use isolated data and run through a documented single command.
+
+OPERATIONS AND FAILURE RECOVERY
+Add structured server logs with request, job, or event correlation IDs but no secrets or unnecessarily sensitive data. Make failures actionable in both the interface and logs. Background work must expose pending, succeeded, failed, and retrying states where relevant; do not silently swallow errors. Include safe database migration and rollback guidance, seed data, backup and restore notes, external-data cleanup behavior, and a basic health or diagnostic path appropriate to the stack.
+
+DELIVERABLES
+Ship the working application, migrations, representative seed data, tests, .env.example, and a concise README. The README must cover prerequisites, local setup, environment variables, migrations, seed and test commands, deployment, integration setup, backup and restore, security decisions, and known limitations. Seed data should exercise the happy path plus at least one empty, failed, overdue, expired, archived, or permission-restricted state relevant to the product.
+
+DEFINITION OF DONE
+The app is complete when a fresh developer can follow the README, create and migrate the database, run the app, sign in as each relevant role, complete every named journey using real persisted data, refresh without losing state, recover from common failures, and use the core interface on phone and desktop. All acceptance scenarios pass, permission boundaries are covered by tests, and no core screen is left as a placeholder.
+
+NON-GOALS
+Do not build team sharing, public collections, AI summaries, or a full read-later reading experience.</pre></div><div class="prompt-box" id="prompt-panel-rails" role="tabpanel" aria-labelledby="prompt-tab-rails" tabindex="0" hidden><pre>You are building a production-ready software product named “Pincushion”, a deliberately focused alternative to Raindrop.io. Build a complete, usable vertical slice—not a landing page, static mockup, or disconnected collection of components.
+
+WORKING AGREEMENT
+Before writing implementation code, produce a short technical plan that names the routes or pages, server actions or endpoints, data tables, important state transitions, authorization boundaries, background jobs, and external adapters. Resolve contradictions in favor of the narrow audience and non-goals below. Prefer a small, legible architecture over speculative abstraction, but do not omit persistence, validation, error handling, or tests.
+
+PRODUCT BRIEF
+Primary user: one person hoarding links across every device.
+Primary outcome: save links with tags and collections in one place and actually find them again.
+Product principle: optimize the exact workflow below instead of copying the full breadth of Raindrop.io. A first-time user should understand what to do from the interface itself, without a tour or documentation.
+
+END-TO-END USER JOURNEYS
+Implement all of these flows through the real interface and persistent data layer:
+1. The owner drags the bookmarklet to the toolbar, saves a page from any site, and sees the title, description, and favicon filled in automatically.
+2. The owner tags a batch of saved links, moves them into a collection, and browses the collection in card view.
+3. The owner searches a half-remembered phrase, finds the bookmark through its stored excerpt, opens it, and marks it a favorite.
+
+SCREENS AND INFORMATION ARCHITECTURE
+Build these as coherent responsive views. Each screen must specify its primary action, secondary actions, visible status, validation feedback, empty state, loading or pending state, success confirmation, and recoverable failure state.
+1. Library: card and list toggle, collection sidebar, tag filters, favorites, sort controls, and quick edit and delete actions.
+2. Save view: URL field, autofilled title, description, and excerpt, tag picker, collection selector, and duplicate warning.
+3. Search: single query box, matches highlighted in titles and excerpts, tag and collection filters, and an empty-state with tips.
+4. Bookmarklet setup: draggable bookmarklet, a copy-paste fallback, and a test-save flow that confirms everything works.
+
+CORE CAPABILITIES
+1. one-click saving via a bookmarklet with autofilled title and description
+2. tags, collections, and favorites
+3. full-text search across titles, descriptions, and stored excerpts
+4. card and list views with domain favicons
+5. duplicate detection by normalized URL
+
+DETAILED BEHAVIOR AND BUSINESS RULES
+Treat these as server-enforced product requirements, not interface suggestions:
+1. Normalize URLs before saving and detect duplicates by normalized URL, offering to update the existing bookmark instead.
+2. Fetch page metadata server-side with a timeout, a size cap, and no execution of remote scripts.
+3. Store only the text excerpt needed for search and index it so search stays fast as the library grows.
+4. Authenticate every save, including bookmarklet requests, with a token the owner can rotate.
+
+DATA MODEL AND LIFECYCLE
+Design a small relational schema centered on Bookmark, Collection, Tag. Before implementing it, document:
+1. Each table’s purpose, primary key, ownership or tenant boundary, timestamps, status fields, and important attributes.
+2. Foreign keys, uniqueness constraints, check constraints, indexes needed by the named screens, and transaction boundaries for multi-record changes.
+3. The allowed lifecycle or state transitions, who may trigger each transition, which transitions are terminal or reversible, and what audit history must remain immutable.
+4. Archive, retention, and deletion behavior, including what happens to dependent records and external files.
+5. Idempotency strategy for submissions, jobs, imports, notifications, webhooks, or retries where applicable.
+Use migrations rather than ad-hoc schema creation. Store time instants consistently and retain named timezone context whenever local schedules or dates matter. Never rely on a counter, disabled button, or client-side check to preserve a business invariant.
+
+USERS, AUTHENTICATION, AND PERMISSIONS
+Implement only the roles required by the stated audience. Make the ownership and visibility model explicit before coding. Enforce authorization in every server-side query and mutation, including search, exports, attachments, live updates, and guessed URLs—not merely by hiding controls. Use secure session defaults, protect state-changing requests, and provide an understandable signed-out, expired-session, and forbidden state. Seed distinct users when multiple roles are required so permissions can be demonstrated and tested.
+
+INTERACTION AND VISUAL DIRECTION
+The product should feel fast, calm, focused, and credible rather than like a generic admin template. Use a clear visual hierarchy, restrained color, readable typography, generous hit targets, and consistent placement for primary actions. Start with server-rendered HTML and progressively enhance only the interactions that benefit from it. The core workflow must remain understandable if enhancement fails.
+
+Start with server-rendered Rails views and ordinary forms. Use Turbo for navigation, submissions, and server-driven updates, then Stimulus only for small browser-side behavior. Do not turn the product into a client-side SPA, and keep the core workflow usable when enhancement fails.
+
+Design mobile layouts intentionally instead of simply stacking desktop panels. Support keyboard navigation, visible focus, semantic landmarks, explicit labels, useful page titles, reduced-motion preferences, and screen-reader announcements for asynchronous results. Never use color alone to communicate state. Destructive actions require clear scope and confirmation; safe repeated actions should be idempotent.
+
+TECHNICAL DIRECTION
+Build this version with Ruby on Rails and Hotwire: Turbo for navigation, form submissions, and server-driven updates, and Stimulus for small browser-side behavior. Use RESTful controllers with strong parameters and explicit authorization, with domain transitions in testable models or small application services. Use Active Record migrations plus database-level constraints and transactions; Active Storage with an S3-compatible service for private files; Active Job with a durable queue backend for retryable work; Action Mailer for email; and Action Cable only when live updates are required.
+
+Keep domain rules in testable server-side modules instead of route handlers or UI components. Separate persistence, external providers, and background work behind small interfaces without building a framework. Prefer ordinary HTML forms and URLs for durable navigation; use optimistic interaction only when failure can be reconciled clearly.
+
+The product brief currently identifies Astro, HTMX, D1 as capability context. Preserve any required native, browser-only, edge, storage, real-time, or background-processing capability through a narrow adapter appropriate to the selected framework. If the core workflow genuinely requires native or browser APIs, keep that runtime as the primary execution surface rather than simulating inaccessible capabilities or inventing an unnecessary web surface.
+
+Integrate with bookmarklet and page metadata extraction. For every integration:
+- List required environment variables in an .env.example without real secrets.
+- Add a small adapter with timeouts, normalized errors, and a deterministic local fake or development path.
+- Verify inbound signatures and deduplicate provider events where supported.
+- Keep credentials server-side, encrypt long-lived provider tokens at rest, and redact secrets and sensitive payloads from logs.
+- Define retry, backoff, and idempotency behavior for any side effect that can be repeated.
+
+SECURITY AND PRIVACY
+Fetch metadata server-side with timeouts and size caps, and store only the excerpt needed for search.
+Validate, normalize, and length-limit all untrusted input on the server. Escape rendered content by default, sanitize any intentionally accepted markup, rate-limit public or abuse-prone actions, and use private object storage plus short-lived authorized URLs for sensitive files. Collect the minimum personal data necessary for the named workflow. Document retention and deletion behavior. Add specific protections for the riskier surfaces in this app, such as uploads, redirects, outbound requests, email delivery, OAuth, webhooks, CSV import or export, and real-time connections.
+
+ACCEPTANCE SCENARIOS
+Automate these app-specific scenarios at the most appropriate level:
+1. Given a page that blocks metadata fetching, the bookmark still saves with the URL and a manually editable title.
+2. Given the same URL saved twice, the library keeps one bookmark and merges the newer tags into it.
+3. Given a search for a phrase that appears only in a stored excerpt, the matching bookmark is returned with the phrase highlighted.
+
+TESTING
+Add focused unit tests for state transitions, authorization predicates, normalization, date or money calculations, and other risky domain rules. Add integration tests for persistence constraints and each external adapter’s success, timeout, retry, and rejection paths. Add at least one browser-level test for every end-to-end journey above, including one small-screen viewport. Tests must use isolated data and run through a documented single command.
+
+OPERATIONS AND FAILURE RECOVERY
+Add structured server logs with request, job, or event correlation IDs but no secrets or unnecessarily sensitive data. Make failures actionable in both the interface and logs. Background work must expose pending, succeeded, failed, and retrying states where relevant; do not silently swallow errors. Include safe database migration and rollback guidance, seed data, backup and restore notes, external-data cleanup behavior, and a basic health or diagnostic path appropriate to the stack.
+
+DELIVERABLES
+Ship the working application, migrations, representative seed data, tests, .env.example, and a concise README. The README must cover prerequisites, local setup, environment variables, migrations, seed and test commands, deployment, integration setup, backup and restore, security decisions, and known limitations. Seed data should exercise the happy path plus at least one empty, failed, overdue, expired, archived, or permission-restricted state relevant to the product.
+
+DEFINITION OF DONE
+The app is complete when a fresh developer can follow the README, create and migrate the database, run the app, sign in as each relevant role, complete every named journey using real persisted data, refresh without losing state, recover from common failures, and use the core interface on phone and desktop. All acceptance scenarios pass, permission boundaries are covered by tests, and no core screen is left as a placeholder.
+
+NON-GOALS
+Do not build team sharing, public collections, AI summaries, or a full read-later reading experience.</pre></div><div class="prompt-actions"><button class="button primary" type="button" id="copy-prompt">Copy AHA prompt</button></div></section><section class="section" aria-labelledby="mini-heading"><h2 id="mini-heading">Build just one piece</h2><p>Not ready to replace all of Raindrop.io? Fine. These are the peculiar sub-problems hiding inside it — the parts that are actually interesting to build. Each one is a standalone prompt, scoped to an evening, no strings attached to the full build.</p><details class="mini"><summary><strong>The same link, saved twice, stored once</strong><span>URL normalization and duplicate detection that knows utm_source is noise.</span></summary><pre>Build duplicate detection for a bookmarking tool, built on URL normalization.
+
+Normalize before every save: lowercase the scheme and host, strip default ports, resolve trailing-slash variance, drop fragments, sort remaining query parameters, and remove known tracking parameters, utm_*, fbclid, gclid, ref, so the same article arriving from a newsletter and from Twitter normalizes identically. Keep meaningful query strings intact: a video id or search query changes the page and must survive. Store both the original URL for opening and the normalized form, uniquely indexed, for matching.
+
+On a duplicate hit, don&#39;t reject and don&#39;t silently drop: offer to update the existing bookmark, and when accepted, merge the newer tags into it, keep the earlier saved date, and refresh title and description if the new fetch got better metadata.
+
+Done when: the same article with different UTM junk matches as one bookmark, two YouTube URLs differing by video id stay separate, and a duplicate save merges tags without losing the original save date.</pre><button class="mini-copy" type="button">Copy this prompt</button></details><details class="mini"><summary><strong>Fetching strangers’ pages without getting hurt</strong><span>Timeouts, size caps, SSRF checks, and a graceful save when the site blocks you.</span></summary><pre>Build the server-side metadata fetcher for a bookmarking tool: given a URL, return title, description, and favicon for autofill.
+
+Fetch defensively. Enforce a hard timeout of a few seconds, cap the downloaded bytes and read streaming so a 2GB page dies early, follow a bounded number of redirects, and parse HTML with a real parser, never executing scripts or loading subresources. Block server-side request forgery: resolve the hostname first and refuse private, loopback, and link-local ranges, re-checking after each redirect, so a bookmark for an internal IP can&#39;t probe your network. Extract title, open-graph fields, and meta description, decode character sets properly, and grab the favicon with the same caps.
+
+Failure must not block saving: when a site times out, blocks bots, or returns garbage, save the bookmark with the bare URL and an editable empty title, flagged for manual naming.
+
+Done when: a URL pointing at an internal address is refused before any connection, a huge or hanging page fails within the caps, and a fetch-hostile page still saves as a usable, editable bookmark.</pre><button class="mini-copy" type="button">Copy this prompt</button></details><details class="mini"><summary><strong>Find it by the phrase you half-remember</strong><span>Full-text search across titles and stored excerpts, with the match highlighted.</span></summary><pre>Build search for a personal bookmark library: one query box over titles, descriptions, and stored page excerpts.
+
+Use a real full-text index, SQLite FTS5 or your database&#39;s equivalent, not LIKE queries that collapse at a few thousand rows. Index title, description, and the excerpt captured at save time, weighting title matches above excerpt matches in ranking. Support multi-word queries as AND by default, with prefix matching on the final term so results appear while typing.
+
+Return snippets: for each hit, extract the region of the excerpt around the match and highlight the matched terms, safely escaped, since excerpts are text from arbitrary websites. Combine search with the structural filters, tag, collection, favorites, as index-friendly conjunctions rather than post-filtering in application code. Keep the index in sync transactionally when bookmarks are added, edited, or deleted.
+
+Done when: a phrase appearing only in a stored excerpt finds its bookmark with the phrase highlighted, typing progressively narrows results without full-word completion, and a deleted bookmark disappears from results immediately.</pre><button class="mini-copy" type="button">Copy this prompt</button></details><details class="mini"><summary><strong>The bookmarklet is an API client you can’t update</strong><span>One-click saving from any page, authenticated by a token the owner can rotate.</span></summary><pre>Build the bookmarklet save flow for a bookmarking tool.
+
+The bookmarklet is a javascript: snippet that grabs the current page&#39;s URL, title, and selected text, then opens a small save window pointed at your endpoint with those values as parameters. It runs inside arbitrary pages, so keep it tiny and dependency-free, and treat everything it sends as untrusted input to validate server-side.
+
+Authentication can&#39;t ride on the bookmarklet living in a page context: embed a long random save token in the generated bookmarklet, scoped to saving only, it can create bookmarks and nothing else, no reads, no deletes. Let the owner rotate the token in settings, which invalidates every previously copied bookmarklet, and show a helpful re-install prompt when a stale token arrives. The save window pre-fills fields, warns about duplicates, and closes on save.
+
+Include a copy-paste install fallback for browsers that block dragging, and a test-save flow confirming the token works.
+
+Done when: saving works from any third-party page in one click, a rotated token cleanly rejects old bookmarklets with a re-install message, and the save token cannot read or modify existing bookmarks.</pre><button class="mini-copy" type="button">Copy this prompt</button></details></section><section class="section" aria-labelledby="faq-heading"><h2 id="faq-heading">Frequently asked questions</h2><details class="faq"><summary>How long does it take to build your own Raindrop.io?</summary><p>A basic version — save links, tags, search — takes about 3 hours. Roughly 1 day gets you a solid v1 with bookmarklet, collections, duplicate detection, excerpts. Matching everything Raindrop.io really does (browser extensions, mobile apps, full-page archiving) is closer to 1 month+, which is exactly why you should scope down instead.</p></details><details class="faq"><summary>How much does Raindrop.io cost if I keep subscribing?</summary><p>Raindrop.io runs $2.33–$3 per month on public paid plans, which is $28–$36 per year. A focused self-built replacement costs your build time plus close-to-zero hosting.</p></details><details class="faq"><summary>What stack should I use to build a Raindrop.io alternative?</summary><p>The build prompt on this page ships in four flavors: the AHA stack (Astro, HTMX, Alpine.js), Next.js, Laravel, and Ruby on Rails. The capability context for this product is Astro, HTMX, D1. Pick the stack you already know — the scope matters more than the framework.</p></details><details class="faq"><summary>What features does a minimal Raindrop.io replacement need?</summary><p>A useful v1 needs: one-click saving via a bookmarklet with autofilled title and description; tags, collections, and favorites; full-text search across titles, descriptions, and stored excerpts; card and list views with domain favicons; duplicate detection by normalized URL. Everything else is scope creep until you personally miss it.</p></details><details class="faq"><summary>What should I deliberately not build?</summary><p>Do not build team sharing, public collections, AI summaries, or a full read-later reading experience.</p></details><details class="faq"><summary>Does this build also replace Pinboard and GoodLinks?</summary><p>Yes. Raindrop.io, Pinboard and GoodLinks all solve the same core job — save links with tags and collections in one place and actually find them again. The scoped v1 on this page covers what most people use any of them for, so one focused build replaces whichever you currently pay for.</p></details></section><section class="section" aria-labelledby="related-heading"><h2 id="related-heading">More personal subscriptions to replace</h2><ul class="related-list"><li><a href="/build-your-own-linktree/">Build your own Linktree</a><span>$9–$24/mo · from 30 min</span></li><li><a href="/build-your-own-readwise-reader/">Build your own Readwise Reader</a><span>$10–$12.99/mo · from 2 days</span></li><li><a href="/build-your-own-tinypng-pro/">Build your own TinyPNG Pro</a><span>$25–$39/mo · from 60 min</span></li><li><a href="/build-your-own-cleanmymac/">Build your own CleanMyMac</a><span>$3.33–$9.95/mo · from 8 hours</span></li></ul><p class="related-home"><a href="/#audit">Browse all 109 buildable subscriptions →</a></p></section></main><footer><a class="logo footer-logo" href="/"><span class="logo-mark">EZ</span><span>ezvibecode</span></a><p><a href="/blog/">Blog</a></p><p><a href="/guides/">Guides</a></p><p><a href="/changelog/">Changelog</a></p><p>A tiny idea about tiny software.</p><p>Built with vibes, obviously.</p></footer><div class="toast" id="toast" role="status" aria-live="polite">Prompt copied. Go ship it.</div><script type="module">var e=Array.from(document.querySelectorAll(`.prompt-tab`)),t=Array.from(document.querySelectorAll(`.prompt-box`)),n=document.querySelector(`#copy-prompt`),r=r=>{e.forEach(e=>{let t=e.dataset.framework===r;e.setAttribute(`aria-selected`,String(t)),e.tabIndex=t?0:-1}),t.forEach(e=>{e.hidden=e.id!==`prompt-panel-${r}`}),n.textContent=`Copy ${e.find(e=>e.dataset.framework===r)?.textContent||`prompt`} prompt`};e.forEach((t,n)=>{t.addEventListener(`click`,()=>r(t.dataset.framework)),t.addEventListener(`keydown`,t=>{let i;t.key===`ArrowRight`&&(i=(n+1)%e.length),t.key===`ArrowLeft`&&(i=(n-1+e.length)%e.length),t.key===`Home`&&(i=0),t.key===`End`&&(i=e.length-1),i!==void 0&&(t.preventDefault(),r(e[i].dataset.framework),e[i].focus())})}),n?.addEventListener(`click`,async()=>{let e=t.find(e=>!e.hidden);await navigator.clipboard.writeText(e?.querySelector(`pre`)?.textContent||``);let n=document.querySelector(`#toast`);n.classList.add(`show`),setTimeout(()=>n.classList.remove(`show`),2200)}),document.querySelectorAll(`.mini-copy`).forEach(e=>{e.addEventListener(`click`,async()=>{let t=e.closest(`.mini`)?.querySelector(`pre`)?.textContent||``;await navigator.clipboard.writeText(t);let n=document.querySelector(`#toast`);n.classList.add(`show`),setTimeout(()=>n.classList.remove(`show`),2200)})});var i=document.querySelector(`#theme-toggle`);localStorage.getItem(`vibe-theme`)===`dark`&&(document.documentElement.dataset.theme=`dark`),i?.addEventListener(`click`,()=>{let e=document.documentElement.dataset.theme!==`dark`;document.documentElement.dataset.theme=e?`dark`:`light`,localStorage.setItem(`vibe-theme`,e?`dark`:`light`)});</script><script type="module" src="https://static.cloudflareinsights.com/beacon.min.js/vce701823e78c4301a35b7e07294d87301792088814092" integrity="sha512-UKNk8GbxkABxKcXYuLkO16EleLGUkcvJWtpSNmExE0Too3ZaFAxTscNWEc1OdAv5/BikHawapSCaiD2XCmp+Bw==" data-cf-beacon='{"version":"2024.11.0","token":"228ace6b78e04bb494384851ece32c99","r":1,"spa":2}' crossorigin="anonymous"></script>
+</body></html>

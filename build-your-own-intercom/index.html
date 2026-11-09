@@ -1,0 +1,404 @@
+<!DOCTYPE html><html lang="en"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width"><title>How to Vibe Code Your Own Intercom Alternative</title><meta name="description" content="Learn how to build your own with ezvibecode Intercom alternative with copyable AI prompts, a scoped feature list, and realistic build estimates starting at 4 days. The same build also replaces Crisp, LiveChat and Drift."><link rel="canonical" href="https://ezvibecode.com/build-your-own-intercom/"><meta name="theme-color" content="#f4f1e8"><link rel="icon" href="/favicon.ico" sizes="32x32"><link rel="icon" href="/favicon.png" type="image/png" sizes="512x512"><link rel="apple-touch-icon" href="/apple-touch-icon.png" sizes="180x180"><meta property="og:type" content="article"><meta property="og:site_name" content="ezvibecode"><meta property="og:title" content="How to Vibe Code Your Own Intercom Alternative"><meta property="og:description" content="Learn how to build your own with ezvibecode Intercom alternative with copyable AI prompts, a scoped feature list, and realistic build estimates starting at 4 days. The same build also replaces Crisp, LiveChat and Drift."><meta property="og:url" content="https://ezvibecode.com/build-your-own-intercom/"><meta property="og:image" content="https://ezvibecode.com/og/build-your-own-intercom.png"><meta property="og:image:type" content="image/png"><meta property="og:image:width" content="1200"><meta property="og:image:height" content="630"><meta property="og:image:alt" content="How to Vibe Code Your Own Intercom Alternative"><meta name="twitter:card" content="summary_large_image"><meta name="twitter:title" content="How to Vibe Code Your Own Intercom Alternative"><meta name="twitter:description" content="Learn how to build your own with ezvibecode Intercom alternative with copyable AI prompts, a scoped feature list, and realistic build estimates starting at 4 days. The same build also replaces Crisp, LiveChat and Drift."><meta name="twitter:image" content="https://ezvibecode.com/og/build-your-own-intercom.png"><meta name="twitter:image:alt" content="How to Vibe Code Your Own Intercom Alternative"><script type="application/ld+json">{"@context":"https://schema.org","@type":"FAQPage","mainEntity":[{"@type":"Question","name":"How long does it take to build your own Intercom?","acceptedAnswer":{"@type":"Answer","text":"A basic version — in-app help button, shared inbox, replies — takes about 4 days. Roughly 2 weeks+ gets you a solid v1 with assignment, notes, tags, customer context, email notifications. Matching everything Intercom really does (ai agents, product tours, omnichannel, marketing platform) is closer to 3 months+, which is exactly why you should scope down instead."}},{"@type":"Question","name":"How much does Intercom cost if I keep subscribing?","acceptedAnswer":{"@type":"Answer","text":"Intercom runs $74–$139 per person per month on public paid plans, which is $888–$1668 per year for every person on your team. A focused self-built replacement costs your build time plus close-to-zero hosting."}},{"@type":"Question","name":"What stack should I use to build a Intercom alternative?","acceptedAnswer":{"@type":"Answer","text":"The build prompt on this page ships in four flavors: the AHA stack (Astro, HTMX, Alpine.js), Next.js, Laravel, and Ruby on Rails. The capability context for this product is Astro, Durable Objects, D1. Pick the stack you already know — the scope matters more than the framework."}},{"@type":"Question","name":"What features does a minimal Intercom replacement need?","acceptedAnswer":{"@type":"Answer","text":"A useful v1 needs: embeddable help button with new-conversation form; shared inbox with open, waiting, and closed states; assignment, internal notes, tags, and collision indicator; customer context panel populated by signed app data; saved replies and customer email notifications. Everything else is scope creep until you personally miss it."}},{"@type":"Question","name":"What should I deliberately not build?","acceptedAnswer":{"@type":"Answer","text":"Do not build product tours, outbound marketing, AI agents, a CRM, or omnichannel social support."}},{"@type":"Question","name":"Does this build also replace Crisp, LiveChat and Drift?","acceptedAnswer":{"@type":"Answer","text":"Yes. Intercom, Crisp, LiveChat and Drift all solve the same core job — let customers ask for help in-app and let the team handle conversations together. The scoped v1 on this page covers what most people use any of them for, so one focused build replaces whichever you currently pay for."}}]}</script><script type="application/ld+json">{"@context":"https://schema.org","@type":"BreadcrumbList","itemListElement":[{"@type":"ListItem","position":1,"name":"ezvibecode","item":"https://ezvibecode.com/"},{"@type":"ListItem","position":2,"name":"Build your own Intercom","item":"https://ezvibecode.com/build-your-own-intercom/"}]}</script><script type="application/ld+json">{"@context":"https://schema.org","@type":"TechArticle","headline":"How to Vibe Code Your Own Intercom Alternative","description":"Learn how to build your own with ezvibecode Intercom alternative with copyable AI prompts, a scoped feature list, and realistic build estimates starting at 4 days. The same build also replaces Crisp, LiveChat and Drift.","url":"https://ezvibecode.com/build-your-own-intercom/","image":"https://ezvibecode.com/og/build-your-own-intercom.png","author":{"@type":"Organization","name":"ezvibecode","url":"https://ezvibecode.com/"}}</script><link rel="stylesheet" href="/_astro/build-your-own-_slug_.0qOs6ThE.css"></head><body><header class="site-header"><a class="logo" href="/" aria-label="ezvibecode home"><span class="logo-mark">EZ</span><span>ezvibecode</span></a><nav class="header-links" aria-label="Site"><a class="header-link" href="/blog/">Blog</a><a class="header-link" href="/guides/">Guides</a><a class="header-link" href="/#audit">All 109 apps</a></nav><button class="icon-button" id="theme-toggle" type="button" aria-label="Toggle dark mode" title="Toggle dark mode">◐</button></header><main><nav class="breadcrumb" aria-label="Breadcrumb"><a href="/">Home</a><span aria-hidden="true">/</span><span aria-current="page">Build your own Intercom</span></nav><section class="hero"><p class="eyebrow">Support · Side quest build</p><h1>How to Vibe Code Your Own <em>Intercom Alternative</em></h1><p class="lede">A shared inbox and help bubble, without the revenue platform. Intercom charges $74–$139 per person per month — that’s $888–$1668 a year per person — for something you can replace with focused software of your own. Here is the honest scope, the honest timeline, and the exact prompt to hand your coding agent.</p><div class="hero-meta"><span class="effort ambitious">from 4 days</span><span class="verdict">Build only your support loop</span></div></section><section class="section" aria-labelledby="who-heading"><h2 id="who-heading">Who this replacement is for</h2><p>This build targets a small SaaS team supporting authenticated customers. The goal: let customers ask for help in-app and let the team handle conversations together. If you need more than that, keep paying — the point of building it yourself is owning a tool shaped exactly like your workflow, not re-implementing a venture-funded roadmap.</p><p class="also-replaces">Same build, different logo: this v1 also replaces <strong>Crisp, LiveChat and Drift</strong> — they all solve the same core job.</p></section><section class="section" aria-labelledby="time-heading"><h2 id="time-heading">How long it actually takes</h2><p>One number would be a lie, so here are three. Each tier is a real, usable product — pick the one that matches how much of Intercom you actually use.</p><table class="estimate-table"><thead><tr><th scope="col">Estimate</th><th scope="col">What you get</th></tr></thead><tbody><tr><th scope="row">4 days</th><td>in-app help button, shared inbox, replies</td></tr><tr><th scope="row">2 weeks+</th><td>assignment, notes, tags, customer context, email notifications</td></tr><tr><th scope="row">3 months+</th><td>ai agents, product tours, omnichannel, marketing platform — the part you should probably skip</td></tr></tbody></table></section><section class="section" aria-labelledby="features-heading"><h2 id="features-heading">What a minimal Intercom alternative needs</h2><ul class="feature-list"><li>embeddable help button with new-conversation form</li><li>shared inbox with open, waiting, and closed states</li><li>assignment, internal notes, tags, and collision indicator</li><li>customer context panel populated by signed app data</li><li>saved replies and customer email notifications</li></ul><div class="fact-grid"><div class="fact"><h3>Data model</h3><p>Customer, Conversation, Message, Assignment, SavedReply</p></div><div class="fact"><h3>Integrations</h3><p>signed identity payload, email, WebSocket updates</p></div><div class="fact"><h3>Capability context</h3><p>Astro, Durable Objects, D1</p></div></div><div class="callout guardrail"><h3>The guardrail</h3><p>Verify signed customer identity and separate internal notes from customer-visible messages.</p></div><div class="callout nongoal"><h3>Deliberate non-goals</h3><p>Do not build product tours, outbound marketing, AI agents, a CRM, or omnichannel social support.</p></div></section><section class="section" aria-labelledby="prompt-heading"><h2 id="prompt-heading">The complete build prompt</h2><p>Copy this into your coding agent of choice. It is scoped for a useful v1 — journeys, screens, business rules, data model, security, tests, and acceptance scenarios included. Pick your stack:</p><div class="prompt-tabs" role="tablist" aria-label="Choose your stack"><button class="prompt-tab" id="prompt-tab-aha" type="button" role="tab" aria-selected="true" aria-controls="prompt-panel-aha" tabindex="0" data-framework="aha">AHA</button><button class="prompt-tab" id="prompt-tab-nextjs" type="button" role="tab" aria-selected="false" aria-controls="prompt-panel-nextjs" tabindex="-1" data-framework="nextjs">Next.js</button><button class="prompt-tab" id="prompt-tab-laravel" type="button" role="tab" aria-selected="false" aria-controls="prompt-panel-laravel" tabindex="-1" data-framework="laravel">Laravel</button><button class="prompt-tab" id="prompt-tab-rails" type="button" role="tab" aria-selected="false" aria-controls="prompt-panel-rails" tabindex="-1" data-framework="rails">Ruby on Rails</button></div><div class="prompt-box" id="prompt-panel-aha" role="tabpanel" aria-labelledby="prompt-tab-aha" tabindex="0"><pre>You are building a production-ready software product named “Knockknock”, a deliberately focused alternative to Intercom. Build a complete, usable vertical slice—not a landing page, static mockup, or disconnected collection of components.
+
+WORKING AGREEMENT
+Before writing implementation code, produce a short technical plan that names the routes or pages, server actions or endpoints, data tables, important state transitions, authorization boundaries, background jobs, and external adapters. Resolve contradictions in favor of the narrow audience and non-goals below. Prefer a small, legible architecture over speculative abstraction, but do not omit persistence, validation, error handling, or tests.
+
+PRODUCT BRIEF
+Primary user: a small SaaS team supporting authenticated customers.
+Primary outcome: let customers ask for help in-app and let the team handle conversations together.
+Product principle: optimize the exact workflow below instead of copying the full breadth of Intercom. A first-time user should understand what to do from the interface itself, without a tour or documentation.
+
+END-TO-END USER JOURNEYS
+Implement all of these flows through the real interface and persistent data layer:
+1. An authenticated customer opens the embedded help button, passes verified app context, starts a conversation, sends a message, and receives an immediate confirmation in the bubble.
+2. An agent opens the shared inbox, claims the conversation, reviews signed customer context, adds a private note, inserts a saved reply, and sends a customer-visible response.
+3. The customer returns to the widget after an email notification, reads the response, replies, and the conversation moves from waiting or closed back to the correct active queue.
+
+SCREENS AND INFORMATION ARCHITECTURE
+Build these as coherent responsive views. Each screen must specify its primary action, secondary actions, visible status, validation feedback, empty state, loading or pending state, success confirmation, and recoverable failure state.
+1. Customer widget: launcher, conversation list, new-conversation form, message thread, sending and retry states, unread count, and clear identity-error state.
+2. Shared inbox: open, waiting, and closed queues, unassigned and mine filters, assignee and tag controls, unread markers, search, and live collision presence.
+3. Conversation workspace: customer-visible thread, reply or internal-note composer, attachments, saved replies, assignment, tags, state changes, and signed customer context panel.
+4. Support settings: widget origin and signing-secret guidance, teammate access, saved-reply management, email sender status, tags, and webhook or delivery diagnostics.
+
+CORE CAPABILITIES
+1. embeddable help button with new-conversation form
+2. shared inbox with open, waiting, and closed states
+3. assignment, internal notes, tags, and collision indicator
+4. customer context panel populated by signed app data
+5. saved replies and customer email notifications
+
+DETAILED BEHAVIOR AND BUSINESS RULES
+Treat these as server-enforced product requirements, not interface suggestions:
+1. Verify the customer identity signature, timestamp, audience, and allowed origin server-side before reading or creating conversations; never trust browser-supplied customer fields alone.
+2. Store internal notes as a distinct message type that cannot enter widget payloads, notification emails, exports intended for customers, or saved-reply output.
+3. Serialize conversation sequence numbers and state transitions, use optimistic versions for agent actions, and show presence as advisory rather than as authorization.
+4. Give each outbound notification and client-submitted message an idempotency key; sanitize rendered content and keep attachment access behind short-lived authorized URLs.
+
+DATA MODEL AND LIFECYCLE
+Design a small relational schema centered on Customer, Conversation, Message, Assignment, SavedReply. Before implementing it, document:
+1. Each table’s purpose, primary key, ownership or tenant boundary, timestamps, status fields, and important attributes.
+2. Foreign keys, uniqueness constraints, check constraints, indexes needed by the named screens, and transaction boundaries for multi-record changes.
+3. The allowed lifecycle or state transitions, who may trigger each transition, which transitions are terminal or reversible, and what audit history must remain immutable.
+4. Archive, retention, and deletion behavior, including what happens to dependent records and external files.
+5. Idempotency strategy for submissions, jobs, imports, notifications, webhooks, or retries where applicable.
+Use migrations rather than ad-hoc schema creation. Store time instants consistently and retain named timezone context whenever local schedules or dates matter. Never rely on a counter, disabled button, or client-side check to preserve a business invariant.
+
+USERS, AUTHENTICATION, AND PERMISSIONS
+Implement only the roles required by the stated audience. Make the ownership and visibility model explicit before coding. Enforce authorization in every server-side query and mutation, including search, exports, attachments, live updates, and guessed URLs—not merely by hiding controls. Use secure session defaults, protect state-changing requests, and provide an understandable signed-out, expired-session, and forbidden state. Seed distinct users when multiple roles are required so permissions can be demonstrated and tested.
+
+INTERACTION AND VISUAL DIRECTION
+The product should feel fast, calm, focused, and credible rather than like a generic admin template. Use a clear visual hierarchy, restrained color, readable typography, generous hit targets, and consistent placement for primary actions. Start with server-rendered HTML and progressively enhance only the interactions that benefit from it. The core workflow must remain understandable if enhancement fails.
+
+Start with server-rendered Astro pages and ordinary HTML forms. Use HTMX for form submissions, partial navigation, and server-driven updates, then Alpine.js only for small local browser state. The core workflow must remain understandable if either enhancement layer fails.
+
+Design mobile layouts intentionally instead of simply stacking desktop panels. Support keyboard navigation, visible focus, semantic landmarks, explicit labels, useful page titles, reduced-motion preferences, and screen-reader announcements for asynchronous results. Never use color alone to communicate state. Destructive actions require clear scope and confirmation; safe repeated actions should be idempotent.
+
+TECHNICAL DIRECTION
+Build this version with the AHA stack: Astro for routing, layouts, and server-rendered pages; HTMX for interactions that benefit from HTML fragment responses; and Alpine.js for small, local interface state. Prefer Cloudflare D1 for relational persistence, R2 for object storage, Workers for server endpoints and scheduled work, Durable Objects only for coordinated real-time state, and Workflows or Queues for durable background jobs—but only when the product requirements call for them.
+
+Keep domain rules in testable server-side modules instead of route handlers or UI components. Separate persistence, external providers, and background work behind small interfaces without building a framework. Prefer ordinary HTML forms and URLs for durable navigation; use optimistic interaction only when failure can be reconciled clearly.
+
+The product brief currently identifies Astro, Durable Objects, D1 as capability context. Preserve any required native, browser-only, edge, storage, real-time, or background-processing capability through a narrow adapter appropriate to the selected framework. If the core workflow genuinely requires native or browser APIs, keep that runtime as the primary execution surface rather than simulating inaccessible capabilities or inventing an unnecessary web surface.
+
+Integrate with signed identity payload and email and WebSocket updates. For every integration:
+- List required environment variables in an .env.example without real secrets.
+- Add a small adapter with timeouts, normalized errors, and a deterministic local fake or development path.
+- Verify inbound signatures and deduplicate provider events where supported.
+- Keep credentials server-side, encrypt long-lived provider tokens at rest, and redact secrets and sensitive payloads from logs.
+- Define retry, backoff, and idempotency behavior for any side effect that can be repeated.
+
+SECURITY AND PRIVACY
+Verify signed customer identity and separate internal notes from customer-visible messages.
+Validate, normalize, and length-limit all untrusted input on the server. Escape rendered content by default, sanitize any intentionally accepted markup, rate-limit public or abuse-prone actions, and use private object storage plus short-lived authorized URLs for sensitive files. Collect the minimum personal data necessary for the named workflow. Document retention and deletion behavior. Add specific protections for the riskier surfaces in this app, such as uploads, redirects, outbound requests, email delivery, OAuth, webhooks, CSV import or export, and real-time connections.
+
+ACCEPTANCE SCENARIOS
+Automate these app-specific scenarios at the most appropriate level:
+1. Given an expired or altered signed identity payload, the widget exposes no customer history and blocks conversation creation with a recoverable authentication message.
+2. Given two agents replying from the same conversation version, the second sees the newer activity and must confirm or edit instead of silently sending a stale duplicate response.
+3. Given an agent adds an internal note, teammates see it immediately while the customer widget and all customer notification emails omit it completely.
+
+TESTING
+Add focused unit tests for state transitions, authorization predicates, normalization, date or money calculations, and other risky domain rules. Add integration tests for persistence constraints and each external adapter’s success, timeout, retry, and rejection paths. Add at least one browser-level test for every end-to-end journey above, including one small-screen viewport. Tests must use isolated data and run through a documented single command.
+
+OPERATIONS AND FAILURE RECOVERY
+Add structured server logs with request, job, or event correlation IDs but no secrets or unnecessarily sensitive data. Make failures actionable in both the interface and logs. Background work must expose pending, succeeded, failed, and retrying states where relevant; do not silently swallow errors. Include safe database migration and rollback guidance, seed data, backup and restore notes, external-data cleanup behavior, and a basic health or diagnostic path appropriate to the stack.
+
+DELIVERABLES
+Ship the working application, migrations, representative seed data, tests, .env.example, and a concise README. The README must cover prerequisites, local setup, environment variables, migrations, seed and test commands, deployment, integration setup, backup and restore, security decisions, and known limitations. Seed data should exercise the happy path plus at least one empty, failed, overdue, expired, archived, or permission-restricted state relevant to the product.
+
+DEFINITION OF DONE
+The app is complete when a fresh developer can follow the README, create and migrate the database, run the app, sign in as each relevant role, complete every named journey using real persisted data, refresh without losing state, recover from common failures, and use the core interface on phone and desktop. All acceptance scenarios pass, permission boundaries are covered by tests, and no core screen is left as a placeholder.
+
+NON-GOALS
+Do not build product tours, outbound marketing, AI agents, a CRM, or omnichannel social support.</pre></div><div class="prompt-box" id="prompt-panel-nextjs" role="tabpanel" aria-labelledby="prompt-tab-nextjs" tabindex="0" hidden><pre>You are building a production-ready software product named “Knockknock”, a deliberately focused alternative to Intercom. Build a complete, usable vertical slice—not a landing page, static mockup, or disconnected collection of components.
+
+WORKING AGREEMENT
+Before writing implementation code, produce a short technical plan that names the routes or pages, server actions or endpoints, data tables, important state transitions, authorization boundaries, background jobs, and external adapters. Resolve contradictions in favor of the narrow audience and non-goals below. Prefer a small, legible architecture over speculative abstraction, but do not omit persistence, validation, error handling, or tests.
+
+PRODUCT BRIEF
+Primary user: a small SaaS team supporting authenticated customers.
+Primary outcome: let customers ask for help in-app and let the team handle conversations together.
+Product principle: optimize the exact workflow below instead of copying the full breadth of Intercom. A first-time user should understand what to do from the interface itself, without a tour or documentation.
+
+END-TO-END USER JOURNEYS
+Implement all of these flows through the real interface and persistent data layer:
+1. An authenticated customer opens the embedded help button, passes verified app context, starts a conversation, sends a message, and receives an immediate confirmation in the bubble.
+2. An agent opens the shared inbox, claims the conversation, reviews signed customer context, adds a private note, inserts a saved reply, and sends a customer-visible response.
+3. The customer returns to the widget after an email notification, reads the response, replies, and the conversation moves from waiting or closed back to the correct active queue.
+
+SCREENS AND INFORMATION ARCHITECTURE
+Build these as coherent responsive views. Each screen must specify its primary action, secondary actions, visible status, validation feedback, empty state, loading or pending state, success confirmation, and recoverable failure state.
+1. Customer widget: launcher, conversation list, new-conversation form, message thread, sending and retry states, unread count, and clear identity-error state.
+2. Shared inbox: open, waiting, and closed queues, unassigned and mine filters, assignee and tag controls, unread markers, search, and live collision presence.
+3. Conversation workspace: customer-visible thread, reply or internal-note composer, attachments, saved replies, assignment, tags, state changes, and signed customer context panel.
+4. Support settings: widget origin and signing-secret guidance, teammate access, saved-reply management, email sender status, tags, and webhook or delivery diagnostics.
+
+CORE CAPABILITIES
+1. embeddable help button with new-conversation form
+2. shared inbox with open, waiting, and closed states
+3. assignment, internal notes, tags, and collision indicator
+4. customer context panel populated by signed app data
+5. saved replies and customer email notifications
+
+DETAILED BEHAVIOR AND BUSINESS RULES
+Treat these as server-enforced product requirements, not interface suggestions:
+1. Verify the customer identity signature, timestamp, audience, and allowed origin server-side before reading or creating conversations; never trust browser-supplied customer fields alone.
+2. Store internal notes as a distinct message type that cannot enter widget payloads, notification emails, exports intended for customers, or saved-reply output.
+3. Serialize conversation sequence numbers and state transitions, use optimistic versions for agent actions, and show presence as advisory rather than as authorization.
+4. Give each outbound notification and client-submitted message an idempotency key; sanitize rendered content and keep attachment access behind short-lived authorized URLs.
+
+DATA MODEL AND LIFECYCLE
+Design a small relational schema centered on Customer, Conversation, Message, Assignment, SavedReply. Before implementing it, document:
+1. Each table’s purpose, primary key, ownership or tenant boundary, timestamps, status fields, and important attributes.
+2. Foreign keys, uniqueness constraints, check constraints, indexes needed by the named screens, and transaction boundaries for multi-record changes.
+3. The allowed lifecycle or state transitions, who may trigger each transition, which transitions are terminal or reversible, and what audit history must remain immutable.
+4. Archive, retention, and deletion behavior, including what happens to dependent records and external files.
+5. Idempotency strategy for submissions, jobs, imports, notifications, webhooks, or retries where applicable.
+Use migrations rather than ad-hoc schema creation. Store time instants consistently and retain named timezone context whenever local schedules or dates matter. Never rely on a counter, disabled button, or client-side check to preserve a business invariant.
+
+USERS, AUTHENTICATION, AND PERMISSIONS
+Implement only the roles required by the stated audience. Make the ownership and visibility model explicit before coding. Enforce authorization in every server-side query and mutation, including search, exports, attachments, live updates, and guessed URLs—not merely by hiding controls. Use secure session defaults, protect state-changing requests, and provide an understandable signed-out, expired-session, and forbidden state. Seed distinct users when multiple roles are required so permissions can be demonstrated and tested.
+
+INTERACTION AND VISUAL DIRECTION
+The product should feel fast, calm, focused, and credible rather than like a generic admin template. Use a clear visual hierarchy, restrained color, readable typography, generous hit targets, and consistent placement for primary actions. Start with server-rendered HTML and progressively enhance only the interactions that benefit from it. The core workflow must remain understandable if enhancement fails.
+
+Render with React Server Components by default. Use Server Actions for authenticated form mutations and add Client Components only for interactions that genuinely require browser state, browser APIs, drag-and-drop, or live updates. The core workflow must remain understandable before client-side JavaScript finishes loading.
+
+Design mobile layouts intentionally instead of simply stacking desktop panels. Support keyboard navigation, visible focus, semantic landmarks, explicit labels, useful page titles, reduced-motion preferences, and screen-reader announcements for asynchronous results. Never use color alone to communicate state. Destructive actions require clear scope and confirmation; safe repeated actions should be idempotent.
+
+TECHNICAL DIRECTION
+Build this version with Next.js, the App Router, and TypeScript. Use Server Components by default, Server Actions for authenticated mutations, and Route Handlers for public APIs, OAuth callbacks, webhooks, feeds, uploads, and downloads. Use PostgreSQL through Drizzle ORM with versioned migrations and an isolated test database. Access S3-compatible object storage through a server-only adapter, and run slow or retryable work in a real job or workflow system instead of the request lifecycle.
+
+Keep domain rules in testable server-side modules instead of route handlers or UI components. Separate persistence, external providers, and background work behind small interfaces without building a framework. Prefer ordinary HTML forms and URLs for durable navigation; use optimistic interaction only when failure can be reconciled clearly.
+
+The product brief currently identifies Astro, Durable Objects, D1 as capability context. Preserve any required native, browser-only, edge, storage, real-time, or background-processing capability through a narrow adapter appropriate to the selected framework. If the core workflow genuinely requires native or browser APIs, keep that runtime as the primary execution surface rather than simulating inaccessible capabilities or inventing an unnecessary web surface.
+
+Integrate with signed identity payload and email and WebSocket updates. For every integration:
+- List required environment variables in an .env.example without real secrets.
+- Add a small adapter with timeouts, normalized errors, and a deterministic local fake or development path.
+- Verify inbound signatures and deduplicate provider events where supported.
+- Keep credentials server-side, encrypt long-lived provider tokens at rest, and redact secrets and sensitive payloads from logs.
+- Define retry, backoff, and idempotency behavior for any side effect that can be repeated.
+
+SECURITY AND PRIVACY
+Verify signed customer identity and separate internal notes from customer-visible messages.
+Validate, normalize, and length-limit all untrusted input on the server. Escape rendered content by default, sanitize any intentionally accepted markup, rate-limit public or abuse-prone actions, and use private object storage plus short-lived authorized URLs for sensitive files. Collect the minimum personal data necessary for the named workflow. Document retention and deletion behavior. Add specific protections for the riskier surfaces in this app, such as uploads, redirects, outbound requests, email delivery, OAuth, webhooks, CSV import or export, and real-time connections.
+
+ACCEPTANCE SCENARIOS
+Automate these app-specific scenarios at the most appropriate level:
+1. Given an expired or altered signed identity payload, the widget exposes no customer history and blocks conversation creation with a recoverable authentication message.
+2. Given two agents replying from the same conversation version, the second sees the newer activity and must confirm or edit instead of silently sending a stale duplicate response.
+3. Given an agent adds an internal note, teammates see it immediately while the customer widget and all customer notification emails omit it completely.
+
+TESTING
+Add focused unit tests for state transitions, authorization predicates, normalization, date or money calculations, and other risky domain rules. Add integration tests for persistence constraints and each external adapter’s success, timeout, retry, and rejection paths. Add at least one browser-level test for every end-to-end journey above, including one small-screen viewport. Tests must use isolated data and run through a documented single command.
+
+OPERATIONS AND FAILURE RECOVERY
+Add structured server logs with request, job, or event correlation IDs but no secrets or unnecessarily sensitive data. Make failures actionable in both the interface and logs. Background work must expose pending, succeeded, failed, and retrying states where relevant; do not silently swallow errors. Include safe database migration and rollback guidance, seed data, backup and restore notes, external-data cleanup behavior, and a basic health or diagnostic path appropriate to the stack.
+
+DELIVERABLES
+Ship the working application, migrations, representative seed data, tests, .env.example, and a concise README. The README must cover prerequisites, local setup, environment variables, migrations, seed and test commands, deployment, integration setup, backup and restore, security decisions, and known limitations. Seed data should exercise the happy path plus at least one empty, failed, overdue, expired, archived, or permission-restricted state relevant to the product.
+
+DEFINITION OF DONE
+The app is complete when a fresh developer can follow the README, create and migrate the database, run the app, sign in as each relevant role, complete every named journey using real persisted data, refresh without losing state, recover from common failures, and use the core interface on phone and desktop. All acceptance scenarios pass, permission boundaries are covered by tests, and no core screen is left as a placeholder.
+
+NON-GOALS
+Do not build product tours, outbound marketing, AI agents, a CRM, or omnichannel social support.</pre></div><div class="prompt-box" id="prompt-panel-laravel" role="tabpanel" aria-labelledby="prompt-tab-laravel" tabindex="0" hidden><pre>You are building a production-ready software product named “Knockknock”, a deliberately focused alternative to Intercom. Build a complete, usable vertical slice—not a landing page, static mockup, or disconnected collection of components.
+
+WORKING AGREEMENT
+Before writing implementation code, produce a short technical plan that names the routes or pages, server actions or endpoints, data tables, important state transitions, authorization boundaries, background jobs, and external adapters. Resolve contradictions in favor of the narrow audience and non-goals below. Prefer a small, legible architecture over speculative abstraction, but do not omit persistence, validation, error handling, or tests.
+
+PRODUCT BRIEF
+Primary user: a small SaaS team supporting authenticated customers.
+Primary outcome: let customers ask for help in-app and let the team handle conversations together.
+Product principle: optimize the exact workflow below instead of copying the full breadth of Intercom. A first-time user should understand what to do from the interface itself, without a tour or documentation.
+
+END-TO-END USER JOURNEYS
+Implement all of these flows through the real interface and persistent data layer:
+1. An authenticated customer opens the embedded help button, passes verified app context, starts a conversation, sends a message, and receives an immediate confirmation in the bubble.
+2. An agent opens the shared inbox, claims the conversation, reviews signed customer context, adds a private note, inserts a saved reply, and sends a customer-visible response.
+3. The customer returns to the widget after an email notification, reads the response, replies, and the conversation moves from waiting or closed back to the correct active queue.
+
+SCREENS AND INFORMATION ARCHITECTURE
+Build these as coherent responsive views. Each screen must specify its primary action, secondary actions, visible status, validation feedback, empty state, loading or pending state, success confirmation, and recoverable failure state.
+1. Customer widget: launcher, conversation list, new-conversation form, message thread, sending and retry states, unread count, and clear identity-error state.
+2. Shared inbox: open, waiting, and closed queues, unassigned and mine filters, assignee and tag controls, unread markers, search, and live collision presence.
+3. Conversation workspace: customer-visible thread, reply or internal-note composer, attachments, saved replies, assignment, tags, state changes, and signed customer context panel.
+4. Support settings: widget origin and signing-secret guidance, teammate access, saved-reply management, email sender status, tags, and webhook or delivery diagnostics.
+
+CORE CAPABILITIES
+1. embeddable help button with new-conversation form
+2. shared inbox with open, waiting, and closed states
+3. assignment, internal notes, tags, and collision indicator
+4. customer context panel populated by signed app data
+5. saved replies and customer email notifications
+
+DETAILED BEHAVIOR AND BUSINESS RULES
+Treat these as server-enforced product requirements, not interface suggestions:
+1. Verify the customer identity signature, timestamp, audience, and allowed origin server-side before reading or creating conversations; never trust browser-supplied customer fields alone.
+2. Store internal notes as a distinct message type that cannot enter widget payloads, notification emails, exports intended for customers, or saved-reply output.
+3. Serialize conversation sequence numbers and state transitions, use optimistic versions for agent actions, and show presence as advisory rather than as authorization.
+4. Give each outbound notification and client-submitted message an idempotency key; sanitize rendered content and keep attachment access behind short-lived authorized URLs.
+
+DATA MODEL AND LIFECYCLE
+Design a small relational schema centered on Customer, Conversation, Message, Assignment, SavedReply. Before implementing it, document:
+1. Each table’s purpose, primary key, ownership or tenant boundary, timestamps, status fields, and important attributes.
+2. Foreign keys, uniqueness constraints, check constraints, indexes needed by the named screens, and transaction boundaries for multi-record changes.
+3. The allowed lifecycle or state transitions, who may trigger each transition, which transitions are terminal or reversible, and what audit history must remain immutable.
+4. Archive, retention, and deletion behavior, including what happens to dependent records and external files.
+5. Idempotency strategy for submissions, jobs, imports, notifications, webhooks, or retries where applicable.
+Use migrations rather than ad-hoc schema creation. Store time instants consistently and retain named timezone context whenever local schedules or dates matter. Never rely on a counter, disabled button, or client-side check to preserve a business invariant.
+
+USERS, AUTHENTICATION, AND PERMISSIONS
+Implement only the roles required by the stated audience. Make the ownership and visibility model explicit before coding. Enforce authorization in every server-side query and mutation, including search, exports, attachments, live updates, and guessed URLs—not merely by hiding controls. Use secure session defaults, protect state-changing requests, and provide an understandable signed-out, expired-session, and forbidden state. Seed distinct users when multiple roles are required so permissions can be demonstrated and tested.
+
+INTERACTION AND VISUAL DIRECTION
+The product should feel fast, calm, focused, and credible rather than like a generic admin template. Use a clear visual hierarchy, restrained color, readable typography, generous hit targets, and consistent placement for primary actions. Start with server-rendered HTML and progressively enhance only the interactions that benefit from it. The core workflow must remain understandable if enhancement fails.
+
+Start with server-rendered Blade views and ordinary forms. Use Livewire for focused server-driven interactions and Alpine.js only for small local interface state. The core workflow must remain understandable without relying on a client-side application shell.
+
+Design mobile layouts intentionally instead of simply stacking desktop panels. Support keyboard navigation, visible focus, semantic landmarks, explicit labels, useful page titles, reduced-motion preferences, and screen-reader announcements for asynchronous results. Never use color alone to communicate state. Destructive actions require clear scope and confirmation; safe repeated actions should be idempotent.
+
+TECHNICAL DIRECTION
+Build this version with Laravel, PHP, Blade, Livewire, and Alpine.js. Use controllers and Blade forms for durable navigation, Livewire for focused interactions, Form Requests for validation, Policies and Gates for authorization, and small application actions or services for domain transitions. Use Eloquent with migrations, database constraints, and transactions; Laravel Storage for private S3-compatible files; queued Jobs for retryable work; the Scheduler for recurring work; and Notifications or Mail for email.
+
+Keep domain rules in testable server-side modules instead of route handlers or UI components. Separate persistence, external providers, and background work behind small interfaces without building a framework. Prefer ordinary HTML forms and URLs for durable navigation; use optimistic interaction only when failure can be reconciled clearly.
+
+The product brief currently identifies Astro, Durable Objects, D1 as capability context. Preserve any required native, browser-only, edge, storage, real-time, or background-processing capability through a narrow adapter appropriate to the selected framework. If the core workflow genuinely requires native or browser APIs, keep that runtime as the primary execution surface rather than simulating inaccessible capabilities or inventing an unnecessary web surface.
+
+Integrate with signed identity payload and email and WebSocket updates. For every integration:
+- List required environment variables in an .env.example without real secrets.
+- Add a small adapter with timeouts, normalized errors, and a deterministic local fake or development path.
+- Verify inbound signatures and deduplicate provider events where supported.
+- Keep credentials server-side, encrypt long-lived provider tokens at rest, and redact secrets and sensitive payloads from logs.
+- Define retry, backoff, and idempotency behavior for any side effect that can be repeated.
+
+SECURITY AND PRIVACY
+Verify signed customer identity and separate internal notes from customer-visible messages.
+Validate, normalize, and length-limit all untrusted input on the server. Escape rendered content by default, sanitize any intentionally accepted markup, rate-limit public or abuse-prone actions, and use private object storage plus short-lived authorized URLs for sensitive files. Collect the minimum personal data necessary for the named workflow. Document retention and deletion behavior. Add specific protections for the riskier surfaces in this app, such as uploads, redirects, outbound requests, email delivery, OAuth, webhooks, CSV import or export, and real-time connections.
+
+ACCEPTANCE SCENARIOS
+Automate these app-specific scenarios at the most appropriate level:
+1. Given an expired or altered signed identity payload, the widget exposes no customer history and blocks conversation creation with a recoverable authentication message.
+2. Given two agents replying from the same conversation version, the second sees the newer activity and must confirm or edit instead of silently sending a stale duplicate response.
+3. Given an agent adds an internal note, teammates see it immediately while the customer widget and all customer notification emails omit it completely.
+
+TESTING
+Add focused unit tests for state transitions, authorization predicates, normalization, date or money calculations, and other risky domain rules. Add integration tests for persistence constraints and each external adapter’s success, timeout, retry, and rejection paths. Add at least one browser-level test for every end-to-end journey above, including one small-screen viewport. Tests must use isolated data and run through a documented single command.
+
+OPERATIONS AND FAILURE RECOVERY
+Add structured server logs with request, job, or event correlation IDs but no secrets or unnecessarily sensitive data. Make failures actionable in both the interface and logs. Background work must expose pending, succeeded, failed, and retrying states where relevant; do not silently swallow errors. Include safe database migration and rollback guidance, seed data, backup and restore notes, external-data cleanup behavior, and a basic health or diagnostic path appropriate to the stack.
+
+DELIVERABLES
+Ship the working application, migrations, representative seed data, tests, .env.example, and a concise README. The README must cover prerequisites, local setup, environment variables, migrations, seed and test commands, deployment, integration setup, backup and restore, security decisions, and known limitations. Seed data should exercise the happy path plus at least one empty, failed, overdue, expired, archived, or permission-restricted state relevant to the product.
+
+DEFINITION OF DONE
+The app is complete when a fresh developer can follow the README, create and migrate the database, run the app, sign in as each relevant role, complete every named journey using real persisted data, refresh without losing state, recover from common failures, and use the core interface on phone and desktop. All acceptance scenarios pass, permission boundaries are covered by tests, and no core screen is left as a placeholder.
+
+NON-GOALS
+Do not build product tours, outbound marketing, AI agents, a CRM, or omnichannel social support.</pre></div><div class="prompt-box" id="prompt-panel-rails" role="tabpanel" aria-labelledby="prompt-tab-rails" tabindex="0" hidden><pre>You are building a production-ready software product named “Knockknock”, a deliberately focused alternative to Intercom. Build a complete, usable vertical slice—not a landing page, static mockup, or disconnected collection of components.
+
+WORKING AGREEMENT
+Before writing implementation code, produce a short technical plan that names the routes or pages, server actions or endpoints, data tables, important state transitions, authorization boundaries, background jobs, and external adapters. Resolve contradictions in favor of the narrow audience and non-goals below. Prefer a small, legible architecture over speculative abstraction, but do not omit persistence, validation, error handling, or tests.
+
+PRODUCT BRIEF
+Primary user: a small SaaS team supporting authenticated customers.
+Primary outcome: let customers ask for help in-app and let the team handle conversations together.
+Product principle: optimize the exact workflow below instead of copying the full breadth of Intercom. A first-time user should understand what to do from the interface itself, without a tour or documentation.
+
+END-TO-END USER JOURNEYS
+Implement all of these flows through the real interface and persistent data layer:
+1. An authenticated customer opens the embedded help button, passes verified app context, starts a conversation, sends a message, and receives an immediate confirmation in the bubble.
+2. An agent opens the shared inbox, claims the conversation, reviews signed customer context, adds a private note, inserts a saved reply, and sends a customer-visible response.
+3. The customer returns to the widget after an email notification, reads the response, replies, and the conversation moves from waiting or closed back to the correct active queue.
+
+SCREENS AND INFORMATION ARCHITECTURE
+Build these as coherent responsive views. Each screen must specify its primary action, secondary actions, visible status, validation feedback, empty state, loading or pending state, success confirmation, and recoverable failure state.
+1. Customer widget: launcher, conversation list, new-conversation form, message thread, sending and retry states, unread count, and clear identity-error state.
+2. Shared inbox: open, waiting, and closed queues, unassigned and mine filters, assignee and tag controls, unread markers, search, and live collision presence.
+3. Conversation workspace: customer-visible thread, reply or internal-note composer, attachments, saved replies, assignment, tags, state changes, and signed customer context panel.
+4. Support settings: widget origin and signing-secret guidance, teammate access, saved-reply management, email sender status, tags, and webhook or delivery diagnostics.
+
+CORE CAPABILITIES
+1. embeddable help button with new-conversation form
+2. shared inbox with open, waiting, and closed states
+3. assignment, internal notes, tags, and collision indicator
+4. customer context panel populated by signed app data
+5. saved replies and customer email notifications
+
+DETAILED BEHAVIOR AND BUSINESS RULES
+Treat these as server-enforced product requirements, not interface suggestions:
+1. Verify the customer identity signature, timestamp, audience, and allowed origin server-side before reading or creating conversations; never trust browser-supplied customer fields alone.
+2. Store internal notes as a distinct message type that cannot enter widget payloads, notification emails, exports intended for customers, or saved-reply output.
+3. Serialize conversation sequence numbers and state transitions, use optimistic versions for agent actions, and show presence as advisory rather than as authorization.
+4. Give each outbound notification and client-submitted message an idempotency key; sanitize rendered content and keep attachment access behind short-lived authorized URLs.
+
+DATA MODEL AND LIFECYCLE
+Design a small relational schema centered on Customer, Conversation, Message, Assignment, SavedReply. Before implementing it, document:
+1. Each table’s purpose, primary key, ownership or tenant boundary, timestamps, status fields, and important attributes.
+2. Foreign keys, uniqueness constraints, check constraints, indexes needed by the named screens, and transaction boundaries for multi-record changes.
+3. The allowed lifecycle or state transitions, who may trigger each transition, which transitions are terminal or reversible, and what audit history must remain immutable.
+4. Archive, retention, and deletion behavior, including what happens to dependent records and external files.
+5. Idempotency strategy for submissions, jobs, imports, notifications, webhooks, or retries where applicable.
+Use migrations rather than ad-hoc schema creation. Store time instants consistently and retain named timezone context whenever local schedules or dates matter. Never rely on a counter, disabled button, or client-side check to preserve a business invariant.
+
+USERS, AUTHENTICATION, AND PERMISSIONS
+Implement only the roles required by the stated audience. Make the ownership and visibility model explicit before coding. Enforce authorization in every server-side query and mutation, including search, exports, attachments, live updates, and guessed URLs—not merely by hiding controls. Use secure session defaults, protect state-changing requests, and provide an understandable signed-out, expired-session, and forbidden state. Seed distinct users when multiple roles are required so permissions can be demonstrated and tested.
+
+INTERACTION AND VISUAL DIRECTION
+The product should feel fast, calm, focused, and credible rather than like a generic admin template. Use a clear visual hierarchy, restrained color, readable typography, generous hit targets, and consistent placement for primary actions. Start with server-rendered HTML and progressively enhance only the interactions that benefit from it. The core workflow must remain understandable if enhancement fails.
+
+Start with server-rendered Rails views and ordinary forms. Use Turbo for navigation, submissions, and server-driven updates, then Stimulus only for small browser-side behavior. Do not turn the product into a client-side SPA, and keep the core workflow usable when enhancement fails.
+
+Design mobile layouts intentionally instead of simply stacking desktop panels. Support keyboard navigation, visible focus, semantic landmarks, explicit labels, useful page titles, reduced-motion preferences, and screen-reader announcements for asynchronous results. Never use color alone to communicate state. Destructive actions require clear scope and confirmation; safe repeated actions should be idempotent.
+
+TECHNICAL DIRECTION
+Build this version with Ruby on Rails and Hotwire: Turbo for navigation, form submissions, and server-driven updates, and Stimulus for small browser-side behavior. Use RESTful controllers with strong parameters and explicit authorization, with domain transitions in testable models or small application services. Use Active Record migrations plus database-level constraints and transactions; Active Storage with an S3-compatible service for private files; Active Job with a durable queue backend for retryable work; Action Mailer for email; and Action Cable only when live updates are required.
+
+Keep domain rules in testable server-side modules instead of route handlers or UI components. Separate persistence, external providers, and background work behind small interfaces without building a framework. Prefer ordinary HTML forms and URLs for durable navigation; use optimistic interaction only when failure can be reconciled clearly.
+
+The product brief currently identifies Astro, Durable Objects, D1 as capability context. Preserve any required native, browser-only, edge, storage, real-time, or background-processing capability through a narrow adapter appropriate to the selected framework. If the core workflow genuinely requires native or browser APIs, keep that runtime as the primary execution surface rather than simulating inaccessible capabilities or inventing an unnecessary web surface.
+
+Integrate with signed identity payload and email and WebSocket updates. For every integration:
+- List required environment variables in an .env.example without real secrets.
+- Add a small adapter with timeouts, normalized errors, and a deterministic local fake or development path.
+- Verify inbound signatures and deduplicate provider events where supported.
+- Keep credentials server-side, encrypt long-lived provider tokens at rest, and redact secrets and sensitive payloads from logs.
+- Define retry, backoff, and idempotency behavior for any side effect that can be repeated.
+
+SECURITY AND PRIVACY
+Verify signed customer identity and separate internal notes from customer-visible messages.
+Validate, normalize, and length-limit all untrusted input on the server. Escape rendered content by default, sanitize any intentionally accepted markup, rate-limit public or abuse-prone actions, and use private object storage plus short-lived authorized URLs for sensitive files. Collect the minimum personal data necessary for the named workflow. Document retention and deletion behavior. Add specific protections for the riskier surfaces in this app, such as uploads, redirects, outbound requests, email delivery, OAuth, webhooks, CSV import or export, and real-time connections.
+
+ACCEPTANCE SCENARIOS
+Automate these app-specific scenarios at the most appropriate level:
+1. Given an expired or altered signed identity payload, the widget exposes no customer history and blocks conversation creation with a recoverable authentication message.
+2. Given two agents replying from the same conversation version, the second sees the newer activity and must confirm or edit instead of silently sending a stale duplicate response.
+3. Given an agent adds an internal note, teammates see it immediately while the customer widget and all customer notification emails omit it completely.
+
+TESTING
+Add focused unit tests for state transitions, authorization predicates, normalization, date or money calculations, and other risky domain rules. Add integration tests for persistence constraints and each external adapter’s success, timeout, retry, and rejection paths. Add at least one browser-level test for every end-to-end journey above, including one small-screen viewport. Tests must use isolated data and run through a documented single command.
+
+OPERATIONS AND FAILURE RECOVERY
+Add structured server logs with request, job, or event correlation IDs but no secrets or unnecessarily sensitive data. Make failures actionable in both the interface and logs. Background work must expose pending, succeeded, failed, and retrying states where relevant; do not silently swallow errors. Include safe database migration and rollback guidance, seed data, backup and restore notes, external-data cleanup behavior, and a basic health or diagnostic path appropriate to the stack.
+
+DELIVERABLES
+Ship the working application, migrations, representative seed data, tests, .env.example, and a concise README. The README must cover prerequisites, local setup, environment variables, migrations, seed and test commands, deployment, integration setup, backup and restore, security decisions, and known limitations. Seed data should exercise the happy path plus at least one empty, failed, overdue, expired, archived, or permission-restricted state relevant to the product.
+
+DEFINITION OF DONE
+The app is complete when a fresh developer can follow the README, create and migrate the database, run the app, sign in as each relevant role, complete every named journey using real persisted data, refresh without losing state, recover from common failures, and use the core interface on phone and desktop. All acceptance scenarios pass, permission boundaries are covered by tests, and no core screen is left as a placeholder.
+
+NON-GOALS
+Do not build product tours, outbound marketing, AI agents, a CRM, or omnichannel social support.</pre></div><div class="prompt-actions"><button class="button primary" type="button" id="copy-prompt">Copy AHA prompt</button></div></section><section class="section" aria-labelledby="mini-heading"><h2 id="mini-heading">Build just one piece</h2><p>Not ready to replace all of Intercom? Fine. These are the peculiar sub-problems hiding inside it — the parts that are actually interesting to build. Each one is a standalone prompt, scoped to an evening, no strings attached to the full build.</p><details class="mini"><summary><strong>The widget that demands ID at the door</strong><span>HMAC-signed identity with timestamp, audience, and origin checks — or no history for you.</span></summary><pre>Build server-side identity verification for an embeddable support widget on a SaaS app.
+
+The host app signs a payload (customer id, email, name, issued-at timestamp) with a shared secret using HMAC. Your server verifies four things before any conversation data flows: the signature matches, the timestamp is fresh (reject anything older than a few minutes to kill replay), the audience claim matches this workspace, and the request origin is on the workspace&#39;s allowlist. Fail any check and the widget gets a recoverable authentication-error state — a &quot;reload to try again&quot; message — never a degraded mode that shows history anyway.
+
+Never trust browser-supplied fields on their own: the customer id used for reads and writes comes from the verified payload, not from a query parameter the customer can edit in devtools. An expired or altered payload must expose zero conversation history and block conversation creation.
+
+Provide clear integration errors for the host developer: wrong secret, stale clock, and missing fields each get a distinct, loggable reason.
+
+Done when: a payload altered by one character exposes nothing, an old payload replayed from a HAR file is rejected, and legitimate customers authenticate invisibly.</pre><button class="mini-copy" type="button">Copy this prompt</button></details><details class="mini"><summary><strong>Internal notes that physically can’t leak</strong><span>A message type the customer-facing serializers don’t even know exists.</span></summary><pre>Build internal notes for a shared support inbox with one property above all: no code path can show a note to a customer.
+
+Model notes as a distinct message type, not a flag on regular messages — a boolean is one forgotten WHERE clause away from disaster. Then enforce exclusion at every boundary where messages leave the building: the widget API serializes from an allowlist of customer-visible types, so notes are structurally absent rather than filtered out; notification emails render from the same allowlist; customer-facing exports likewise. A new message type defaults to invisible until explicitly allowlisted.
+
+In the agent UI, make the distinction unmistakable: different composer mode, different background color, and an explicit switch between reply and note — with a confirmation if an agent flips modes while text is already typed, because drafting a snarky note and sending it as a reply is the classic career-limiting move.
+
+Write the test that matters: create a note, then assert byte-level absence from widget payloads, emails, and exports.
+
+Done when: notes appear instantly to teammates, the exclusion test passes at every boundary, and mode-switching with drafted text requires confirmation.</pre><button class="mini-copy" type="button">Copy this prompt</button></details><details class="mini"><summary><strong>Two agents, one conversation, zero clobbering</strong><span>Optimistic versions make the second reply confirm instead of duplicate.</span></summary><pre>Build collision handling for a shared inbox where two agents routinely open the same conversation.
+
+Give each conversation a version number that increments on every meaningful event: new message, reply, assignment, state change. When an agent loads the conversation, they hold a version. When they act — send a reply, close, reassign — the request carries that version. If it no longer matches, reject the action and show what changed: &quot;Maria replied 20 seconds ago&quot; with the new content inline, and a choice to send anyway, edit first, or discard. The second agent must never silently send a stale duplicate answer to a customer who was already helped.
+
+Layer advisory presence on top: show who else has the conversation open and who is typing, updated live. Presence is a warning light, not a lock — never block an agent from acting because a teammate left a tab open and went to lunch. The version check is the real safety; presence just makes collisions rare.
+
+Done when: concurrent replies force the second agent through an explicit confirm-with-context step, presence indicators appear within seconds, and an abandoned tab blocks nobody.</pre><button class="mini-copy" type="button">Copy this prompt</button></details><details class="mini"><summary><strong>Messages that arrive once, in order</strong><span>Server-issued sequence numbers plus client idempotency keys for flaky connections.</span></summary><pre>Build the message delivery layer between a support widget and a shared inbox, assuming the customer is on hotel wifi.
+
+Ordering: the server assigns each message a per-conversation sequence number at write time, serialized so two simultaneous messages get distinct consecutive numbers. Clients render strictly by sequence, not by arrival — real-time delivery can arrive out of order, and the transcript both sides see must match.
+
+Idempotency: the widget generates a unique key per composed message before first send. Retries after a timeout reuse the key; the server treats a duplicate key as &quot;already have it&quot; and returns the existing message with its sequence number. This is what makes the send button safe to show as retrying — the classic timeout-after-write cannot produce a doubled message.
+
+In the widget, show explicit sending, failed, and retry states, and reconcile optimistic local echoes with the authoritative sequence when confirmation lands. Compute unread counts from the highest sequence each side has acknowledged.
+
+Done when: a send retried three times lands once, two simultaneous messages never share a sequence, and both sides render identical transcript order.</pre><button class="mini-copy" type="button">Copy this prompt</button></details></section><section class="section" aria-labelledby="faq-heading"><h2 id="faq-heading">Frequently asked questions</h2><details class="faq"><summary>How long does it take to build your own Intercom?</summary><p>A basic version — in-app help button, shared inbox, replies — takes about 4 days. Roughly 2 weeks+ gets you a solid v1 with assignment, notes, tags, customer context, email notifications. Matching everything Intercom really does (ai agents, product tours, omnichannel, marketing platform) is closer to 3 months+, which is exactly why you should scope down instead.</p></details><details class="faq"><summary>How much does Intercom cost if I keep subscribing?</summary><p>Intercom runs $74–$139 per person per month on public paid plans, which is $888–$1668 per year for every person on your team. A focused self-built replacement costs your build time plus close-to-zero hosting.</p></details><details class="faq"><summary>What stack should I use to build a Intercom alternative?</summary><p>The build prompt on this page ships in four flavors: the AHA stack (Astro, HTMX, Alpine.js), Next.js, Laravel, and Ruby on Rails. The capability context for this product is Astro, Durable Objects, D1. Pick the stack you already know — the scope matters more than the framework.</p></details><details class="faq"><summary>What features does a minimal Intercom replacement need?</summary><p>A useful v1 needs: embeddable help button with new-conversation form; shared inbox with open, waiting, and closed states; assignment, internal notes, tags, and collision indicator; customer context panel populated by signed app data; saved replies and customer email notifications. Everything else is scope creep until you personally miss it.</p></details><details class="faq"><summary>What should I deliberately not build?</summary><p>Do not build product tours, outbound marketing, AI agents, a CRM, or omnichannel social support.</p></details><details class="faq"><summary>Does this build also replace Crisp, LiveChat and Drift?</summary><p>Yes. Intercom, Crisp, LiveChat and Drift all solve the same core job — let customers ask for help in-app and let the team handle conversations together. The scoped v1 on this page covers what most people use any of them for, so one focused build replaces whichever you currently pay for.</p></details></section><section class="section" aria-labelledby="related-heading"><h2 id="related-heading">More support subscriptions to replace</h2><ul class="related-list"><li><a href="/build-your-own-help-scout/">Build your own Help Scout</a><span>$25–$75/mo · from 3 days</span></li><li><a href="/build-your-own-chatbase/">Build your own Chatbase</a><span>$40–$150/mo · from 2 days</span></li><li><a href="/build-your-own-readme/">Build your own ReadMe</a><span>$250–$250/mo · from 3 days</span></li><li><a href="/build-your-own-helpdocs/">Build your own HelpDocs</a><span>$99–$399/mo · from 10 hours</span></li></ul><p class="related-home"><a href="/#audit">Browse all 109 buildable subscriptions →</a></p></section></main><footer><a class="logo footer-logo" href="/"><span class="logo-mark">EZ</span><span>ezvibecode</span></a><p><a href="/blog/">Blog</a></p><p><a href="/guides/">Guides</a></p><p><a href="/changelog/">Changelog</a></p><p>A tiny idea about tiny software.</p><p>Built with vibes, obviously.</p></footer><div class="toast" id="toast" role="status" aria-live="polite">Prompt copied. Go ship it.</div><script type="module">var e=Array.from(document.querySelectorAll(`.prompt-tab`)),t=Array.from(document.querySelectorAll(`.prompt-box`)),n=document.querySelector(`#copy-prompt`),r=r=>{e.forEach(e=>{let t=e.dataset.framework===r;e.setAttribute(`aria-selected`,String(t)),e.tabIndex=t?0:-1}),t.forEach(e=>{e.hidden=e.id!==`prompt-panel-${r}`}),n.textContent=`Copy ${e.find(e=>e.dataset.framework===r)?.textContent||`prompt`} prompt`};e.forEach((t,n)=>{t.addEventListener(`click`,()=>r(t.dataset.framework)),t.addEventListener(`keydown`,t=>{let i;t.key===`ArrowRight`&&(i=(n+1)%e.length),t.key===`ArrowLeft`&&(i=(n-1+e.length)%e.length),t.key===`Home`&&(i=0),t.key===`End`&&(i=e.length-1),i!==void 0&&(t.preventDefault(),r(e[i].dataset.framework),e[i].focus())})}),n?.addEventListener(`click`,async()=>{let e=t.find(e=>!e.hidden);await navigator.clipboard.writeText(e?.querySelector(`pre`)?.textContent||``);let n=document.querySelector(`#toast`);n.classList.add(`show`),setTimeout(()=>n.classList.remove(`show`),2200)}),document.querySelectorAll(`.mini-copy`).forEach(e=>{e.addEventListener(`click`,async()=>{let t=e.closest(`.mini`)?.querySelector(`pre`)?.textContent||``;await navigator.clipboard.writeText(t);let n=document.querySelector(`#toast`);n.classList.add(`show`),setTimeout(()=>n.classList.remove(`show`),2200)})});var i=document.querySelector(`#theme-toggle`);localStorage.getItem(`vibe-theme`)===`dark`&&(document.documentElement.dataset.theme=`dark`),i?.addEventListener(`click`,()=>{let e=document.documentElement.dataset.theme!==`dark`;document.documentElement.dataset.theme=e?`dark`:`light`,localStorage.setItem(`vibe-theme`,e?`dark`:`light`)});</script><script type="module" src="https://static.cloudflareinsights.com/beacon.min.js/vce701823e78c4301a35b7e07294d87301792088814092" integrity="sha512-UKNk8GbxkABxKcXYuLkO16EleLGUkcvJWtpSNmExE0Too3ZaFAxTscNWEc1OdAv5/BikHawapSCaiD2XCmp+Bw==" data-cf-beacon='{"version":"2024.11.0","token":"228ace6b78e04bb494384851ece32c99","r":1,"spa":2}' crossorigin="anonymous"></script>
+</body></html>

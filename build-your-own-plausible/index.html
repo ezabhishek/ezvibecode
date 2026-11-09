@@ -1,0 +1,404 @@
+<!DOCTYPE html><html lang="en"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width"><title>How to Vibe Code Your Own Plausible Alternative</title><meta name="description" content="Learn how to build your own with ezvibecode Plausible alternative with copyable AI prompts, a scoped feature list, and realistic build estimates starting at 8 hours. The same build also replaces Fathom Analytics, Simple Analytics, Umami and Matomo."><link rel="canonical" href="https://ezvibecode.com/build-your-own-plausible/"><meta name="theme-color" content="#f4f1e8"><link rel="icon" href="/favicon.ico" sizes="32x32"><link rel="icon" href="/favicon.png" type="image/png" sizes="512x512"><link rel="apple-touch-icon" href="/apple-touch-icon.png" sizes="180x180"><meta property="og:type" content="article"><meta property="og:site_name" content="ezvibecode"><meta property="og:title" content="How to Vibe Code Your Own Plausible Alternative"><meta property="og:description" content="Learn how to build your own with ezvibecode Plausible alternative with copyable AI prompts, a scoped feature list, and realistic build estimates starting at 8 hours. The same build also replaces Fathom Analytics, Simple Analytics, Umami and Matomo."><meta property="og:url" content="https://ezvibecode.com/build-your-own-plausible/"><meta property="og:image" content="https://ezvibecode.com/og/build-your-own-plausible.png"><meta property="og:image:type" content="image/png"><meta property="og:image:width" content="1200"><meta property="og:image:height" content="630"><meta property="og:image:alt" content="How to Vibe Code Your Own Plausible Alternative"><meta name="twitter:card" content="summary_large_image"><meta name="twitter:title" content="How to Vibe Code Your Own Plausible Alternative"><meta name="twitter:description" content="Learn how to build your own with ezvibecode Plausible alternative with copyable AI prompts, a scoped feature list, and realistic build estimates starting at 8 hours. The same build also replaces Fathom Analytics, Simple Analytics, Umami and Matomo."><meta name="twitter:image" content="https://ezvibecode.com/og/build-your-own-plausible.png"><meta name="twitter:image:alt" content="How to Vibe Code Your Own Plausible Alternative"><script type="application/ld+json">{"@context":"https://schema.org","@type":"FAQPage","mainEntity":[{"@type":"Question","name":"How long does it take to build your own Plausible?","acceptedAnswer":{"@type":"Answer","text":"A basic version — pageview script, visitor counts, top pages — takes about 8 hours. Roughly 3 days gets you a solid v1 with goals, referrers, geo, device breakdown, csv export. Matching everything Plausible really does (billions-of-events ingestion, funnels, imports, saas hardening) is closer to 1 month+, which is exactly why you should scope down instead."}},{"@type":"Question","name":"How much does Plausible cost if I keep subscribing?","acceptedAnswer":{"@type":"Answer","text":"Plausible runs $9–$19 per month on public paid plans, which is $108–$228 per year. A focused self-built replacement costs your build time plus close-to-zero hosting."}},{"@type":"Question","name":"What stack should I use to build a Plausible alternative?","acceptedAnswer":{"@type":"Answer","text":"The build prompt on this page ships in four flavors: the AHA stack (Astro, HTMX, Alpine.js), Next.js, Laravel, and Ruby on Rails. The capability context for this product is Workers, Analytics Engine, Astro. Pick the stack you already know — the scope matters more than the framework."}},{"@type":"Question","name":"What features does a minimal Plausible replacement need?","acceptedAnswer":{"@type":"Answer","text":"A useful v1 needs: tiny pageview and custom-event script; dashboard for visitors, views, bounce proxy, and visit duration; top pages, referrers, countries, and device classes; goal definitions with conversion rate; date comparison and CSV export. Everything else is scope creep until you personally miss it."}},{"@type":"Question","name":"What should I deliberately not build?","acceptedAnswer":{"@type":"Answer","text":"Do not build attribution modeling, ad integrations, user journeys, or raw event replay."}},{"@type":"Question","name":"Does this build also replace Fathom Analytics, Simple Analytics, Umami and Matomo?","acceptedAnswer":{"@type":"Answer","text":"Yes. Plausible, Fathom Analytics, Simple Analytics, Umami and Matomo all solve the same core job — show trustworthy aggregate traffic and conversion trends with no visitor profiles. The scoped v1 on this page covers what most people use any of them for, so one focused build replaces whichever you currently pay for."}}]}</script><script type="application/ld+json">{"@context":"https://schema.org","@type":"BreadcrumbList","itemListElement":[{"@type":"ListItem","position":1,"name":"ezvibecode","item":"https://ezvibecode.com/"},{"@type":"ListItem","position":2,"name":"Build your own Plausible","item":"https://ezvibecode.com/build-your-own-plausible/"}]}</script><script type="application/ld+json">{"@context":"https://schema.org","@type":"TechArticle","headline":"How to Vibe Code Your Own Plausible Alternative","description":"Learn how to build your own with ezvibecode Plausible alternative with copyable AI prompts, a scoped feature list, and realistic build estimates starting at 8 hours. The same build also replaces Fathom Analytics, Simple Analytics, Umami and Matomo.","url":"https://ezvibecode.com/build-your-own-plausible/","image":"https://ezvibecode.com/og/build-your-own-plausible.png","author":{"@type":"Organization","name":"ezvibecode","url":"https://ezvibecode.com/"}}</script><link rel="stylesheet" href="/_astro/build-your-own-_slug_.0qOs6ThE.css"></head><body><header class="site-header"><a class="logo" href="/" aria-label="ezvibecode home"><span class="logo-mark">EZ</span><span>ezvibecode</span></a><nav class="header-links" aria-label="Site"><a class="header-link" href="/blog/">Blog</a><a class="header-link" href="/guides/">Guides</a><a class="header-link" href="/#audit">All 109 apps</a></nav><button class="icon-button" id="theme-toggle" type="button" aria-label="Toggle dark mode" title="Toggle dark mode">◐</button></header><main><nav class="breadcrumb" aria-label="Breadcrumb"><a href="/">Home</a><span aria-hidden="true">/</span><span aria-current="page">Build your own Plausible</span></nav><section class="hero"><p class="eyebrow">Marketing · Weekend build</p><h1>How to Vibe Code Your Own <em>Plausible Alternative</em></h1><p class="lede">The five website numbers you look at, minus twelve menus. Plausible charges $9–$19 per month — that’s $108–$228 a year — for something you can replace with focused software of your own. Here is the honest scope, the honest timeline, and the exact prompt to hand your coding agent.</p><div class="hero-meta"><span class="effort weekend">from 8 hours</span><span class="verdict">Lovely focused build</span></div></section><section class="section" aria-labelledby="who-heading"><h2 id="who-heading">Who this replacement is for</h2><p>This build targets a site owner wanting simple first-party traffic analytics. The goal: show trustworthy aggregate traffic and conversion trends with no visitor profiles. If you need more than that, keep paying — the point of building it yourself is owning a tool shaped exactly like your workflow, not re-implementing a venture-funded roadmap.</p><p class="also-replaces">Same build, different logo: this v1 also replaces <strong>Fathom Analytics, Simple Analytics, Umami and Matomo</strong> — they all solve the same core job.</p></section><section class="section" aria-labelledby="time-heading"><h2 id="time-heading">How long it actually takes</h2><p>One number would be a lie, so here are three. Each tier is a real, usable product — pick the one that matches how much of Plausible you actually use.</p><table class="estimate-table"><thead><tr><th scope="col">Estimate</th><th scope="col">What you get</th></tr></thead><tbody><tr><th scope="row">8 hours</th><td>pageview script, visitor counts, top pages</td></tr><tr><th scope="row">3 days</th><td>goals, referrers, geo, device breakdown, csv export</td></tr><tr><th scope="row">1 month+</th><td>billions-of-events ingestion, funnels, imports, saas hardening — the part you should probably skip</td></tr></tbody></table></section><section class="section" aria-labelledby="features-heading"><h2 id="features-heading">What a minimal Plausible alternative needs</h2><ul class="feature-list"><li>tiny pageview and custom-event script</li><li>dashboard for visitors, views, bounce proxy, and visit duration</li><li>top pages, referrers, countries, and device classes</li><li>goal definitions with conversion rate</li><li>date comparison and CSV export</li></ul><div class="fact-grid"><div class="fact"><h3>Data model</h3><p>Site, PageView, CustomEvent, Goal</p></div><div class="fact"><h3>Integrations</h3><p>first-party script endpoint, GeoIP country lookup</p></div><div class="fact"><h3>Capability context</h3><p>Workers, Analytics Engine, Astro</p></div></div><div class="callout guardrail"><h3>The guardrail</h3><p>Do not set tracking cookies or store full IP addresses, user agents, or persistent identifiers.</p></div><div class="callout nongoal"><h3>Deliberate non-goals</h3><p>Do not build attribution modeling, ad integrations, user journeys, or raw event replay.</p></div></section><section class="section" aria-labelledby="prompt-heading"><h2 id="prompt-heading">The complete build prompt</h2><p>Copy this into your coding agent of choice. It is scoped for a useful v1 — journeys, screens, business rules, data model, security, tests, and acceptance scenarios included. Pick your stack:</p><div class="prompt-tabs" role="tablist" aria-label="Choose your stack"><button class="prompt-tab" id="prompt-tab-aha" type="button" role="tab" aria-selected="true" aria-controls="prompt-panel-aha" tabindex="0" data-framework="aha">AHA</button><button class="prompt-tab" id="prompt-tab-nextjs" type="button" role="tab" aria-selected="false" aria-controls="prompt-panel-nextjs" tabindex="-1" data-framework="nextjs">Next.js</button><button class="prompt-tab" id="prompt-tab-laravel" type="button" role="tab" aria-selected="false" aria-controls="prompt-panel-laravel" tabindex="-1" data-framework="laravel">Laravel</button><button class="prompt-tab" id="prompt-tab-rails" type="button" role="tab" aria-selected="false" aria-controls="prompt-panel-rails" tabindex="-1" data-framework="rails">Ruby on Rails</button></div><div class="prompt-box" id="prompt-panel-aha" role="tabpanel" aria-labelledby="prompt-tab-aha" tabindex="0"><pre>You are building a production-ready software product named “Plainstats”, a deliberately focused alternative to Plausible. Build a complete, usable vertical slice—not a landing page, static mockup, or disconnected collection of components.
+
+WORKING AGREEMENT
+Before writing implementation code, produce a short technical plan that names the routes or pages, server actions or endpoints, data tables, important state transitions, authorization boundaries, background jobs, and external adapters. Resolve contradictions in favor of the narrow audience and non-goals below. Prefer a small, legible architecture over speculative abstraction, but do not omit persistence, validation, error handling, or tests.
+
+PRODUCT BRIEF
+Primary user: a site owner wanting simple first-party traffic analytics.
+Primary outcome: show trustworthy aggregate traffic and conversion trends with no visitor profiles.
+Product principle: optimize the exact workflow below instead of copying the full breadth of Plausible. A first-time user should understand what to do from the interface itself, without a tour or documentation.
+
+END-TO-END USER JOURNEYS
+Implement all of these flows through the real interface and persistent data layer:
+1. The owner adds a site, copies the first-party tracking snippet, restricts accepted origins, visits the site, and confirms the first pageview in installation diagnostics.
+2. A visitor navigates several pages and completes a named custom event; edge collection updates aggregate visit, duration, page, referrer, country, device, and goal metrics without cookies.
+3. The owner compares this month with the previous period, drills from a traffic change into pages and referrers, inspects goal conversion rates, and exports the filtered aggregates.
+
+SCREENS AND INFORMATION ARCHITECTURE
+Build these as coherent responsive views. Each screen must specify its primary action, secondary actions, visible status, validation feedback, empty state, loading or pending state, success confirmation, and recoverable failure state.
+1. Sites and setup: site list, live or waiting state, snippet, allowed domains, timezone, installation test, and recent rejected-event diagnostics.
+2. Overview dashboard: visitors, views, bounce proxy, visit duration, comparison deltas, daily trend, realtime indicator, and metric definitions.
+3. Breakdowns: top pages, entry pages, referrer domains, countries, browsers, operating systems, and device classes with cross-filtering and pagination.
+4. Goals and export: page or custom-event goal definitions, conversions and rates over time, goal breakdowns, date comparison, and aggregate CSV download.
+
+CORE CAPABILITIES
+1. tiny pageview and custom-event script
+2. dashboard for visitors, views, bounce proxy, and visit duration
+3. top pages, referrers, countries, and device classes
+4. goal definitions with conversion rate
+5. date comparison and CSV export
+
+DETAILED BEHAVIOR AND BUSINESS RULES
+Treat these as server-enforced product requirements, not interface suggestions:
+1. Set no tracking cookies and persist no full IP address, raw user agent, or cross-day visitor identifier; derive any daily uniqueness key transiently with a rotating secret.
+2. Accept events only for configured origins and site identifiers, normalize paths without sensitive query values, validate custom-event names, and rate-limit abusive clients.
+3. Define visitors, bounce proxy, duration, and conversion rate once in code and apply the same timezone-aware formulas to cards, charts, comparisons, and exports.
+4. Aggregate accepted events asynchronously with idempotent event identifiers so retries do not inflate counts, while late events update the correct site-local day.
+
+DATA MODEL AND LIFECYCLE
+Design a small relational schema centered on Site, PageView, CustomEvent, Goal. Before implementing it, document:
+1. Each table’s purpose, primary key, ownership or tenant boundary, timestamps, status fields, and important attributes.
+2. Foreign keys, uniqueness constraints, check constraints, indexes needed by the named screens, and transaction boundaries for multi-record changes.
+3. The allowed lifecycle or state transitions, who may trigger each transition, which transitions are terminal or reversible, and what audit history must remain immutable.
+4. Archive, retention, and deletion behavior, including what happens to dependent records and external files.
+5. Idempotency strategy for submissions, jobs, imports, notifications, webhooks, or retries where applicable.
+Use migrations rather than ad-hoc schema creation. Store time instants consistently and retain named timezone context whenever local schedules or dates matter. Never rely on a counter, disabled button, or client-side check to preserve a business invariant.
+
+USERS, AUTHENTICATION, AND PERMISSIONS
+Implement only the roles required by the stated audience. Make the ownership and visibility model explicit before coding. Enforce authorization in every server-side query and mutation, including search, exports, attachments, live updates, and guessed URLs—not merely by hiding controls. Use secure session defaults, protect state-changing requests, and provide an understandable signed-out, expired-session, and forbidden state. Seed distinct users when multiple roles are required so permissions can be demonstrated and tested.
+
+INTERACTION AND VISUAL DIRECTION
+The product should feel fast, calm, focused, and credible rather than like a generic admin template. Use a clear visual hierarchy, restrained color, readable typography, generous hit targets, and consistent placement for primary actions. Start with server-rendered HTML and progressively enhance only the interactions that benefit from it. The core workflow must remain understandable if enhancement fails.
+
+Start with server-rendered Astro pages and ordinary HTML forms. Use HTMX for form submissions, partial navigation, and server-driven updates, then Alpine.js only for small local browser state. The core workflow must remain understandable if either enhancement layer fails.
+
+Design mobile layouts intentionally instead of simply stacking desktop panels. Support keyboard navigation, visible focus, semantic landmarks, explicit labels, useful page titles, reduced-motion preferences, and screen-reader announcements for asynchronous results. Never use color alone to communicate state. Destructive actions require clear scope and confirmation; safe repeated actions should be idempotent.
+
+TECHNICAL DIRECTION
+Build this version with the AHA stack: Astro for routing, layouts, and server-rendered pages; HTMX for interactions that benefit from HTML fragment responses; and Alpine.js for small, local interface state. Prefer Cloudflare D1 for relational persistence, R2 for object storage, Workers for server endpoints and scheduled work, Durable Objects only for coordinated real-time state, and Workflows or Queues for durable background jobs—but only when the product requirements call for them.
+
+Keep domain rules in testable server-side modules instead of route handlers or UI components. Separate persistence, external providers, and background work behind small interfaces without building a framework. Prefer ordinary HTML forms and URLs for durable navigation; use optimistic interaction only when failure can be reconciled clearly.
+
+The product brief currently identifies Workers, Analytics Engine, Astro as capability context. Preserve any required native, browser-only, edge, storage, real-time, or background-processing capability through a narrow adapter appropriate to the selected framework. If the core workflow genuinely requires native or browser APIs, keep that runtime as the primary execution surface rather than simulating inaccessible capabilities or inventing an unnecessary web surface.
+
+Integrate with first-party script endpoint and GeoIP country lookup. For every integration:
+- List required environment variables in an .env.example without real secrets.
+- Add a small adapter with timeouts, normalized errors, and a deterministic local fake or development path.
+- Verify inbound signatures and deduplicate provider events where supported.
+- Keep credentials server-side, encrypt long-lived provider tokens at rest, and redact secrets and sensitive payloads from logs.
+- Define retry, backoff, and idempotency behavior for any side effect that can be repeated.
+
+SECURITY AND PRIVACY
+Do not set tracking cookies or store full IP addresses, user agents, or persistent identifiers.
+Validate, normalize, and length-limit all untrusted input on the server. Escape rendered content by default, sanitize any intentionally accepted markup, rate-limit public or abuse-prone actions, and use private object storage plus short-lived authorized URLs for sensitive files. Collect the minimum personal data necessary for the named workflow. Document retention and deletion behavior. Add specific protections for the riskier surfaces in this app, such as uploads, redirects, outbound requests, email delivery, OAuth, webhooks, CSV import or export, and real-time connections.
+
+ACCEPTANCE SCENARIOS
+Automate these app-specific scenarios at the most appropriate level:
+1. Given one visitor viewing three pages on the same site-local day, the dashboard shows three views and one approximate visitor without storing a reusable visitor profile.
+2. Given a custom event matching an active goal, the event increments that goal once and its conversion rate uses the same filtered visitor denominator as the dashboard.
+3. Given an event from an unapproved origin or with a malformed site identifier, collection is rejected and no analytics aggregate changes.
+
+TESTING
+Add focused unit tests for state transitions, authorization predicates, normalization, date or money calculations, and other risky domain rules. Add integration tests for persistence constraints and each external adapter’s success, timeout, retry, and rejection paths. Add at least one browser-level test for every end-to-end journey above, including one small-screen viewport. Tests must use isolated data and run through a documented single command.
+
+OPERATIONS AND FAILURE RECOVERY
+Add structured server logs with request, job, or event correlation IDs but no secrets or unnecessarily sensitive data. Make failures actionable in both the interface and logs. Background work must expose pending, succeeded, failed, and retrying states where relevant; do not silently swallow errors. Include safe database migration and rollback guidance, seed data, backup and restore notes, external-data cleanup behavior, and a basic health or diagnostic path appropriate to the stack.
+
+DELIVERABLES
+Ship the working application, migrations, representative seed data, tests, .env.example, and a concise README. The README must cover prerequisites, local setup, environment variables, migrations, seed and test commands, deployment, integration setup, backup and restore, security decisions, and known limitations. Seed data should exercise the happy path plus at least one empty, failed, overdue, expired, archived, or permission-restricted state relevant to the product.
+
+DEFINITION OF DONE
+The app is complete when a fresh developer can follow the README, create and migrate the database, run the app, sign in as each relevant role, complete every named journey using real persisted data, refresh without losing state, recover from common failures, and use the core interface on phone and desktop. All acceptance scenarios pass, permission boundaries are covered by tests, and no core screen is left as a placeholder.
+
+NON-GOALS
+Do not build attribution modeling, ad integrations, user journeys, or raw event replay.</pre></div><div class="prompt-box" id="prompt-panel-nextjs" role="tabpanel" aria-labelledby="prompt-tab-nextjs" tabindex="0" hidden><pre>You are building a production-ready software product named “Plainstats”, a deliberately focused alternative to Plausible. Build a complete, usable vertical slice—not a landing page, static mockup, or disconnected collection of components.
+
+WORKING AGREEMENT
+Before writing implementation code, produce a short technical plan that names the routes or pages, server actions or endpoints, data tables, important state transitions, authorization boundaries, background jobs, and external adapters. Resolve contradictions in favor of the narrow audience and non-goals below. Prefer a small, legible architecture over speculative abstraction, but do not omit persistence, validation, error handling, or tests.
+
+PRODUCT BRIEF
+Primary user: a site owner wanting simple first-party traffic analytics.
+Primary outcome: show trustworthy aggregate traffic and conversion trends with no visitor profiles.
+Product principle: optimize the exact workflow below instead of copying the full breadth of Plausible. A first-time user should understand what to do from the interface itself, without a tour or documentation.
+
+END-TO-END USER JOURNEYS
+Implement all of these flows through the real interface and persistent data layer:
+1. The owner adds a site, copies the first-party tracking snippet, restricts accepted origins, visits the site, and confirms the first pageview in installation diagnostics.
+2. A visitor navigates several pages and completes a named custom event; edge collection updates aggregate visit, duration, page, referrer, country, device, and goal metrics without cookies.
+3. The owner compares this month with the previous period, drills from a traffic change into pages and referrers, inspects goal conversion rates, and exports the filtered aggregates.
+
+SCREENS AND INFORMATION ARCHITECTURE
+Build these as coherent responsive views. Each screen must specify its primary action, secondary actions, visible status, validation feedback, empty state, loading or pending state, success confirmation, and recoverable failure state.
+1. Sites and setup: site list, live or waiting state, snippet, allowed domains, timezone, installation test, and recent rejected-event diagnostics.
+2. Overview dashboard: visitors, views, bounce proxy, visit duration, comparison deltas, daily trend, realtime indicator, and metric definitions.
+3. Breakdowns: top pages, entry pages, referrer domains, countries, browsers, operating systems, and device classes with cross-filtering and pagination.
+4. Goals and export: page or custom-event goal definitions, conversions and rates over time, goal breakdowns, date comparison, and aggregate CSV download.
+
+CORE CAPABILITIES
+1. tiny pageview and custom-event script
+2. dashboard for visitors, views, bounce proxy, and visit duration
+3. top pages, referrers, countries, and device classes
+4. goal definitions with conversion rate
+5. date comparison and CSV export
+
+DETAILED BEHAVIOR AND BUSINESS RULES
+Treat these as server-enforced product requirements, not interface suggestions:
+1. Set no tracking cookies and persist no full IP address, raw user agent, or cross-day visitor identifier; derive any daily uniqueness key transiently with a rotating secret.
+2. Accept events only for configured origins and site identifiers, normalize paths without sensitive query values, validate custom-event names, and rate-limit abusive clients.
+3. Define visitors, bounce proxy, duration, and conversion rate once in code and apply the same timezone-aware formulas to cards, charts, comparisons, and exports.
+4. Aggregate accepted events asynchronously with idempotent event identifiers so retries do not inflate counts, while late events update the correct site-local day.
+
+DATA MODEL AND LIFECYCLE
+Design a small relational schema centered on Site, PageView, CustomEvent, Goal. Before implementing it, document:
+1. Each table’s purpose, primary key, ownership or tenant boundary, timestamps, status fields, and important attributes.
+2. Foreign keys, uniqueness constraints, check constraints, indexes needed by the named screens, and transaction boundaries for multi-record changes.
+3. The allowed lifecycle or state transitions, who may trigger each transition, which transitions are terminal or reversible, and what audit history must remain immutable.
+4. Archive, retention, and deletion behavior, including what happens to dependent records and external files.
+5. Idempotency strategy for submissions, jobs, imports, notifications, webhooks, or retries where applicable.
+Use migrations rather than ad-hoc schema creation. Store time instants consistently and retain named timezone context whenever local schedules or dates matter. Never rely on a counter, disabled button, or client-side check to preserve a business invariant.
+
+USERS, AUTHENTICATION, AND PERMISSIONS
+Implement only the roles required by the stated audience. Make the ownership and visibility model explicit before coding. Enforce authorization in every server-side query and mutation, including search, exports, attachments, live updates, and guessed URLs—not merely by hiding controls. Use secure session defaults, protect state-changing requests, and provide an understandable signed-out, expired-session, and forbidden state. Seed distinct users when multiple roles are required so permissions can be demonstrated and tested.
+
+INTERACTION AND VISUAL DIRECTION
+The product should feel fast, calm, focused, and credible rather than like a generic admin template. Use a clear visual hierarchy, restrained color, readable typography, generous hit targets, and consistent placement for primary actions. Start with server-rendered HTML and progressively enhance only the interactions that benefit from it. The core workflow must remain understandable if enhancement fails.
+
+Render with React Server Components by default. Use Server Actions for authenticated form mutations and add Client Components only for interactions that genuinely require browser state, browser APIs, drag-and-drop, or live updates. The core workflow must remain understandable before client-side JavaScript finishes loading.
+
+Design mobile layouts intentionally instead of simply stacking desktop panels. Support keyboard navigation, visible focus, semantic landmarks, explicit labels, useful page titles, reduced-motion preferences, and screen-reader announcements for asynchronous results. Never use color alone to communicate state. Destructive actions require clear scope and confirmation; safe repeated actions should be idempotent.
+
+TECHNICAL DIRECTION
+Build this version with Next.js, the App Router, and TypeScript. Use Server Components by default, Server Actions for authenticated mutations, and Route Handlers for public APIs, OAuth callbacks, webhooks, feeds, uploads, and downloads. Use PostgreSQL through Drizzle ORM with versioned migrations and an isolated test database. Access S3-compatible object storage through a server-only adapter, and run slow or retryable work in a real job or workflow system instead of the request lifecycle.
+
+Keep domain rules in testable server-side modules instead of route handlers or UI components. Separate persistence, external providers, and background work behind small interfaces without building a framework. Prefer ordinary HTML forms and URLs for durable navigation; use optimistic interaction only when failure can be reconciled clearly.
+
+The product brief currently identifies Workers, Analytics Engine, Astro as capability context. Preserve any required native, browser-only, edge, storage, real-time, or background-processing capability through a narrow adapter appropriate to the selected framework. If the core workflow genuinely requires native or browser APIs, keep that runtime as the primary execution surface rather than simulating inaccessible capabilities or inventing an unnecessary web surface.
+
+Integrate with first-party script endpoint and GeoIP country lookup. For every integration:
+- List required environment variables in an .env.example without real secrets.
+- Add a small adapter with timeouts, normalized errors, and a deterministic local fake or development path.
+- Verify inbound signatures and deduplicate provider events where supported.
+- Keep credentials server-side, encrypt long-lived provider tokens at rest, and redact secrets and sensitive payloads from logs.
+- Define retry, backoff, and idempotency behavior for any side effect that can be repeated.
+
+SECURITY AND PRIVACY
+Do not set tracking cookies or store full IP addresses, user agents, or persistent identifiers.
+Validate, normalize, and length-limit all untrusted input on the server. Escape rendered content by default, sanitize any intentionally accepted markup, rate-limit public or abuse-prone actions, and use private object storage plus short-lived authorized URLs for sensitive files. Collect the minimum personal data necessary for the named workflow. Document retention and deletion behavior. Add specific protections for the riskier surfaces in this app, such as uploads, redirects, outbound requests, email delivery, OAuth, webhooks, CSV import or export, and real-time connections.
+
+ACCEPTANCE SCENARIOS
+Automate these app-specific scenarios at the most appropriate level:
+1. Given one visitor viewing three pages on the same site-local day, the dashboard shows three views and one approximate visitor without storing a reusable visitor profile.
+2. Given a custom event matching an active goal, the event increments that goal once and its conversion rate uses the same filtered visitor denominator as the dashboard.
+3. Given an event from an unapproved origin or with a malformed site identifier, collection is rejected and no analytics aggregate changes.
+
+TESTING
+Add focused unit tests for state transitions, authorization predicates, normalization, date or money calculations, and other risky domain rules. Add integration tests for persistence constraints and each external adapter’s success, timeout, retry, and rejection paths. Add at least one browser-level test for every end-to-end journey above, including one small-screen viewport. Tests must use isolated data and run through a documented single command.
+
+OPERATIONS AND FAILURE RECOVERY
+Add structured server logs with request, job, or event correlation IDs but no secrets or unnecessarily sensitive data. Make failures actionable in both the interface and logs. Background work must expose pending, succeeded, failed, and retrying states where relevant; do not silently swallow errors. Include safe database migration and rollback guidance, seed data, backup and restore notes, external-data cleanup behavior, and a basic health or diagnostic path appropriate to the stack.
+
+DELIVERABLES
+Ship the working application, migrations, representative seed data, tests, .env.example, and a concise README. The README must cover prerequisites, local setup, environment variables, migrations, seed and test commands, deployment, integration setup, backup and restore, security decisions, and known limitations. Seed data should exercise the happy path plus at least one empty, failed, overdue, expired, archived, or permission-restricted state relevant to the product.
+
+DEFINITION OF DONE
+The app is complete when a fresh developer can follow the README, create and migrate the database, run the app, sign in as each relevant role, complete every named journey using real persisted data, refresh without losing state, recover from common failures, and use the core interface on phone and desktop. All acceptance scenarios pass, permission boundaries are covered by tests, and no core screen is left as a placeholder.
+
+NON-GOALS
+Do not build attribution modeling, ad integrations, user journeys, or raw event replay.</pre></div><div class="prompt-box" id="prompt-panel-laravel" role="tabpanel" aria-labelledby="prompt-tab-laravel" tabindex="0" hidden><pre>You are building a production-ready software product named “Plainstats”, a deliberately focused alternative to Plausible. Build a complete, usable vertical slice—not a landing page, static mockup, or disconnected collection of components.
+
+WORKING AGREEMENT
+Before writing implementation code, produce a short technical plan that names the routes or pages, server actions or endpoints, data tables, important state transitions, authorization boundaries, background jobs, and external adapters. Resolve contradictions in favor of the narrow audience and non-goals below. Prefer a small, legible architecture over speculative abstraction, but do not omit persistence, validation, error handling, or tests.
+
+PRODUCT BRIEF
+Primary user: a site owner wanting simple first-party traffic analytics.
+Primary outcome: show trustworthy aggregate traffic and conversion trends with no visitor profiles.
+Product principle: optimize the exact workflow below instead of copying the full breadth of Plausible. A first-time user should understand what to do from the interface itself, without a tour or documentation.
+
+END-TO-END USER JOURNEYS
+Implement all of these flows through the real interface and persistent data layer:
+1. The owner adds a site, copies the first-party tracking snippet, restricts accepted origins, visits the site, and confirms the first pageview in installation diagnostics.
+2. A visitor navigates several pages and completes a named custom event; edge collection updates aggregate visit, duration, page, referrer, country, device, and goal metrics without cookies.
+3. The owner compares this month with the previous period, drills from a traffic change into pages and referrers, inspects goal conversion rates, and exports the filtered aggregates.
+
+SCREENS AND INFORMATION ARCHITECTURE
+Build these as coherent responsive views. Each screen must specify its primary action, secondary actions, visible status, validation feedback, empty state, loading or pending state, success confirmation, and recoverable failure state.
+1. Sites and setup: site list, live or waiting state, snippet, allowed domains, timezone, installation test, and recent rejected-event diagnostics.
+2. Overview dashboard: visitors, views, bounce proxy, visit duration, comparison deltas, daily trend, realtime indicator, and metric definitions.
+3. Breakdowns: top pages, entry pages, referrer domains, countries, browsers, operating systems, and device classes with cross-filtering and pagination.
+4. Goals and export: page or custom-event goal definitions, conversions and rates over time, goal breakdowns, date comparison, and aggregate CSV download.
+
+CORE CAPABILITIES
+1. tiny pageview and custom-event script
+2. dashboard for visitors, views, bounce proxy, and visit duration
+3. top pages, referrers, countries, and device classes
+4. goal definitions with conversion rate
+5. date comparison and CSV export
+
+DETAILED BEHAVIOR AND BUSINESS RULES
+Treat these as server-enforced product requirements, not interface suggestions:
+1. Set no tracking cookies and persist no full IP address, raw user agent, or cross-day visitor identifier; derive any daily uniqueness key transiently with a rotating secret.
+2. Accept events only for configured origins and site identifiers, normalize paths without sensitive query values, validate custom-event names, and rate-limit abusive clients.
+3. Define visitors, bounce proxy, duration, and conversion rate once in code and apply the same timezone-aware formulas to cards, charts, comparisons, and exports.
+4. Aggregate accepted events asynchronously with idempotent event identifiers so retries do not inflate counts, while late events update the correct site-local day.
+
+DATA MODEL AND LIFECYCLE
+Design a small relational schema centered on Site, PageView, CustomEvent, Goal. Before implementing it, document:
+1. Each table’s purpose, primary key, ownership or tenant boundary, timestamps, status fields, and important attributes.
+2. Foreign keys, uniqueness constraints, check constraints, indexes needed by the named screens, and transaction boundaries for multi-record changes.
+3. The allowed lifecycle or state transitions, who may trigger each transition, which transitions are terminal or reversible, and what audit history must remain immutable.
+4. Archive, retention, and deletion behavior, including what happens to dependent records and external files.
+5. Idempotency strategy for submissions, jobs, imports, notifications, webhooks, or retries where applicable.
+Use migrations rather than ad-hoc schema creation. Store time instants consistently and retain named timezone context whenever local schedules or dates matter. Never rely on a counter, disabled button, or client-side check to preserve a business invariant.
+
+USERS, AUTHENTICATION, AND PERMISSIONS
+Implement only the roles required by the stated audience. Make the ownership and visibility model explicit before coding. Enforce authorization in every server-side query and mutation, including search, exports, attachments, live updates, and guessed URLs—not merely by hiding controls. Use secure session defaults, protect state-changing requests, and provide an understandable signed-out, expired-session, and forbidden state. Seed distinct users when multiple roles are required so permissions can be demonstrated and tested.
+
+INTERACTION AND VISUAL DIRECTION
+The product should feel fast, calm, focused, and credible rather than like a generic admin template. Use a clear visual hierarchy, restrained color, readable typography, generous hit targets, and consistent placement for primary actions. Start with server-rendered HTML and progressively enhance only the interactions that benefit from it. The core workflow must remain understandable if enhancement fails.
+
+Start with server-rendered Blade views and ordinary forms. Use Livewire for focused server-driven interactions and Alpine.js only for small local interface state. The core workflow must remain understandable without relying on a client-side application shell.
+
+Design mobile layouts intentionally instead of simply stacking desktop panels. Support keyboard navigation, visible focus, semantic landmarks, explicit labels, useful page titles, reduced-motion preferences, and screen-reader announcements for asynchronous results. Never use color alone to communicate state. Destructive actions require clear scope and confirmation; safe repeated actions should be idempotent.
+
+TECHNICAL DIRECTION
+Build this version with Laravel, PHP, Blade, Livewire, and Alpine.js. Use controllers and Blade forms for durable navigation, Livewire for focused interactions, Form Requests for validation, Policies and Gates for authorization, and small application actions or services for domain transitions. Use Eloquent with migrations, database constraints, and transactions; Laravel Storage for private S3-compatible files; queued Jobs for retryable work; the Scheduler for recurring work; and Notifications or Mail for email.
+
+Keep domain rules in testable server-side modules instead of route handlers or UI components. Separate persistence, external providers, and background work behind small interfaces without building a framework. Prefer ordinary HTML forms and URLs for durable navigation; use optimistic interaction only when failure can be reconciled clearly.
+
+The product brief currently identifies Workers, Analytics Engine, Astro as capability context. Preserve any required native, browser-only, edge, storage, real-time, or background-processing capability through a narrow adapter appropriate to the selected framework. If the core workflow genuinely requires native or browser APIs, keep that runtime as the primary execution surface rather than simulating inaccessible capabilities or inventing an unnecessary web surface.
+
+Integrate with first-party script endpoint and GeoIP country lookup. For every integration:
+- List required environment variables in an .env.example without real secrets.
+- Add a small adapter with timeouts, normalized errors, and a deterministic local fake or development path.
+- Verify inbound signatures and deduplicate provider events where supported.
+- Keep credentials server-side, encrypt long-lived provider tokens at rest, and redact secrets and sensitive payloads from logs.
+- Define retry, backoff, and idempotency behavior for any side effect that can be repeated.
+
+SECURITY AND PRIVACY
+Do not set tracking cookies or store full IP addresses, user agents, or persistent identifiers.
+Validate, normalize, and length-limit all untrusted input on the server. Escape rendered content by default, sanitize any intentionally accepted markup, rate-limit public or abuse-prone actions, and use private object storage plus short-lived authorized URLs for sensitive files. Collect the minimum personal data necessary for the named workflow. Document retention and deletion behavior. Add specific protections for the riskier surfaces in this app, such as uploads, redirects, outbound requests, email delivery, OAuth, webhooks, CSV import or export, and real-time connections.
+
+ACCEPTANCE SCENARIOS
+Automate these app-specific scenarios at the most appropriate level:
+1. Given one visitor viewing three pages on the same site-local day, the dashboard shows three views and one approximate visitor without storing a reusable visitor profile.
+2. Given a custom event matching an active goal, the event increments that goal once and its conversion rate uses the same filtered visitor denominator as the dashboard.
+3. Given an event from an unapproved origin or with a malformed site identifier, collection is rejected and no analytics aggregate changes.
+
+TESTING
+Add focused unit tests for state transitions, authorization predicates, normalization, date or money calculations, and other risky domain rules. Add integration tests for persistence constraints and each external adapter’s success, timeout, retry, and rejection paths. Add at least one browser-level test for every end-to-end journey above, including one small-screen viewport. Tests must use isolated data and run through a documented single command.
+
+OPERATIONS AND FAILURE RECOVERY
+Add structured server logs with request, job, or event correlation IDs but no secrets or unnecessarily sensitive data. Make failures actionable in both the interface and logs. Background work must expose pending, succeeded, failed, and retrying states where relevant; do not silently swallow errors. Include safe database migration and rollback guidance, seed data, backup and restore notes, external-data cleanup behavior, and a basic health or diagnostic path appropriate to the stack.
+
+DELIVERABLES
+Ship the working application, migrations, representative seed data, tests, .env.example, and a concise README. The README must cover prerequisites, local setup, environment variables, migrations, seed and test commands, deployment, integration setup, backup and restore, security decisions, and known limitations. Seed data should exercise the happy path plus at least one empty, failed, overdue, expired, archived, or permission-restricted state relevant to the product.
+
+DEFINITION OF DONE
+The app is complete when a fresh developer can follow the README, create and migrate the database, run the app, sign in as each relevant role, complete every named journey using real persisted data, refresh without losing state, recover from common failures, and use the core interface on phone and desktop. All acceptance scenarios pass, permission boundaries are covered by tests, and no core screen is left as a placeholder.
+
+NON-GOALS
+Do not build attribution modeling, ad integrations, user journeys, or raw event replay.</pre></div><div class="prompt-box" id="prompt-panel-rails" role="tabpanel" aria-labelledby="prompt-tab-rails" tabindex="0" hidden><pre>You are building a production-ready software product named “Plainstats”, a deliberately focused alternative to Plausible. Build a complete, usable vertical slice—not a landing page, static mockup, or disconnected collection of components.
+
+WORKING AGREEMENT
+Before writing implementation code, produce a short technical plan that names the routes or pages, server actions or endpoints, data tables, important state transitions, authorization boundaries, background jobs, and external adapters. Resolve contradictions in favor of the narrow audience and non-goals below. Prefer a small, legible architecture over speculative abstraction, but do not omit persistence, validation, error handling, or tests.
+
+PRODUCT BRIEF
+Primary user: a site owner wanting simple first-party traffic analytics.
+Primary outcome: show trustworthy aggregate traffic and conversion trends with no visitor profiles.
+Product principle: optimize the exact workflow below instead of copying the full breadth of Plausible. A first-time user should understand what to do from the interface itself, without a tour or documentation.
+
+END-TO-END USER JOURNEYS
+Implement all of these flows through the real interface and persistent data layer:
+1. The owner adds a site, copies the first-party tracking snippet, restricts accepted origins, visits the site, and confirms the first pageview in installation diagnostics.
+2. A visitor navigates several pages and completes a named custom event; edge collection updates aggregate visit, duration, page, referrer, country, device, and goal metrics without cookies.
+3. The owner compares this month with the previous period, drills from a traffic change into pages and referrers, inspects goal conversion rates, and exports the filtered aggregates.
+
+SCREENS AND INFORMATION ARCHITECTURE
+Build these as coherent responsive views. Each screen must specify its primary action, secondary actions, visible status, validation feedback, empty state, loading or pending state, success confirmation, and recoverable failure state.
+1. Sites and setup: site list, live or waiting state, snippet, allowed domains, timezone, installation test, and recent rejected-event diagnostics.
+2. Overview dashboard: visitors, views, bounce proxy, visit duration, comparison deltas, daily trend, realtime indicator, and metric definitions.
+3. Breakdowns: top pages, entry pages, referrer domains, countries, browsers, operating systems, and device classes with cross-filtering and pagination.
+4. Goals and export: page or custom-event goal definitions, conversions and rates over time, goal breakdowns, date comparison, and aggregate CSV download.
+
+CORE CAPABILITIES
+1. tiny pageview and custom-event script
+2. dashboard for visitors, views, bounce proxy, and visit duration
+3. top pages, referrers, countries, and device classes
+4. goal definitions with conversion rate
+5. date comparison and CSV export
+
+DETAILED BEHAVIOR AND BUSINESS RULES
+Treat these as server-enforced product requirements, not interface suggestions:
+1. Set no tracking cookies and persist no full IP address, raw user agent, or cross-day visitor identifier; derive any daily uniqueness key transiently with a rotating secret.
+2. Accept events only for configured origins and site identifiers, normalize paths without sensitive query values, validate custom-event names, and rate-limit abusive clients.
+3. Define visitors, bounce proxy, duration, and conversion rate once in code and apply the same timezone-aware formulas to cards, charts, comparisons, and exports.
+4. Aggregate accepted events asynchronously with idempotent event identifiers so retries do not inflate counts, while late events update the correct site-local day.
+
+DATA MODEL AND LIFECYCLE
+Design a small relational schema centered on Site, PageView, CustomEvent, Goal. Before implementing it, document:
+1. Each table’s purpose, primary key, ownership or tenant boundary, timestamps, status fields, and important attributes.
+2. Foreign keys, uniqueness constraints, check constraints, indexes needed by the named screens, and transaction boundaries for multi-record changes.
+3. The allowed lifecycle or state transitions, who may trigger each transition, which transitions are terminal or reversible, and what audit history must remain immutable.
+4. Archive, retention, and deletion behavior, including what happens to dependent records and external files.
+5. Idempotency strategy for submissions, jobs, imports, notifications, webhooks, or retries where applicable.
+Use migrations rather than ad-hoc schema creation. Store time instants consistently and retain named timezone context whenever local schedules or dates matter. Never rely on a counter, disabled button, or client-side check to preserve a business invariant.
+
+USERS, AUTHENTICATION, AND PERMISSIONS
+Implement only the roles required by the stated audience. Make the ownership and visibility model explicit before coding. Enforce authorization in every server-side query and mutation, including search, exports, attachments, live updates, and guessed URLs—not merely by hiding controls. Use secure session defaults, protect state-changing requests, and provide an understandable signed-out, expired-session, and forbidden state. Seed distinct users when multiple roles are required so permissions can be demonstrated and tested.
+
+INTERACTION AND VISUAL DIRECTION
+The product should feel fast, calm, focused, and credible rather than like a generic admin template. Use a clear visual hierarchy, restrained color, readable typography, generous hit targets, and consistent placement for primary actions. Start with server-rendered HTML and progressively enhance only the interactions that benefit from it. The core workflow must remain understandable if enhancement fails.
+
+Start with server-rendered Rails views and ordinary forms. Use Turbo for navigation, submissions, and server-driven updates, then Stimulus only for small browser-side behavior. Do not turn the product into a client-side SPA, and keep the core workflow usable when enhancement fails.
+
+Design mobile layouts intentionally instead of simply stacking desktop panels. Support keyboard navigation, visible focus, semantic landmarks, explicit labels, useful page titles, reduced-motion preferences, and screen-reader announcements for asynchronous results. Never use color alone to communicate state. Destructive actions require clear scope and confirmation; safe repeated actions should be idempotent.
+
+TECHNICAL DIRECTION
+Build this version with Ruby on Rails and Hotwire: Turbo for navigation, form submissions, and server-driven updates, and Stimulus for small browser-side behavior. Use RESTful controllers with strong parameters and explicit authorization, with domain transitions in testable models or small application services. Use Active Record migrations plus database-level constraints and transactions; Active Storage with an S3-compatible service for private files; Active Job with a durable queue backend for retryable work; Action Mailer for email; and Action Cable only when live updates are required.
+
+Keep domain rules in testable server-side modules instead of route handlers or UI components. Separate persistence, external providers, and background work behind small interfaces without building a framework. Prefer ordinary HTML forms and URLs for durable navigation; use optimistic interaction only when failure can be reconciled clearly.
+
+The product brief currently identifies Workers, Analytics Engine, Astro as capability context. Preserve any required native, browser-only, edge, storage, real-time, or background-processing capability through a narrow adapter appropriate to the selected framework. If the core workflow genuinely requires native or browser APIs, keep that runtime as the primary execution surface rather than simulating inaccessible capabilities or inventing an unnecessary web surface.
+
+Integrate with first-party script endpoint and GeoIP country lookup. For every integration:
+- List required environment variables in an .env.example without real secrets.
+- Add a small adapter with timeouts, normalized errors, and a deterministic local fake or development path.
+- Verify inbound signatures and deduplicate provider events where supported.
+- Keep credentials server-side, encrypt long-lived provider tokens at rest, and redact secrets and sensitive payloads from logs.
+- Define retry, backoff, and idempotency behavior for any side effect that can be repeated.
+
+SECURITY AND PRIVACY
+Do not set tracking cookies or store full IP addresses, user agents, or persistent identifiers.
+Validate, normalize, and length-limit all untrusted input on the server. Escape rendered content by default, sanitize any intentionally accepted markup, rate-limit public or abuse-prone actions, and use private object storage plus short-lived authorized URLs for sensitive files. Collect the minimum personal data necessary for the named workflow. Document retention and deletion behavior. Add specific protections for the riskier surfaces in this app, such as uploads, redirects, outbound requests, email delivery, OAuth, webhooks, CSV import or export, and real-time connections.
+
+ACCEPTANCE SCENARIOS
+Automate these app-specific scenarios at the most appropriate level:
+1. Given one visitor viewing three pages on the same site-local day, the dashboard shows three views and one approximate visitor without storing a reusable visitor profile.
+2. Given a custom event matching an active goal, the event increments that goal once and its conversion rate uses the same filtered visitor denominator as the dashboard.
+3. Given an event from an unapproved origin or with a malformed site identifier, collection is rejected and no analytics aggregate changes.
+
+TESTING
+Add focused unit tests for state transitions, authorization predicates, normalization, date or money calculations, and other risky domain rules. Add integration tests for persistence constraints and each external adapter’s success, timeout, retry, and rejection paths. Add at least one browser-level test for every end-to-end journey above, including one small-screen viewport. Tests must use isolated data and run through a documented single command.
+
+OPERATIONS AND FAILURE RECOVERY
+Add structured server logs with request, job, or event correlation IDs but no secrets or unnecessarily sensitive data. Make failures actionable in both the interface and logs. Background work must expose pending, succeeded, failed, and retrying states where relevant; do not silently swallow errors. Include safe database migration and rollback guidance, seed data, backup and restore notes, external-data cleanup behavior, and a basic health or diagnostic path appropriate to the stack.
+
+DELIVERABLES
+Ship the working application, migrations, representative seed data, tests, .env.example, and a concise README. The README must cover prerequisites, local setup, environment variables, migrations, seed and test commands, deployment, integration setup, backup and restore, security decisions, and known limitations. Seed data should exercise the happy path plus at least one empty, failed, overdue, expired, archived, or permission-restricted state relevant to the product.
+
+DEFINITION OF DONE
+The app is complete when a fresh developer can follow the README, create and migrate the database, run the app, sign in as each relevant role, complete every named journey using real persisted data, refresh without losing state, recover from common failures, and use the core interface on phone and desktop. All acceptance scenarios pass, permission boundaries are covered by tests, and no core screen is left as a placeholder.
+
+NON-GOALS
+Do not build attribution modeling, ad integrations, user journeys, or raw event replay.</pre></div><div class="prompt-actions"><button class="button primary" type="button" id="copy-prompt">Copy AHA prompt</button></div></section><section class="section" aria-labelledby="mini-heading"><h2 id="mini-heading">Build just one piece</h2><p>Not ready to replace all of Plausible? Fine. These are the peculiar sub-problems hiding inside it — the parts that are actually interesting to build. Each one is a standalone prompt, scoped to an evening, no strings attached to the full build.</p><details class="mini"><summary><strong>Counting visitors you can’t recognize tomorrow</strong><span>A rotating daily salt turns unique-visitor counting into deliberate amnesia.</span></summary><pre>Build cookieless unique-visitor counting for a web analytics service.
+
+No cookies, no localStorage, no persistent identifiers. Instead, derive a transient daily key: hash(site id, IP address, user agent, daily rotating salt). Use it only to decide &quot;have we seen this visitor today&quot; — increment the visitor count on first sight, only the pageview count afterwards. The salt rotates every day (in the site&#39;s timezone) and old salts are destroyed, which makes cross-day correlation cryptographically impossible rather than just promised. The raw IP is used as hash input and then discarded; it never touches disk.
+
+Get the details right: the hash lives in a fast store with a 24-plus-hour TTL, keys expire on their own, and the same visitor viewing three pages on one site-local day counts as one visitor and three views. A visitor returning tomorrow is a new visitor by design — document this as the honest tradeoff it is.
+
+Done when: three same-day pageviews yield one visitor, the database contains no IPs and no cross-day identifiers, and yesterday&#39;s salt cannot regenerate today&#39;s keys.</pre><button class="mini-copy" type="button">Copy this prompt</button></details><details class="mini"><summary><strong>One definition of bounce, everywhere</strong><span>Timezone-aware metric formulas defined once, so cards and CSVs can never disagree.</span></summary><pre>Build the metrics core for a website analytics dashboard: visitors, views, bounce proxy, visit duration, and conversion rate, each defined exactly once in code.
+
+The trap this prevents: the overview card, the trend chart, the comparison delta, and the CSV export each reimplementing &quot;bounce rate&quot; slightly differently and drifting apart. Put every formula in one module — bounce proxy is single-pageview visits over total visits, duration comes from first-to-last event within a visit window, conversion rate uses the same filtered visitor denominator as the dashboard — and make every surface call it.
+
+Day bucketing is timezone-aware: each site has a configured timezone, and events aggregate into that site-local day. A pageview at 11:30 PM in Rome lands on Tuesday even if it is Wednesday in UTC. Late-arriving events (delayed beacons, retries) update the day they belong to, not the day they arrived.
+
+Support date-range comparison (this month versus last) computed through the same code path, deltas included.
+
+Done when: card, chart, comparison, and export agree to the digit for any range, and a late event lands in its correct site-local day.</pre><button class="mini-copy" type="button">Copy this prompt</button></details><details class="mini"><summary><strong>The aggregation pipeline that shrugs at retries</strong><span>Idempotent event IDs so a retried beacon never inflates a count.</span></summary><pre>Build the ingestion-to-aggregation pipeline for an analytics service, hardened against every kind of duplicate.
+
+The client beacon assigns each event a unique event id at creation. The collector accepts the event, acknowledges fast, and hands it to an async aggregation step — collection must never block on aggregation, and a slow database must not slow the tracked site.
+
+Aggregation is where idempotency lives: before folding an event into its counters (pageviews, visitors, goals, per-dimension breakdowns), check whether that event id was already processed; if so, skip it silently. This makes the whole pipeline safe against client retries (flaky mobile networks resend beacons), collector retries, and queue redeliveries — all three happen in practice.
+
+Keep the processed-id set bounded: ids only need remembering for a dedupe window (say 48 hours), after which they expire. Counters update atomically so concurrent aggregation workers do not lose increments.
+
+Done when: replaying the same event five times changes counters once, a paused aggregator catches up without drift, and collection latency stays flat while aggregation backlogs.</pre><button class="mini-copy" type="button">Copy this prompt</button></details><details class="mini"><summary><strong>The bouncer at the ingest door</strong><span>Origin allowlists, path scrubbing, and rate limits before anything counts.</span></summary><pre>Build the validation gate for an analytics collection endpoint — everything that happens before an event is allowed to exist.
+
+Check provenance first: the event&#39;s site id must exist, and the request&#39;s origin must be on that site&#39;s configured domain allowlist. Wrong origin or malformed site id means rejection with no aggregate touched — and a rejection counter per site, surfaced in installation diagnostics so owners can debug their setup instead of emailing you.
+
+Scrub paths before storage: strip query strings entirely or keep only an explicit safe-list, because URLs arrive carrying session tokens, reset codes, and email addresses. Normalize trailing slashes and case so /Pricing and /pricing/ are one page. Validate custom event names against a strict pattern (length cap, safe characters) to keep garbage out of dropdowns.
+
+Rate-limit per site and per client aggressively — a broken single-page app in a render loop can emit thousands of events a minute and quietly wreck both your bill and the site&#39;s stats.
+
+Done when: unapproved origins change nothing, no stored path contains a query secret, and a synthetic event flood hits the limiter instead of the database.</pre><button class="mini-copy" type="button">Copy this prompt</button></details></section><section class="section" aria-labelledby="faq-heading"><h2 id="faq-heading">Frequently asked questions</h2><details class="faq"><summary>How long does it take to build your own Plausible?</summary><p>A basic version — pageview script, visitor counts, top pages — takes about 8 hours. Roughly 3 days gets you a solid v1 with goals, referrers, geo, device breakdown, csv export. Matching everything Plausible really does (billions-of-events ingestion, funnels, imports, saas hardening) is closer to 1 month+, which is exactly why you should scope down instead.</p></details><details class="faq"><summary>How much does Plausible cost if I keep subscribing?</summary><p>Plausible runs $9–$19 per month on public paid plans, which is $108–$228 per year. A focused self-built replacement costs your build time plus close-to-zero hosting.</p></details><details class="faq"><summary>What stack should I use to build a Plausible alternative?</summary><p>The build prompt on this page ships in four flavors: the AHA stack (Astro, HTMX, Alpine.js), Next.js, Laravel, and Ruby on Rails. The capability context for this product is Workers, Analytics Engine, Astro. Pick the stack you already know — the scope matters more than the framework.</p></details><details class="faq"><summary>What features does a minimal Plausible replacement need?</summary><p>A useful v1 needs: tiny pageview and custom-event script; dashboard for visitors, views, bounce proxy, and visit duration; top pages, referrers, countries, and device classes; goal definitions with conversion rate; date comparison and CSV export. Everything else is scope creep until you personally miss it.</p></details><details class="faq"><summary>What should I deliberately not build?</summary><p>Do not build attribution modeling, ad integrations, user journeys, or raw event replay.</p></details><details class="faq"><summary>Does this build also replace Fathom Analytics, Simple Analytics, Umami and Matomo?</summary><p>Yes. Plausible, Fathom Analytics, Simple Analytics, Umami and Matomo all solve the same core job — show trustworthy aggregate traffic and conversion trends with no visitor profiles. The scoped v1 on this page covers what most people use any of them for, so one focused build replaces whichever you currently pay for.</p></details></section><section class="section" aria-labelledby="related-heading"><h2 id="related-heading">More marketing subscriptions to replace</h2><ul class="related-list"><li><a href="/build-your-own-typeform/">Build your own Typeform</a><span>$29–$99/mo · from 2 hours</span></li><li><a href="/build-your-own-buffer/">Build your own Buffer</a><span>$18–$36/mo · from 8 hours</span></li><li><a href="/build-your-own-mailchimp/">Build your own Mailchimp</a><span>$20–$350/mo · from 12 hours</span></li><li><a href="/build-your-own-kit/">Build your own Kit</a><span>$29–$79/mo · from 10 hours</span></li></ul><p class="related-home"><a href="/#audit">Browse all 109 buildable subscriptions →</a></p></section></main><footer><a class="logo footer-logo" href="/"><span class="logo-mark">EZ</span><span>ezvibecode</span></a><p><a href="/blog/">Blog</a></p><p><a href="/guides/">Guides</a></p><p><a href="/changelog/">Changelog</a></p><p>A tiny idea about tiny software.</p><p>Built with vibes, obviously.</p></footer><div class="toast" id="toast" role="status" aria-live="polite">Prompt copied. Go ship it.</div><script type="module">var e=Array.from(document.querySelectorAll(`.prompt-tab`)),t=Array.from(document.querySelectorAll(`.prompt-box`)),n=document.querySelector(`#copy-prompt`),r=r=>{e.forEach(e=>{let t=e.dataset.framework===r;e.setAttribute(`aria-selected`,String(t)),e.tabIndex=t?0:-1}),t.forEach(e=>{e.hidden=e.id!==`prompt-panel-${r}`}),n.textContent=`Copy ${e.find(e=>e.dataset.framework===r)?.textContent||`prompt`} prompt`};e.forEach((t,n)=>{t.addEventListener(`click`,()=>r(t.dataset.framework)),t.addEventListener(`keydown`,t=>{let i;t.key===`ArrowRight`&&(i=(n+1)%e.length),t.key===`ArrowLeft`&&(i=(n-1+e.length)%e.length),t.key===`Home`&&(i=0),t.key===`End`&&(i=e.length-1),i!==void 0&&(t.preventDefault(),r(e[i].dataset.framework),e[i].focus())})}),n?.addEventListener(`click`,async()=>{let e=t.find(e=>!e.hidden);await navigator.clipboard.writeText(e?.querySelector(`pre`)?.textContent||``);let n=document.querySelector(`#toast`);n.classList.add(`show`),setTimeout(()=>n.classList.remove(`show`),2200)}),document.querySelectorAll(`.mini-copy`).forEach(e=>{e.addEventListener(`click`,async()=>{let t=e.closest(`.mini`)?.querySelector(`pre`)?.textContent||``;await navigator.clipboard.writeText(t);let n=document.querySelector(`#toast`);n.classList.add(`show`),setTimeout(()=>n.classList.remove(`show`),2200)})});var i=document.querySelector(`#theme-toggle`);localStorage.getItem(`vibe-theme`)===`dark`&&(document.documentElement.dataset.theme=`dark`),i?.addEventListener(`click`,()=>{let e=document.documentElement.dataset.theme!==`dark`;document.documentElement.dataset.theme=e?`dark`:`light`,localStorage.setItem(`vibe-theme`,e?`dark`:`light`)});</script><script type="module" src="https://static.cloudflareinsights.com/beacon.min.js/vce701823e78c4301a35b7e07294d87301792088814092" integrity="sha512-UKNk8GbxkABxKcXYuLkO16EleLGUkcvJWtpSNmExE0Too3ZaFAxTscNWEc1OdAv5/BikHawapSCaiD2XCmp+Bw==" data-cf-beacon='{"version":"2024.11.0","token":"228ace6b78e04bb494384851ece32c99","r":1,"spa":2}' crossorigin="anonymous"></script>
+</body></html>
