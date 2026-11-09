@@ -23,10 +23,11 @@ const MIME_TYPES = {
 };
 
 const server = http.createServer((req, res) => {
-  let reqPath = decodeURIComponent(new URL(req.url, `http://${req.headers.host}`).pathname);
+  const p = ROOT.includes('/') ? path.posix : path;
+  let reqPath = decodeURIComponent(new URL(req.url, `http://${req.headers.host || 'localhost'}`).pathname);
 
-  // Normalize path
-  let filePath = path.join(ROOT, reqPath);
+  // Normalize path safely across Windows and Linux (Vercel)
+  let filePath = p.resolve(ROOT, '.' + reqPath);
 
   // Security check: ensure path stays within ROOT
   if (!filePath.startsWith(ROOT)) {
@@ -39,11 +40,11 @@ const server = http.createServer((req, res) => {
   if (fs.existsSync(filePath)) {
     const stat = fs.statSync(filePath);
     if (stat.isDirectory()) {
-      filePath = path.join(filePath, 'index.html');
+      filePath = p.join(filePath, 'index.html');
     }
   } else {
     // Try adding index.html (for clean urls without trailing slash like /blog or /guides)
-    const withIndex = path.join(filePath, 'index.html');
+    const withIndex = p.join(filePath, 'index.html');
     if (fs.existsSync(withIndex)) {
       filePath = withIndex;
     } else if (fs.existsSync(filePath + '.html')) {
@@ -52,7 +53,7 @@ const server = http.createServer((req, res) => {
   }
 
   if (fs.existsSync(filePath) && fs.statSync(filePath).isFile()) {
-    const ext = path.extname(filePath).toLowerCase();
+    const ext = p.extname(filePath).toLowerCase();
     const contentType = MIME_TYPES[ext] || 'application/octet-stream';
     
     // Set caching headers
